@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-EMPL_INSP_SCRD,EMPL_INSP_SCRD,,Root,0,1,Goal,Root,EMPL_INSP_SCRD,1,No
-EMPL_INSP_SCRD,CSSC,EMPL_INSP_SCRD,div,1,100.0,Goal,Root/div,EMPL_INSP_SCRD/CSSC,1,No
-EMPL_INSP_SCRD,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,EMPL_INSP_SCRD/CSSC/CS,0,Yes

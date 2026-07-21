@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-PROD_ENGINE,PROD_ENGINE,,Root,0,1,Goal,Root,PROD_ENGINE,1,No
-PROD_ENGINE,TOP,PROD_ENGINE,div,1,100.0,Goal,Root/div,PROD_ENGINE/TOP,1,No
-PROD_ENGINE,Engine Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,PROD_ENGINE/TOP/Engine Maintenance,0,Yes

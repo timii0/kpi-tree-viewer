@@ -1,6 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-ODI_DC,ODI_DC,,Root,0,1,Goal,Root,ODI_DC,4,No
-ODI_DC,9E,ODI_DC,dc_carrier,1,35.68,Goal,Root/dc_carrier,ODI_DC/9E,0,Yes
-ODI_DC,OO,ODI_DC,dc_carrier,1,31.78,Goal,Root/dc_carrier,ODI_DC/OO,0,Yes
-ODI_DC,YX,ODI_DC,dc_carrier,1,29.8,Goal,Root/dc_carrier,ODI_DC/YX,0,Yes
-ODI_DC,DC,ODI_DC,div,1,2.74,Goal,Root/div,ODI_DC/DC,0,Yes

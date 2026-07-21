@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FOP_TRAIN_LEN,FOP_TRAIN_LEN,,Root,0,1,Goal,Root,FOP_TRAIN_LEN,1,No
-FOP_TRAIN_LEN,DL,FOP_TRAIN_LEN,sys,1,100.0,Goal,Root/sys,FOP_TRAIN_LEN/DL,0,Yes

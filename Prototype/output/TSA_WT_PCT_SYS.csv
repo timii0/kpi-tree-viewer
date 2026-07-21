@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-TSA_WT_PCT_SYS,TSA_WT_PCT_SYS,,Root,0,1,Goal,Root,TSA_WT_PCT_SYS,1,No
-TSA_WT_PCT_SYS,DL,TSA_WT_PCT_SYS,sys,1,100.0,Goal,Root/sys,TSA_WT_PCT_SYS/DL,0,Yes

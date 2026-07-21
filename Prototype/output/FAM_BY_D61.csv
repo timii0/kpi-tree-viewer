@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FAM_BY_D61,FAM_BY_D61,,Root,0,1,Goal,Root,FAM_BY_D61,1,No
-FAM_BY_D61,ML,FAM_BY_D61,carrier,1,100.0,Goal,Root/carrier,FAM_BY_D61/ML,0,Yes

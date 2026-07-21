@@ -1,8 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FAB_SYS,FAB_SYS,,Root,0,1,Goal,Root,FAB_SYS,2,No
-FAB_SYS,O,FAB_SYS,orig_typ,1,89.9,Goal,Root/orig_typ,FAB_SYS/O,2,No
-FAB_SYS,D,O,dom_int,2,81.47,Goal,Root/orig_typ/dom_int,FAB_SYS/O/D,0,Yes
-FAB_SYS,I,O,dom_int,2,18.53,Goal,Root/orig_typ/dom_int,FAB_SYS/O/I,0,Yes
-FAB_SYS,T,FAB_SYS,orig_typ,1,10.1,Goal,Root/orig_typ,FAB_SYS/T,2,No
-FAB_SYS,D,T,dom_int,2,54.89,Goal,Root/orig_typ/dom_int,FAB_SYS/T/D,0,Yes
-FAB_SYS,I,T,dom_int,2,45.11,Goal,Root/orig_typ/dom_int,FAB_SYS/T/I,0,Yes

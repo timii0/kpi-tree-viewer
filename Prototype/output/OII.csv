@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-OII,OII,,Root,0,1,Goal,Root,OII,1,No
-OII,TOP,OII,div,1,100.0,Goal,Root/div,OII/TOP,0,Yes

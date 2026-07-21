@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FAINS_COMB,FAINS_COMB,,Root,0,1,Goal,Root,FAINS_COMB,1,No
-FAINS_COMB,IFS,FAINS_COMB,div,1,100.0,Goal,Root/div,FAINS_COMB/IFS,0,Yes

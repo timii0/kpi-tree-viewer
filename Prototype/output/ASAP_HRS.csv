@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-ASAP_HRS,ASAP_HRS,,Root,0,1,Goal,Root,ASAP_HRS,2,No
-ASAP_HRS,ACS,ASAP_HRS,div,1,57.68,Goal,Root/div,ASAP_HRS/ACS,0,Yes
-ASAP_HRS,CGO,ASAP_HRS,div,1,42.32,Goal,Root/div,ASAP_HRS/CGO,0,Yes

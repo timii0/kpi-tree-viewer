@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-NM_COS_BH,NM_COS_BH,,Root,0,1,Goal,Root,NM_COS_BH,1,No
-NM_COS_BH,DC,NM_COS_BH,div,1,100.0,Goal,Root/div,NM_COS_BH/DC,0,Yes

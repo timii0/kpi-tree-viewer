@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-TOT_OP_EXP,TOT_OP_EXP,,Root,0,1,Goal,Root,TOT_OP_EXP,1,No
-TOT_OP_EXP,OBS,TOT_OP_EXP,div,1,100.0,Goal,Root/div,TOT_OP_EXP/OBS,0,Yes

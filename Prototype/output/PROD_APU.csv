@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-PROD_APU,PROD_APU,,Root,0,1,Goal,Root,PROD_APU,1,No
-PROD_APU,TOP,PROD_APU,div,1,100.0,Goal,Root/div,PROD_APU/TOP,1,No
-PROD_APU,Engine Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,PROD_APU/TOP/Engine Maintenance,0,Yes

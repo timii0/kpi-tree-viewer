@@ -1,6 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-ISR_DC,ISR_DC,,Root,0,1,Goal,Root,ISR_DC,4,No
-ISR_DC,9E,ISR_DC,dc_carrier,1,6.84,Goal,Root/dc_carrier,ISR_DC/9E,0,Yes
-ISR_DC,OO,ISR_DC,dc_carrier,1,45.42,Goal,Root/dc_carrier,ISR_DC/OO,0,Yes
-ISR_DC,YX,ISR_DC,dc_carrier,1,36.2,Goal,Root/dc_carrier,ISR_DC/YX,0,Yes
-ISR_DC,DC,ISR_DC,div,1,11.54,Goal,Root/div,ISR_DC/DC,0,Yes

@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-ALLOC_ACC_COMP,ALLOC_ACC_COMP,,Root,0,1,Goal,Root,ALLOC_ACC_COMP,1,No
-ALLOC_ACC_COMP,TOP,ALLOC_ACC_COMP,div,1,100.0,Goal,Root/div,ALLOC_ACC_COMP/TOP,1,No
-ALLOC_ACC_COMP,Materials,TOP,bu,2,100.0,Goal,Root/div/bu,ALLOC_ACC_COMP/TOP/Materials,0,Yes

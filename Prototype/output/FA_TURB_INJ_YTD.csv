@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FA_TURB_INJ_YTD,FA_TURB_INJ_YTD,,Root,0,1,Goal,Root,FA_TURB_INJ_YTD,1,No
-FA_TURB_INJ_YTD,DL,FA_TURB_INJ_YTD,sys,1,100.0,Goal,Root/sys,FA_TURB_INJ_YTD/DL,0,Yes

@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-COST_DEP,COST_DEP,,Root,0,1,Goal,Root,COST_DEP,1,No
-COST_DEP,OCC,COST_DEP,div,1,100.0,Goal,Root/div,COST_DEP/OCC,0,Yes

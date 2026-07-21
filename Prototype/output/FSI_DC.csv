@@ -1,6 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FSI_DC,FSI_DC,,Root,0,1,Goal,Root,FSI_DC,4,No
-FSI_DC,9E,FSI_DC,dc_carrier,1,35.46,Goal,Root/dc_carrier,FSI_DC/9E,0,Yes
-FSI_DC,OO,FSI_DC,dc_carrier,1,7.54,Goal,Root/dc_carrier,FSI_DC/OO,0,Yes
-FSI_DC,YX,FSI_DC,dc_carrier,1,28.67,Goal,Root/dc_carrier,FSI_DC/YX,0,Yes
-FSI_DC,DC,FSI_DC,div,1,28.33,Goal,Root/div,FSI_DC/DC,0,Yes

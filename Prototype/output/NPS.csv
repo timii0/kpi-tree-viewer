@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-NPS,NPS,,Root,0,1,Goal,Root,NPS,2,No
-NPS,DC,NPS,carrier,1,34.1,Goal,Root/carrier,NPS/DC,0,Yes
-NPS,ML,NPS,carrier,1,65.9,Goal,Root/carrier,NPS/ML,0,Yes

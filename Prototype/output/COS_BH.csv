@@ -1,5 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-COS_BH,COS_BH,,Root,0,1,Goal,Root,COS_BH,2,No
-COS_BH,IFS,COS_BH,div,1,77.36,Goal,Root/div,COS_BH/IFS,1,No
-COS_BH,FA,IFS,bu,2,100.0,Goal,Root/div/bu,COS_BH/IFS/FA,0,Yes
-COS_BH,DC,COS_BH,div,1,22.64,Goal,Root/div,COS_BH/DC,0,Yes

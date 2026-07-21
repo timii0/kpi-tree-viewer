@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-MTC_SPARE_UTIL,MTC_SPARE_UTIL,,Root,0,1,Goal,Root,MTC_SPARE_UTIL,1,No
-MTC_SPARE_UTIL,DL,MTC_SPARE_UTIL,sys,1,100.0,Goal,Root/sys,MTC_SPARE_UTIL/DL,0,Yes

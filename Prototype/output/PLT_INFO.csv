@@ -1,7 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-PLT_INFO,PLT_INFO,,Root,0,1,Goal,Root,PLT_INFO,5,No
-PLT_INFO,DC,PLT_INFO,carrier,1,23.4,Goal,Root/carrier,PLT_INFO/DC,0,Yes
-PLT_INFO,ML,PLT_INFO,carrier,1,9.96,Goal,Root/carrier,PLT_INFO/ML,0,Yes
-PLT_INFO,9E,PLT_INFO,dc_carrier,1,33.15,Goal,Root/dc_carrier,PLT_INFO/9E,0,Yes
-PLT_INFO,OO,PLT_INFO,dc_carrier,1,27.74,Goal,Root/dc_carrier,PLT_INFO/OO,0,Yes
-PLT_INFO,YX,PLT_INFO,dc_carrier,1,5.75,Goal,Root/dc_carrier,PLT_INFO/YX,0,Yes

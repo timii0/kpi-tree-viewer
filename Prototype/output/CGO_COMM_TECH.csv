@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CGO_COMM_TECH,CGO_COMM_TECH,,Root,0,1,Goal,Root,CGO_COMM_TECH,1,No
-CGO_COMM_TECH,DL,CGO_COMM_TECH,sys,1,100.0,Goal,Root/sys,CGO_COMM_TECH/DL,0,Yes

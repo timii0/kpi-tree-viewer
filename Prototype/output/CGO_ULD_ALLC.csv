@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CGO_ULD_ALLC,CGO_ULD_ALLC,,Root,0,1,Goal,Root,CGO_ULD_ALLC,1,No
-CGO_ULD_ALLC,DL,CGO_ULD_ALLC,sys,1,100.0,Goal,Root/sys,CGO_ULD_ALLC/DL,0,Yes

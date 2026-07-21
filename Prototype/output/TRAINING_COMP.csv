@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-TRAINING_COMP,TRAINING_COMP,,Root,0,1,Goal,Root,TRAINING_COMP,1,No
-TRAINING_COMP,TOP,TRAINING_COMP,div,1,100.0,Goal,Root/div,TRAINING_COMP/TOP,1,No
-TRAINING_COMP,Materials,TOP,bu,2,100.0,Goal,Root/div/bu,TRAINING_COMP/TOP/Materials,0,Yes

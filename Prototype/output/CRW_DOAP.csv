@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CRW_DOAP,CRW_DOAP,,Root,0,1,Goal,Root,CRW_DOAP,1,No
-CRW_DOAP,DL,CRW_DOAP,sys,1,100.0,Goal,Root/sys,CRW_DOAP/DL,0,Yes

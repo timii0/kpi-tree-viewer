@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CGO_EML_ART_PRM,CGO_EML_ART_PRM,,Root,0,1,Goal,Root,CGO_EML_ART_PRM,1,No
-CGO_EML_ART_PRM,DL,CGO_EML_ART_PRM,sys,1,100.0,Goal,Root/sys,CGO_EML_ART_PRM/DL,0,Yes

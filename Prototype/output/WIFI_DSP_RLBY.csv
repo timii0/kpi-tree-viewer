@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-WIFI_DSP_RLBY,WIFI_DSP_RLBY,,Root,0,1,Goal,Root,WIFI_DSP_RLBY,1,No
-WIFI_DSP_RLBY,TOP,WIFI_DSP_RLBY,div,1,100.0,Goal,Root/div,WIFI_DSP_RLBY/TOP,1,No
-WIFI_DSP_RLBY,Cabin Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,WIFI_DSP_RLBY/TOP/Cabin Maintenance,0,Yes

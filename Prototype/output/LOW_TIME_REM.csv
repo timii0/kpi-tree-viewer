@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-LOW_TIME_REM,LOW_TIME_REM,,Root,0,1,Goal,Root,LOW_TIME_REM,1,No
-LOW_TIME_REM,TOP,LOW_TIME_REM,div,1,100.0,Goal,Root/div,LOW_TIME_REM/TOP,1,No
-LOW_TIME_REM,Engine Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,LOW_TIME_REM/TOP/Engine Maintenance,0,Yes

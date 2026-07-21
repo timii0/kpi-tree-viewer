@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FA_AVAIL_FLY,FA_AVAIL_FLY,,Root,0,1,Goal,Root,FA_AVAIL_FLY,1,No
-FA_AVAIL_FLY,IFS,FA_AVAIL_FLY,div,1,100.0,Goal,Root/div,FA_AVAIL_FLY/IFS,0,Yes

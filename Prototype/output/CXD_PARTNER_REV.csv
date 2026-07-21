@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CXD_PARTNER_REV,CXD_PARTNER_REV,,Root,0,1,Goal,Root,CXD_PARTNER_REV,1,No
-CXD_PARTNER_REV,DL,CXD_PARTNER_REV,sys,1,100.0,Goal,Root/sys,CXD_PARTNER_REV/DL,0,Yes

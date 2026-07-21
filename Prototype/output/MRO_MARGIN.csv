@@ -1,5 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-MRO_MARGIN,MRO_MARGIN,,Root,0,1,Goal,Root,MRO_MARGIN,1,No
-MRO_MARGIN,TOP,MRO_MARGIN,div,1,100.0,Goal,Root/div,MRO_MARGIN/TOP,2,No
-MRO_MARGIN,Component Maintenance,TOP,bu,2,2.92,Goal,Root/div/bu,MRO_MARGIN/TOP/Component Maintenance,0,Yes
-MRO_MARGIN,Engine Maintenance,TOP,bu,2,97.08,Goal,Root/div/bu,MRO_MARGIN/TOP/Engine Maintenance,0,Yes

@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-NOV,NOV,,Root,0,1,Goal,Root,NOV,1,No
-NOV,CSSC,NOV,div,1,100.0,Goal,Root/div,NOV/CSSC,1,No
-NOV,CERC,CSSC,bu,2,100.0,Goal,Root/div/bu,NOV/CSSC/CERC,0,Yes

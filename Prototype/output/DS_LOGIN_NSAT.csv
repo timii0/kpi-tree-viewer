@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-DS_LOGIN_NSAT,DS_LOGIN_NSAT,,Root,0,1,Goal,Root,DS_LOGIN_NSAT,1,No
-DS_LOGIN_NSAT,DL,DS_LOGIN_NSAT,sys,1,100.0,Goal,Root/sys,DS_LOGIN_NSAT/DL,0,Yes

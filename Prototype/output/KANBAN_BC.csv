@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-KANBAN_BC,KANBAN_BC,,Root,0,1,Goal,Root,KANBAN_BC,1,No
-KANBAN_BC,TOP,KANBAN_BC,div,1,100.0,Goal,Root/div,KANBAN_BC/TOP,0,Yes

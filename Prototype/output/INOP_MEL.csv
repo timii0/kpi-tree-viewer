@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-INOP_MEL,INOP_MEL,,Root,0,1,Goal,Root,INOP_MEL,2,No
-INOP_MEL,Customer,INOP_MEL,impact_type,1,66.04,Goal,Root/impact_type,INOP_MEL/Customer,0,Yes
-INOP_MEL,Flight Attendant,INOP_MEL,impact_type,1,33.96,Goal,Root/impact_type,INOP_MEL/Flight Attendant,0,Yes

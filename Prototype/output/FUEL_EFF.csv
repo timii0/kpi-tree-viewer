@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FUEL_EFF,FUEL_EFF,,Root,0,1,Goal,Root,FUEL_EFF,1,No
-FUEL_EFF,DL,FUEL_EFF,sys,1,100.0,Goal,Root/sys,FUEL_EFF/DL,0,Yes

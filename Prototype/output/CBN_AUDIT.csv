@@ -1,0 +1,6 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CBN_AUDIT,CBN_AUDIT,,Root,0,1,Goal,Root,CBN_AUDIT,4,No
+CBN_AUDIT,DC,CBN_AUDIT,carrier,1,40.31,Goal,Root/carrier,CBN_AUDIT/DC,0,Yes
+CBN_AUDIT,9E,CBN_AUDIT,dc_carrier,1,29.82,Goal,Root/dc_carrier,CBN_AUDIT/9E,0,Yes
+CBN_AUDIT,OO,CBN_AUDIT,dc_carrier,1,28.03,Goal,Root/dc_carrier,CBN_AUDIT/OO,0,Yes
+CBN_AUDIT,YX,CBN_AUDIT,dc_carrier,1,1.84,Goal,Root/dc_carrier,CBN_AUDIT/YX,0,Yes

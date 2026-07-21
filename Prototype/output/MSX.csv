@@ -1,0 +1,13 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+MSX,MSX,,Root,0,1,Goal,Root,MSX,2,No
+MSX,ACS,MSX,div,1,26.56,Goal,Root/div,MSX/ACS,9,No
+MSX,ATL,ACS,station,2,6.73,Goal,Root/div/station,MSX/ACS/ATL,0,Yes
+MSX,BOS,ACS,station,2,23.3,Goal,Root/div/station,MSX/ACS/BOS,0,Yes
+MSX,DTW,ACS,station,2,11.62,Goal,Root/div/station,MSX/ACS/DTW,0,Yes
+MSX,JFK,ACS,station,2,0.65,Goal,Root/div/station,MSX/ACS/JFK,0,Yes
+MSX,LAX,ACS,station,2,9.64,Goal,Root/div/station,MSX/ACS/LAX,0,Yes
+MSX,LGA,ACS,station,2,11.71,Goal,Root/div/station,MSX/ACS/LGA,0,Yes
+MSX,MSP,ACS,station,2,6.12,Goal,Root/div/station,MSX/ACS/MSP,0,Yes
+MSX,SEA,ACS,station,2,8.79,Goal,Root/div/station,MSX/ACS/SEA,0,Yes
+MSX,SLC,ACS,station,2,21.44,Goal,Root/div/station,MSX/ACS/SLC,0,Yes
+MSX,DL,MSX,sys,1,73.44,Goal,Root/sys,MSX/DL,0,Yes

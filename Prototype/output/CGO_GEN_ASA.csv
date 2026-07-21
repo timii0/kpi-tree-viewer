@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CGO_GEN_ASA,CGO_GEN_ASA,,Root,0,1,Goal,Root,CGO_GEN_ASA,1,No
+CGO_GEN_ASA,DL,CGO_GEN_ASA,sys,1,100.0,Goal,Root/sys,CGO_GEN_ASA/DL,0,Yes

@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+EXEC_PRTCT,EXEC_PRTCT,,Root,0,1,Goal,Root,EXEC_PRTCT,1,No
+EXEC_PRTCT,CSSC,EXEC_PRTCT,div,1,100.0,Goal,Root/div,EXEC_PRTCT/CSSC,1,No
+EXEC_PRTCT,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,EXEC_PRTCT/CSSC/CS,0,Yes

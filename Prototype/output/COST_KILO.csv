@@ -1,0 +1,6 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+COST_KILO,COST_KILO,,Root,0,1,Goal,Root,COST_KILO,1,No
+COST_KILO,CGO,COST_KILO,div,1,100.0,Goal,Root/div,COST_KILO/CGO,1,No
+COST_KILO,Trucking,CGO,bu,2,100.0,Goal,Root/div/bu,COST_KILO/CGO/Trucking,2,No
+COST_KILO,D,Trucking,dom_int,3,76.64,Goal,Root/div/bu/dom_int,COST_KILO/CGO/Trucking/D,0,Yes
+COST_KILO,I,Trucking,dom_int,3,23.36,Goal,Root/div/bu/dom_int,COST_KILO/CGO/Trucking/I,0,Yes

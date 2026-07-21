@@ -1,0 +1,51 @@
+{
+    "id": "SVC_LVL",
+    "name": "SVC_LVL",
+    "category": "Root",
+    "tier": 0,
+    "path": "SVC_LVL",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ESSN1",
+            "name": "ESSN1",
+            "category": "essn_cd",
+            "path": "SVC_LVL/ESSN1",
+            "tier": 1,
+            "contribution": 40.69,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ESSN2",
+            "name": "ESSN2",
+            "category": "essn_cd",
+            "path": "SVC_LVL/ESSN2",
+            "tier": 1,
+            "contribution": 7.6,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ESSN3",
+            "name": "ESSN3",
+            "category": "essn_cd",
+            "path": "SVC_LVL/ESSN3",
+            "tier": 1,
+            "contribution": 38.47,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "KILLER",
+            "name": "KILLER",
+            "category": "essn_cd",
+            "path": "SVC_LVL/KILLER",
+            "tier": 1,
+            "contribution": 13.24,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

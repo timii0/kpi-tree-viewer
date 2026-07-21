@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CMP_PERF,CMP_PERF,,Root,0,1,Goal,Root,CMP_PERF,1,No
+CMP_PERF,CSSC,CMP_PERF,div,1,100.0,Goal,Root/div,CMP_PERF/CSSC,1,No
+CMP_PERF,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,CMP_PERF/CSSC/CS,0,Yes

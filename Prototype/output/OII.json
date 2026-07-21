@@ -1,0 +1,21 @@
+{
+    "id": "OII",
+    "name": "OII",
+    "category": "Root",
+    "tier": 0,
+    "path": "OII",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "OII/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

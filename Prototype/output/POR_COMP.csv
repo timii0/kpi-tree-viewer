@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+POR_COMP,POR_COMP,,Root,0,1,Goal,Root,POR_COMP,1,No
+POR_COMP,TOP,POR_COMP,div,1,100.0,Goal,Root/div,POR_COMP/TOP,0,Yes

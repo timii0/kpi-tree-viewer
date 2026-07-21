@@ -1,0 +1,31 @@
+{
+    "id": "RSGE_FL",
+    "name": "RSGE_FL",
+    "category": "Root",
+    "tier": 0,
+    "path": "RSGE_FL",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ML",
+            "name": "ML",
+            "category": "carrier",
+            "path": "RSGE_FL/ML",
+            "tier": 1,
+            "contribution": 82.39,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "RSGE_FL/DL",
+            "tier": 1,
+            "contribution": 17.61,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

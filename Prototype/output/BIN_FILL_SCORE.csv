@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+BIN_FILL_SCORE,BIN_FILL_SCORE,,Root,0,1,Goal,Root,BIN_FILL_SCORE,1,No
+BIN_FILL_SCORE,APU,BIN_FILL_SCORE,part_type,1,100.0,Goal,Root/part_type,BIN_FILL_SCORE/APU,0,Yes

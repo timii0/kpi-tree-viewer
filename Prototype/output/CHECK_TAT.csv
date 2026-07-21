@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CHECK_TAT,CHECK_TAT,,Root,0,1,Goal,Root,CHECK_TAT,1,No
+CHECK_TAT,TOP,CHECK_TAT,div,1,100.0,Goal,Root/div,CHECK_TAT/TOP,1,No
+CHECK_TAT,Airframe Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,CHECK_TAT/TOP/Airframe Maintenance,0,Yes

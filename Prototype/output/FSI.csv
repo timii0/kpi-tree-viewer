@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FSI,FSI,,Root,0,1,Goal,Root,FSI,1,No
+FSI,DL,FSI,sys,1,100.0,Goal,Root/sys,FSI/DL,0,Yes

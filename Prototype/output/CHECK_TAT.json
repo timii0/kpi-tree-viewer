@@ -1,0 +1,32 @@
+{
+    "id": "CHECK_TAT",
+    "name": "CHECK_TAT",
+    "category": "Root",
+    "tier": 0,
+    "path": "CHECK_TAT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "CHECK_TAT/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Airframe Maintenance",
+                    "name": "Airframe Maintenance",
+                    "category": "bu",
+                    "path": "CHECK_TAT/TOP/Airframe Maintenance",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

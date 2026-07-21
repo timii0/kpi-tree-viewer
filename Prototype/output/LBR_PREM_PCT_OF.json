@@ -1,0 +1,21 @@
+{
+    "id": "LBR_PREM_PCT_OF",
+    "name": "LBR_PREM_PCT_OF",
+    "category": "Root",
+    "tier": 0,
+    "path": "LBR_PREM_PCT_OF",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "FOP",
+            "name": "FOP",
+            "category": "div",
+            "path": "LBR_PREM_PCT_OF/FOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

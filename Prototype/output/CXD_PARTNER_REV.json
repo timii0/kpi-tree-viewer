@@ -1,0 +1,21 @@
+{
+    "id": "CXD_PARTNER_REV",
+    "name": "CXD_PARTNER_REV",
+    "category": "Root",
+    "tier": 0,
+    "path": "CXD_PARTNER_REV",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "CXD_PARTNER_REV/DL",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CBP_WT_PCT_SYS,CBP_WT_PCT_SYS,,Root,0,1,Goal,Root,CBP_WT_PCT_SYS,1,No
+CBP_WT_PCT_SYS,DL,CBP_WT_PCT_SYS,sys,1,100.0,Goal,Root/sys,CBP_WT_PCT_SYS/DL,0,Yes

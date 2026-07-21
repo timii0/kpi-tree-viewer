@@ -1,0 +1,32 @@
+{
+    "id": "ALLOC_COMP_COMP",
+    "name": "ALLOC_COMP_COMP",
+    "category": "Root",
+    "tier": 0,
+    "path": "ALLOC_COMP_COMP",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "ALLOC_COMP_COMP/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Component Maintenance",
+                    "name": "Component Maintenance",
+                    "category": "bu",
+                    "path": "ALLOC_COMP_COMP/TOP/Component Maintenance",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+IFS_ABSENCES,IFS_ABSENCES,,Root,0,1,Goal,Root,IFS_ABSENCES,1,No
+IFS_ABSENCES,IFS,IFS_ABSENCES,div,1,100.0,Goal,Root/div,IFS_ABSENCES/IFS,0,Yes

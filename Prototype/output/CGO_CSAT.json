@@ -1,0 +1,21 @@
+{
+    "id": "CGO_CSAT",
+    "name": "CGO_CSAT",
+    "category": "Root",
+    "tier": 0,
+    "path": "CGO_CSAT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "CGO",
+            "name": "CGO",
+            "category": "div",
+            "path": "CGO_CSAT/CGO",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

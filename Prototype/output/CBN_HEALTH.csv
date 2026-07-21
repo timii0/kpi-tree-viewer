@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CBN_HEALTH,CBN_HEALTH,,Root,0,1,Goal,Root,CBN_HEALTH,1,No
+CBN_HEALTH,TOP,CBN_HEALTH,div,1,100.0,Goal,Root/div,CBN_HEALTH/TOP,1,No
+CBN_HEALTH,Cabin Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,CBN_HEALTH/TOP/Cabin Maintenance,0,Yes

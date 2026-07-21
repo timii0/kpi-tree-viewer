@@ -1,0 +1,2921 @@
+{
+    "id": "LAV_QR_SCAN",
+    "name": "LAV_QR_SCAN",
+    "category": "Root",
+    "tier": 0,
+    "path": "LAV_QR_SCAN",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "GCS",
+            "name": "GCS",
+            "category": "div",
+            "path": "LAV_QR_SCAN/GCS",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/ANC",
+                    "tier": 2,
+                    "contribution": 1.52,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ANC/,null,",
+                            "tier": 3,
+                            "contribution": 54.23,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ANC/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Pegasus",
+                            "name": "Pegasus",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ANC/Pegasus",
+                            "tier": 3,
+                            "contribution": 45.77,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ANC/Pegasus/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/ATL",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ATL/,null,",
+                            "tier": 3,
+                            "contribution": 58.59,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ATL/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Delta",
+                            "name": "Delta",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ATL/Delta",
+                            "tier": 3,
+                            "contribution": 41.41,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ATL/Delta/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/AUS",
+                    "tier": 2,
+                    "contribution": 3.08,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/AUS/,null,",
+                            "tier": 3,
+                            "contribution": 46.07,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/AUS/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/AUS/Unifi",
+                            "tier": 3,
+                            "contribution": 53.93,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/AUS/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/BNA",
+                    "tier": 2,
+                    "contribution": 2.42,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BNA/,null,",
+                            "tier": 3,
+                            "contribution": 38.64,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BNA/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BNA/Prospect",
+                            "tier": 3,
+                            "contribution": 24.85,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BNA/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BNA/Unifi",
+                            "tier": 3,
+                            "contribution": 36.510000000000005,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BNA/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/BOS",
+                    "tier": 2,
+                    "contribution": 2.33,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BOS/,null,",
+                            "tier": 3,
+                            "contribution": 61.45,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BOS/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "G2",
+                            "name": "G2",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BOS/G2",
+                            "tier": 3,
+                            "contribution": 3.98,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BOS/G2/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HHS Aviation",
+                            "name": "HHS Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BOS/HHS Aviation",
+                            "tier": 3,
+                            "contribution": 26.4,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BOS/HHS Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BOS/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 8.17,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BOS/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/BWI",
+                    "tier": 2,
+                    "contribution": 0.75,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BWI/,null,",
+                            "tier": 3,
+                            "contribution": 36.11,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BWI/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HHS Aviation",
+                            "name": "HHS Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/BWI/HHS Aviation",
+                            "tier": 3,
+                            "contribution": 63.89,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/BWI/HHS Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CMH",
+                    "name": "CMH",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/CMH",
+                    "tier": 2,
+                    "contribution": 1.7,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/CMH/,null,",
+                            "tier": 3,
+                            "contribution": 42.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/CMH/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/CMH/Prospect",
+                            "tier": 3,
+                            "contribution": 15.98,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/CMH/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/CMH/Unifi",
+                            "tier": 3,
+                            "contribution": 41.89,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/CMH/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/CVG",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/CVG/,null,",
+                            "tier": 3,
+                            "contribution": 78.79,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/CVG/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/CVG/Unifi",
+                            "tier": 3,
+                            "contribution": 21.21,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/CVG/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/DCA",
+                    "tier": 2,
+                    "contribution": 1.36,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DCA/,null,",
+                            "tier": 3,
+                            "contribution": 91.99,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DCA/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Eulen",
+                            "name": "Eulen",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DCA/Eulen",
+                            "tier": 3,
+                            "contribution": 8.01,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DCA/Eulen/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/DEN",
+                    "tier": 2,
+                    "contribution": 2.25,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DEN/,null,",
+                            "tier": 3,
+                            "contribution": 42.68,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DEN/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DEN/Unifi",
+                            "tier": 3,
+                            "contribution": 57.32,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DEN/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/DFW",
+                    "tier": 2,
+                    "contribution": 3.93,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DFW/,null,",
+                            "tier": 3,
+                            "contribution": 21.94,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DFW/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HHS Aviation",
+                            "name": "HHS Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DFW/HHS Aviation",
+                            "tier": 3,
+                            "contribution": 78.06,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DFW/HHS Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/DTW",
+                    "tier": 2,
+                    "contribution": 3.83,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DTW/,null,",
+                            "tier": 3,
+                            "contribution": 41.55,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DTW/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "G2",
+                            "name": "G2",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DTW/G2",
+                            "tier": 3,
+                            "contribution": 44.01,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DTW/G2/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/DTW/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 14.44,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/DTW/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/EWR",
+                    "tier": 2,
+                    "contribution": 1.47,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/EWR/,null,",
+                            "tier": 3,
+                            "contribution": 58.22,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/EWR/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/EWR/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 41.78,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/EWR/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/FLL",
+                    "tier": 2,
+                    "contribution": 0.77,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/FLL/,null,",
+                            "tier": 3,
+                            "contribution": 49.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/FLL/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HHS Aviation",
+                            "name": "HHS Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/FLL/HHS Aviation",
+                            "tier": 3,
+                            "contribution": 51.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/FLL/HHS Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GRB",
+                    "name": "GRB",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/GRB",
+                    "tier": 2,
+                    "contribution": 3.21,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/GRB/,null,",
+                            "tier": 3,
+                            "contribution": 88.34,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/GRB/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Jet Air",
+                            "name": "Jet Air",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/GRB/Jet Air",
+                            "tier": 3,
+                            "contribution": 11.66,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/GRB/Jet Air/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GRR",
+                    "name": "GRR",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/GRR",
+                    "tier": 2,
+                    "contribution": 2.74,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/GRR/,null,",
+                            "tier": 3,
+                            "contribution": 56.89,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/GRR/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/GRR/Prospect",
+                            "tier": 3,
+                            "contribution": 41.81,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/GRR/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/GRR/Unifi",
+                            "tier": 3,
+                            "contribution": 1.3,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/GRR/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/HNL",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/HNL/,null,",
+                            "tier": 3,
+                            "contribution": 57.98,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/HNL/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/HNL/Unifi",
+                            "tier": 3,
+                            "contribution": 42.02,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/HNL/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/IAD",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/IAD/,null,",
+                            "tier": 3,
+                            "contribution": 55.22,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/IAD/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/IAD/Unifi",
+                            "tier": 3,
+                            "contribution": 44.78,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/IAD/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/IAH",
+                    "tier": 2,
+                    "contribution": 1.25,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/IAH/,null,",
+                            "tier": 3,
+                            "contribution": 50.77,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/IAH/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/IAH/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 49.23,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/IAH/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/IND",
+                    "tier": 2,
+                    "contribution": 2.56,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/IND/,null,",
+                            "tier": 3,
+                            "contribution": 18.58,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/IND/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/IND/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 81.42,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/IND/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/JFK",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/JFK/,null,",
+                            "tier": 3,
+                            "contribution": 41.38,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/JFK/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/JFK/Unifi",
+                            "tier": 3,
+                            "contribution": 58.62,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/JFK/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/LAS",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LAS/,null,",
+                            "tier": 3,
+                            "contribution": 9.88,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LAS/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LAS/Unifi",
+                            "tier": 3,
+                            "contribution": 90.12,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LAS/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/LAX",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LAX/,null,",
+                            "tier": 3,
+                            "contribution": 87.41,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LAX/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LAX/Unifi",
+                            "tier": 3,
+                            "contribution": 12.59,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LAX/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/LGA",
+                    "tier": 2,
+                    "contribution": 1.88,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LGA/,null,",
+                            "tier": 3,
+                            "contribution": 21.32,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LGA/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "G2",
+                            "name": "G2",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LGA/G2",
+                            "tier": 3,
+                            "contribution": 76.12,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LGA/G2/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/LGA/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 2.56,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/LGA/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MCI",
+                    "name": "MCI",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MCI",
+                    "tier": 2,
+                    "contribution": 2.34,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MCI/,null,",
+                            "tier": 3,
+                            "contribution": 83.96,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MCI/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MCI/Unifi",
+                            "tier": 3,
+                            "contribution": 16.04,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MCI/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MCO",
+                    "tier": 2,
+                    "contribution": 3.68,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MCO/,null,",
+                            "tier": 3,
+                            "contribution": 68.87,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MCO/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Eulen",
+                            "name": "Eulen",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MCO/Eulen",
+                            "tier": 3,
+                            "contribution": 31.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MCO/Eulen/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MDW",
+                    "name": "MDW",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MDW",
+                    "tier": 2,
+                    "contribution": 1.67,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MDW/,null,",
+                            "tier": 3,
+                            "contribution": 25.76,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MDW/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MDW/Prospect",
+                            "tier": 3,
+                            "contribution": 21.54,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MDW/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MDW/Unifi",
+                            "tier": 3,
+                            "contribution": 52.7,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MDW/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MEM",
+                    "tier": 2,
+                    "contribution": 1.75,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MEM/,null,",
+                            "tier": 3,
+                            "contribution": 70.8,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MEM/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MEM/Unifi",
+                            "tier": 3,
+                            "contribution": 29.2,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MEM/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MIA",
+                    "tier": 2,
+                    "contribution": 1.92,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MIA/,null,",
+                            "tier": 3,
+                            "contribution": 83.93,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MIA/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Eulen",
+                            "name": "Eulen",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MIA/Eulen",
+                            "tier": 3,
+                            "contribution": 16.07,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MIA/Eulen/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MKE",
+                    "name": "MKE",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MKE",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MKE/,null,",
+                            "tier": 3,
+                            "contribution": 1.96,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MKE/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MKE/Prospect",
+                            "tier": 3,
+                            "contribution": 73.45,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MKE/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MKE/Unifi",
+                            "tier": 3,
+                            "contribution": 24.59,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MKE/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MSN",
+                    "name": "MSN",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MSN",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MSN/,null,",
+                            "tier": 3,
+                            "contribution": 52.69,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MSN/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MSN/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 47.31,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MSN/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MSP",
+                    "tier": 2,
+                    "contribution": 1.44,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MSP/,null,",
+                            "tier": 3,
+                            "contribution": 84.1,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MSP/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MSP/Unifi",
+                            "tier": 3,
+                            "contribution": 15.9,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MSP/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/MSY",
+                    "tier": 2,
+                    "contribution": 1.8,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MSY/,null,",
+                            "tier": 3,
+                            "contribution": 49.57,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MSY/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/MSY/GAT",
+                            "tier": 3,
+                            "contribution": 50.43,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/MSY/GAT/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/ORD",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ORD/,null,",
+                            "tier": 3,
+                            "contribution": 2.89,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ORD/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ORD/Prospect",
+                            "tier": 3,
+                            "contribution": 65.07,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ORD/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/ORD/Unifi",
+                            "tier": 3,
+                            "contribution": 32.04,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/ORD/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/PDX",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PDX/,null,",
+                            "tier": 3,
+                            "contribution": 14.56,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PDX/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "G2",
+                            "name": "G2",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PDX/G2",
+                            "tier": 3,
+                            "contribution": 34.19,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PDX/G2/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PDX/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 51.25,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PDX/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/PHL",
+                    "tier": 2,
+                    "contribution": 4.15,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PHL/,null,",
+                            "tier": 3,
+                            "contribution": 27.51,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PHL/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PHL/Unifi",
+                            "tier": 3,
+                            "contribution": 34.05,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PHL/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "US Aviation",
+                            "name": "US Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PHL/US Aviation",
+                            "tier": 3,
+                            "contribution": 38.44,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PHL/US Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/PHX",
+                    "tier": 2,
+                    "contribution": 0.73,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PHX/,null,",
+                            "tier": 3,
+                            "contribution": 4.59,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PHX/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PHX/Prospect",
+                            "tier": 3,
+                            "contribution": 61.61,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PHX/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/PHX/Unifi",
+                            "tier": 3,
+                            "contribution": 33.8,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/PHX/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/RDU",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/RDU/,null,",
+                            "tier": 3,
+                            "contribution": 67.26,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/RDU/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/RDU/Unifi",
+                            "tier": 3,
+                            "contribution": 32.74,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/RDU/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/RSW",
+                    "tier": 2,
+                    "contribution": 1.65,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/RSW/,null,",
+                            "tier": 3,
+                            "contribution": 13.79,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/RSW/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/RSW/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 86.21,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/RSW/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/SEA",
+                    "tier": 2,
+                    "contribution": 1.43,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SEA/,null,",
+                            "tier": 3,
+                            "contribution": 29.34,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SEA/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SEA/Unifi",
+                            "tier": 3,
+                            "contribution": 70.66,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SEA/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/SFO",
+                    "tier": 2,
+                    "contribution": 1.89,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SFO/,null,",
+                            "tier": 3,
+                            "contribution": 81.11,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SFO/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SFO/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 18.89,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SFO/Menzies Aviation/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/SLC",
+                    "tier": 2,
+                    "contribution": 3.84,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SLC/,null,",
+                            "tier": 3,
+                            "contribution": 33.48,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SLC/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Delta",
+                            "name": "Delta",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SLC/Delta",
+                            "tier": 3,
+                            "contribution": 14.2,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SLC/Delta/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/SLC/Unifi",
+                            "tier": 3,
+                            "contribution": 52.32,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/SLC/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/STL",
+                    "tier": 2,
+                    "contribution": 2.8,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/STL/,null,",
+                            "tier": 3,
+                            "contribution": 35.74,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/STL/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Prospect",
+                            "name": "Prospect",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/STL/Prospect",
+                            "tier": 3,
+                            "contribution": 49.84,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/STL/Prospect/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/STL/Unifi",
+                            "tier": 3,
+                            "contribution": 14.42,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/STL/Unifi/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "LAV_QR_SCAN/GCS/TPA",
+                    "tier": 2,
+                    "contribution": 2.51,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": ",null,",
+                            "name": ",null,",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/TPA/,null,",
+                            "tier": 3,
+                            "contribution": 66.64,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/TPA/,null,/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Eulen",
+                            "name": "Eulen",
+                            "category": "vendor",
+                            "path": "LAV_QR_SCAN/GCS/TPA/Eulen",
+                            "tier": 3,
+                            "contribution": 33.36,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Cabin",
+                                    "name": "Cabin",
+                                    "category": "vnd_typ",
+                                    "path": "LAV_QR_SCAN/GCS/TPA/Eulen/Cabin",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": ",null,",
+                    "name": ",null,",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/,null,",
+                    "tier": 2,
+                    "contribution": 3.63,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/,null,/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Delta",
+                    "name": "Delta",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Delta",
+                    "tier": 2,
+                    "contribution": 3.88,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Delta/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Eulen",
+                    "name": "Eulen",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Eulen",
+                    "tier": 2,
+                    "contribution": 1.45,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Eulen/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "G2",
+                    "name": "G2",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/G2",
+                    "tier": 2,
+                    "contribution": 1.22,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/G2/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "GAT",
+                    "name": "GAT",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/GAT",
+                    "tier": 2,
+                    "contribution": 3.11,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/GAT/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "HHS Aviation",
+                    "name": "HHS Aviation",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/HHS Aviation",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/HHS Aviation/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Jet Air",
+                    "name": "Jet Air",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Jet Air",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Jet Air/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Menzies Aviation",
+                    "name": "Menzies Aviation",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Menzies Aviation",
+                    "tier": 2,
+                    "contribution": 2.74,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Menzies Aviation/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Pegasus",
+                    "name": "Pegasus",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Pegasus",
+                    "tier": 2,
+                    "contribution": 3.06,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Pegasus/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Prospect",
+                    "name": "Prospect",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Prospect",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Prospect/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Unifi",
+                    "name": "Unifi",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/Unifi",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/Unifi/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "US Aviation",
+                    "name": "US Aviation",
+                    "category": "vendor",
+                    "path": "LAV_QR_SCAN/GCS/US Aviation",
+                    "tier": 2,
+                    "contribution": 3.02,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Cabin",
+                            "name": "Cabin",
+                            "category": "vnd_typ",
+                            "path": "LAV_QR_SCAN/GCS/US Aviation/Cabin",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "id": "ODI_DC",
+    "name": "ODI_DC",
+    "category": "Root",
+    "tier": 0,
+    "path": "ODI_DC",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "9E",
+            "name": "9E",
+            "category": "dc_carrier",
+            "path": "ODI_DC/9E",
+            "tier": 1,
+            "contribution": 35.68,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "OO",
+            "name": "OO",
+            "category": "dc_carrier",
+            "path": "ODI_DC/OO",
+            "tier": 1,
+            "contribution": 31.78,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "YX",
+            "name": "YX",
+            "category": "dc_carrier",
+            "path": "ODI_DC/YX",
+            "tier": 1,
+            "contribution": 29.8,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "DC",
+            "name": "DC",
+            "category": "div",
+            "path": "ODI_DC/DC",
+            "tier": 1,
+            "contribution": 2.74,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

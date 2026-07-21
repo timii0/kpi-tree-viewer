@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+QUAL_COST_MRO,QUAL_COST_MRO,,Root,0,1,Goal,Root,QUAL_COST_MRO,1,No
+QUAL_COST_MRO,TOP,QUAL_COST_MRO,div,1,100.0,Goal,Root/div,QUAL_COST_MRO/TOP,1,No
+QUAL_COST_MRO,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,QUAL_COST_MRO/TOP/Distribution_Logistics,0,Yes

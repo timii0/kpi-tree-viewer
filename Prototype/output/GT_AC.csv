@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+GT_AC,GT_AC,,Root,0,1,Goal,Root,GT_AC,2,No
+GT_AC,N,GT_AC,body_type_cd,1,75.29,Goal,Root/body_type_cd,GT_AC/N,0,Yes
+GT_AC,W,GT_AC,body_type_cd,1,24.71,Goal,Root/body_type_cd,GT_AC/W,0,Yes

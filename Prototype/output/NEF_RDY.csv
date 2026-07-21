@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NEF_RDY,NEF_RDY,,Root,0,1,Goal,Root,NEF_RDY,1,No
+NEF_RDY,TOP,NEF_RDY,div,1,100.0,Goal,Root/div,NEF_RDY/TOP,0,Yes

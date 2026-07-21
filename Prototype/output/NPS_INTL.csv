@@ -1,0 +1,10 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NPS_INTL,NPS_INTL,,Root,0,1,Goal,Root,NPS_INTL,1,No
+NPS_INTL,ML,NPS_INTL,carrier,1,100.0,Goal,Root/carrier,NPS_INTL/ML,4,No
+NPS_INTL,TATL,ML,entity,2,42.82,Goal,Root/carrier/entity,NPS_INTL/ML/TATL,1,No
+NPS_INTL,D1,TATL,cabin,3,100.0,Goal,Root/carrier/entity/cabin,NPS_INTL/ML/TATL/D1,0,Yes
+NPS_INTL,LATIN,ML,entity,2,44.39,Goal,Root/carrier/entity,NPS_INTL/ML/LATIN,2,No
+NPS_INTL,LH,LATIN,variant,3,1.56,Goal,Root/carrier/entity/variant,NPS_INTL/ML/LATIN/LH,0,Yes
+NPS_INTL,SH,LATIN,variant,3,98.44,Goal,Root/carrier/entity/variant,NPS_INTL/ML/LATIN/SH,0,Yes
+NPS_INTL,Latin,ML,entity,2,9.64,Goal,Root/carrier/entity,NPS_INTL/ML/Latin,0,Yes
+NPS_INTL,TPAC,ML,entity,2,3.15,Goal,Root/carrier/entity,NPS_INTL/ML/TPAC,0,Yes

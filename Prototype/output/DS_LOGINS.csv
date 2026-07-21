@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DS_LOGINS,DS_LOGINS,,Root,0,1,Goal,Root,DS_LOGINS,1,No
+DS_LOGINS,DL,DS_LOGINS,sys,1,100.0,Goal,Root/sys,DS_LOGINS/DL,0,Yes

@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CGO_KG_SCL_HR,CGO_KG_SCL_HR,,Root,0,1,Goal,Root,CGO_KG_SCL_HR,1,No
+CGO_KG_SCL_HR,CGO,CGO_KG_SCL_HR,div,1,100.0,Goal,Root/div,CGO_KG_SCL_HR/CGO,0,Yes

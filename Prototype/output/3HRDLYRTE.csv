@@ -1,0 +1,14 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+3HRDLYRTE,3HRDLYRTE,,Root,0,1,Goal,Root,3HRDLYRTE,4,No
+3HRDLYRTE,DC,3HRDLYRTE,carrier,1,36.13,Goal,Root/carrier,3HRDLYRTE/DC,2,No
+3HRDLYRTE,CRW,DC,bu,2,6.2,Goal,Root/carrier/bu,3HRDLYRTE/DC/CRW,0,Yes
+3HRDLYRTE,MTC,DC,bu,2,93.8,Goal,Root/carrier/bu,3HRDLYRTE/DC/MTC,0,Yes
+3HRDLYRTE,9E,3HRDLYRTE,dc_carrier,1,26.65,Goal,Root/dc_carrier,3HRDLYRTE/9E,2,No
+3HRDLYRTE,CRW,9E,bu,2,54.03,Goal,Root/dc_carrier/bu,3HRDLYRTE/9E/CRW,0,Yes
+3HRDLYRTE,MTC,9E,bu,2,45.97,Goal,Root/dc_carrier/bu,3HRDLYRTE/9E/MTC,0,Yes
+3HRDLYRTE,OO,3HRDLYRTE,dc_carrier,1,19.41,Goal,Root/dc_carrier,3HRDLYRTE/OO,2,No
+3HRDLYRTE,CRW,OO,bu,2,21.18,Goal,Root/dc_carrier/bu,3HRDLYRTE/OO/CRW,0,Yes
+3HRDLYRTE,MTC,OO,bu,2,78.82,Goal,Root/dc_carrier/bu,3HRDLYRTE/OO/MTC,0,Yes
+3HRDLYRTE,YX,3HRDLYRTE,dc_carrier,1,17.81,Goal,Root/dc_carrier,3HRDLYRTE/YX,2,No
+3HRDLYRTE,CRW,YX,bu,2,33.28,Goal,Root/dc_carrier/bu,3HRDLYRTE/YX/CRW,0,Yes
+3HRDLYRTE,MTC,YX,bu,2,66.72,Goal,Root/dc_carrier/bu,3HRDLYRTE/YX/MTC,0,Yes

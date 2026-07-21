@@ -1,0 +1,32 @@
+{
+    "id": "DOCK_TO_STOCK",
+    "name": "DOCK_TO_STOCK",
+    "category": "Root",
+    "tier": 0,
+    "path": "DOCK_TO_STOCK",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "DOCK_TO_STOCK/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Distribution_Logistics",
+                    "name": "Distribution_Logistics",
+                    "category": "bu",
+                    "path": "DOCK_TO_STOCK/TOP/Distribution_Logistics",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

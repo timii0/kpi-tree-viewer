@@ -1,0 +1,885 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DLYRTE,DLYRTE,,Root,0,1,Goal,Root,DLYRTE,2,No
+DLYRTE,VND,DLYRTE,div,1,41.09,Goal,Root/div,DLYRTE/VND,201,No
+DLYRTE,ABQ,VND,station,2,0.92,Goal,Root/div/station,DLYRTE/VND/ABQ,2,No
+DLYRTE,Unifi,ABQ,vendor,3,94.24,Goal,Root/div/station/vendor,DLYRTE/VND/ABQ/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ABQ/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/ABQ/Unifi/RMP/Blended,0,Yes
+DLYRTE,PrimeFlight,ABQ,vendor,3,5.76,Goal,Root/div/station/vendor,DLYRTE/VND/ABQ/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ABQ/PrimeFlight/WCH,0,Yes
+DLYRTE,ALB,VND,station,2,0.58,Goal,Root/div/station,DLYRTE/VND/ALB,2,No
+DLYRTE,Unifi,ALB,vendor,3,37.18,Goal,Root/div/station/vendor,DLYRTE/VND/ALB/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ALB/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/ALB/Unifi/RMP/Blended,0,Yes
+DLYRTE,PrimeFlight,ALB,vendor,3,62.82,Goal,Root/div/station/vendor,DLYRTE/VND/ALB/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ALB/PrimeFlight/WCH,0,Yes
+DLYRTE,BDL,VND,station,2,0.73,Goal,Root/div/station,DLYRTE/VND/BDL,1,No
+DLYRTE,Menzies Aviation,BDL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BDL/Menzies Aviation,2,No
+DLYRTE,RMP,Menzies Aviation,function,4,32.91,Goal,Root/div/station/vendor/function,DLYRTE/VND/BDL/Menzies Aviation/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/BDL/Menzies Aviation/RMP/Blended,0,Yes
+DLYRTE,WCH,Menzies Aviation,function,4,67.09,Goal,Root/div/station/vendor/function,DLYRTE/VND/BDL/Menzies Aviation/WCH,0,Yes
+DLYRTE,BHM,VND,station,2,0.4,Goal,Root/div/station,DLYRTE/VND/BHM,2,No
+DLYRTE,Unifi,BHM,vendor,3,69.04,Goal,Root/div/station/vendor,DLYRTE/VND/BHM/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BHM/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/BHM/Unifi/RMP/Blended,0,Yes
+DLYRTE,HUNTLEIGH USA CORP,BHM,vendor,3,30.96,Goal,Root/div/station/vendor,DLYRTE/VND/BHM/HUNTLEIGH USA CORP,1,No
+DLYRTE,WCH,HUNTLEIGH USA CORP,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BHM/HUNTLEIGH USA CORP/WCH,0,Yes
+DLYRTE,BOI,VND,station,2,0.3,Goal,Root/div/station,DLYRTE/VND/BOI,1,No
+DLYRTE,Unifi,BOI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BOI/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BOI/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/BOI/Unifi/RMP/Blended,0,Yes
+DLYRTE,BZN,VND,station,2,0.99,Goal,Root/div/station,DLYRTE/VND/BZN,2,No
+DLYRTE,WFS -Worldwide Flight Services,BZN,vendor,3,46.21,Goal,Root/div/station/vendor,DLYRTE/VND/BZN/WFS -Worldwide Flight Services,1,No
+DLYRTE,RMP,WFS -Worldwide Flight Services,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BZN/WFS -Worldwide Flight Services/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/BZN/WFS -Worldwide Flight Services/RMP/Blended,0,Yes
+DLYRTE,Delta,BZN,vendor,3,53.79,Goal,Root/div/station/vendor,DLYRTE/VND/BZN/Delta,1,No
+DLYRTE,WCH,Delta,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BZN/Delta/WCH,0,Yes
+DLYRTE,CAE,VND,station,2,0.93,Goal,Root/div/station,DLYRTE/VND/CAE,1,No
+DLYRTE,Unifi,CAE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CAE/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,25.37,Goal,Root/div/station/vendor/function,DLYRTE/VND/CAE/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/CAE/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,74.63,Goal,Root/div/station/vendor/function,DLYRTE/VND/CAE/Unifi/WCH,0,Yes
+DLYRTE,CHS,VND,station,2,0.87,Goal,Root/div/station,DLYRTE/VND/CHS,2,No
+DLYRTE,Unifi,CHS,vendor,3,69.22,Goal,Root/div/station/vendor,DLYRTE/VND/CHS/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CHS/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/CHS/Unifi/RMP/Blended,0,Yes
+DLYRTE,Menzies Aviation,CHS,vendor,3,30.78,Goal,Root/div/station/vendor,DLYRTE/VND/CHS/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CHS/Menzies Aviation/WCH,0,Yes
+DLYRTE,CLE,VND,station,2,0.37,Goal,Root/div/station,DLYRTE/VND/CLE,1,No
+DLYRTE,Unifi,CLE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CLE/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,7.52,Goal,Root/div/station/vendor/function,DLYRTE/VND/CLE/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/CLE/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,92.48,Goal,Root/div/station/vendor/function,DLYRTE/VND/CLE/Unifi/WCH,0,Yes
+DLYRTE,CLT,VND,station,2,0.05,Goal,Root/div/station,DLYRTE/VND/CLT,2,No
+DLYRTE,Unifi,CLT,vendor,3,12.4,Goal,Root/div/station/vendor,DLYRTE/VND/CLT/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CLT/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/CLT/Unifi/RMP/Blended,0,Yes
+DLYRTE,Menzies Aviation,CLT,vendor,3,87.6,Goal,Root/div/station/vendor,DLYRTE/VND/CLT/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CLT/Menzies Aviation/WCH,0,Yes
+DLYRTE,COS,VND,station,2,0.26,Goal,Root/div/station,DLYRTE/VND/COS,2,No
+DLYRTE,Unifi,COS,vendor,3,20.61,Goal,Root/div/station/vendor,DLYRTE/VND/COS/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/COS/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/COS/Unifi/RMP/Blended,0,Yes
+DLYRTE,HUNTLEIGH USA CORP,COS,vendor,3,79.39,Goal,Root/div/station/vendor,DLYRTE/VND/COS/HUNTLEIGH USA CORP,1,No
+DLYRTE,WCH,HUNTLEIGH USA CORP,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/COS/HUNTLEIGH USA CORP/WCH,0,Yes
+DLYRTE,DAB,VND,station,2,0.72,Goal,Root/div/station,DLYRTE/VND/DAB,1,No
+DLYRTE,Menzies Aviation,DAB,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DAB/Menzies Aviation,2,No
+DLYRTE,RMP,Menzies Aviation,function,4,86.26,Goal,Root/div/station/vendor/function,DLYRTE/VND/DAB/Menzies Aviation/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/DAB/Menzies Aviation/RMP/Blended,0,Yes
+DLYRTE,WCH,Menzies Aviation,function,4,13.74,Goal,Root/div/station/vendor/function,DLYRTE/VND/DAB/Menzies Aviation/WCH,0,Yes
+DLYRTE,DAY,VND,station,2,0.4,Goal,Root/div/station,DLYRTE/VND/DAY,2,No
+DLYRTE,Unifi,DAY,vendor,3,20.77,Goal,Root/div/station/vendor,DLYRTE/VND/DAY/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DAY/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/DAY/Unifi/RMP/Blended,0,Yes
+DLYRTE,HHS Aviation,DAY,vendor,3,79.23,Goal,Root/div/station/vendor,DLYRTE/VND/DAY/HHS Aviation,1,No
+DLYRTE,WCH,HHS Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DAY/HHS Aviation/WCH,0,Yes
+DLYRTE,ELP,VND,station,2,0.83,Goal,Root/div/station,DLYRTE/VND/ELP,1,No
+DLYRTE,GAT,ELP,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ELP/GAT,2,No
+DLYRTE,RMP,GAT,function,4,61.85,Goal,Root/div/station/vendor/function,DLYRTE/VND/ELP/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/ELP/GAT/RMP/Blended,0,Yes
+DLYRTE,WCH,GAT,function,4,38.15,Goal,Root/div/station/vendor/function,DLYRTE/VND/ELP/GAT/WCH,0,Yes
+DLYRTE,GSO,VND,station,2,0.27,Goal,Root/div/station,DLYRTE/VND/GSO,2,No
+DLYRTE,Unifi,GSO,vendor,3,43.0,Goal,Root/div/station/vendor,DLYRTE/VND/GSO/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GSO/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/GSO/Unifi/RMP/Blended,0,Yes
+DLYRTE,PrimeFlight,GSO,vendor,3,57.0,Goal,Root/div/station/vendor,DLYRTE/VND/GSO/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GSO/PrimeFlight/WCH,0,Yes
+DLYRTE,GSP,VND,station,2,0.87,Goal,Root/div/station,DLYRTE/VND/GSP,2,No
+DLYRTE,Unifi,GSP,vendor,3,47.28,Goal,Root/div/station/vendor,DLYRTE/VND/GSP/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GSP/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/GSP/Unifi/RMP/Blended,0,Yes
+DLYRTE,Menzies Aviation,GSP,vendor,3,52.72,Goal,Root/div/station/vendor,DLYRTE/VND/GSP/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GSP/Menzies Aviation/WCH,0,Yes
+DLYRTE,HOU,VND,station,2,0.37,Goal,Root/div/station,DLYRTE/VND/HOU,1,No
+DLYRTE,GAT,HOU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HOU/GAT,2,No
+DLYRTE,RMP,GAT,function,4,24.65,Goal,Root/div/station/vendor/function,DLYRTE/VND/HOU/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/HOU/GAT/RMP/Blended,0,Yes
+DLYRTE,WCH,GAT,function,4,75.35,Goal,Root/div/station/vendor/function,DLYRTE/VND/HOU/GAT/WCH,0,Yes
+DLYRTE,HSV,VND,station,2,0.05,Goal,Root/div/station,DLYRTE/VND/HSV,2,No
+DLYRTE,GAT,HSV,vendor,3,49.51,Goal,Root/div/station/vendor,DLYRTE/VND/HSV/GAT,1,No
+DLYRTE,RMP,GAT,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HSV/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/HSV/GAT/RMP/Blended,0,Yes
+DLYRTE,HUNTLEIGH USA CORP,HSV,vendor,3,50.49,Goal,Root/div/station/vendor,DLYRTE/VND/HSV/HUNTLEIGH USA CORP,1,No
+DLYRTE,WCH,HUNTLEIGH USA CORP,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HSV/HUNTLEIGH USA CORP/WCH,0,Yes
+DLYRTE,JAN,VND,station,2,0.1,Goal,Root/div/station,DLYRTE/VND/JAN,1,No
+DLYRTE,GAT,JAN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/JAN/GAT,2,No
+DLYRTE,RMP,GAT,function,4,26.4,Goal,Root/div/station/vendor/function,DLYRTE/VND/JAN/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/JAN/GAT/RMP/Blended,0,Yes
+DLYRTE,WCH,GAT,function,4,73.6,Goal,Root/div/station/vendor/function,DLYRTE/VND/JAN/GAT/WCH,0,Yes
+DLYRTE,JAX,VND,station,2,0.24,Goal,Root/div/station,DLYRTE/VND/JAX,1,No
+DLYRTE,Unifi,JAX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/JAX/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,92.18,Goal,Root/div/station/vendor/function,DLYRTE/VND/JAX/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/JAX/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,7.82,Goal,Root/div/station/vendor/function,DLYRTE/VND/JAX/Unifi/WCH,0,Yes
+DLYRTE,KOA,VND,station,2,0.71,Goal,Root/div/station,DLYRTE/VND/KOA,1,No
+DLYRTE,Unifi,KOA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/KOA/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,31.32,Goal,Root/div/station/vendor/function,DLYRTE/VND/KOA/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/KOA/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,68.68,Goal,Root/div/station/vendor/function,DLYRTE/VND/KOA/Unifi/WCH,0,Yes
+DLYRTE,LEX,VND,station,2,0.35,Goal,Root/div/station,DLYRTE/VND/LEX,2,No
+DLYRTE,Unifi,LEX,vendor,3,50.95,Goal,Root/div/station/vendor,DLYRTE/VND/LEX/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LEX/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/LEX/Unifi/RMP/Blended,0,Yes
+DLYRTE,ABM,LEX,vendor,3,49.05,Goal,Root/div/station/vendor,DLYRTE/VND/LEX/ABM,1,No
+DLYRTE,WCH,ABM,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LEX/ABM/WCH,0,Yes
+DLYRTE,LIH,VND,station,2,0.98,Goal,Root/div/station,DLYRTE/VND/LIH,1,No
+DLYRTE,Unifi,LIH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LIH/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,84.56,Goal,Root/div/station/vendor/function,DLYRTE/VND/LIH/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/LIH/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,15.44,Goal,Root/div/station/vendor/function,DLYRTE/VND/LIH/Unifi/WCH,0,Yes
+DLYRTE,LIT,VND,station,2,0.49,Goal,Root/div/station,DLYRTE/VND/LIT,2,No
+DLYRTE,Unifi,LIT,vendor,3,26.28,Goal,Root/div/station/vendor,DLYRTE/VND/LIT/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LIT/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/LIT/Unifi/RMP/Blended,0,Yes
+DLYRTE,ABM,LIT,vendor,3,73.72,Goal,Root/div/station/vendor,DLYRTE/VND/LIT/ABM,1,No
+DLYRTE,WCH,ABM,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LIT/ABM/WCH,0,Yes
+DLYRTE,MLB,VND,station,2,0.04,Goal,Root/div/station,DLYRTE/VND/MLB,1,No
+DLYRTE,CITY OF MELBOURNE,MLB,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MLB/CITY OF MELBOURNE,2,No
+DLYRTE,RMP,CITY OF MELBOURNE,function,4,52.15,Goal,Root/div/station/vendor/function,DLYRTE/VND/MLB/CITY OF MELBOURNE/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/MLB/CITY OF MELBOURNE/RMP/Blended,0,Yes
+DLYRTE,WCH,CITY OF MELBOURNE,function,4,47.85,Goal,Root/div/station/vendor/function,DLYRTE/VND/MLB/CITY OF MELBOURNE/WCH,0,Yes
+DLYRTE,MOB,VND,station,2,0.15,Goal,Root/div/station,DLYRTE/VND/MOB,1,No
+DLYRTE,GAT,MOB,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MOB/GAT,2,No
+DLYRTE,RMP,GAT,function,4,52.07,Goal,Root/div/station/vendor/function,DLYRTE/VND/MOB/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/MOB/GAT/RMP/Blended,0,Yes
+DLYRTE,WCH,GAT,function,4,47.93,Goal,Root/div/station/vendor/function,DLYRTE/VND/MOB/GAT/WCH,0,Yes
+DLYRTE,OGG,VND,station,2,0.85,Goal,Root/div/station,DLYRTE/VND/OGG,1,No
+DLYRTE,Unifi,OGG,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/OGG/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,54.54,Goal,Root/div/station/vendor/function,DLYRTE/VND/OGG/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/OGG/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,45.46,Goal,Root/div/station/vendor/function,DLYRTE/VND/OGG/Unifi/WCH,0,Yes
+DLYRTE,OKC,VND,station,2,0.22,Goal,Root/div/station,DLYRTE/VND/OKC,1,No
+DLYRTE,US Aviation,OKC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/OKC/US Aviation,2,No
+DLYRTE,RMP,US Aviation,function,4,61.17,Goal,Root/div/station/vendor/function,DLYRTE/VND/OKC/US Aviation/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/OKC/US Aviation/RMP/Blended,0,Yes
+DLYRTE,WCH,US Aviation,function,4,38.83,Goal,Root/div/station/vendor/function,DLYRTE/VND/OKC/US Aviation/WCH,0,Yes
+DLYRTE,ONT,VND,station,2,0.08,Goal,Root/div/station,DLYRTE/VND/ONT,1,No
+DLYRTE,US Aviation,ONT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ONT/US Aviation,2,No
+DLYRTE,RMP,US Aviation,function,4,27.67,Goal,Root/div/station/vendor/function,DLYRTE/VND/ONT/US Aviation/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/ONT/US Aviation/RMP/Blended,0,Yes
+DLYRTE,WCH,US Aviation,function,4,72.33,Goal,Root/div/station/vendor/function,DLYRTE/VND/ONT/US Aviation/WCH,0,Yes
+DLYRTE,ORF,VND,station,2,0.39,Goal,Root/div/station,DLYRTE/VND/ORF,2,No
+DLYRTE,Unifi,ORF,vendor,3,47.0,Goal,Root/div/station/vendor,DLYRTE/VND/ORF/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ORF/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/ORF/Unifi/RMP/Blended,0,Yes
+DLYRTE,HUNTLEIGH USA CORP,ORF,vendor,3,53.0,Goal,Root/div/station/vendor,DLYRTE/VND/ORF/HUNTLEIGH USA CORP,1,No
+DLYRTE,WCH,HUNTLEIGH USA CORP,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ORF/HUNTLEIGH USA CORP/WCH,0,Yes
+DLYRTE,PBI,VND,station,2,0.17,Goal,Root/div/station,DLYRTE/VND/PBI,2,No
+DLYRTE,Unifi,PBI,vendor,3,38.28,Goal,Root/div/station/vendor,DLYRTE/VND/PBI/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PBI/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/PBI/Unifi/RMP/Blended,0,Yes
+DLYRTE,Eulen,PBI,vendor,3,61.72,Goal,Root/div/station/vendor,DLYRTE/VND/PBI/Eulen,1,No
+DLYRTE,WCH,Eulen,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PBI/Eulen/WCH,0,Yes
+DLYRTE,PIT,VND,station,2,0.61,Goal,Root/div/station,DLYRTE/VND/PIT,1,No
+DLYRTE,Unifi,PIT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PIT/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PIT/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/PIT/Unifi/RMP/Blended,0,Yes
+DLYRTE,PNS,VND,station,2,0.88,Goal,Root/div/station,DLYRTE/VND/PNS,1,No
+DLYRTE,Unifi,PNS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PNS/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,78.88,Goal,Root/div/station/vendor/function,DLYRTE/VND/PNS/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/PNS/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,21.12,Goal,Root/div/station/vendor/function,DLYRTE/VND/PNS/Unifi/WCH,0,Yes
+DLYRTE,PVD,VND,station,2,0.85,Goal,Root/div/station,DLYRTE/VND/PVD,2,No
+DLYRTE,Unifi,PVD,vendor,3,42.42,Goal,Root/div/station/vendor,DLYRTE/VND/PVD/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PVD/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/PVD/Unifi/RMP/Blended,0,Yes
+DLYRTE,ABM,PVD,vendor,3,57.58,Goal,Root/div/station/vendor,DLYRTE/VND/PVD/ABM,1,No
+DLYRTE,WCH,ABM,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PVD/ABM/WCH,0,Yes
+DLYRTE,RIC,VND,station,2,0.39,Goal,Root/div/station,DLYRTE/VND/RIC,2,No
+DLYRTE,Unifi,RIC,vendor,3,67.21,Goal,Root/div/station/vendor,DLYRTE/VND/RIC/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RIC/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/RIC/Unifi/RMP/Blended,0,Yes
+DLYRTE,PrimeFlight,RIC,vendor,3,32.79,Goal,Root/div/station/vendor,DLYRTE/VND/RIC/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RIC/PrimeFlight/WCH,0,Yes
+DLYRTE,SAN,VND,station,2,0.7,Goal,Root/div/station,DLYRTE/VND/SAN,1,No
+DLYRTE,Unifi,SAN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SAN/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,59.81,Goal,Root/div/station/vendor/function,DLYRTE/VND/SAN/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SAN/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,40.19,Goal,Root/div/station/vendor/function,DLYRTE/VND/SAN/Unifi/WCH,0,Yes
+DLYRTE,SAT,VND,station,2,0.72,Goal,Root/div/station,DLYRTE/VND/SAT,1,No
+DLYRTE,Unifi,SAT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SAT/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SAT/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SAT/Unifi/RMP/Blended,0,Yes
+DLYRTE,SAV,VND,station,2,0.21,Goal,Root/div/station,DLYRTE/VND/SAV,1,No
+DLYRTE,Unifi,SAV,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SAV/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SAV/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SAV/Unifi/RMP/Blended,0,Yes
+DLYRTE,SDF,VND,station,2,0.3,Goal,Root/div/station,DLYRTE/VND/SDF,2,No
+DLYRTE,Unifi,SDF,vendor,3,40.55,Goal,Root/div/station/vendor,DLYRTE/VND/SDF/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SDF/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SDF/Unifi/RMP/Blended,0,Yes
+DLYRTE,Menzies Aviation,SDF,vendor,3,59.45,Goal,Root/div/station/vendor,DLYRTE/VND/SDF/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SDF/Menzies Aviation/WCH,0,Yes
+DLYRTE,SJC,VND,station,2,0.71,Goal,Root/div/station,DLYRTE/VND/SJC,2,No
+DLYRTE,Unifi,SJC,vendor,3,3.71,Goal,Root/div/station/vendor,DLYRTE/VND/SJC/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SJC/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SJC/Unifi/RMP/Blended,0,Yes
+DLYRTE,Menzies Aviation,SJC,vendor,3,96.29,Goal,Root/div/station/vendor,DLYRTE/VND/SJC/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SJC/Menzies Aviation/WCH,0,Yes
+DLYRTE,SMF,VND,station,2,0.18,Goal,Root/div/station,DLYRTE/VND/SMF,1,No
+DLYRTE,Menzies Aviation,SMF,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SMF/Menzies Aviation,2,No
+DLYRTE,RMP,Menzies Aviation,function,4,71.57,Goal,Root/div/station/vendor/function,DLYRTE/VND/SMF/Menzies Aviation/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SMF/Menzies Aviation/RMP/Blended,0,Yes
+DLYRTE,WCH,Menzies Aviation,function,4,28.43,Goal,Root/div/station/vendor/function,DLYRTE/VND/SMF/Menzies Aviation/WCH,0,Yes
+DLYRTE,SNA,VND,station,2,0.3,Goal,Root/div/station,DLYRTE/VND/SNA,1,No
+DLYRTE,Unifi,SNA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SNA/Unifi,1,No
+DLYRTE,RMP,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SNA/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SNA/Unifi/RMP/Blended,0,Yes
+DLYRTE,SRQ,VND,station,2,0.34,Goal,Root/div/station,DLYRTE/VND/SRQ,1,No
+DLYRTE,GAT,SRQ,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SRQ/GAT,2,No
+DLYRTE,RMP,GAT,function,4,34.81,Goal,Root/div/station/vendor/function,DLYRTE/VND/SRQ/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SRQ/GAT/RMP/Blended,0,Yes
+DLYRTE,WCH,GAT,function,4,65.19,Goal,Root/div/station/vendor/function,DLYRTE/VND/SRQ/GAT/WCH,0,Yes
+DLYRTE,SYR,VND,station,2,0.85,Goal,Root/div/station,DLYRTE/VND/SYR,1,No
+DLYRTE,Unifi,SYR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SYR/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,35.59,Goal,Root/div/station/vendor/function,DLYRTE/VND/SYR/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/SYR/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,64.41,Goal,Root/div/station/vendor/function,DLYRTE/VND/SYR/Unifi/WCH,0,Yes
+DLYRTE,TLH,VND,station,2,0.17,Goal,Root/div/station,DLYRTE/VND/TLH,1,No
+DLYRTE,GAT,TLH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TLH/GAT,2,No
+DLYRTE,RMP,GAT,function,4,20.42,Goal,Root/div/station/vendor/function,DLYRTE/VND/TLH/GAT/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/TLH/GAT/RMP/Blended,0,Yes
+DLYRTE,WCH,GAT,function,4,79.58,Goal,Root/div/station/vendor/function,DLYRTE/VND/TLH/GAT/WCH,0,Yes
+DLYRTE,TUS,VND,station,2,0.24,Goal,Root/div/station,DLYRTE/VND/TUS,1,No
+DLYRTE,Unifi,TUS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TUS/Unifi,2,No
+DLYRTE,RMP,Unifi,function,4,16.8,Goal,Root/div/station/vendor/function,DLYRTE/VND/TUS/Unifi/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/TUS/Unifi/RMP/Blended,0,Yes
+DLYRTE,WCH,Unifi,function,4,83.2,Goal,Root/div/station/vendor/function,DLYRTE/VND/TUS/Unifi/WCH,0,Yes
+DLYRTE,TYS,VND,station,2,0.39,Goal,Root/div/station,DLYRTE/VND/TYS,1,No
+DLYRTE,Menzies Aviation,TYS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TYS/Menzies Aviation,2,No
+DLYRTE,RMP,Menzies Aviation,function,4,30.08,Goal,Root/div/station/vendor/function,DLYRTE/VND/TYS/Menzies Aviation/RMP,1,No
+DLYRTE,Blended,RMP,vnd_typ,5,100.0,Goal,Root/div/station/vendor/function/vnd_typ,DLYRTE/VND/TYS/Menzies Aviation/RMP/Blended,0,Yes
+DLYRTE,WCH,Menzies Aviation,function,4,69.92,Goal,Root/div/station/vendor/function,DLYRTE/VND/TYS/Menzies Aviation/WCH,0,Yes
+DLYRTE,ABE,VND,station,2,0.78,Goal,Root/div/station,DLYRTE/VND/ABE,1,No
+DLYRTE,Unifi,ABE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ABE/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ABE/Unifi/WCH,0,Yes
+DLYRTE,ABR,VND,station,2,0.41,Goal,Root/div/station,DLYRTE/VND/ABR,1,No
+DLYRTE,Unifi,ABR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ABR/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ABR/Unifi/WCH,0,Yes
+DLYRTE,ABY,VND,station,2,0.37,Goal,Root/div/station,DLYRTE/VND/ABY,1,No
+DLYRTE,Menzies Aviation,ABY,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ABY/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ABY/Menzies Aviation/WCH,0,Yes
+DLYRTE,ACK,VND,station,2,0.73,Goal,Root/div/station,DLYRTE/VND/ACK,1,No
+DLYRTE,Unifi,ACK,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ACK/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ACK/Unifi/WCH,0,Yes
+DLYRTE,AEX,VND,station,2,0.31,Goal,Root/div/station,DLYRTE/VND/AEX,1,No
+DLYRTE,Unifi,AEX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/AEX/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/AEX/Unifi/WCH,0,Yes
+DLYRTE,AGS,VND,station,2,0.94,Goal,Root/div/station,DLYRTE/VND/AGS,1,No
+DLYRTE,Airport,AGS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/AGS/Airport,1,No
+DLYRTE,WCH,Airport,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/AGS/Airport/WCH,0,Yes
+DLYRTE,ANC,VND,station,2,0.06,Goal,Root/div/station,DLYRTE/VND/ANC,1,No
+DLYRTE,Unifi,ANC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ANC/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ANC/Unifi/WCH,0,Yes
+DLYRTE,APN,VND,station,2,0.65,Goal,Root/div/station,DLYRTE/VND/APN,1,No
+DLYRTE,Unifi,APN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/APN/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/APN/Unifi/WCH,0,Yes
+DLYRTE,ASE,VND,station,2,0.92,Goal,Root/div/station,DLYRTE/VND/ASE,1,No
+DLYRTE,SkyWest,ASE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ASE/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ASE/SkyWest/WCH,0,Yes
+DLYRTE,ATL,VND,station,2,0.48,Goal,Root/div/station,DLYRTE/VND/ATL,1,No
+DLYRTE,Unifi,ATL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ATL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ATL/Unifi/WCH,0,Yes
+DLYRTE,ATW,VND,station,2,0.74,Goal,Root/div/station,DLYRTE/VND/ATW,1,No
+DLYRTE,Unifi,ATW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ATW/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ATW/Unifi/WCH,0,Yes
+DLYRTE,AUS,VND,station,2,0.77,Goal,Root/div/station,DLYRTE/VND/AUS,1,No
+DLYRTE,Unifi,AUS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/AUS/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/AUS/Unifi/WCH,0,Yes
+DLYRTE,AVL,VND,station,2,0.32,Goal,Root/div/station,DLYRTE/VND/AVL,1,No
+DLYRTE,Unifi,AVL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/AVL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/AVL/Unifi/WCH,0,Yes
+DLYRTE,AZO,VND,station,2,0.85,Goal,Root/div/station,DLYRTE/VND/AZO,1,No
+DLYRTE,Unifi,AZO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/AZO/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/AZO/Unifi/WCH,0,Yes
+DLYRTE,BGM,VND,station,2,1.01,Goal,Root/div/station,DLYRTE/VND/BGM,1,No
+DLYRTE,Menzies Aviation,BGM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BGM/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BGM/Menzies Aviation/WCH,0,Yes
+DLYRTE,BGR,VND,station,2,0.29,Goal,Root/div/station,DLYRTE/VND/BGR,1,No
+DLYRTE,Unifi,BGR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BGR/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BGR/Unifi/WCH,0,Yes
+DLYRTE,BIL,VND,station,2,0.64,Goal,Root/div/station,DLYRTE/VND/BIL,1,No
+DLYRTE,Unifi,BIL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BIL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BIL/Unifi/WCH,0,Yes
+DLYRTE,BIS,VND,station,2,0.52,Goal,Root/div/station,DLYRTE/VND/BIS,1,No
+DLYRTE,Unifi,BIS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BIS/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BIS/Unifi/WCH,0,Yes
+DLYRTE,BJI,VND,station,2,0.21,Goal,Root/div/station,DLYRTE/VND/BJI,1,No
+DLYRTE,Unifi,BJI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BJI/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BJI/Unifi/WCH,0,Yes
+DLYRTE,BMI,VND,station,2,0.5,Goal,Root/div/station,DLYRTE/VND/BMI,1,No
+DLYRTE,Unifi,BMI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BMI/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BMI/Unifi/WCH,0,Yes
+DLYRTE,BNA,VND,station,2,0.14,Goal,Root/div/station,DLYRTE/VND/BNA,1,No
+DLYRTE,Unifi,BNA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BNA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BNA/Unifi/WCH,0,Yes
+DLYRTE,BOS,VND,station,2,0.0,Goal,Root/div/station,DLYRTE/VND/BOS,1,No
+DLYRTE,Unifi,BOS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BOS/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BOS/Unifi/WCH,0,Yes
+DLYRTE,BQK,VND,station,2,0.41,Goal,Root/div/station,DLYRTE/VND/BQK,1,No
+DLYRTE,Menzies Aviation,BQK,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BQK/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BQK/Menzies Aviation/WCH,0,Yes
+DLYRTE,BRD,VND,station,2,0.06,Goal,Root/div/station,DLYRTE/VND/BRD,1,No
+DLYRTE,Unifi,BRD,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BRD/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BRD/Unifi/WCH,0,Yes
+DLYRTE,BTM,VND,station,2,0.5,Goal,Root/div/station,DLYRTE/VND/BTM,1,No
+DLYRTE,SkyWest,BTM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BTM/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BTM/SkyWest/WCH,0,Yes
+DLYRTE,BTR,VND,station,2,0.03,Goal,Root/div/station,DLYRTE/VND/BTR,1,No
+DLYRTE,Unifi,BTR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BTR/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BTR/Unifi/WCH,0,Yes
+DLYRTE,BTV,VND,station,2,0.9,Goal,Root/div/station,DLYRTE/VND/BTV,1,No
+DLYRTE,Unifi,BTV,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BTV/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BTV/Unifi/WCH,0,Yes
+DLYRTE,BUF,VND,station,2,0.9,Goal,Root/div/station,DLYRTE/VND/BUF,1,No
+DLYRTE,PrimeFlight,BUF,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BUF/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BUF/PrimeFlight/WCH,0,Yes
+DLYRTE,BUR,VND,station,2,0.84,Goal,Root/div/station,DLYRTE/VND/BUR,1,No
+DLYRTE,GAT,BUR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BUR/GAT,1,No
+DLYRTE,WCH,GAT,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BUR/GAT/WCH,0,Yes
+DLYRTE,BWI,VND,station,2,0.34,Goal,Root/div/station,DLYRTE/VND/BWI,1,No
+DLYRTE,HHS Aviation,BWI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/BWI/HHS Aviation,1,No
+DLYRTE,WCH,HHS Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/BWI/HHS Aviation/WCH,0,Yes
+DLYRTE,CDC,VND,station,2,0.34,Goal,Root/div/station,DLYRTE/VND/CDC,1,No
+DLYRTE,SkyWest,CDC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CDC/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CDC/SkyWest/WCH,0,Yes
+DLYRTE,CHA,VND,station,2,0.4,Goal,Root/div/station,DLYRTE/VND/CHA,1,No
+DLYRTE,Unifi,CHA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CHA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CHA/Unifi/WCH,0,Yes
+DLYRTE,CHO,VND,station,2,0.86,Goal,Root/div/station,DLYRTE/VND/CHO,1,No
+DLYRTE,Unifi,CHO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CHO/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CHO/Unifi/WCH,0,Yes
+DLYRTE,CID,VND,station,2,0.14,Goal,Root/div/station,DLYRTE/VND/CID,1,No
+DLYRTE,Unifi,CID,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CID/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CID/Unifi/WCH,0,Yes
+DLYRTE,CIU,VND,station,2,0.4,Goal,Root/div/station,DLYRTE/VND/CIU,1,No
+DLYRTE,Unifi,CIU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CIU/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CIU/Unifi/WCH,0,Yes
+DLYRTE,CMH,VND,station,2,0.26,Goal,Root/div/station,DLYRTE/VND/CMH,1,No
+DLYRTE,Unifi,CMH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CMH/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CMH/Unifi/WCH,0,Yes
+DLYRTE,CRW,VND,station,2,0.16,Goal,Root/div/station,DLYRTE/VND/CRW,1,No
+DLYRTE,Unifi,CRW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CRW/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CRW/Unifi/WCH,0,Yes
+DLYRTE,CSG,VND,station,2,0.21,Goal,Root/div/station,DLYRTE/VND/CSG,1,No
+DLYRTE,Unifi,CSG,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CSG/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CSG/Unifi/WCH,0,Yes
+DLYRTE,CVG,VND,station,2,0.94,Goal,Root/div/station,DLYRTE/VND/CVG,1,No
+DLYRTE,Unifi,CVG,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CVG/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CVG/Unifi/WCH,0,Yes
+DLYRTE,CWA,VND,station,2,0.81,Goal,Root/div/station,DLYRTE/VND/CWA,1,No
+DLYRTE,Unifi,CWA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/CWA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/CWA/Unifi/WCH,0,Yes
+DLYRTE,DAL,VND,station,2,0.33,Goal,Root/div/station,DLYRTE/VND/DAL,1,No
+DLYRTE,Unifi,DAL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DAL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DAL/Unifi/WCH,0,Yes
+DLYRTE,DCA,VND,station,2,0.84,Goal,Root/div/station,DLYRTE/VND/DCA,1,No
+DLYRTE,Eulen,DCA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DCA/Eulen,1,No
+DLYRTE,WCH,Eulen,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DCA/Eulen/WCH,0,Yes
+DLYRTE,DEN,VND,station,2,0.24,Goal,Root/div/station,DLYRTE/VND/DEN,1,No
+DLYRTE,Unifi,DEN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DEN/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DEN/Unifi/WCH,0,Yes
+DLYRTE,DFW,VND,station,2,0.14,Goal,Root/div/station,DLYRTE/VND/DFW,1,No
+DLYRTE,ABM,DFW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DFW/ABM,1,No
+DLYRTE,WCH,ABM,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DFW/ABM/WCH,0,Yes
+DLYRTE,DHN,VND,station,2,0.57,Goal,Root/div/station,DLYRTE/VND/DHN,1,No
+DLYRTE,Menzies Aviation,DHN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DHN/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DHN/Menzies Aviation/WCH,0,Yes
+DLYRTE,DLH,VND,station,2,0.34,Goal,Root/div/station,DLYRTE/VND/DLH,1,No
+DLYRTE,Unifi,DLH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DLH/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DLH/Unifi/WCH,0,Yes
+DLYRTE,DSM,VND,station,2,0.37,Goal,Root/div/station,DLYRTE/VND/DSM,1,No
+DLYRTE,Unifi,DSM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DSM/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/DSM/Unifi/WCH,0,Yes
+DLYRTE,DTW,VND,station,2,0.19,Goal,Root/div/station,DLYRTE/VND/DTW,1,No
+DLYRTE,Unifi,DTW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/DTW/Unifi,2,No
+DLYRTE,WCH,Unifi,function,4,25.98,Goal,Root/div/station/vendor/function,DLYRTE/VND/DTW/Unifi/WCH,0,Yes
+DLYRTE,MSPDTW,Unifi,variant,4,74.02,Goal,Root/div/station/vendor/variant,DLYRTE/VND/DTW/Unifi/MSPDTW,0,Yes
+DLYRTE,EGE,VND,station,2,1.0,Goal,Root/div/station,DLYRTE/VND/EGE,1,No
+DLYRTE,Menzies Aviation,EGE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/EGE/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/EGE/Menzies Aviation/WCH,0,Yes
+DLYRTE,EKO,VND,station,2,0.49,Goal,Root/div/station,DLYRTE/VND/EKO,1,No
+DLYRTE,SkyWest,EKO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/EKO/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/EKO/SkyWest/WCH,0,Yes
+DLYRTE,ELM,VND,station,2,0.82,Goal,Root/div/station,DLYRTE/VND/ELM,1,No
+DLYRTE,Unifi,ELM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ELM/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ELM/Unifi/WCH,0,Yes
+DLYRTE,ESC,VND,station,2,0.91,Goal,Root/div/station,DLYRTE/VND/ESC,1,No
+DLYRTE,Unifi,ESC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ESC/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ESC/Unifi/WCH,0,Yes
+DLYRTE,EUG,VND,station,2,0.37,Goal,Root/div/station,DLYRTE/VND/EUG,1,No
+DLYRTE,Unifi,EUG,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/EUG/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/EUG/Unifi/WCH,0,Yes
+DLYRTE,EVV,VND,station,2,0.46,Goal,Root/div/station,DLYRTE/VND/EVV,1,No
+DLYRTE,Unifi,EVV,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/EVV/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/EVV/Unifi/WCH,0,Yes
+DLYRTE,EWR,VND,station,2,0.03,Goal,Root/div/station,DLYRTE/VND/EWR,1,No
+DLYRTE,Menzies Aviation,EWR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/EWR/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/EWR/Menzies Aviation/WCH,0,Yes
+DLYRTE,EYW,VND,station,2,0.77,Goal,Root/div/station,DLYRTE/VND/EYW,1,No
+DLYRTE,Unifi,EYW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/EYW/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/EYW/Unifi/WCH,0,Yes
+DLYRTE,FAI,VND,station,2,0.42,Goal,Root/div/station,DLYRTE/VND/FAI,1,No
+DLYRTE,Unifi,FAI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FAI/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FAI/Unifi/WCH,0,Yes
+DLYRTE,FAR,VND,station,2,0.44,Goal,Root/div/station,DLYRTE/VND/FAR,1,No
+DLYRTE,Unifi,FAR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FAR/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FAR/Unifi/WCH,0,Yes
+DLYRTE,FAT,VND,station,2,0.59,Goal,Root/div/station,DLYRTE/VND/FAT,1,No
+DLYRTE,Unifi,FAT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FAT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FAT/Unifi/WCH,0,Yes
+DLYRTE,FAY,VND,station,2,0.16,Goal,Root/div/station,DLYRTE/VND/FAY,1,No
+DLYRTE,Unifi,FAY,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FAY/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FAY/Unifi/WCH,0,Yes
+DLYRTE,FCA,VND,station,2,0.26,Goal,Root/div/station,DLYRTE/VND/FCA,1,No
+DLYRTE,Unifi,FCA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FCA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FCA/Unifi/WCH,0,Yes
+DLYRTE,FLL,VND,station,2,0.9,Goal,Root/div/station,DLYRTE/VND/FLL,1,No
+DLYRTE,HHS Aviation,FLL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FLL/HHS Aviation,1,No
+DLYRTE,WCH,HHS Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FLL/HHS Aviation/WCH,0,Yes
+DLYRTE,FSD,VND,station,2,0.48,Goal,Root/div/station,DLYRTE/VND/FSD,1,No
+DLYRTE,Unifi,FSD,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FSD/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FSD/Unifi/WCH,0,Yes
+DLYRTE,FWA,VND,station,2,0.94,Goal,Root/div/station,DLYRTE/VND/FWA,1,No
+DLYRTE,Unifi,FWA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/FWA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/FWA/Unifi/WCH,0,Yes
+DLYRTE,GEG,VND,station,2,0.44,Goal,Root/div/station,DLYRTE/VND/GEG,1,No
+DLYRTE,ABM,GEG,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GEG/ABM,1,No
+DLYRTE,WCH,ABM,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GEG/ABM/WCH,0,Yes
+DLYRTE,GFK,VND,station,2,0.91,Goal,Root/div/station,DLYRTE/VND/GFK,1,No
+DLYRTE,Unifi,GFK,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GFK/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GFK/Unifi/WCH,0,Yes
+DLYRTE,GJT,VND,station,2,0.28,Goal,Root/div/station,DLYRTE/VND/GJT,1,No
+DLYRTE,SkyWest,GJT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GJT/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GJT/SkyWest/WCH,0,Yes
+DLYRTE,GNV,VND,station,2,0.3,Goal,Root/div/station,DLYRTE/VND/GNV,1,No
+DLYRTE,Unifi,GNV,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GNV/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GNV/Unifi/WCH,0,Yes
+DLYRTE,GPT,VND,station,2,0.03,Goal,Root/div/station,DLYRTE/VND/GPT,1,No
+DLYRTE,Unifi,GPT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GPT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GPT/Unifi/WCH,0,Yes
+DLYRTE,GRB,VND,station,2,0.66,Goal,Root/div/station,DLYRTE/VND/GRB,1,No
+DLYRTE,Delta,GRB,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GRB/Delta,1,No
+DLYRTE,WCH,Delta,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GRB/Delta/WCH,0,Yes
+DLYRTE,GTF,VND,station,2,0.25,Goal,Root/div/station,DLYRTE/VND/GTF,1,No
+DLYRTE,Unifi,GTF,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GTF/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GTF/Unifi/WCH,0,Yes
+DLYRTE,GTR,VND,station,2,0.69,Goal,Root/div/station,DLYRTE/VND/GTR,1,No
+DLYRTE,Menzies Aviation,GTR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/GTR/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/GTR/Menzies Aviation/WCH,0,Yes
+DLYRTE,HDN,VND,station,2,0.98,Goal,Root/div/station,DLYRTE/VND/HDN,1,No
+DLYRTE,Menzies Aviation,HDN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HDN/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HDN/Menzies Aviation/WCH,0,Yes
+DLYRTE,HHH,VND,station,2,0.57,Goal,Root/div/station,DLYRTE/VND/HHH,1,No
+DLYRTE,Unifi,HHH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HHH/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HHH/Unifi/WCH,0,Yes
+DLYRTE,HIB,VND,station,2,0.02,Goal,Root/div/station,DLYRTE/VND/HIB,1,No
+DLYRTE,SkyWest,HIB,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HIB/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HIB/SkyWest/WCH,0,Yes
+DLYRTE,HLN,VND,station,2,0.33,Goal,Root/div/station,DLYRTE/VND/HLN,1,No
+DLYRTE,SkyWest,HLN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HLN/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HLN/SkyWest/WCH,0,Yes
+DLYRTE,HNL,VND,station,2,0.89,Goal,Root/div/station,DLYRTE/VND/HNL,1,No
+DLYRTE,Unifi,HNL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HNL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HNL/Unifi/WCH,0,Yes
+DLYRTE,HPN,VND,station,2,0.24,Goal,Root/div/station,DLYRTE/VND/HPN,1,No
+DLYRTE,Unifi,HPN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/HPN/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/HPN/Unifi/WCH,0,Yes
+DLYRTE,IAH,VND,station,2,0.67,Goal,Root/div/station,DLYRTE/VND/IAH,1,No
+DLYRTE,Menzies Aviation,IAH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/IAH/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/IAH/Menzies Aviation/WCH,0,Yes
+DLYRTE,ICT,VND,station,2,0.57,Goal,Root/div/station,DLYRTE/VND/ICT,1,No
+DLYRTE,Unifi,ICT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ICT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ICT/Unifi/WCH,0,Yes
+DLYRTE,IDA,VND,station,2,0.23,Goal,Root/div/station,DLYRTE/VND/IDA,1,No
+DLYRTE,SkyWest,IDA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/IDA/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/IDA/SkyWest/WCH,0,Yes
+DLYRTE,IMT,VND,station,2,0.47,Goal,Root/div/station,DLYRTE/VND/IMT,1,No
+DLYRTE,Unifi,IMT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/IMT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/IMT/Unifi/WCH,0,Yes
+DLYRTE,INL,VND,station,2,0.35,Goal,Root/div/station,DLYRTE/VND/INL,1,No
+DLYRTE,Unifi,INL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/INL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/INL/Unifi/WCH,0,Yes
+DLYRTE,ITH,VND,station,2,0.82,Goal,Root/div/station,DLYRTE/VND/ITH,1,No
+DLYRTE,Unifi,ITH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ITH/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ITH/Unifi/WCH,0,Yes
+DLYRTE,JAC,VND,station,2,0.14,Goal,Root/div/station,DLYRTE/VND/JAC,1,No
+DLYRTE,Unifi,JAC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/JAC/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/JAC/Unifi/WCH,0,Yes
+DLYRTE,JFK,VND,station,2,0.69,Goal,Root/div/station,DLYRTE/VND/JFK,1,No
+DLYRTE,Unifi,JFK,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/JFK/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/JFK/Unifi/WCH,0,Yes
+DLYRTE,JNU,VND,station,2,0.69,Goal,Root/div/station,DLYRTE/VND/JNU,1,No
+DLYRTE,Unifi,JNU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/JNU/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/JNU/Unifi/WCH,0,Yes
+DLYRTE,LAN,VND,station,2,0.63,Goal,Root/div/station,DLYRTE/VND/LAN,1,No
+DLYRTE,Unifi,LAN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LAN/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LAN/Unifi/WCH,0,Yes
+DLYRTE,LAS,VND,station,2,0.7,Goal,Root/div/station,DLYRTE/VND/LAS,1,No
+DLYRTE,Unifi,LAS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LAS/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LAS/Unifi/WCH,0,Yes
+DLYRTE,LAX,VND,station,2,0.77,Goal,Root/div/station,DLYRTE/VND/LAX,1,No
+DLYRTE,Unifi,LAX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LAX/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LAX/Unifi/WCH,0,Yes
+DLYRTE,LFT,VND,station,2,0.83,Goal,Root/div/station,DLYRTE/VND/LFT,1,No
+DLYRTE,Unifi,LFT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LFT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LFT/Unifi/WCH,0,Yes
+DLYRTE,LGA,VND,station,2,0.29,Goal,Root/div/station,DLYRTE/VND/LGA,1,No
+DLYRTE,Menzies Aviation,LGA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LGA/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LGA/Menzies Aviation/WCH,0,Yes
+DLYRTE,LGB,VND,station,2,0.69,Goal,Root/div/station,DLYRTE/VND/LGB,1,No
+DLYRTE,Unifi,LGB,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LGB/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LGB/Unifi/WCH,0,Yes
+DLYRTE,LWS,VND,station,2,0.11,Goal,Root/div/station,DLYRTE/VND/LWS,1,No
+DLYRTE,SkyWest,LWS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/LWS/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/LWS/SkyWest/WCH,0,Yes
+DLYRTE,MAF,VND,station,2,0.38,Goal,Root/div/station,DLYRTE/VND/MAF,1,No
+DLYRTE,HHS Aviation,MAF,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MAF/HHS Aviation,1,No
+DLYRTE,WCH,HHS Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MAF/HHS Aviation/WCH,0,Yes
+DLYRTE,MBS,VND,station,2,0.15,Goal,Root/div/station,DLYRTE/VND/MBS,1,No
+DLYRTE,Unifi,MBS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MBS/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MBS/Unifi/WCH,0,Yes
+DLYRTE,MCI,VND,station,2,0.62,Goal,Root/div/station,DLYRTE/VND/MCI,1,No
+DLYRTE,HUNTLEIGH USA CORP,MCI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MCI/HUNTLEIGH USA CORP,1,No
+DLYRTE,WCH,HUNTLEIGH USA CORP,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MCI/HUNTLEIGH USA CORP/WCH,0,Yes
+DLYRTE,MCO,VND,station,2,1.0,Goal,Root/div/station,DLYRTE/VND/MCO,1,No
+DLYRTE,Unifi,MCO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MCO/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MCO/Unifi/WCH,0,Yes
+DLYRTE,MDT,VND,station,2,0.4,Goal,Root/div/station,DLYRTE/VND/MDT,1,No
+DLYRTE,Unifi,MDT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MDT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MDT/Unifi/WCH,0,Yes
+DLYRTE,MDW,VND,station,2,0.35,Goal,Root/div/station,DLYRTE/VND/MDW,1,No
+DLYRTE,Unifi,MDW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MDW/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MDW/Unifi/WCH,0,Yes
+DLYRTE,MEM,VND,station,2,0.06,Goal,Root/div/station,DLYRTE/VND/MEM,1,No
+DLYRTE,Unifi,MEM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MEM/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MEM/Unifi/WCH,0,Yes
+DLYRTE,MFE,VND,station,2,0.94,Goal,Root/div/station,DLYRTE/VND/MFE,1,No
+DLYRTE,PrimeFlight,MFE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MFE/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MFE/PrimeFlight/WCH,0,Yes
+DLYRTE,MFR,VND,station,2,0.81,Goal,Root/div/station,DLYRTE/VND/MFR,1,No
+DLYRTE,Unifi,MFR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MFR/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MFR/Unifi/WCH,0,Yes
+DLYRTE,MGM,VND,station,2,0.86,Goal,Root/div/station,DLYRTE/VND/MGM,1,No
+DLYRTE,Unifi,MGM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MGM/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MGM/Unifi/WCH,0,Yes
+DLYRTE,MIA,VND,station,2,0.7,Goal,Root/div/station,DLYRTE/VND/MIA,1,No
+DLYRTE,Eulen,MIA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MIA/Eulen,1,No
+DLYRTE,WCH,Eulen,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MIA/Eulen/WCH,0,Yes
+DLYRTE,MKE,VND,station,2,0.74,Goal,Root/div/station,DLYRTE/VND/MKE,1,No
+DLYRTE,Unifi,MKE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MKE/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MKE/Unifi/WCH,0,Yes
+DLYRTE,MLI,VND,station,2,0.07,Goal,Root/div/station,DLYRTE/VND/MLI,1,No
+DLYRTE,Unifi,MLI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MLI/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MLI/Unifi/WCH,0,Yes
+DLYRTE,MLU,VND,station,2,0.32,Goal,Root/div/station,DLYRTE/VND/MLU,1,No
+DLYRTE,Unifi,MLU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MLU/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MLU/Unifi/WCH,0,Yes
+DLYRTE,MOT,VND,station,2,0.98,Goal,Root/div/station,DLYRTE/VND/MOT,1,No
+DLYRTE,Unifi,MOT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MOT/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MOT/Unifi/WCH,0,Yes
+DLYRTE,MQT,VND,station,2,0.23,Goal,Root/div/station,DLYRTE/VND/MQT,1,No
+DLYRTE,SkyWest,MQT,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MQT/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MQT/SkyWest/WCH,0,Yes
+DLYRTE,MSN,VND,station,2,0.11,Goal,Root/div/station,DLYRTE/VND/MSN,1,No
+DLYRTE,Menzies Aviation,MSN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MSN/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MSN/Menzies Aviation/WCH,0,Yes
+DLYRTE,MSO,VND,station,2,0.32,Goal,Root/div/station,DLYRTE/VND/MSO,1,No
+DLYRTE,Unifi,MSO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MSO/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MSO/Unifi/WCH,0,Yes
+DLYRTE,MSP,VND,station,2,0.46,Goal,Root/div/station,DLYRTE/VND/MSP,1,No
+DLYRTE,Unifi,MSP,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MSP/Unifi,2,No
+DLYRTE,WCH,Unifi,function,4,43.93,Goal,Root/div/station/vendor/function,DLYRTE/VND/MSP/Unifi/WCH,0,Yes
+DLYRTE,MSPDTW,Unifi,variant,4,56.07,Goal,Root/div/station/vendor/variant,DLYRTE/VND/MSP/Unifi/MSPDTW,0,Yes
+DLYRTE,MSY,VND,station,2,0.56,Goal,Root/div/station,DLYRTE/VND/MSY,1,No
+DLYRTE,GAT,MSY,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MSY/GAT,1,No
+DLYRTE,WCH,GAT,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MSY/GAT/WCH,0,Yes
+DLYRTE,MTJ,VND,station,2,0.64,Goal,Root/div/station,DLYRTE/VND/MTJ,1,No
+DLYRTE,Menzies Aviation,MTJ,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MTJ/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MTJ/Menzies Aviation/WCH,0,Yes
+DLYRTE,MVY,VND,station,2,0.16,Goal,Root/div/station,DLYRTE/VND/MVY,1,No
+DLYRTE,Unifi,MVY,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/MVY/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/MVY/Unifi/WCH,0,Yes
+DLYRTE,OAJ,VND,station,2,0.36,Goal,Root/div/station,DLYRTE/VND/OAJ,1,No
+DLYRTE,Unifi,OAJ,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/OAJ/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/OAJ/Unifi/WCH,0,Yes
+DLYRTE,OAK,VND,station,2,0.13,Goal,Root/div/station,DLYRTE/VND/OAK,1,No
+DLYRTE,Unifi,OAK,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/OAK/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/OAK/Unifi/WCH,0,Yes
+DLYRTE,OMA,VND,station,2,0.34,Goal,Root/div/station,DLYRTE/VND/OMA,1,No
+DLYRTE,PrimeFlight,OMA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/OMA/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/OMA/PrimeFlight/WCH,0,Yes
+DLYRTE,ORD,VND,station,2,0.8,Goal,Root/div/station,DLYRTE/VND/ORD,1,No
+DLYRTE,Unifi,ORD,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ORD/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ORD/Unifi/WCH,0,Yes
+DLYRTE,ORH,VND,station,2,0.34,Goal,Root/div/station,DLYRTE/VND/ORH,1,No
+DLYRTE,Menzies Aviation,ORH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ORH/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ORH/Menzies Aviation/WCH,0,Yes
+DLYRTE,PDX,VND,station,2,0.93,Goal,Root/div/station,DLYRTE/VND/PDX,1,No
+DLYRTE,Menzies Aviation,PDX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PDX/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PDX/Menzies Aviation/WCH,0,Yes
+DLYRTE,PHL,VND,station,2,0.65,Goal,Root/div/station,DLYRTE/VND/PHL,1,No
+DLYRTE,Unifi,PHL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PHL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PHL/Unifi/WCH,0,Yes
+DLYRTE,PHX,VND,station,2,0.75,Goal,Root/div/station,DLYRTE/VND/PHX,1,No
+DLYRTE,Unifi,PHX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PHX/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PHX/Unifi/WCH,0,Yes
+DLYRTE,PIH,VND,station,2,0.23,Goal,Root/div/station,DLYRTE/VND/PIH,1,No
+DLYRTE,SkyWest,PIH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PIH/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PIH/SkyWest/WCH,0,Yes
+DLYRTE,PLN,VND,station,2,0.61,Goal,Root/div/station,DLYRTE/VND/PLN,1,No
+DLYRTE,Unifi,PLN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PLN/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PLN/Unifi/WCH,0,Yes
+DLYRTE,PSC,VND,station,2,0.39,Goal,Root/div/station,DLYRTE/VND/PSC,1,No
+DLYRTE,Menzies Aviation,PSC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/PSC/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/PSC/Menzies Aviation/WCH,0,Yes
+DLYRTE,RAP,VND,station,2,0.31,Goal,Root/div/station,DLYRTE/VND/RAP,1,No
+DLYRTE,Unifi,RAP,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/RAP/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RAP/Unifi/WCH,0,Yes
+DLYRTE,RDM,VND,station,2,0.05,Goal,Root/div/station,DLYRTE/VND/RDM,1,No
+DLYRTE,Unifi,RDM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/RDM/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RDM/Unifi/WCH,0,Yes
+DLYRTE,RDU,VND,station,2,0.72,Goal,Root/div/station,DLYRTE/VND/RDU,1,No
+DLYRTE,Menzies Aviation,RDU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/RDU/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RDU/Menzies Aviation/WCH,0,Yes
+DLYRTE,RHI,VND,station,2,0.85,Goal,Root/div/station,DLYRTE/VND/RHI,1,No
+DLYRTE,Unifi,RHI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/RHI/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RHI/Unifi/WCH,0,Yes
+DLYRTE,RNO,VND,station,2,0.33,Goal,Root/div/station,DLYRTE/VND/RNO,1,No
+DLYRTE,ABM,RNO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/RNO/ABM,1,No
+DLYRTE,WCH,ABM,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RNO/ABM/WCH,0,Yes
+DLYRTE,ROA,VND,station,2,0.42,Goal,Root/div/station,DLYRTE/VND/ROA,1,No
+DLYRTE,Unifi,ROA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ROA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ROA/Unifi/WCH,0,Yes
+DLYRTE,ROC,VND,station,2,0.11,Goal,Root/div/station,DLYRTE/VND/ROC,1,No
+DLYRTE,PrimeFlight,ROC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/ROC/PrimeFlight,1,No
+DLYRTE,WCH,PrimeFlight,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/ROC/PrimeFlight/WCH,0,Yes
+DLYRTE,RSW,VND,station,2,0.21,Goal,Root/div/station,DLYRTE/VND/RSW,1,No
+DLYRTE,Menzies Aviation,RSW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/RSW/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/RSW/Menzies Aviation/WCH,0,Yes
+DLYRTE,SBA,VND,station,2,0.53,Goal,Root/div/station,DLYRTE/VND/SBA,1,No
+DLYRTE,Unifi,SBA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SBA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SBA/Unifi/WCH,0,Yes
+DLYRTE,SBN,VND,station,2,0.1,Goal,Root/div/station,DLYRTE/VND/SBN,1,No
+DLYRTE,Unifi,SBN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SBN/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SBN/Unifi/WCH,0,Yes
+DLYRTE,SEA,VND,station,2,0.56,Goal,Root/div/station,DLYRTE/VND/SEA,1,No
+DLYRTE,Unifi,SEA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SEA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SEA/Unifi/WCH,0,Yes
+DLYRTE,SFO,VND,station,2,0.89,Goal,Root/div/station,DLYRTE/VND/SFO,1,No
+DLYRTE,Menzies Aviation,SFO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SFO/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SFO/Menzies Aviation/WCH,0,Yes
+DLYRTE,SGU,VND,station,2,0.23,Goal,Root/div/station,DLYRTE/VND/SGU,1,No
+DLYRTE,SkyWest,SGU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SGU/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SGU/SkyWest/WCH,0,Yes
+DLYRTE,SHV,VND,station,2,1.0,Goal,Root/div/station,DLYRTE/VND/SHV,1,No
+DLYRTE,Unifi,SHV,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SHV/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SHV/Unifi/WCH,0,Yes
+DLYRTE,SLC,VND,station,2,0.66,Goal,Root/div/station,DLYRTE/VND/SLC,1,No
+DLYRTE,Unifi,SLC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SLC/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SLC/Unifi/WCH,0,Yes
+DLYRTE,STL,VND,station,2,0.91,Goal,Root/div/station,DLYRTE/VND/STL,1,No
+DLYRTE,Unifi,STL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/STL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/STL/Unifi/WCH,0,Yes
+DLYRTE,SUN,VND,station,2,0.25,Goal,Root/div/station,DLYRTE/VND/SUN,1,No
+DLYRTE,SkyWest,SUN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/SUN/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/SUN/SkyWest/WCH,0,Yes
+DLYRTE,TPA,VND,station,2,0.33,Goal,Root/div/station,DLYRTE/VND/TPA,1,No
+DLYRTE,Unifi,TPA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TPA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/TPA/Unifi/WCH,0,Yes
+DLYRTE,TRI,VND,station,2,0.8,Goal,Root/div/station,DLYRTE/VND/TRI,1,No
+DLYRTE,Unifi,TRI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TRI/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/TRI/Unifi/WCH,0,Yes
+DLYRTE,TUL,VND,station,2,0.24,Goal,Root/div/station,DLYRTE/VND/TUL,1,No
+DLYRTE,Unifi,TUL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TUL/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/TUL/Unifi/WCH,0,Yes
+DLYRTE,TVC,VND,station,2,1.0,Goal,Root/div/station,DLYRTE/VND/TVC,1,No
+DLYRTE,Unifi,TVC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TVC/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/TVC/Unifi/WCH,0,Yes
+DLYRTE,TWF,VND,station,2,0.93,Goal,Root/div/station,DLYRTE/VND/TWF,1,No
+DLYRTE,SkyWest,TWF,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/TWF/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/TWF/SkyWest/WCH,0,Yes
+DLYRTE,VLD,VND,station,2,0.15,Goal,Root/div/station,DLYRTE/VND/VLD,1,No
+DLYRTE,Menzies Aviation,VLD,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/VLD/Menzies Aviation,1,No
+DLYRTE,WCH,Menzies Aviation,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/VLD/Menzies Aviation/WCH,0,Yes
+DLYRTE,VPS,VND,station,2,0.15,Goal,Root/div/station,DLYRTE/VND/VPS,1,No
+DLYRTE,Unifi,VPS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/VPS/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/VPS/Unifi/WCH,0,Yes
+DLYRTE,WYS,VND,station,2,0.78,Goal,Root/div/station,DLYRTE/VND/WYS,1,No
+DLYRTE,SkyWest,WYS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/WYS/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/WYS/SkyWest/WCH,0,Yes
+DLYRTE,XNA,VND,station,2,0.26,Goal,Root/div/station,DLYRTE/VND/XNA,1,No
+DLYRTE,Unifi,XNA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/XNA/Unifi,1,No
+DLYRTE,WCH,Unifi,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/XNA/Unifi/WCH,0,Yes
+DLYRTE,XWA,VND,station,2,0.88,Goal,Root/div/station,DLYRTE/VND/XWA,1,No
+DLYRTE,SkyWest,XWA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/VND/XWA/SkyWest,1,No
+DLYRTE,WCH,SkyWest,function,4,100.0,Goal,Root/div/station/vendor/function,DLYRTE/VND/XWA/SkyWest/WCH,0,Yes
+DLYRTE,GCS,DLYRTE,div,1,58.91,Goal,Root/div,DLYRTE/GCS,42,No
+DLYRTE,ANC,GCS,station,2,1.52,Goal,Root/div/station,DLYRTE/GCS/ANC,1,No
+DLYRTE,Pegasus,ANC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/ANC/Pegasus,1,No
+DLYRTE,Cabin,Pegasus,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/ANC/Pegasus/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/ANC/Pegasus/Cabin/RSGE,0,Yes
+DLYRTE,AUS,GCS,station,2,2.45,Goal,Root/div/station,DLYRTE/GCS/AUS,1,No
+DLYRTE,Unifi,AUS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/AUS/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/AUS/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/AUS/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,BNA,GCS,station,2,4.33,Goal,Root/div/station,DLYRTE/GCS/BNA,1,No
+DLYRTE,Unifi,BNA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/BNA/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/BNA/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/BNA/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,BOS,GCS,station,2,4.43,Goal,Root/div/station,DLYRTE/GCS/BOS,1,No
+DLYRTE,HHS Aviation,BOS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/BOS/HHS Aviation,1,No
+DLYRTE,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/BOS/HHS Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/BOS/HHS Aviation/Cabin/RSGE,0,Yes
+DLYRTE,BWI,GCS,station,2,1.22,Goal,Root/div/station,DLYRTE/GCS/BWI,1,No
+DLYRTE,HHS Aviation,BWI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/BWI/HHS Aviation,1,No
+DLYRTE,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/BWI/HHS Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/BWI/HHS Aviation/Cabin/RSGE,0,Yes
+DLYRTE,CMH,GCS,station,2,0.68,Goal,Root/div/station,DLYRTE/GCS/CMH,1,No
+DLYRTE,Unifi,CMH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/CMH/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/CMH/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/CMH/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,CVG,GCS,station,2,3.51,Goal,Root/div/station,DLYRTE/GCS/CVG,1,No
+DLYRTE,Unifi,CVG,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/CVG/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/CVG/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/CVG/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,DCA,GCS,station,2,0.05,Goal,Root/div/station,DLYRTE/GCS/DCA,1,No
+DLYRTE,Eulen,DCA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/DCA/Eulen,1,No
+DLYRTE,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/DCA/Eulen/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/DCA/Eulen/Cabin/RSGE,0,Yes
+DLYRTE,DEN,GCS,station,2,4.55,Goal,Root/div/station,DLYRTE/GCS/DEN,1,No
+DLYRTE,Unifi,DEN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/DEN/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/DEN/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/DEN/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,DFW,GCS,station,2,0.73,Goal,Root/div/station,DLYRTE/GCS/DFW,1,No
+DLYRTE,HHS Aviation,DFW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/DFW/HHS Aviation,1,No
+DLYRTE,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/DFW/HHS Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/DFW/HHS Aviation/Cabin/RSGE,0,Yes
+DLYRTE,DTW,GCS,station,2,1.27,Goal,Root/div/station,DLYRTE/GCS/DTW,1,No
+DLYRTE,Menzies Aviation,DTW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/DTW/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/DTW/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/DTW/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,EWR,GCS,station,2,1.95,Goal,Root/div/station,DLYRTE/GCS/EWR,1,No
+DLYRTE,Menzies Aviation,EWR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/EWR/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/EWR/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/EWR/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,FLL,GCS,station,2,2.01,Goal,Root/div/station,DLYRTE/GCS/FLL,1,No
+DLYRTE,HHS Aviation,FLL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/FLL/HHS Aviation,1,No
+DLYRTE,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/FLL/HHS Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/FLL/HHS Aviation/Cabin/RSGE,0,Yes
+DLYRTE,GRR,GCS,station,2,2.94,Goal,Root/div/station,DLYRTE/GCS/GRR,1,No
+DLYRTE,Unifi,GRR,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/GRR/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/GRR/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/GRR/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,HNL,GCS,station,2,1.34,Goal,Root/div/station,DLYRTE/GCS/HNL,1,No
+DLYRTE,Unifi,HNL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/HNL/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/HNL/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/HNL/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,IAD,GCS,station,2,0.95,Goal,Root/div/station,DLYRTE/GCS/IAD,1,No
+DLYRTE,Unifi,IAD,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/IAD/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/IAD/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/IAD/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,IAH,GCS,station,2,1.7,Goal,Root/div/station,DLYRTE/GCS/IAH,1,No
+DLYRTE,Menzies Aviation,IAH,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/IAH/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/IAH/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/IAH/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,IND,GCS,station,2,4.14,Goal,Root/div/station,DLYRTE/GCS/IND,1,No
+DLYRTE,Menzies Aviation,IND,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/IND/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/IND/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/IND/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,JFK,GCS,station,2,4.5,Goal,Root/div/station,DLYRTE/GCS/JFK,1,No
+DLYRTE,Unifi,JFK,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/JFK/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/JFK/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/JFK/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,LAS,GCS,station,2,3.3,Goal,Root/div/station,DLYRTE/GCS/LAS,1,No
+DLYRTE,Unifi,LAS,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/LAS/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/LAS/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/LAS/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,LAX,GCS,station,2,4.89,Goal,Root/div/station,DLYRTE/GCS/LAX,1,No
+DLYRTE,Unifi,LAX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/LAX/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/LAX/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/LAX/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,LGA,GCS,station,2,0.49,Goal,Root/div/station,DLYRTE/GCS/LGA,1,No
+DLYRTE,Menzies Aviation,LGA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/LGA/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/LGA/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/LGA/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,MCI,GCS,station,2,1.62,Goal,Root/div/station,DLYRTE/GCS/MCI,1,No
+DLYRTE,Unifi,MCI,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MCI/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MCI/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MCI/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,MCO,GCS,station,2,2.94,Goal,Root/div/station,DLYRTE/GCS/MCO,1,No
+DLYRTE,Eulen,MCO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MCO/Eulen,1,No
+DLYRTE,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MCO/Eulen/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MCO/Eulen/Cabin/RSGE,0,Yes
+DLYRTE,MDW,GCS,station,2,4.43,Goal,Root/div/station,DLYRTE/GCS/MDW,1,No
+DLYRTE,Unifi,MDW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MDW/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MDW/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MDW/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,MEM,GCS,station,2,5.11,Goal,Root/div/station,DLYRTE/GCS/MEM,1,No
+DLYRTE,Unifi,MEM,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MEM/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MEM/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MEM/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,MIA,GCS,station,2,3.39,Goal,Root/div/station,DLYRTE/GCS/MIA,1,No
+DLYRTE,Eulen,MIA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MIA/Eulen,1,No
+DLYRTE,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MIA/Eulen/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MIA/Eulen/Cabin/RSGE,0,Yes
+DLYRTE,MKE,GCS,station,2,1.64,Goal,Root/div/station,DLYRTE/GCS/MKE,1,No
+DLYRTE,Unifi,MKE,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MKE/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MKE/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MKE/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,MSN,GCS,station,2,2.86,Goal,Root/div/station,DLYRTE/GCS/MSN,1,No
+DLYRTE,Menzies Aviation,MSN,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MSN/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MSN/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MSN/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,MSP,GCS,station,2,0.89,Goal,Root/div/station,DLYRTE/GCS/MSP,1,No
+DLYRTE,Unifi,MSP,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MSP/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MSP/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MSP/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,MSY,GCS,station,2,0.79,Goal,Root/div/station,DLYRTE/GCS/MSY,1,No
+DLYRTE,GAT,MSY,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/MSY/GAT,1,No
+DLYRTE,Cabin,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/MSY/GAT/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/MSY/GAT/Cabin/RSGE,0,Yes
+DLYRTE,ORD,GCS,station,2,0.4,Goal,Root/div/station,DLYRTE/GCS/ORD,1,No
+DLYRTE,Unifi,ORD,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/ORD/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/ORD/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/ORD/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,PDX,GCS,station,2,4.54,Goal,Root/div/station,DLYRTE/GCS/PDX,1,No
+DLYRTE,Menzies Aviation,PDX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/PDX/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/PDX/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/PDX/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,PHL,GCS,station,2,2.76,Goal,Root/div/station,DLYRTE/GCS/PHL,1,No
+DLYRTE,Unifi,PHL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/PHL/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/PHL/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/PHL/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,PHX,GCS,station,2,0.26,Goal,Root/div/station,DLYRTE/GCS/PHX,1,No
+DLYRTE,Unifi,PHX,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/PHX/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/PHX/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/PHX/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,RDU,GCS,station,2,4.99,Goal,Root/div/station,DLYRTE/GCS/RDU,1,No
+DLYRTE,Unifi,RDU,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/RDU/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/RDU/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/RDU/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,RSW,GCS,station,2,2.26,Goal,Root/div/station,DLYRTE/GCS/RSW,1,No
+DLYRTE,Menzies Aviation,RSW,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/RSW/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/RSW/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/RSW/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,SEA,GCS,station,2,4.13,Goal,Root/div/station,DLYRTE/GCS/SEA,1,No
+DLYRTE,Unifi,SEA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/SEA/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/SEA/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/SEA/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,SFO,GCS,station,2,0.08,Goal,Root/div/station,DLYRTE/GCS/SFO,1,No
+DLYRTE,Menzies Aviation,SFO,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/SFO/Menzies Aviation,1,No
+DLYRTE,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/SFO/Menzies Aviation/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/SFO/Menzies Aviation/Cabin/RSGE,0,Yes
+DLYRTE,SLC,GCS,station,2,2.46,Goal,Root/div/station,DLYRTE/GCS/SLC,1,No
+DLYRTE,Unifi,SLC,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/SLC/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/SLC/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/SLC/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,STL,GCS,station,2,1.09,Goal,Root/div/station,DLYRTE/GCS/STL,1,No
+DLYRTE,Unifi,STL,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/STL/Unifi,1,No
+DLYRTE,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/STL/Unifi/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/STL/Unifi/Cabin/RSGE,0,Yes
+DLYRTE,TPA,GCS,station,2,0.41000000000000003,Goal,Root/div/station,DLYRTE/GCS/TPA,1,No
+DLYRTE,Eulen,TPA,vendor,3,100.0,Goal,Root/div/station/vendor,DLYRTE/GCS/TPA/Eulen,1,No
+DLYRTE,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,DLYRTE/GCS/TPA/Eulen/Cabin,1,No
+DLYRTE,RSGE,Cabin,variant,5,100.0,Goal,Root/div/station/vendor/vnd_typ/variant,DLYRTE/GCS/TPA/Eulen/Cabin/RSGE,0,Yes

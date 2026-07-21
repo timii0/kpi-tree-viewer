@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DG_COMPLIANCE,DG_COMPLIANCE,,Root,0,1,Goal,Root,DG_COMPLIANCE,1,No
+DG_COMPLIANCE,TOP,DG_COMPLIANCE,div,1,100.0,Goal,Root/div,DG_COMPLIANCE/TOP,1,No
+DG_COMPLIANCE,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,DG_COMPLIANCE/TOP/Distribution_Logistics,0,Yes

@@ -1,0 +1,32 @@
+{
+    "id": "PROD_ENGINE",
+    "name": "PROD_ENGINE",
+    "category": "Root",
+    "tier": 0,
+    "path": "PROD_ENGINE",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "PROD_ENGINE/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Engine Maintenance",
+                    "name": "Engine Maintenance",
+                    "category": "bu",
+                    "path": "PROD_ENGINE/TOP/Engine Maintenance",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

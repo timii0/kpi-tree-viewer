@@ -1,0 +1,3686 @@
+{
+    "id": "WDR_DISC",
+    "name": "WDR_DISC",
+    "category": "Root",
+    "tier": 0,
+    "path": "WDR_DISC",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "VND",
+            "name": "VND",
+            "category": "div",
+            "path": "WDR_DISC/VND",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "BW",
+                    "name": "BW",
+                    "category": "risk_grp",
+                    "path": "WDR_DISC/VND/BW",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "ABE",
+                            "name": "ABE",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ABE",
+                            "tier": 3,
+                            "contribution": 1.67,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ABE/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ABE/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ABQ",
+                            "name": "ABQ",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ABQ",
+                            "tier": 3,
+                            "contribution": 0.46,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ABQ/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ABQ/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "AGS",
+                            "name": "AGS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/AGS",
+                            "tier": 3,
+                            "contribution": 0.62,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/AGS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/AGS/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 82.82,
+                                            "type": "Goal",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/AGS/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 17.18,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ALB",
+                            "name": "ALB",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ALB",
+                            "tier": 3,
+                            "contribution": 1.43,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ALB/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ALB/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ATW",
+                            "name": "ATW",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ATW",
+                            "tier": 3,
+                            "contribution": 0.12,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ATW/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ATW/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "AVL",
+                            "name": "AVL",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/AVL",
+                            "tier": 3,
+                            "contribution": 0.14,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/AVL/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/AVL/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BDL",
+                            "name": "BDL",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BDL",
+                            "tier": 3,
+                            "contribution": 1.68,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BDL/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BDL/Menzies Aviation/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BGR",
+                            "name": "BGR",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BGR",
+                            "tier": 3,
+                            "contribution": 1.07,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BGR/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BGR/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BHM",
+                            "name": "BHM",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BHM",
+                            "tier": 3,
+                            "contribution": 1.53,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BHM/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BHM/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BIL",
+                            "name": "BIL",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BIL",
+                            "tier": 3,
+                            "contribution": 0.47,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BIL/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BIL/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BIS",
+                            "name": "BIS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BIS",
+                            "tier": 3,
+                            "contribution": 0.05,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BIS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BIS/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BOI",
+                            "name": "BOI",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BOI",
+                            "tier": 3,
+                            "contribution": 0.94,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BOI/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BOI/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BTR",
+                            "name": "BTR",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BTR",
+                            "tier": 3,
+                            "contribution": 1.38,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BTR/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BTR/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BTV",
+                            "name": "BTV",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BTV",
+                            "tier": 3,
+                            "contribution": 0.21,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BTV/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BTV/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BUF",
+                            "name": "BUF",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BUF",
+                            "tier": 3,
+                            "contribution": 0.47,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BUF/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BUF/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BUR",
+                            "name": "BUR",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BUR",
+                            "tier": 3,
+                            "contribution": 0.55,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BUR/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BUR/GAT/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BZN",
+                            "name": "BZN",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/BZN",
+                            "tier": 3,
+                            "contribution": 0.97,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "WFS -Worldwide Flight Services",
+                                    "name": "WFS -Worldwide Flight Services",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/BZN/WFS -Worldwide Flight Services",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/BZN/WFS -Worldwide Flight Services/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CAE",
+                            "name": "CAE",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CAE",
+                            "tier": 3,
+                            "contribution": 1.33,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CAE/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CAE/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CHA",
+                            "name": "CHA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CHA",
+                            "tier": 3,
+                            "contribution": 1.5,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CHA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CHA/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CHO",
+                            "name": "CHO",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CHO",
+                            "tier": 3,
+                            "contribution": 0.04,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CHO/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CHO/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CHS",
+                            "name": "CHS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CHS",
+                            "tier": 3,
+                            "contribution": 1.53,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CHS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CHS/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CID",
+                            "name": "CID",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CID",
+                            "tier": 3,
+                            "contribution": 1.68,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CID/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CID/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CLE",
+                            "name": "CLE",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CLE",
+                            "tier": 3,
+                            "contribution": 0.93,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CLE/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CLE/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CLT",
+                            "name": "CLT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CLT",
+                            "tier": 3,
+                            "contribution": 0.42,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CLT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CLT/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "COS",
+                            "name": "COS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/COS",
+                            "tier": 3,
+                            "contribution": 1.52,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/COS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/COS/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CSG",
+                            "name": "CSG",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/CSG",
+                            "tier": 3,
+                            "contribution": 1.15,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/CSG/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/CSG/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "DAB",
+                            "name": "DAB",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/DAB",
+                            "tier": 3,
+                            "contribution": 1.15,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/DAB/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/DAB/Menzies Aviation/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "DAL",
+                            "name": "DAL",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/DAL",
+                            "tier": 3,
+                            "contribution": 0.26,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/DAL/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/DAL/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "DAY",
+                            "name": "DAY",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/DAY",
+                            "tier": 3,
+                            "contribution": 0.79,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/DAY/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/DAY/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "DLH",
+                            "name": "DLH",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/DLH",
+                            "tier": 3,
+                            "contribution": 0.64,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/DLH/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/DLH/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "DSM",
+                            "name": "DSM",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/DSM",
+                            "tier": 3,
+                            "contribution": 0.17,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/DSM/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/DSM/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ECP",
+                            "name": "ECP",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ECP",
+                            "tier": 3,
+                            "contribution": 1.53,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ECP/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ECP/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "EGE",
+                            "name": "EGE",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/EGE",
+                            "tier": 3,
+                            "contribution": 1.14,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/EGE/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/EGE/Menzies Aviation/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ELP",
+                            "name": "ELP",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ELP",
+                            "tier": 3,
+                            "contribution": 1.38,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ELP/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ELP/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "EYW",
+                            "name": "EYW",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/EYW",
+                            "tier": 3,
+                            "contribution": 1.51,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/EYW/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/EYW/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FAI",
+                            "name": "FAI",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/FAI",
+                            "tier": 3,
+                            "contribution": 0.45,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/FAI/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/FAI/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FAR",
+                            "name": "FAR",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/FAR",
+                            "tier": 3,
+                            "contribution": 0.55,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/FAR/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/FAR/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FAT",
+                            "name": "FAT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/FAT",
+                            "tier": 3,
+                            "contribution": 0.23,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/FAT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/FAT/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FAY",
+                            "name": "FAY",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/FAY",
+                            "tier": 3,
+                            "contribution": 0.87,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/FAY/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/FAY/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FCA",
+                            "name": "FCA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/FCA",
+                            "tier": 3,
+                            "contribution": 1.59,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/FCA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/FCA/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FSD",
+                            "name": "FSD",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/FSD",
+                            "tier": 3,
+                            "contribution": 0.32,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/FSD/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/FSD/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GEG",
+                            "name": "GEG",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/GEG",
+                            "tier": 3,
+                            "contribution": 0.11,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/GEG/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/GEG/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GNV",
+                            "name": "GNV",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/GNV",
+                            "tier": 3,
+                            "contribution": 1.37,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/GNV/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/GNV/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GPT",
+                            "name": "GPT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/GPT",
+                            "tier": 3,
+                            "contribution": 0.59,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/GPT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/GPT/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GSO",
+                            "name": "GSO",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/GSO",
+                            "tier": 3,
+                            "contribution": 1.17,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/GSO/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/GSO/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GSP",
+                            "name": "GSP",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/GSP",
+                            "tier": 3,
+                            "contribution": 0.39,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/GSP/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/GSP/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HDN",
+                            "name": "HDN",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/HDN",
+                            "tier": 3,
+                            "contribution": 1.25,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/HDN/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/HDN/Menzies Aviation/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HOU",
+                            "name": "HOU",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/HOU",
+                            "tier": 3,
+                            "contribution": 1.37,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/HOU/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/HOU/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HPN",
+                            "name": "HPN",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/HPN",
+                            "tier": 3,
+                            "contribution": 1.03,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "WESTCHESTER COUNTY AIRPORT",
+                                    "name": "WESTCHESTER COUNTY AIRPORT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/HPN/WESTCHESTER COUNTY AIRPORT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/HPN/WESTCHESTER COUNTY AIRPORT/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HRL",
+                            "name": "HRL",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/HRL",
+                            "tier": 3,
+                            "contribution": 0.34,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Valley International Airport Ground Handling Services",
+                                    "name": "Valley International Airport Ground Handling Services",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/HRL/Valley International Airport Ground Handling Services",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/HRL/Valley International Airport Ground Handling Services/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "HSV",
+                            "name": "HSV",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/HSV",
+                            "tier": 3,
+                            "contribution": 0.92,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/HSV/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/HSV/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ICT",
+                            "name": "ICT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ICT",
+                            "tier": 3,
+                            "contribution": 0.88,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ICT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ICT/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "IDA",
+                            "name": "IDA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/IDA",
+                            "tier": 3,
+                            "contribution": 0.42,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "SkyWest",
+                                    "name": "SkyWest",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/IDA/SkyWest",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/IDA/SkyWest/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ILM",
+                            "name": "ILM",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ILM",
+                            "tier": 3,
+                            "contribution": 0.55,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ILM/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ILM/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "JAC",
+                            "name": "JAC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/JAC",
+                            "tier": 3,
+                            "contribution": 0.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/JAC/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/JAC/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "JAN",
+                            "name": "JAN",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/JAN",
+                            "tier": 3,
+                            "contribution": 1.46,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/JAN/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/JAN/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "JAX",
+                            "name": "JAX",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/JAX",
+                            "tier": 3,
+                            "contribution": 0.95,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/JAX/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/JAX/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "JNU",
+                            "name": "JNU",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/JNU",
+                            "tier": 3,
+                            "contribution": 0.91,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/JNU/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/JNU/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "KOA",
+                            "name": "KOA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/KOA",
+                            "tier": 3,
+                            "contribution": 0.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/KOA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/KOA/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "LEX",
+                            "name": "LEX",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/LEX",
+                            "tier": 3,
+                            "contribution": 1.19,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/LEX/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/LEX/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "LGB",
+                            "name": "LGB",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/LGB",
+                            "tier": 3,
+                            "contribution": 1.65,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/LGB/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/LGB/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "LIH",
+                            "name": "LIH",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/LIH",
+                            "tier": 3,
+                            "contribution": 0.66,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/LIH/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/LIH/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "LIT",
+                            "name": "LIT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/LIT",
+                            "tier": 3,
+                            "contribution": 1.04,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/LIT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/LIT/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MDT",
+                            "name": "MDT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/MDT",
+                            "tier": 3,
+                            "contribution": 0.27,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/MDT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/MDT/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MLB",
+                            "name": "MLB",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/MLB",
+                            "tier": 3,
+                            "contribution": 0.76,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "CITY OF MELBOURNE",
+                                    "name": "CITY OF MELBOURNE",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/MLB/CITY OF MELBOURNE",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/MLB/CITY OF MELBOURNE/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MOB",
+                            "name": "MOB",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/MOB",
+                            "tier": 3,
+                            "contribution": 0.26,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/MOB/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/MOB/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MSO",
+                            "name": "MSO",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/MSO",
+                            "tier": 3,
+                            "contribution": 1.32,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/MSO/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/MSO/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MTJ",
+                            "name": "MTJ",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/MTJ",
+                            "tier": 3,
+                            "contribution": 1.23,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/MTJ/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/MTJ/Menzies Aviation/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MYR",
+                            "name": "MYR",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/MYR",
+                            "tier": 3,
+                            "contribution": 0.2,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/MYR/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/MYR/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "OAK",
+                            "name": "OAK",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/OAK",
+                            "tier": 3,
+                            "contribution": 1.38,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/OAK/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/OAK/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "OGG",
+                            "name": "OGG",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/OGG",
+                            "tier": 3,
+                            "contribution": 0.83,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/OGG/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/OGG/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "OKC",
+                            "name": "OKC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/OKC",
+                            "tier": 3,
+                            "contribution": 1.37,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "US Aviation",
+                                    "name": "US Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/OKC/US Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/OKC/US Aviation/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "OMA",
+                            "name": "OMA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/OMA",
+                            "tier": 3,
+                            "contribution": 1.61,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/OMA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/OMA/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ONT",
+                            "name": "ONT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ONT",
+                            "tier": 3,
+                            "contribution": 0.62,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "US Aviation",
+                                    "name": "US Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ONT/US Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ONT/US Aviation/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ORF",
+                            "name": "ORF",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ORF",
+                            "tier": 3,
+                            "contribution": 0.94,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ORF/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ORF/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PBI",
+                            "name": "PBI",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PBI",
+                            "tier": 3,
+                            "contribution": 1.04,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PBI/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PBI/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PIT",
+                            "name": "PIT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PIT",
+                            "tier": 3,
+                            "contribution": 0.43,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PIT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PIT/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PNS",
+                            "name": "PNS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PNS",
+                            "tier": 3,
+                            "contribution": 0.82,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PNS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PNS/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PSC",
+                            "name": "PSC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PSC",
+                            "tier": 3,
+                            "contribution": 0.85,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PSC/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PSC/Menzies Aviation/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PSP",
+                            "name": "PSP",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PSP",
+                            "tier": 3,
+                            "contribution": 0.23,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PSP/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PSP/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PVD",
+                            "name": "PVD",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PVD",
+                            "tier": 3,
+                            "contribution": 0.94,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PVD/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PVD/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "PWM",
+                            "name": "PWM",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/PWM",
+                            "tier": 3,
+                            "contribution": 1.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/PWM/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/PWM/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "RAP",
+                            "name": "RAP",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/RAP",
+                            "tier": 3,
+                            "contribution": 0.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/RAP/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/RAP/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "RIC",
+                            "name": "RIC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/RIC",
+                            "tier": 3,
+                            "contribution": 0.02,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/RIC/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/RIC/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "RNO",
+                            "name": "RNO",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/RNO",
+                            "tier": 3,
+                            "contribution": 1.37,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/RNO/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/RNO/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ROA",
+                            "name": "ROA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ROA",
+                            "tier": 3,
+                            "contribution": 0.02,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ROA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ROA/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ROC",
+                            "name": "ROC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/ROC",
+                            "tier": 3,
+                            "contribution": 1.43,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/ROC/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/ROC/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SAN",
+                            "name": "SAN",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SAN",
+                            "tier": 3,
+                            "contribution": 0.41,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SAN/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SAN/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SAT",
+                            "name": "SAT",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SAT",
+                            "tier": 3,
+                            "contribution": 0.46,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SAT/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SAT/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SAV",
+                            "name": "SAV",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SAV",
+                            "tier": 3,
+                            "contribution": 1.19,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SAV/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SAV/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SBA",
+                            "name": "SBA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SBA",
+                            "tier": 3,
+                            "contribution": 1.07,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SBA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SBA/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDF",
+                            "name": "SDF",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SDF",
+                            "tier": 3,
+                            "contribution": 1.08,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SDF/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SDF/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SGF",
+                            "name": "SGF",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SGF",
+                            "tier": 3,
+                            "contribution": 1.41,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SGF/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SGF/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SHV",
+                            "name": "SHV",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SHV",
+                            "tier": 3,
+                            "contribution": 0.96,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SHV/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SHV/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SJC",
+                            "name": "SJC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SJC",
+                            "tier": 3,
+                            "contribution": 1.37,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SJC/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SJC/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SMF",
+                            "name": "SMF",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SMF",
+                            "tier": 3,
+                            "contribution": 0.67,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SMF/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SMF/Menzies Aviation/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SNA",
+                            "name": "SNA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SNA",
+                            "tier": 3,
+                            "contribution": 0.71,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SNA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SNA/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SRQ",
+                            "name": "SRQ",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SRQ",
+                            "tier": 3,
+                            "contribution": 1.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SRQ/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SRQ/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SYR",
+                            "name": "SYR",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/SYR",
+                            "tier": 3,
+                            "contribution": 1.11,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/SYR/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/SYR/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "TLH",
+                            "name": "TLH",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/TLH",
+                            "tier": 3,
+                            "contribution": 1.2,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "GAT",
+                                    "name": "GAT",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/TLH/GAT",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/TLH/GAT/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "TRI",
+                            "name": "TRI",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/TRI",
+                            "tier": 3,
+                            "contribution": 1.24,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/TRI/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/TRI/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "TUL",
+                            "name": "TUL",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/TUL",
+                            "tier": 3,
+                            "contribution": 0.98,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/TUL/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/TUL/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "TUS",
+                            "name": "TUS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/TUS",
+                            "tier": 3,
+                            "contribution": 0.03,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/TUS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/TUS/Unifi/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "TVC",
+                            "name": "TVC",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/TVC",
+                            "tier": 3,
+                            "contribution": 0.87,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/TVC/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/TVC/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "TYS",
+                            "name": "TYS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/TYS",
+                            "tier": 3,
+                            "contribution": 1.37,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Menzies Aviation",
+                                    "name": "Menzies Aviation",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/TYS/Menzies Aviation",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "Blended",
+                                            "name": "Blended",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/TYS/Menzies Aviation/Blended",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "VPS",
+                            "name": "VPS",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/VPS",
+                            "tier": 3,
+                            "contribution": 0.19,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/VPS/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/VPS/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "XNA",
+                            "name": "XNA",
+                            "category": "station",
+                            "path": "WDR_DISC/VND/BW/XNA",
+                            "tier": 3,
+                            "contribution": 1.68,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "WDR_DISC/VND/BW/XNA/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "FS",
+                                            "name": "FS",
+                                            "category": "vnd_typ",
+                                            "path": "WDR_DISC/VND/BW/XNA/Unifi/FS",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CITY OF MELBOURNE",
+                            "name": "CITY OF MELBOURNE",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/CITY OF MELBOURNE",
+                            "tier": 3,
+                            "contribution": 0.51,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Blended",
+                                    "name": "Blended",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/CITY OF MELBOURNE/Blended",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/GAT",
+                            "tier": 3,
+                            "contribution": 0.32,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Blended",
+                                    "name": "Blended",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/GAT/Blended",
+                                    "tier": 4,
+                                    "contribution": 48.67,
+                                    "type": "Goal",
+                                    "children": []
+                                },
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/GAT/FS",
+                                    "tier": 4,
+                                    "contribution": 51.33,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 0.62,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Blended",
+                                    "name": "Blended",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/Menzies Aviation/Blended",
+                                    "tier": 4,
+                                    "contribution": 29.72,
+                                    "type": "Goal",
+                                    "children": []
+                                },
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/Menzies Aviation/FS",
+                                    "tier": 4,
+                                    "contribution": 70.28,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SkyWest",
+                            "name": "SkyWest",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/SkyWest",
+                            "tier": 3,
+                            "contribution": 1.63,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/SkyWest/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/Unifi",
+                            "tier": 3,
+                            "contribution": 0.21,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Blended",
+                                    "name": "Blended",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/Unifi/Blended",
+                                    "tier": 4,
+                                    "contribution": 65.21,
+                                    "type": "Goal",
+                                    "children": []
+                                },
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 34.79,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "US Aviation",
+                            "name": "US Aviation",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/US Aviation",
+                            "tier": 3,
+                            "contribution": 0.81,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Blended",
+                                    "name": "Blended",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/US Aviation/Blended",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Valley International Airport Ground Handling Services",
+                            "name": "Valley International Airport Ground Handling Services",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/Valley International Airport Ground Handling Services",
+                            "tier": 3,
+                            "contribution": 1.54,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/Valley International Airport Ground Handling Services/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WESTCHESTER COUNTY AIRPORT",
+                            "name": "WESTCHESTER COUNTY AIRPORT",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/WESTCHESTER COUNTY AIRPORT",
+                            "tier": 3,
+                            "contribution": 0.6,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/WESTCHESTER COUNTY AIRPORT/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WFS -Worldwide Flight Services",
+                            "name": "WFS -Worldwide Flight Services",
+                            "category": "vendor",
+                            "path": "WDR_DISC/VND/BW/WFS -Worldwide Flight Services",
+                            "tier": 3,
+                            "contribution": 0.61,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Blended",
+                                    "name": "Blended",
+                                    "category": "vnd_typ",
+                                    "path": "WDR_DISC/VND/BW/WFS -Worldwide Flight Services/Blended",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

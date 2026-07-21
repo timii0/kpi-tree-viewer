@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CABIN_COMP,CABIN_COMP,,Root,0,1,Goal,Root,CABIN_COMP,1,No
+CABIN_COMP,TOP,CABIN_COMP,div,1,100.0,Goal,Root/div,CABIN_COMP/TOP,1,No
+CABIN_COMP,Cabin Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,CABIN_COMP/TOP/Cabin Maintenance,0,Yes

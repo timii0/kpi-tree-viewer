@@ -1,0 +1,12 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+Gate_SS,Gate_SS,,Root,0,1,Goal,Root,Gate_SS,1,No
+Gate_SS,VND,Gate_SS,div,1,100.0,Goal,Root/div,Gate_SS/VND,1,No
+Gate_SS,DC,VND,carrier,2,100.0,Goal,Root/div/carrier,Gate_SS/VND/DC,2,No
+Gate_SS,DTW,DC,station,3,49.88,Goal,Root/div/carrier/station,Gate_SS/VND/DC/DTW,1,No
+Gate_SS,Unifi,DTW,vendor,4,100.0,Goal,Root/div/carrier/station/vendor,Gate_SS/VND/DC/DTW/Unifi,1,No
+Gate_SS,PAX,Unifi,function,5,100.0,Goal,Root/div/carrier/station/vendor/function,Gate_SS/VND/DC/DTW/Unifi/PAX,1,No
+Gate_SS,MSPDTW,PAX,variant,6,100.0,Goal,Root/div/carrier/station/vendor/function/variant,Gate_SS/VND/DC/DTW/Unifi/PAX/MSPDTW,0,Yes
+Gate_SS,MSP,DC,station,3,50.12,Goal,Root/div/carrier/station,Gate_SS/VND/DC/MSP,1,No
+Gate_SS,Unifi,MSP,vendor,4,100.0,Goal,Root/div/carrier/station/vendor,Gate_SS/VND/DC/MSP/Unifi,1,No
+Gate_SS,PAX,Unifi,function,5,100.0,Goal,Root/div/carrier/station/vendor/function,Gate_SS/VND/DC/MSP/Unifi/PAX,1,No
+Gate_SS,MSPDTW,PAX,variant,6,100.0,Goal,Root/div/carrier/station/vendor/function/variant,Gate_SS/VND/DC/MSP/Unifi/PAX/MSPDTW,0,Yes

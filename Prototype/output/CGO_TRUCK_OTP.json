@@ -1,0 +1,21 @@
+{
+    "id": "CGO_TRUCK_OTP",
+    "name": "CGO_TRUCK_OTP",
+    "category": "Root",
+    "tier": 0,
+    "path": "CGO_TRUCK_OTP",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "I",
+            "name": "I",
+            "category": "dom_int",
+            "path": "CGO_TRUCK_OTP/I",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

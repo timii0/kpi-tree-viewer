@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FA_INT_INTL,FA_INT_INTL,,Root,0,1,Goal,Root,FA_INT_INTL,1,No
+FA_INT_INTL,ML,FA_INT_INTL,carrier,1,100.0,Goal,Root/carrier,FA_INT_INTL/ML,1,No
+FA_INT_INTL,TATL,ML,entity,2,100.0,Goal,Root/carrier/entity,FA_INT_INTL/ML/TATL,0,Yes

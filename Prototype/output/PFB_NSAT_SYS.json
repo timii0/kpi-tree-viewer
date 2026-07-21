@@ -1,0 +1,106 @@
+{
+    "id": "PFB_NSAT_SYS",
+    "name": "PFB_NSAT_SYS",
+    "category": "Root",
+    "tier": 0,
+    "path": "PFB_NSAT_SYS",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ML",
+            "name": "ML",
+            "category": "carrier",
+            "path": "PFB_NSAT_SYS/ML",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "D",
+                    "name": "D",
+                    "category": "dom_int",
+                    "path": "PFB_NSAT_SYS/ML/D",
+                    "tier": 2,
+                    "contribution": 58.21,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "FC",
+                            "name": "FC",
+                            "category": "cabin",
+                            "path": "PFB_NSAT_SYS/ML/D/FC",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Bev",
+                                    "name": "Bev",
+                                    "category": "variant",
+                                    "path": "PFB_NSAT_SYS/ML/D/FC/Bev",
+                                    "tier": 4,
+                                    "contribution": 39.07,
+                                    "type": "Goal",
+                                    "children": []
+                                },
+                                {
+                                    "id": "Meal",
+                                    "name": "Meal",
+                                    "category": "variant",
+                                    "path": "PFB_NSAT_SYS/ML/D/FC/Meal",
+                                    "tier": 4,
+                                    "contribution": 60.93,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "TATL",
+                    "name": "TATL",
+                    "category": "entity",
+                    "path": "PFB_NSAT_SYS/ML/TATL",
+                    "tier": 2,
+                    "contribution": 11.37,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "D1",
+                            "name": "D1",
+                            "category": "cabin",
+                            "path": "PFB_NSAT_SYS/ML/TATL/D1",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "TPAC",
+                    "name": "TPAC",
+                    "category": "entity",
+                    "path": "PFB_NSAT_SYS/ML/TPAC",
+                    "tier": 2,
+                    "contribution": 30.42,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "D1",
+                            "name": "D1",
+                            "category": "cabin",
+                            "path": "PFB_NSAT_SYS/ML/TPAC/D1",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FAIR,FAIR,,Root,0,1,Goal,Root,FAIR,1,No
+FAIR,CSSC,FAIR,div,1,100.0,Goal,Root/div,FAIR/CSSC,1,No
+FAIR,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,FAIR/CSSC/CS,0,Yes

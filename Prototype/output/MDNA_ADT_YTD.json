@@ -1,0 +1,4597 @@
+{
+    "id": "MDNA_ADT_YTD",
+    "name": "MDNA_ADT_YTD",
+    "category": "Root",
+    "tier": 0,
+    "path": "MDNA_ADT_YTD",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "OBS",
+            "name": "OBS",
+            "category": "div",
+            "path": "MDNA_ADT_YTD/OBS",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": ",null,",
+                    "name": ",null,",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/,null,",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABM",
+                    "name": "ABM",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/ABM",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Aerococina",
+                    "name": "Aerococina",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Aerococina",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AirChefs",
+                    "name": "AirChefs",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/AirChefs",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AirFayre",
+                    "name": "AirFayre",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/AirFayre",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Alpha",
+                    "name": "Alpha",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Alpha",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Aviation Tech Services",
+                    "name": "Aviation Tech Services",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Aviation Tech Services",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Calloway",
+                    "name": "Calloway",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Calloway",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Canonica",
+                    "name": "Canonica",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Canonica",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CaribCater",
+                    "name": "CaribCater",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/CaribCater",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CasaProveedora",
+                    "name": "CasaProveedora",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/CasaProveedora",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CateringPor",
+                    "name": "CateringPor",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/CateringPor",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Chelsea",
+                    "name": "Chelsea",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Chelsea",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CoDelAire",
+                    "name": "CoDelAire",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/CoDelAire",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CoDeVuelos",
+                    "name": "CoDeVuelos",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/CoDeVuelos",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTA",
+                    "name": "CTA",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/CTA",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Dakar",
+                    "name": "Dakar",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Dakar",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DALC",
+                    "name": "DALC",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/DALC",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEL",
+                    "name": "DEL",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/DEL",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Delta",
+                    "name": "Delta",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Delta",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "dnata",
+                    "name": "dnata",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/dnata",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "dnata SRL",
+                    "name": "dnata SRL",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/dnata SRL",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DOCO",
+                    "name": "DOCO",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/DOCO",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DOCO-JFK",
+                    "name": "DOCO-JFK",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/DOCO-JFK",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EFG",
+                    "name": "EFG",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/EFG",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EGSC",
+                    "name": "EGSC",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/EGSC",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Emerys",
+                    "name": "Emerys",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Emerys",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FlyFoodGrp",
+                    "name": "FlyFoodGrp",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/FlyFoodGrp",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GAT",
+                    "name": "GAT",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/GAT",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GG",
+                    "name": "GG",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/GG",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Goddard",
+                    "name": "Goddard",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Goddard",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GourmetToGo",
+                    "name": "GourmetToGo",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/GourmetToGo",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HMS",
+                    "name": "HMS",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/HMS",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IGS",
+                    "name": "IGS",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/IGS",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IMC",
+                    "name": "IMC",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/IMC",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ISS",
+                    "name": "ISS",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/ISS",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/JFK",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JJRoca",
+                    "name": "JJRoca",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/JJRoca",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Kore",
+                    "name": "Kore",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Kore",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LSG",
+                    "name": "LSG",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/LSG",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MA",
+                    "name": "MA",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/MA",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Mainline",
+                    "name": "Mainline",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Mainline",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Mainline Aviation",
+                    "name": "Mainline Aviation",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Mainline Aviation",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NagoyaAir",
+                    "name": "NagoyaAir",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/NagoyaAir",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Newrest",
+                    "name": "Newrest",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Newrest",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Prospect Airport Services Inc",
+                    "name": "Prospect Airport Services Inc",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Prospect Airport Services Inc",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Servair",
+                    "name": "Servair",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Servair",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ShanghaiEast",
+                    "name": "ShanghaiEast",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/ShanghaiEast",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Sharp-DOCO",
+                    "name": "Sharp-DOCO",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Sharp-DOCO",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SkyCafe",
+                    "name": "SkyCafe",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/SkyCafe",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SkyCater",
+                    "name": "SkyCater",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/SkyCater",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TFK",
+                    "name": "TFK",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/TFK",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TopOCove",
+                    "name": "TopOCove",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/TopOCove",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Unifi",
+                    "name": "Unifi",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Unifi",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Unknown",
+                    "name": "Unknown",
+                    "category": "caterer",
+                    "path": "MDNA_ADT_YTD/OBS/Unknown",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Africa",
+                    "name": "Africa",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/Africa",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Asia",
+                    "name": "Asia",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/Asia",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Australia",
+                    "name": "Australia",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/Australia",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Europe",
+                    "name": "Europe",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/Europe",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Latin_America_Caribbean",
+                    "name": "Latin_America_Caribbean",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/Latin_America_Caribbean",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "North_America",
+                    "name": "North_America",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/North_America",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "South_America",
+                    "name": "South_America",
+                    "category": "continental_region",
+                    "path": "MDNA_ADT_YTD/OBS/South_America",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northeast_Hubs",
+                    "name": "Northeast_Hubs",
+                    "category": "director",
+                    "path": "MDNA_ADT_YTD/OBS/Northeast_Hubs",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "DOCO",
+                            "name": "DOCO",
+                            "category": "caterer",
+                            "path": "MDNA_ADT_YTD/OBS/Northeast_Hubs/DOCO",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ATL-Director",
+                    "name": "ATL-Director",
+                    "category": "director",
+                    "path": "MDNA_ADT_YTD/OBS/ATL-Director",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "International",
+                    "name": "International",
+                    "category": "director",
+                    "path": "MDNA_ADT_YTD/OBS/International",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "T2_East",
+                    "name": "T2_East",
+                    "category": "director",
+                    "path": "MDNA_ADT_YTD/OBS/T2_East",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "T2_West",
+                    "name": "T2_West",
+                    "category": "director",
+                    "path": "MDNA_ADT_YTD/OBS/T2_West",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Hubs",
+                    "name": "West_Hubs",
+                    "category": "director",
+                    "path": "MDNA_ADT_YTD/OBS/West_Hubs",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS_BRU",
+                    "name": "AMS_BRU",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/AMS_BRU",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL-Commissary",
+                    "name": "ATL-Commissary",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/ATL-Commissary",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL-Kitchen",
+                    "name": "ATL-Kitchen",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/ATL-Kitchen",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS-Hub",
+                    "name": "BOS-Hub",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/BOS-Hub",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central",
+                    "name": "Central",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Central",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW-Hub",
+                    "name": "DTW-Hub",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/DTW-Hub",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East",
+                    "name": "East",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/East",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida",
+                    "name": "Florida",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Florida",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Germany",
+                    "name": "Germany",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Germany",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Italy",
+                    "name": "Italy",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Italy",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX-Hub",
+                    "name": "LAX-Hub",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/LAX-Hub",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP-Hub",
+                    "name": "MSP-Hub",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/MSP-Hub",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northern_Eastern_Europe",
+                    "name": "Northern_Eastern_Europe",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Northern_Eastern_Europe",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NYC",
+                    "name": "NYC",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/NYC",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Pacific",
+                    "name": "Pacific",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Pacific",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA-Hub",
+                    "name": "SEA-Hub",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/SEA-Hub",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC-Hub",
+                    "name": "SLC-Hub",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/SLC-Hub",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West",
+                    "name": "West",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/West",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Western_Europe",
+                    "name": "Western_Europe",
+                    "category": "region",
+                    "path": "MDNA_ADT_YTD/OBS/Western_Europe",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ATL",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Mainline",
+                            "name": "Mainline",
+                            "category": "caterer",
+                            "path": "MDNA_ADT_YTD/OBS/ATL/Mainline",
+                            "tier": 3,
+                            "contribution": 7.49,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "IFK",
+                                    "name": "IFK",
+                                    "category": "kitchen",
+                                    "path": "MDNA_ADT_YTD/OBS/ATL/Mainline/IFK",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Newrest",
+                            "name": "Newrest",
+                            "category": "caterer",
+                            "path": "MDNA_ADT_YTD/OBS/ATL/Newrest",
+                            "tier": 3,
+                            "contribution": 87.3,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "DFK",
+                                    "name": "DFK",
+                                    "category": "kitchen",
+                                    "path": "MDNA_ADT_YTD/OBS/ATL/Newrest/DFK",
+                                    "tier": 4,
+                                    "contribution": 64.81,
+                                    "type": "Goal",
+                                    "children": []
+                                },
+                                {
+                                    "id": "MLC",
+                                    "name": "MLC",
+                                    "category": "kitchen",
+                                    "path": "MDNA_ADT_YTD/OBS/ATL/Newrest/MLC",
+                                    "tier": 4,
+                                    "contribution": 35.19,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "caterer",
+                            "path": "MDNA_ADT_YTD/OBS/ATL/Unifi",
+                            "tier": 3,
+                            "contribution": 5.21,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "DCC",
+                                    "name": "DCC",
+                                    "category": "kitchen",
+                                    "path": "MDNA_ADT_YTD/OBS/ATL/Unifi/DCC",
+                                    "tier": 4,
+                                    "contribution": 45.17,
+                                    "type": "Goal",
+                                    "children": []
+                                },
+                                {
+                                    "id": "MLC",
+                                    "name": "MLC",
+                                    "category": "kitchen",
+                                    "path": "MDNA_ADT_YTD/OBS/ATL/Unifi/MLC",
+                                    "tier": 4,
+                                    "contribution": 54.83,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "*NA",
+                    "name": "*NA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/*NA",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "*UN",
+                    "name": "*UN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/*UN",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "2LA",
+                    "name": "2LA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/2LA",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "513",
+                    "name": "513",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/513",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABE",
+                    "name": "ABE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ABE",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABQ",
+                    "name": "ABQ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ABQ",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABR",
+                    "name": "ABR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ABR",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABY",
+                    "name": "ABY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ABY",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACC",
+                    "name": "ACC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ACC",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACK",
+                    "name": "ACK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ACK",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AEX",
+                    "name": "AEX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AEX",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AGS",
+                    "name": "AGS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AGS",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AKL",
+                    "name": "AKL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AKL",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ALB",
+                    "name": "ALB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ALB",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS",
+                    "name": "AMS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AMS",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ANC",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANU",
+                    "name": "ANU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ANU",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "APN",
+                    "name": "APN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/APN",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ARN",
+                    "name": "ARN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ARN",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ASE",
+                    "name": "ASE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ASE",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATG",
+                    "name": "ATG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ATG",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATH",
+                    "name": "ATH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ATH",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATW",
+                    "name": "ATW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ATW",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATY",
+                    "name": "ATY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ATY",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUA",
+                    "name": "AUA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AUA",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AUS",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AVL",
+                    "name": "AVL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AVL",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AZO",
+                    "name": "AZO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/AZO",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BCN",
+                    "name": "BCN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BCN",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDA",
+                    "name": "BDA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BDA",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDL",
+                    "name": "BDL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BDL",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BER",
+                    "name": "BER",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BER",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGI",
+                    "name": "BGI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BGI",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGM",
+                    "name": "BGM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BGM",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGR",
+                    "name": "BGR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BGR",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BHM",
+                    "name": "BHM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BHM",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIL",
+                    "name": "BIL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BIL",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIS",
+                    "name": "BIS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BIS",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BJI",
+                    "name": "BJI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BJI",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BLANK",
+                    "name": "BLANK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BLANK",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BMI",
+                    "name": "BMI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BMI",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BNA",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNE",
+                    "name": "BNE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BNE",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOG",
+                    "name": "BOG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BOG",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOI",
+                    "name": "BOI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BOI",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BON",
+                    "name": "BON",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BON",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BOS",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BQK",
+                    "name": "BQK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BQK",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRD",
+                    "name": "BRD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BRD",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRU",
+                    "name": "BRU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BRU",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTM",
+                    "name": "BTM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BTM",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTR",
+                    "name": "BTR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BTR",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTV",
+                    "name": "BTV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BTV",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUF",
+                    "name": "BUF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BUF",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUR",
+                    "name": "BUR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BUR",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BWI",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZE",
+                    "name": "BZE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BZE",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZN",
+                    "name": "BZN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/BZN",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CAE",
+                    "name": "CAE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CAE",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CAK",
+                    "name": "CAK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CAK",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDC",
+                    "name": "CDC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CDC",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG",
+                    "name": "CDG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CDG",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHA",
+                    "name": "CHA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CHA",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHE",
+                    "name": "CHE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CHE",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHO",
+                    "name": "CHO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CHO",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHS",
+                    "name": "CHS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CHS",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CID",
+                    "name": "CID",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CID",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CIU",
+                    "name": "CIU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CIU",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLE",
+                    "name": "CLE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CLE",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CLT",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CMH",
+                    "name": "CMH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CMH",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CNY",
+                    "name": "CNY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CNY",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "COS",
+                    "name": "COS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/COS",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPH",
+                    "name": "CPH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CPH",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPR",
+                    "name": "CPR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CPR",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPT",
+                    "name": "CPT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CPT",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPT_Newrest",
+                    "name": "CPT_Newrest",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CPT_Newrest",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CRW",
+                    "name": "CRW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CRW",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CSG",
+                    "name": "CSG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CSG",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTG",
+                    "name": "CTG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CTG",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUN",
+                    "name": "CUN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CUN",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUR",
+                    "name": "CUR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CUR",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CVG",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CWA",
+                    "name": "CWA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CWA",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CZM",
+                    "name": "CZM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/CZM",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAB",
+                    "name": "DAB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DAB",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAL",
+                    "name": "DAL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DAL",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAY",
+                    "name": "DAY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DAY",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DCA",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DEN",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DFW",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DHN",
+                    "name": "DHN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DHN",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DLH",
+                    "name": "DLH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DLH",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSM",
+                    "name": "DSM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DSM",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSS",
+                    "name": "DSS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DSS",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DTW",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DUB",
+                    "name": "DUB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DUB",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DUS",
+                    "name": "DUS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/DUS",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EBB",
+                    "name": "EBB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EBB",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ECP",
+                    "name": "ECP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ECP",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EDI",
+                    "name": "EDI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EDI",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EGE",
+                    "name": "EGE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EGE",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EKO",
+                    "name": "EKO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EKO",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELH",
+                    "name": "ELH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ELH",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELM",
+                    "name": "ELM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ELM",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELP",
+                    "name": "ELP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ELP",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ESC",
+                    "name": "ESC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ESC",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EUG",
+                    "name": "EUG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EUG",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EVV",
+                    "name": "EVV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EVV",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EWR",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EYW",
+                    "name": "EYW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EYW",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EZE",
+                    "name": "EZE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/EZE",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAI",
+                    "name": "FAI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FAI",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAR",
+                    "name": "FAR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FAR",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAT",
+                    "name": "FAT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FAT",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAY",
+                    "name": "FAY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FAY",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCA",
+                    "name": "FCA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FCA",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCO",
+                    "name": "FCO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FCO",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FLL",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FRA",
+                    "name": "FRA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FRA",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FSD",
+                    "name": "FSD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FSD",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FWA",
+                    "name": "FWA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/FWA",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GCM",
+                    "name": "GCM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GCM",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GDL",
+                    "name": "GDL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GDL",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GEG",
+                    "name": "GEG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GEG",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GFK",
+                    "name": "GFK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GFK",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GGT",
+                    "name": "GGT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GGT",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GIG",
+                    "name": "GIG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GIG",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GJT",
+                    "name": "GJT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GJT",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GLA",
+                    "name": "GLA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GLA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GND",
+                    "name": "GND",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GND",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GNV",
+                    "name": "GNV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GNV",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GPT",
+                    "name": "GPT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GPT",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRB",
+                    "name": "GRB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GRB",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRR",
+                    "name": "GRR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GRR",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRU",
+                    "name": "GRU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GRU",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSO",
+                    "name": "GSO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GSO",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSP",
+                    "name": "GSP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GSP",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GTF",
+                    "name": "GTF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GTF",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GTR",
+                    "name": "GTR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GTR",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GUA",
+                    "name": "GUA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GUA",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GVA",
+                    "name": "GVA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/GVA",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HAV",
+                    "name": "HAV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HAV",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HDN",
+                    "name": "HDN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HDN",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HHH",
+                    "name": "HHH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HHH",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HIB",
+                    "name": "HIB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HIB",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HKG",
+                    "name": "HKG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HKG",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HLN",
+                    "name": "HLN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HLN",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HND",
+                    "name": "HND",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HND",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HNL",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HOU",
+                    "name": "HOU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HOU",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HPN",
+                    "name": "HPN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HPN",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HRL",
+                    "name": "HRL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HRL",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HSV",
+                    "name": "HSV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/HSV",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/IAD",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/IAH",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICN",
+                    "name": "ICN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ICN",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICT",
+                    "name": "ICT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ICT",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IDA",
+                    "name": "IDA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/IDA",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ILM",
+                    "name": "ILM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ILM",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IMT",
+                    "name": "IMT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/IMT",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/IND",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND_AirFayre",
+                    "name": "IND_AirFayre",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/IND_AirFayre",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "INL",
+                    "name": "INL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/INL",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ITH",
+                    "name": "ITH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ITH",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAC",
+                    "name": "JAC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/JAC",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAN",
+                    "name": "JAN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/JAN",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAX",
+                    "name": "JAX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/JAX",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK-DOCO",
+                    "name": "JFK-DOCO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/JFK-DOCO",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNB",
+                    "name": "JNB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/JNB",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNU",
+                    "name": "JNU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/JNU",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KEF",
+                    "name": "KEF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/KEF",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KIN",
+                    "name": "KIN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/KIN",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/KOA",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KTN",
+                    "name": "KTN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/KTN",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAN",
+                    "name": "LAN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LAN",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LAS",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LAX",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LEX",
+                    "name": "LEX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LEX",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LFT",
+                    "name": "LFT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LFT",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LGA",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGB",
+                    "name": "LGB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LGB",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGW",
+                    "name": "LGW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LGW",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LHR",
+                    "name": "LHR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LHR",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LIH",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIM",
+                    "name": "LIM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LIM",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIR",
+                    "name": "LIR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LIR",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIS",
+                    "name": "LIS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LIS",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIT",
+                    "name": "LIT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LIT",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LNK",
+                    "name": "LNK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LNK",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LOS",
+                    "name": "LOS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LOS",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LSE",
+                    "name": "LSE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LSE",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LWS",
+                    "name": "LWS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/LWS",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MAD",
+                    "name": "MAD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MAD",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MAF",
+                    "name": "MAF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MAF",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBJ",
+                    "name": "MBJ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MBJ",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBS",
+                    "name": "MBS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MBS",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCI",
+                    "name": "MCI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MCI",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MCO",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDT",
+                    "name": "MDT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MDT",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDW",
+                    "name": "MDW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MDW",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEL",
+                    "name": "MEL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MEL",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MEM",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEX",
+                    "name": "MEX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MEX",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFE",
+                    "name": "MFE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MFE",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFR",
+                    "name": "MFR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MFR",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MGM",
+                    "name": "MGM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MGM",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MHH",
+                    "name": "MHH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MHH",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MIA",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MKE",
+                    "name": "MKE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MKE",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLA",
+                    "name": "MLA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MLA",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLB",
+                    "name": "MLB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MLB",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLI",
+                    "name": "MLI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MLI",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLU",
+                    "name": "MLU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MLU",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOB",
+                    "name": "MOB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MOB",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOT",
+                    "name": "MOT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MOT",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MQT",
+                    "name": "MQT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MQT",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MS4",
+                    "name": "MS4",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MS4",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSN",
+                    "name": "MSN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MSN",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSO",
+                    "name": "MSO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MSO",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MSP",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MSY",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MTJ",
+                    "name": "MTJ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MTJ",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MTY",
+                    "name": "MTY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MTY",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MUC",
+                    "name": "MUC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MUC",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MVY",
+                    "name": "MVY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MVY",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MXP",
+                    "name": "MXP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MXP",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MYR",
+                    "name": "MYR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MYR",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MZT",
+                    "name": "MZT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/MZT",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAP",
+                    "name": "NAP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/NAP",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAS",
+                    "name": "NAS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/NAS",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NCE",
+                    "name": "NCE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/NCE",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NGO",
+                    "name": "NGO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/NGO",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAJ",
+                    "name": "OAJ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OAJ",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAK",
+                    "name": "OAK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OAK",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OGG",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OKC",
+                    "name": "OKC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OKC",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OLB",
+                    "name": "OLB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OLB",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OMA",
+                    "name": "OMA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OMA",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ONT",
+                    "name": "ONT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ONT",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OPO",
+                    "name": "OPO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/OPO",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ORD",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORF",
+                    "name": "ORF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ORF",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORH",
+                    "name": "ORH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ORH",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PBI",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PDX",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PHL",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PHX",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIH",
+                    "name": "PIH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PIH",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PIT",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PLN",
+                    "name": "PLN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PLN",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PLS",
+                    "name": "PLS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PLS",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PNS",
+                    "name": "PNS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PNS",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "POP",
+                    "name": "POP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/POP",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PPT",
+                    "name": "PPT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PPT",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PRG",
+                    "name": "PRG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PRG",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSC",
+                    "name": "PSC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PSC",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSP",
+                    "name": "PSP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PSP",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PTY",
+                    "name": "PTY",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PTY",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PUJ",
+                    "name": "PUJ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PUJ",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVD",
+                    "name": "PVD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PVD",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVG",
+                    "name": "PVG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PVG",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVR",
+                    "name": "PVR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PVR",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PWM",
+                    "name": "PWM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/PWM",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAK",
+                    "name": "RAK",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RAK",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAP",
+                    "name": "RAP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RAP",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDM",
+                    "name": "RDM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RDM",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RDU",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RHI",
+                    "name": "RHI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RHI",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RIC",
+                    "name": "RIC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RIC",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RNO",
+                    "name": "RNO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RNO",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROA",
+                    "name": "ROA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ROA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROC",
+                    "name": "ROC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ROC",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RST",
+                    "name": "RST",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RST",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RSW",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RTB",
+                    "name": "RTB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/RTB",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAL",
+                    "name": "SAL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SAL",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SAN",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAP",
+                    "name": "SAP",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SAP",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SAT",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAV",
+                    "name": "SAV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SAV",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBA",
+                    "name": "SBA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SBA",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBN",
+                    "name": "SBN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SBN",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SCE",
+                    "name": "SCE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SCE",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SCL",
+                    "name": "SCL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SCL",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDF",
+                    "name": "SDF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SDF",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDQ",
+                    "name": "SDQ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SDQ",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDQ-SkyCater",
+                    "name": "SDQ-SkyCater",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SDQ-SkyCater",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SEA",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SFO",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SGF",
+                    "name": "SGF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SGF",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SGU",
+                    "name": "SGU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SGU",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SHV",
+                    "name": "SHV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SHV",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SIT",
+                    "name": "SIT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SIT",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SJC",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJD",
+                    "name": "SJD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SJD",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJO",
+                    "name": "SJO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SJO",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJU",
+                    "name": "SJU",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SJU",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SKB",
+                    "name": "SKB",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SKB",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SLC",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SMF",
+                    "name": "SMF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SMF",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SNA",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNN",
+                    "name": "SNN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SNN",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SRQ",
+                    "name": "SRQ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SRQ",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STI",
+                    "name": "STI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/STI",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/STL",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STR",
+                    "name": "STR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/STR",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STT",
+                    "name": "STT",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/STT",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STX",
+                    "name": "STX",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/STX",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SUN",
+                    "name": "SUN",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SUN",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SVD",
+                    "name": "SVD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SVD",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SXM",
+                    "name": "SXM",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SXM",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYD",
+                    "name": "SYD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SYD",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYR",
+                    "name": "SYR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/SYR",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLH",
+                    "name": "TLH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TLH",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLV",
+                    "name": "TLV",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TLV",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TPA",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPE",
+                    "name": "TPE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TPE",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TQO",
+                    "name": "TQO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TQO",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TRI",
+                    "name": "TRI",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TRI",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUL",
+                    "name": "TUL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TUL",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUS",
+                    "name": "TUS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TUS",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TVC",
+                    "name": "TVC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TVC",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TWF",
+                    "name": "TWF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TWF",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TYO",
+                    "name": "TYO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TYO",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TYS",
+                    "name": "TYS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/TYS",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UIO",
+                    "name": "UIO",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/UIO",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UVF",
+                    "name": "UVF",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/UVF",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VCE",
+                    "name": "VCE",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/VCE",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VLD",
+                    "name": "VLD",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/VLD",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VPS",
+                    "name": "VPS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/VPS",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "WYS",
+                    "name": "WYS",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/WYS",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XNA",
+                    "name": "XNA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/XNA",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XWA",
+                    "name": "XWA",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/XWA",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YEG",
+                    "name": "YEG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YEG",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YHZ",
+                    "name": "YHZ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YHZ",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YUL",
+                    "name": "YUL",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YUL",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YVR",
+                    "name": "YVR",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YVR",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YWG",
+                    "name": "YWG",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YWG",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YYC",
+                    "name": "YYC",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YYC",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YYZ",
+                    "name": "YYZ",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/YYZ",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ZIH",
+                    "name": "ZIH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ZIH",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ZRH",
+                    "name": "ZRH",
+                    "category": "station",
+                    "path": "MDNA_ADT_YTD/OBS/ZRH",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_DCC",
+                    "name": "ATL_DCC",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/ATL_DCC",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_DFK",
+                    "name": "ATL_DFK",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/ATL_DFK",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_DOOR 77",
+                    "name": "ATL_DOOR 77",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/ATL_DOOR 77",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_IFK",
+                    "name": "ATL_IFK",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/ATL_IFK",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_MLC",
+                    "name": "ATL_MLC",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/ATL_MLC",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_MLC_Newrest",
+                    "name": "ATL_MLC_Newrest",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/ATL_MLC_Newrest",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AVP",
+                    "name": "AVP",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/AVP",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOM",
+                    "name": "BOM",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/BOM",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DBV",
+                    "name": "DBV",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/DBV",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FNT",
+                    "name": "FNT",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/FNT",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KIX",
+                    "name": "KIX",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/KIX",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MGA",
+                    "name": "MGA",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/MGA",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MNL",
+                    "name": "MNL",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/MNL",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NRT",
+                    "name": "NRT",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/NRT",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PAP",
+                    "name": "PAP",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/PAP",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PEK",
+                    "name": "PEK",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/PEK",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TGU",
+                    "name": "TGU",
+                    "category": "stn_kitchen",
+                    "path": "MDNA_ADT_YTD/OBS/TGU",
+                    "tier": 2,
+                    "contribution": 0.33999999999999997,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

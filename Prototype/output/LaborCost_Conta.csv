@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+LaborCost_Conta,LaborCost_Conta,,Root,0,1,Goal,Root,LaborCost_Conta,1,No
+LaborCost_Conta,RES,LaborCost_Conta,div,1,100.0,Goal,Root/div,LaborCost_Conta/RES,0,Yes

@@ -1,0 +1,21 @@
+{
+    "id": "03P_DLY_RATE",
+    "name": "03P_DLY_RATE",
+    "category": "Root",
+    "tier": 0,
+    "path": "03P_DLY_RATE",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "03P_DLY_RATE/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

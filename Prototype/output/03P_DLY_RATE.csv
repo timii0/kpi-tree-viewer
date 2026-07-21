@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+03P_DLY_RATE,03P_DLY_RATE,,Root,0,1,Goal,Root,03P_DLY_RATE,1,No
+03P_DLY_RATE,TOP,03P_DLY_RATE,div,1,100.0,Goal,Root/div,03P_DLY_RATE/TOP,0,Yes

@@ -1,0 +1,6 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+ADI_DC,ADI_DC,,Root,0,1,Goal,Root,ADI_DC,4,No
+ADI_DC,9E,ADI_DC,dc_carrier,1,21.67,Goal,Root/dc_carrier,ADI_DC/9E,0,Yes
+ADI_DC,OO,ADI_DC,dc_carrier,1,28.59,Goal,Root/dc_carrier,ADI_DC/OO,0,Yes
+ADI_DC,YX,ADI_DC,dc_carrier,1,26.55,Goal,Root/dc_carrier,ADI_DC/YX,0,Yes
+ADI_DC,DC,ADI_DC,div,1,23.19,Goal,Root/div,ADI_DC/DC,0,Yes

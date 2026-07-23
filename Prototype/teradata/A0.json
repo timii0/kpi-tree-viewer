@@ -1,0 +1,92 @@
+{
+    "id": "A0",
+    "name": "A0",
+    "category": "Root",
+    "tier": 0,
+    "path": "A0",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "9E",
+            "name": "9E",
+            "category": "dc_carrier",
+            "path": "A0/9E",
+            "tier": 1,
+            "contribution": 4.53,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "OO",
+            "name": "OO",
+            "category": "dc_carrier",
+            "path": "A0/OO",
+            "tier": 1,
+            "contribution": 34.39,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "YX",
+            "name": "YX",
+            "category": "dc_carrier",
+            "path": "A0/YX",
+            "tier": 1,
+            "contribution": 20.01,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "WB",
+            "name": "WB",
+            "category": "body_type",
+            "path": "A0/WB",
+            "tier": 1,
+            "contribution": 8.75,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "I",
+                    "name": "I",
+                    "category": "dom_int",
+                    "path": "A0/WB/I",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "DC",
+            "name": "DC",
+            "category": "carrier",
+            "path": "A0/DC",
+            "tier": 1,
+            "contribution": 12.14,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ML",
+            "name": "ML",
+            "category": "carrier",
+            "path": "A0/ML",
+            "tier": 1,
+            "contribution": 16.77,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "A0/DL",
+            "tier": 1,
+            "contribution": 3.41,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

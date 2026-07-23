@@ -1,19 +1,24 @@
 # Imports
 import json
 from pathlib import Path
+from csvtojson import build_stats_rows
 import streamlit as st
 import networkx as nx
 import plotly.graph_objects as go
+import pandas as pd
 
 CATEGORIES = [
-    "Div",
-    "Director",
-    "Region",
-    "Station",
-    "BU",
-    "Carrier",
-    "Body Type",
-    "System"
+    "div",
+    "director",
+    "region",
+    "station",
+    "bu",
+    "carrier",
+    "body type",
+    "system",
+    "direction",
+    "dom_int",
+    "dc_carrier"
 ]
 
 TYPES = [
@@ -126,8 +131,6 @@ def delete_node(parent, path):
 
     return False
 
-
-
 def count_nodes(node):
 
     return 1 + sum(
@@ -211,11 +214,9 @@ new_type = st.sidebar.selectbox(
 )
 
 if st.sidebar.button("Save Changes"):
-
     selected_node["name"] = new_name
     selected_node["category"] = new_category
     selected_node["type"] = new_type
-
     st.success("Node updated")
 
 # =====================================================
@@ -532,7 +533,30 @@ with graph_tab:
     )
 
 with statistics_tab:
-    st.write("Statistics")
+
+    st.subheader("Hierarchy Drill Down")
+
+    stats_rows = build_stats_rows(
+        root_data
+    )
+
+    stats_df = pd.DataFrame(
+        stats_rows
+    )
+
+    stats_df["Goal"] = (
+        stats_df["Goal"] * 100
+    ).round(2)
+
+    stats_df["Proportion"] = (
+        stats_df["Proportion"] * 100
+    ).round(1)
+
+    st.dataframe(
+        stats_df,
+        use_container_width=True,
+        hide_index=True
+    )
 
 left, right = st.columns([2,1])
 

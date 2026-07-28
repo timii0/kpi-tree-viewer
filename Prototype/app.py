@@ -6,19 +6,24 @@ import streamlit as st
 import networkx as nx
 import plotly.graph_objects as go
 import pandas as pd
+from streamlit_plotly_events import plotly_events
+from kpi_statistics import df
 
 CATEGORIES = [
     "div",
     "director",
     "region",
-    "station",
+    "Station",
     "bu",
-    "carrier",
+    "Carrier",
     "body type",
     "system",
     "direction",
     "dom_int",
-    "dc_carrier"
+    "DC_Carrier",
+    "ML_Station",
+    "unknown",
+    "Enterprise"
 ]
 
 TYPES = [
@@ -79,7 +84,6 @@ with col1:
 
 with col2:
     st.title("KPI Tree Viewer")
-
 
 
 OUTPUT_DIR = Path("output")
@@ -162,162 +166,49 @@ def collect_paths(node, paths=None):
 
     return paths
 
+def update_paths(node, parent_path=""):
+
+    if parent_path:
+
+        node["path"] = (
+            f"{parent_path}/{node['name']}"
+        )
+
+    else:
+
+        node["path"] = node["name"]
+
+    for child in node.get("children", []):
+
+        update_paths(
+            child,
+            node["path"]
+        )
+
 node_paths = collect_paths(root_data)
 
-selected_path = st.sidebar.selectbox(
-    "Select Node",
-    node_paths
-)
+
+if "selected_path" not in st.session_state:
+    st.session_state.selected_path = (
+        root_data.get("path")
+        or root_data["name"]
+        )
+
+selected_path = st.session_state.selected_path
+
+if "unsaved_changes" not in st.session_state:
+    st.session_state.unsaved_changes = False
+
 
 selected_node = find_node(
     root_data,
     selected_path
 )
 
-# =====================================================
-# Edit Node
-# =====================================================
-
-st.sidebar.header("Edit Node")
-
-new_name = st.sidebar.text_input(
-    "Name",
-    value=selected_node["name"]
-)
-
-current_category = selected_node.get(
-    "category",
-    "Div"
-)
-
-new_category = st.sidebar.selectbox(
-    "Category",
-    CATEGORIES,
-    index=(
-        CATEGORIES.index(current_category)
-        if current_category in CATEGORIES
-        else 0
-    )
-)
-
-new_type = st.sidebar.selectbox(
-    "Type",
-    TYPES,
-    index=(
-        TYPES.index(
-            selected_node.get(
-                "type",
-                "Goal"
-            )
-        )
-    )
-)
-
-if st.sidebar.button("Save Changes"):
-    selected_node["name"] = new_name
-    selected_node["category"] = new_category
-    selected_node["type"] = new_type
-    st.success("Node updated")
-
-# =====================================================
-# Add Child
-# =====================================================
-
-st.sidebar.header("Add Child")
-
-child_name = st.sidebar.text_input(
-    "Child Name"
-)
-
-child_category = st.sidebar.selectbox(
-    "Child Category",
-    CATEGORIES,
-    key="child_category"
-)
-
-child_type = st.sidebar.selectbox(
-    "Child Type",
-    TYPES,
-    key="child_type"
-)
-
-if st.sidebar.button("Add Child"):
-
-    if not child_name.strip():
-
-        st.error(
-            "Child name is required"
-        )
-
-    else:
-
-        new_child = {
-            "id": child_name,
-            "name": child_name,
-            "path": (
-                f"{selected_node['path']}"
-                f"/{child_name}"
-            ),
-            "category": child_category,
-            "type": child_type,
-            "score": 0,
-            "contribution": 0,
-            "children": []
-        }
-
-        selected_node.setdefault(
-            "children",
-            []
-        ).append(
-            new_child
-        )
-
-        st.success(
-            "Child added"
-        )
-
-# =====================================================
-# Delete Node
-# ====================================================
-
-if selected_node["path"] != root_data["path"]:
-
-    if st.sidebar.button(
-        "Delete Node",
-        type="primary"
-    ):
-
-        delete_node(
-            root_data,
-            selected_node["path"]
-        )
-
-        st.success(
-            "Node deleted"
-        )
+if selected_node is None:
+    selected_node = root_data
 
 col1, col2 = st.columns(2)
-
-if st.sidebar.button(
-    "Save Tree"
-):
-
-    with open(
-        json_file,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            root_data,
-            f,
-            indent=4,
-            ensure_ascii=False
-        )
-
-    st.success(
-        "Tree saved"
-    )
 
 col1.metric(
     "Nodes",
@@ -333,9 +224,29 @@ def display_tree(node):
 
     children = node.get("children", [])
 
+    is_selected = (
+        node["path"]
+        == st.session_state.selected_path
+    )
+
+    label = (
+        f"✅ {node['name']}"
+        if is_selected
+        else node["name"]
+    )
+
     if children:
 
-        with st.expander(node["name"]):
+        with st.expander(label):
+
+            if st.button(
+                f"Select {node['name']}",
+                key=f"select_{node['path']}"
+            ):
+                st.session_state.selected_path = (
+                    node["path"]
+                )
+                st.rerun()
 
             st.write(
                 f"Category: {node.get('category','')}"
@@ -346,9 +257,22 @@ def display_tree(node):
 
     else:
 
-        st.write(
-            f"• {node['name']}"
+        label = (
+            f"✅ {node['name']}"
+            if is_selected
+            else node["name"]
         )
+
+        if st.button(
+            label,
+            key=f"leaf_{node['path']}"
+        ):
+            st.session_state.selected_path = (
+                node["path"]
+            )
+            st.rerun()
+
+
 
 def build_graph(node, graph):
 
@@ -376,8 +300,372 @@ tree_tab, graph_tab, statistics_tab = st.tabs(
 )
 
 with tree_tab:
-    display_tree(root_data)
 
+    tree_col, detail_col = st.columns(
+        [2, 1]
+    )
+
+    with tree_col:
+
+        display_tree(root_data)
+
+    with detail_col:
+        if st.session_state.unsaved_changes:
+            st.warning(
+                "⚠ You have unsaved changes."
+            )
+
+        if "edit_mode" not in st.session_state:
+            st.session_state.edit_mode = None
+        
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            if st.button("Edit", use_container_width=True):
+                st.session_state.edit_mode = "edit"
+
+        with col2:
+            if st.button("Add Child", use_container_width=True):
+                st.session_state.edit_mode = "add"
+
+        with col3:
+            if st.button("Delete", use_container_width=True):
+                st.session_state.edit_mode = "delete"
+
+        st.subheader("Properties")
+
+        st.markdown(
+            f"### {selected_node['name']}"
+        )
+
+        st.caption(
+            selected_node.get(
+                "category",
+                ""
+            )
+        )
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.metric(
+                "Baseline",
+                f"{selected_node['baseline']:.2%}"
+            )
+
+        with col2:
+            st.metric(
+                "Goal",
+                f"{selected_node['goal']:.2%}"
+            )
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.metric(
+                "Num",
+                f"{selected_node['num']:,}"
+            )
+
+        with col2:
+            st.metric(
+                "Den",
+                f"{selected_node['den']:,}"
+            )
+
+        st.metric(
+            "Contribution",
+            f"{selected_node['contribution']:.2%}"
+        )
+
+        new_name = st.text_input(
+            "Name",
+            value=selected_node["name"]
+        )
+
+        new_category = st.selectbox(
+            "Category",
+            CATEGORIES,
+            index=(
+                CATEGORIES.index(selected_node.get("category", "unknown")
+            )
+        )
+        )
+
+        new_type = st.selectbox(
+            "Type",
+            TYPES,
+            index=(
+                TYPES.index(
+                    selected_node.get(
+                        "type",
+                        "Goal"
+                    )
+                )
+            )
+        )
+
+        if st.session_state.get("edit_mode") == "edit":
+
+            st.markdown("---")
+            st.subheader("Edit Node")
+
+            edit_name = st.text_input(
+                "Name",
+                value=selected_node["name"],
+                key="edit_name"
+            )
+
+            current_category = selected_node.get(
+                "category",
+                CATEGORIES[0]
+            )
+
+            edit_category = st.selectbox(
+                "Category",
+                CATEGORIES,
+                index=(
+                    CATEGORIES.index(current_category)
+                    if current_category in CATEGORIES
+                    else 0
+                ),
+                key="edit_category"
+            )
+
+            edit_type = st.selectbox(
+                "Type",
+                TYPES,
+                index=(
+                    TYPES.index(
+                        selected_node.get(
+                            "type",
+                            "Goal"
+                        )
+                    )
+                ),
+                key="edit_type"
+            )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+
+                if st.button(
+                    "Save Changes",
+                    key="save_edit"
+                ):
+
+                    old_path = selected_node["path"]
+                    selected_node["name"] = edit_name
+                    selected_node["category"] = edit_category
+                    selected_node["type"] = edit_type
+
+                    update_paths(root_data)
+
+                    st.session_state.selected_path = (
+                        selected_node["path"]
+                    )
+
+                    st.session_state.unsaved_changes = True
+
+                    st.success("Node updated")
+
+                    st.session_state.edit_mode = None
+
+                    st.rerun()
+
+            with col2:
+
+                if st.button(
+                    "Cancel",
+                    key="cancel_edit"
+                ):
+
+                    st.session_state.edit_mode = None
+
+                    st.rerun()
+
+        if st.session_state.get("edit_mode") == "add":
+
+            st.markdown("---")
+            st.subheader("Add Child")
+
+            child_name = st.text_input(
+                "Child Name",
+                key="add_child_name"
+            )
+
+            child_category = st.selectbox(
+                "Category",
+                CATEGORIES,
+                key="add_child_category"
+            )
+
+            child_type = st.selectbox(
+                "Type",
+                TYPES,
+                key="add_child_type"
+            )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+
+                if st.button(
+                    "Add Child",
+                    key="confirm_add_child"
+                ):
+
+                    if not child_name.strip():
+
+                        st.error(
+                            "Child name is required"
+                        )
+
+                    else:
+
+                        new_child = {
+                            "id": child_name,
+                            "name": child_name,
+                            "path": (
+                                f"{selected_node['path']}"
+                                f"/{child_name}"
+                            ),
+                            "category": child_category,
+                            "type": child_type,
+
+                            "tier": selected_node.get(
+                                "tier",
+                                0
+                            ) + 1,
+
+                            "baseline": 0,
+                            "goal": 0,
+                            "contribution": 0,
+
+                            "num": 0,
+                            "den": 0,
+
+                            "children": []
+                        }
+
+                        selected_node.setdefault(
+                            "children",
+                            []
+                        ).append(
+                            new_child
+                        )
+
+                        update_paths(root_data)
+                        st.session_state.unsaved_changes = True
+
+                        st.success(
+                            f"Added {child_name}"
+                        )
+
+                        st.session_state.edit_mode = None
+
+                        st.rerun()
+
+            with col2:
+
+                if st.button(
+                    "Cancel",
+                    key="cancel_add_child"
+                ):
+
+                    st.session_state.edit_mode = None
+
+                    st.rerun()
+
+        if st.session_state.get("edit_mode") == "delete":
+            st.markdown("---")
+            st.subheader("Delete Node")
+
+            st.warning(
+                f"Are you sure you want to delete "
+                f"'{selected_node['name']}'?"
+            )
+
+            st.write(
+                "This action cannot be undone."
+            )
+
+            # Prevent deleting root node
+            if selected_node["path"] == root_data["path"]:
+
+                st.error(
+                    "The root node cannot be deleted."
+                )
+
+            else:
+
+                col1, col2 = st.columns(2)
+
+                with col1:
+
+                    if st.button(
+                        "Confirm Delete",
+                        key="confirm_delete",
+                        type="primary"
+                    ):
+
+                        delete_node(
+                            root_data,
+                            selected_node["path"]
+                        )
+
+                        update_paths(root_data)
+                        st.session_state.unsaved_changes = True
+
+                        st.success(
+                            f"{selected_node['name']} deleted"
+                        )
+
+                        st.session_state.selected_path = (
+                            root_data["path"]
+                        )
+
+                        st.session_state.edit_mode = None
+
+                        st.rerun()
+
+                with col2:
+
+                    if st.button(
+                        "Cancel",
+                        key="cancel_delete"
+                    ):
+
+                        st.session_state.edit_mode = None
+
+                        st.rerun()
+
+        st.markdown("---")
+
+        if st.button(
+            "💾 Save Tree",
+            use_container_width=True
+        ):
+
+            with open(
+                json_file,
+                "w",
+                encoding="utf-8"
+            ) as f:
+
+                json.dump(
+                    root_data,
+                    f,
+                    indent=4,
+                    ensure_ascii=False
+                )
+
+            st.session_state.unsaved_changes = False
+
+            st.success(
+                "Tree saved successfully"
+            )
 with graph_tab:
 
     G = nx.DiGraph()
@@ -534,29 +822,25 @@ with graph_tab:
 
 with statistics_tab:
 
-    st.subheader("Hierarchy Drill Down")
-
-    stats_rows = build_stats_rows(
-        root_data
-    )
-
-    stats_df = pd.DataFrame(
-        stats_rows
-    )
-
-    stats_df["Goal"] = (
-        stats_df["Goal"] * 100
-    ).round(2)
-
-    stats_df["Proportion"] = (
-        stats_df["Proportion"] * 100
-    ).round(1)
+    st.subheader("Statistics")
 
     st.dataframe(
-        stats_df,
+        df,
         use_container_width=True,
         hide_index=True
     )
+
+    # csv_file = Path("assets") / f"{selected_kpi}.csv"
+
+    # stats_df = pd.read_csv(
+    #     csv_file
+    # )
+
+    # st.dataframe(
+    #     stats_df,
+    #     use_container_width=True,
+    #     hide_index=True
+    # )
 
 left, right = st.columns([2,1])
 

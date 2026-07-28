@@ -81,7 +81,6 @@ with td_connect() as conn:
             kpi_code
         FROM zods_kpi.ref_kpi_goals
         WHERE goal_year = 2026
-        --AND kpi_code = 'MSI'
         ORDER BY goal_owner, grp_comb;
 
         """,

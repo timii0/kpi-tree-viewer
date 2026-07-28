@@ -40,6 +40,8 @@ def find_or_create(parent, name, category):
     return node
 
 
+
+
 def update_tree(node, tier=0, parent_path=""):
     node["tier"] = tier
     if parent_path:
@@ -93,6 +95,37 @@ root = {
 
     "children": []
 }
+def normalize_grp_comb(grp_comb):
+
+    category_path, value_path = grp_comb.split(";")
+
+    cats = category_path.split("/")
+    vals = value_path.split("/")
+
+    # Remove SYS/DIV because we already start at DL/ACS
+
+    if (
+        len(cats) >= 2
+        and cats[0].lower() == "sys"
+        and cats[1].lower() == "div"
+    ):
+        cats = cats[2:]
+        vals = vals[2:]
+
+    return f"{'/'.join(cats)};{'/'.join(vals)}"
+
+
+dl_node = find_or_create(
+    root,
+    "DL",
+    "sys"
+)
+
+acs_node = find_or_create(
+    dl_node,
+    "ACS",
+    "div"
+)
 
 # ==========================
 # BUILD TREE
@@ -100,7 +133,9 @@ root = {
 
 for _, row in df.iterrows():
 
-    hierarchy = row["Recommended Grp_Comb"]
+    hierarchy  = normalize_grp_comb(
+    row["Grp_Comb"]
+)
 
     if pd.isna(hierarchy):
         continue
@@ -110,7 +145,7 @@ for _, row in df.iterrows():
     categories = category_path.split("/")
     values = value_path.split("/")
 
-    current = root
+    current = acs_node
 
     for category, value in zip(
         categories,
@@ -132,15 +167,8 @@ for _, row in df.iterrows():
         row["Tier"]
     )
 
-    current["num"] = (
-        0 if pd.isna(row["Num"])
-        else int(row["Num"])
-    )
-
-    current["den"] = (
-        0 if pd.isna(row["Den"])
-        else int(row["Den"])
-    )
+    current["num"] += int(row["Num"])
+    current["den"] += int(row["Den"])
 
     current["baseline"] = float(
         str(row["A0"])
@@ -152,7 +180,60 @@ for _, row in df.iterrows():
         .replace("%", "")
     )
 
+def rollup(node):
+
+    children = node.get("children", [])
+
+    for child in children:
+        rollup(child)
+
+    if children:
+
+        node["num"] = sum(
+            child["num"]
+            for child in children
+        )
+
+        node["den"] = sum(
+            child["den"]
+            for child in children
+        )
+
+    node["goal"] = (
+        node["num"] / node["den"]
+        if node["den"] > 0
+        else 0
+    )
+
+def calculate_contributions(
+    node,
+    parent_den=None
+):
+
+    node["contribution"] = (
+        1.0
+        if parent_den is None
+        else (
+            node["den"] / parent_den
+            if parent_den > 0
+            else 0
+        )
+    )
+
+    for child in node.get("children", []):
+
+        calculate_contributions(
+            child,
+            node["den"]
+        )
+
+
+rollup(root)
+calculate_contributions(root)
 update_tree(root)
+
+
+
 
 # ==========================
 # SAVE JSON

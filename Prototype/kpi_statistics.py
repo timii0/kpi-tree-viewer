@@ -18,12 +18,7 @@ def td_connect():
     return teradatasql.connect(host=TD_HOST, user=TD_USER, password=TD_PASS, logmech=TD_LOGMECH)
 
 
-
-
-with td_connect() as conn:
-
-    df = pd.read_sql(
-        """
+query = """
         select
             Yr_Nb,
             Mo_Nb,
@@ -44,8 +39,10 @@ with td_connect() as conn:
             and DOT_OA_Sub_Op_Ct = 1
             and flt_orig_dt between '2026-06-29' and '2026-06-30'
 
-        """,
-        conn
-    )
+        """
+
+with td_connect() as conn:
+    df = pd.read_sql(query, conn)
+    df.to_parquet("teradata_cache.parquet")
 
 print(df.head())

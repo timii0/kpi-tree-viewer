@@ -13,15 +13,15 @@ CATEGORIES = [
     "region",
     "Station",
     "bu",
-    "Carrier",
+    "carrier",
     "body type",
     "system",
     "direction",
     "dom_int",
-    "DC_Carrier",
-    "ML_Station",
+    "dc_carrier",
+    "ml_station",
+    "enterprise"
     "unknown",
-    "Enterprise"
 ]
 
 TYPES = [
@@ -30,59 +30,10 @@ TYPES = [
 ]
 
 st.set_page_config(
-    page_title="KPI Tree Viewer",
+    page_title="KPI Hierarchy",
     page_icon="assets/logo.png",
     layout="wide"
 )
-
-# colors = {
-#     "sidebar" : "#C01933",
-#     "bg": "#003366",
-#     "extras" : "#991933"
-# }
-
-##Functional CSS
-# st.markdown("""
-# <style>
-
-# /* Sidebar */
-# [data-testid="stSidebar"] {
-#     background-color: #003366;
-# }
-            
-
-
-# /* Expander headers */
-# .streamlit-expanderHeader {
-#     background-color: #CC0000;
-#     color: white;
-#     font-size: 1.1rem;
-#     font-weight: 600;
-# }
-
-# /* Expander body */
-# div[data-testid="stExpander"] {
-#     background-color: #003366;
-#     font-size: 22px;
-# }
-
-# /* Selectbox */
-# div[data-baseweb="select"] > div {
-#     background-color: #003366;
-#     color: white;
-# }
-
-# # /* Main page */
-# # .stApp {
-# #     background-color: #003366;
-            
-
-# # }
-
-# </style>
-# """, unsafe_allow_html=True)
-
-##Presentation CSS
 
 st.markdown("""
 <style>
@@ -170,7 +121,6 @@ button[data-baseweb="tab"] {
 
 /* ===== Containers ===== */
 
-
 /* Reduce vertical spacing between elements */
 div[data-testid="stVerticalBlock"] {
     gap: 0.5rem;
@@ -194,7 +144,7 @@ div[data-baseweb="select"] > div {
 div[data-testid="stExpander"] {
     background-color: #003366;
 }
-            
+
 /* Tree node buttons */
 .stButton button {
     font-size: 1.5rem;
@@ -211,27 +161,84 @@ summary {
 """, unsafe_allow_html=True)
 
 
-col1, col2 = st.columns([1, 12])
+# ---------------------------------------------------------------------------
+# Cached data loading
+# ---------------------------------------------------------------------------
+
+@st.cache_data
+def load_tree(json_path):
+    """Load and cache tree JSON from disk."""
+    with open(json_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@st.cache_data
+def load_parquet(parquet_path):
+    """Load and cache parquet data."""
+    return pd.read_parquet(parquet_path)
+
+
+@st.cache_data
+def load_csv(csv_path):
+    """Load and cache CSV data."""
+    return pd.read_csv(csv_path)
+
+
+# ---------------------------------------------------------------------------
+# Pre-computed index: flat dict of path -> node reference
+# ---------------------------------------------------------------------------
+
+def build_path_index(node, index=None):
+    """Build a flat dict mapping path -> node for O(1) lookups."""
+    if index is None:
+        index = {}
+
+    index[node["path"]] = node
+
+    for child in node.get("children", []):
+        build_path_index(child, index)
+
+    return index
+
+
+def count_nodes_cached(node):
+    """Count total nodes (called once, stored in session)."""
+    return 1 + sum(
+        count_nodes_cached(child)
+        for child in node.get("children", [])
+    )
+
+
+# ---------------------------------------------------------------------------
+# Header
+# ---------------------------------------------------------------------------
+
+col1, col2 = st.columns([1, 14])
 
 with col1:
-    st.image("assets/logo.png", width=200)
+    st.image("assets/logo.png", width=160)
 
 with col2:
     st.markdown(
         """
         <h1 style="
-            font-size: 4.5rem;
-            font-weight: 800;
+            font-size: 40px;
+            font-weight: 600;
             margin-top: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
             color: white;
+            white-space: nowrap;
         ">
-            KPI Tree Viewer
+            KPI Hierarchy
         </h1>
         """,
         unsafe_allow_html=True
     )
 
+
+# ---------------------------------------------------------------------------
+# Sidebar
+# ---------------------------------------------------------------------------
 
 OUTPUT_DIR = Path("output")
 
@@ -252,183 +259,142 @@ max_leaf_nodes = st.sidebar.slider(
     10
 )
 
+MAX_TREE_DEPTH = st.sidebar.slider(
+    "Tree Display Depth",
+    1,
+    8,
+    3
+)
+
 json_file = OUTPUT_DIR / f"{selected_kpi}.json"
 
+# Load tree with caching
 if ("tree_data" not in st.session_state or st.session_state.get("loaded_kpi") != selected_kpi):
-    with open(json_file, "r", encoding="utf-8") as f:
-        st.session_state.tree_data = json.load(f)
-
+    st.session_state.tree_data = load_tree(str(json_file))
     st.session_state.loaded_kpi = selected_kpi
+    # Invalidate index on reload
+    st.session_state.pop("path_index", None)
+    st.session_state.pop("node_count", None)
 
 root_data = st.session_state.tree_data
 
+# Build path index (once per tree load)
+if "path_index" not in st.session_state:
+    st.session_state.path_index = build_path_index(root_data)
+
+if "node_count" not in st.session_state:
+    st.session_state.node_count = count_nodes_cached(root_data)
+
+path_index = st.session_state.path_index
+
+
+# ---------------------------------------------------------------------------
+# Utility functions (use path_index for O(1) lookup)
+# ---------------------------------------------------------------------------
+
 def find_node(node, path):
+    """O(1) node lookup via pre-built index."""
+    return path_index.get(path)
 
-    if node["path"] == path:
-        return node
-
-    for child in node.get("children", []):
-
-        result = find_node(
-            child,
-            path
-        )
-
-        if result:
-            return result
-
-    return None
 
 def delete_node(parent, path):
-
     children = parent.get("children", [])
 
     for i, child in enumerate(children):
-
         if child["path"] == path:
             del children[i]
             return True
-
         if delete_node(child, path):
             return True
 
     return False
 
-def count_nodes(node):
-
-    return 1 + sum(
-        count_nodes(child)
-        for child in node.get("children", [])
-    )
-
-def count_leafs(node):
-
-    children = node.get("children", [])
-
-    if not children:
-        return 1
-
-    return sum(
-        count_leafs(child)
-        for child in children
-    )
-
-def collect_paths(node, paths=None):
-
-    if paths is None:
-        paths = []
-
-    paths.append(node["path"])
-
-    for child in node.get("children", []):
-        collect_paths(child, paths)
-
-    return paths
 
 def update_paths(node, parent_path=""):
-
     if parent_path:
-
-        node["path"] = (
-            f"{parent_path}/{node['name']}"
-        )
-
+        node["path"] = f"{parent_path}/{node['name']}"
     else:
-
         node["path"] = node["name"]
 
     for child in node.get("children", []):
+        update_paths(child, node["path"])
 
-        update_paths(
-            child,
-            node["path"]
-        )
+
+def rebuild_index():
+    """Rebuild path index after tree mutations."""
+    st.session_state.path_index = build_path_index(root_data)
+    st.session_state.node_count = count_nodes_cached(root_data)
+
 
 def validate_contributions(node):
-
     issues = []
-
-    children = node.get(
-        "children",
-        []
-    )
+    children = node.get("children", [])
 
     if children:
-
         total = sum(
-            child.get(
-                "contribution",
-                0
-            )
+            child.get("contribution", 0)
             for child in children
         )
-
         if abs(total - 1.0) > 0.001:
-
             issues.append({
                 "node": node["name"],
                 "total": total
             })
 
     for child in children:
-
-        issues.extend(
-            validate_contributions(
-                child
-            )
-        )
+        issues.extend(validate_contributions(child))
 
     return issues
 
-node_paths = collect_paths(root_data)
 
+# ---------------------------------------------------------------------------
+# State initialization
+# ---------------------------------------------------------------------------
 
 if "selected_path" not in st.session_state:
     st.session_state.selected_path = (
-        root_data.get("path")
-        or root_data["name"]
-        )
+        root_data.get("path") or root_data["name"]
+    )
 
 selected_path = st.session_state.selected_path
 
 if "unsaved_changes" not in st.session_state:
     st.session_state.unsaved_changes = False
 
-
-selected_node = find_node(
-    root_data,
-    selected_path
-)
+selected_node = find_node(root_data, selected_path)
 
 if selected_node is None:
     selected_node = root_data
 
 col1, col2 = st.columns(2)
 
-col1.metric(
-    "KPI",
-    selected_kpi
-)
+col1.metric("KPI", selected_kpi)
+col2.metric("Nodes", st.session_state.node_count)
 
-col2.metric(
-    "Nodes",
-    count_nodes(root_data)
-)
 
-def display_tree(node):
+# ---------------------------------------------------------------------------
+# Lazy tree display — only renders nodes up to MAX_TREE_DEPTH from root,
+# and always expands the path to the selected node.
+# ---------------------------------------------------------------------------
+
+def get_ancestor_paths(path):
+    """Get all ancestor paths for a given node path."""
+    parts = path.split("/")
+    ancestors = set()
+    for i in range(1, len(parts) + 1):
+        ancestors.add("/".join(parts[:i]))
+    return ancestors
+
+
+def display_tree(node, depth=0, ancestor_paths=None):
+    """Render tree lazily — only expand to MAX_TREE_DEPTH or along selection path."""
+    if ancestor_paths is None:
+        ancestor_paths = get_ancestor_paths(st.session_state.selected_path)
 
     children = node.get("children", [])
 
-    is_selected = (
-        node["path"]
-        == st.session_state.selected_path
-    )
-
-    is_parent_of_selected = (
-        st.session_state.selected_path.startswith(
-            node["path"]
-        )
-    )
+    is_selected = (node["path"] == st.session_state.selected_path)
+    is_ancestor = (node["path"] in ancestor_paths)
 
     label = (
         f"✅ {node['name']}"
@@ -437,38 +403,35 @@ def display_tree(node):
     )
 
     if children:
+        # Only expand if within depth limit OR on the path to selected node
+        should_expand = is_ancestor
+        should_render_children = (depth < MAX_TREE_DEPTH) or is_ancestor
 
-        with st.expander(
-            label,
-            expanded=is_parent_of_selected
-        ):
-
+        with st.expander(label, expanded=should_expand):
             if st.button(
                 f"Select {node['name']}",
                 key=f"select_{node['path']}"
             ):
-                st.session_state.selected_path = (
-                    node["path"]
-                )
+                st.session_state.selected_path = node["path"]
                 st.rerun()
 
-            for child in children:
-                display_tree(child)
-
+            if should_render_children:
+                for child in children:
+                    display_tree(child, depth + 1, ancestor_paths)
+            else:
+                st.caption(f"({len(children)} children hidden — increase Tree Display Depth)")
     else:
-
-        if st.button(
-            label,
-            key=f"leaf_{node['path']}"
-        ):
-            st.session_state.selected_path = (
-                node["path"]
-            )
+        if st.button(label, key=f"leaf_{node['path']}"):
+            st.session_state.selected_path = node["path"]
             st.rerun()
 
 
-def build_graph(node, graph):
+# ---------------------------------------------------------------------------
+# Graph building (only when needed)
+# ---------------------------------------------------------------------------
 
+def build_graph(node, graph, depth=0, max_depth=4):
+    """Build graph with depth limit to avoid rendering thousands of nodes."""
     graph.add_node(
         node["path"],
         name=node["name"],
@@ -476,43 +439,37 @@ def build_graph(node, graph):
         type=node.get("type", "")
     )
 
-    children = node.get("children", [])
+    if depth >= max_depth:
+        return
 
-    children = children[:max_leaf_nodes]
+    children = node.get("children", [])[:max_leaf_nodes]
 
     for child in children:
+        graph.add_edge(node["path"], child["path"])
+        build_graph(child, graph, depth + 1, max_depth)
 
-        graph.add_edge(
-            node["path"],
-            child["path"]
-        )
 
-        build_graph(
-            child,
-            graph
-        )
+# ---------------------------------------------------------------------------
+# Tabs
+# ---------------------------------------------------------------------------
 
 tree_tab, graph_tab, statistics_tab = st.tabs(
     ["Tree", "Graph", "Statistics"]
 )
 
 with tree_tab:
-    tree_col, detail_col = st.columns(
-        [1, 1],  
-    )
+    tree_col, detail_col = st.columns([1, 1])
 
     with tree_col:
         display_tree(root_data)
 
     with detail_col:
         if st.session_state.unsaved_changes:
-            st.warning(
-                "⚠ You have unsaved changes."
-            )
+            st.warning("⚠ You have unsaved changes.")
 
         if "edit_mode" not in st.session_state:
             st.session_state.edit_mode = None
-        
+
         col1, col2, col3 = st.columns(3)
 
         with col1:
@@ -529,428 +486,240 @@ with tree_tab:
 
         st.subheader("Properties")
 
-        issues = validate_contributions(
-            root_data
-        )
+        issues = validate_contributions(root_data)
 
         if issues:
-            st.error(
-                f"{len(issues)} contribution issue(s)"
-            )
+            st.error(f"{len(issues)} contribution issue(s)")
         else:
-            st.success(
-                "✓ All contribution groups total 100%"
-            )
-        
+            st.success("✓ All contribution groups total 100%")
+
         with st.expander("QA Validation"):
             if not issues:
-
-                st.success(
-                    "✓ All contributions balance"
-                )
+                st.success("✓ All contributions balance")
 
             for issue in issues:
                 st.warning(
-                    f"{issue['node']} = "
-                    f"{issue['total']:.1%}"
+                    f"{issue['node']} = {issue['total']:.1%}"
                 )
 
-        st.markdown(
-            f"### {selected_node['name']}"
-        )
+        st.markdown(f"### {selected_node['name']}")
 
-        st.caption(
-            selected_node.get(
-                "category",
-                ""
-            )
-        )
+        st.caption(selected_node.get("category", ""))
 
         col1, col2 = st.columns(2)
 
         with col1:
-            st.metric(
-                "Baseline",
-                f"{selected_node['baseline']:.2%}"
-            )
+            st.metric("Baseline", f"{selected_node['baseline']:.2%}")
 
         with col2:
-            st.metric(
-                "Goal",
-                f"{selected_node['goal']:.2%}"
-            )
+            st.metric("Goal", f"{selected_node['goal']:.2%}")
 
         col1, col2 = st.columns(2)
 
         with col1:
-            st.metric(
-                "Num",
-                f"{selected_node['num']:,}"
-            )
+            st.metric("Num", f"{selected_node['num']:,}")
 
         with col2:
-            st.metric(
-                "Den",
-                f"{selected_node['den']:,}"
-            )
+            st.metric("Den", f"{selected_node['den']:,}")
 
-        st.metric(
-            "Contribution",
-            f"{selected_node['contribution']:.2%}"
-        )
+        st.metric("Contribution", f"{selected_node['contribution']:.2%}")
 
-
+        # --- Edit Mode ---
         if st.session_state.get("edit_mode") == "edit":
-
             st.markdown("---")
             st.subheader("Edit Node")
 
             edit_name = st.text_input(
-                "Name",
-                value=selected_node["name"],
-                key="edit_name"
+                "Name", value=selected_node["name"], key="edit_name"
             )
 
-            current_category = selected_node.get(
-                "category",
-                CATEGORIES[0]
-            )
-
+            current_category = selected_node.get("category", CATEGORIES[0])
             edit_category = st.selectbox(
-                "Category",
-                CATEGORIES,
+                "Category", CATEGORIES,
                 index=(
                     CATEGORIES.index(current_category)
-                    if current_category in CATEGORIES
-                    else 0
+                    if current_category in CATEGORIES else 0
                 ),
                 key="edit_category"
             )
 
             edit_type = st.selectbox(
-                "Type",
-                TYPES,
-                index=(
-                    TYPES.index(
-                        selected_node.get(
-                            "type",
-                            "Goal"
-                        )
-                    )
-                ),
+                "Type", TYPES,
+                index=TYPES.index(selected_node.get("type", "Goal")),
                 key="edit_type"
             )
 
             edit_contribution = st.number_input(
                 "Contribution (%)",
-                min_value=0.0,
-                max_value=100.0,
-                value=selected_node.get(
-                    "contribution",
-                    0
-                ) * 100,
+                min_value=0.0, max_value=100.0,
+                value=selected_node.get("contribution", 0) * 100,
                 step=0.1
             )
 
             col1, col2 = st.columns(2)
 
             with col1:
-                if st.button(
-                    "Save Changes",
-                    key="save_edit"
-                ):
-
-                    old_path = selected_node["path"]
+                if st.button("Save Changes", key="save_edit"):
                     selected_node["name"] = edit_name
                     selected_node["category"] = edit_category
                     selected_node["type"] = edit_type
-
-                    selected_node["contribution"] = (
-                        edit_contribution / 100
-                    )
+                    selected_node["contribution"] = edit_contribution / 100
 
                     update_paths(root_data)
+                    rebuild_index()
 
-                    st.session_state.selected_path = (
-                        selected_node["path"]
-                    )
-
+                    st.session_state.selected_path = selected_node["path"]
                     st.session_state.unsaved_changes = True
-
-                    st.success("Node updated")
-
                     st.session_state.edit_mode = None
-
                     st.rerun()
 
             with col2:
-
-                if st.button(
-                    "Cancel",
-                    key="cancel_edit"
-                ):
-
+                if st.button("Cancel", key="cancel_edit"):
                     st.session_state.edit_mode = None
-
                     st.rerun()
 
+        # --- Add Child Mode ---
         if st.session_state.get("edit_mode") == "add":
-
             st.markdown("---")
             st.subheader("Add Child")
 
-            child_name = st.text_input(
-                "Child Name",
-                key="add_child_name"
-            )
-
+            child_name = st.text_input("Child Name", key="add_child_name")
             child_category = st.selectbox(
-                "Category",
-                CATEGORIES,
-                key="add_child_category"
+                "Category", CATEGORIES, key="add_child_category"
             )
-
-            child_type = st.selectbox(
-                "Type",
-                TYPES,
-                key="add_child_type"
-            )
+            child_type = st.selectbox("Type", TYPES, key="add_child_type")
 
             col1, col2 = st.columns(2)
 
             with col1:
-
-                if st.button(
-                    "Add Child",
-                    key="confirm_add_child"
-                ):
-
+                if st.button("Add Child", key="confirm_add_child"):
                     if not child_name.strip():
-
-                        st.error(
-                            "Child name is required"
-                        )
-
+                        st.error("Child name is required")
                     else:
-
                         new_child = {
                             "id": child_name,
                             "name": child_name,
-                            "path": (
-                                f"{selected_node['path']}"
-                                f"/{child_name}"
-                            ),
+                            "path": f"{selected_node['path']}/{child_name}",
                             "category": child_category,
                             "type": child_type,
-
-                            "tier": selected_node.get(
-                                "tier",
-                                0
-                            ) + 1,
-
+                            "tier": selected_node.get("tier", 0) + 1,
                             "baseline": 0,
                             "goal": 0,
                             "contribution": 0,
-
                             "num": 0,
                             "den": 0,
-
                             "children": []
                         }
 
-                        selected_node.setdefault(
-                            "children",
-                            []
-                        ).append(
-                            new_child
-                        )
-
+                        selected_node.setdefault("children", []).append(new_child)
                         update_paths(root_data)
+                        rebuild_index()
+
                         st.session_state.unsaved_changes = True
-
-                        st.success(
-                            f"Added {child_name}"
-                        )
-
                         st.session_state.edit_mode = None
-
                         st.rerun()
 
             with col2:
-
-                if st.button(
-                    "Cancel",
-                    key="cancel_add_child"
-                ):
-
+                if st.button("Cancel", key="cancel_add_child"):
                     st.session_state.edit_mode = None
-
                     st.rerun()
 
+        # --- Delete Mode ---
         if st.session_state.get("edit_mode") == "delete":
             st.markdown("---")
             st.subheader("Delete Node")
 
-            st.warning(
-                f"Are you sure you want to delete "
-                f"'{selected_node['name']}'?"
-            )
+            st.warning(f"Are you sure you want to delete '{selected_node['name']}'?")
+            st.write("This action cannot be undone.")
 
-            st.write(
-                "This action cannot be undone."
-            )
-
-            # Prevent deleting root node
             if selected_node["path"] == root_data["path"]:
-
-                st.error(
-                    "The root node cannot be deleted."
-                )
-
+                st.error("The root node cannot be deleted.")
             else:
-
                 col1, col2 = st.columns(2)
 
                 with col1:
-
-                    if st.button(
-                        "Confirm Delete",
-                        key="confirm_delete",
-                        type="primary"
-                    ):
-
-                        delete_node(
-                            root_data,
-                            selected_node["path"]
-                        )
-
+                    if st.button("Confirm Delete", key="confirm_delete", type="primary"):
+                        delete_node(root_data, selected_node["path"])
                         update_paths(root_data)
+                        rebuild_index()
+
                         st.session_state.unsaved_changes = True
-
-                        st.success(
-                            f"{selected_node['name']} deleted"
-                        )
-
-                        st.session_state.selected_path = (
-                            root_data["path"]
-                        )
-
+                        st.session_state.selected_path = root_data["path"]
                         st.session_state.edit_mode = None
-
                         st.rerun()
 
                 with col2:
-                    if st.button(
-                        "Cancel",
-                        key="cancel_delete"
-                    ):
+                    if st.button("Cancel", key="cancel_delete"):
                         st.session_state.edit_mode = None
-
                         st.rerun()
 
         st.markdown("---")
 
-        if st.button(
-            "Save Tree",
-            use_container_width=True
-        ):
-
-            with open(
-                json_file,
-                "w",
-                encoding="utf-8"
-            ) as f:
+        if st.button("Save Tree", use_container_width=True):
+            with open(json_file, "w", encoding="utf-8") as f:
                 json.dump(
-                    st.session_state.tree_data,
-                    f,
-                    indent=4,
-                    ensure_ascii=False
+                    st.session_state.tree_data, f,
+                    indent=4, ensure_ascii=False
                 )
-
             st.session_state.unsaved_changes = False
+            st.success("Tree saved successfully")
 
-            st.success(
-                "Tree saved successfully"
-            )
+
+# ---------------------------------------------------------------------------
+# Graph tab — only builds when viewed
+# ---------------------------------------------------------------------------
+
 with graph_tab:
-
     G = nx.DiGraph()
 
-    build_graph(
-        root_data,
-        G
-    )
+    # Use selected node as graph root for focused view
+    graph_root = selected_node if selected_node else root_data
 
-    def hierarchy_pos(
-    G,
-    root,
-    width=1.0,
-    vert_gap=0.2,
-    vert_loc=0,
-    xcenter=0.5
-):
+    build_graph(graph_root, G)
 
+    def hierarchy_pos(G, root, width=1.0, vert_gap=0.2, vert_loc=0, xcenter=0.5):
         children = list(G.successors(root))
-        
 
         if not children:
             return {root: (xcenter, vert_loc)}
 
-        pos = {
-            root: (xcenter, vert_loc)
-        }
-
+        pos = {root: (xcenter, vert_loc)}
         dx = width / len(children)
-
         nextx = xcenter - width / 2 - dx / 2
 
         for child in children:
-
             nextx += dx
-
             pos.update(
                 hierarchy_pos(
-                    G,
-                    child,
-                    width=dx,
-                    vert_gap=vert_gap,
+                    G, child,
+                    width=dx, vert_gap=vert_gap,
                     vert_loc=vert_loc - vert_gap,
                     xcenter=nextx
                 )
             )
 
         return pos
-    
-    pos = hierarchy_pos(
-        G,
-        root_data["path"]
-    )
+
+    pos = hierarchy_pos(G, graph_root["path"])
 
     edge_x = []
     edge_y = []
 
     for edge in G.edges():
-
         x0, y0 = pos[edge[0]]
         x1, y1 = pos[edge[1]]
-
         edge_x += [x0, x1, None]
         edge_y += [y0, y1, None]
 
     edge_trace = go.Scatter(
-        x=edge_x,
-        y=edge_y,
+        x=edge_x, y=edge_y,
         mode="lines",
-        line=dict(
-            width=1,
-            color="#888"
-        ),
+        line=dict(width=1, color="#888"),
         hoverinfo="none"
     )
 
     node_x = []
     node_y = []
-
     node_text = []
     node_color = []
 
@@ -959,138 +728,89 @@ with graph_tab:
         "Target": "#003366"
     }
 
-    for node in G.nodes():
-
-        x, y = pos[node]
-
+    for node_path in G.nodes():
+        x, y = pos[node_path]
         node_x.append(x)
         node_y.append(y)
 
-        data = G.nodes[node]
-
-        node_data = find_node(
-            root_data,
-            node
-        )
+        data = G.nodes[node_path]
+        node_data = find_node(root_data, node_path)
 
         node_text.append(
-            f"""
-            <b>{data['name']}</b><br>
-            Category: {data.get('category', '')}<br>
-            Type: {data.get('type', '')}<br>
-            Tier: {node_data.get('tier', '')}<br>
-            <br>
-            Baseline: {node_data.get('baseline', 0):.2%}<br>
-            Goal: {node_data.get('goal', 0):.2%}<br>
-            Contribution: {node_data.get('contribution', 0):.2%}<br>
-            <br>
-            Num: {node_data.get('num', 0):,}<br>
-            Den: {node_data.get('den', 0):,}
-            """
+            f"<b>{data['name']}</b><br>"
+            f"Category: {data.get('category', '')}<br>"
+            f"Type: {data.get('type', '')}<br>"
+            f"Tier: {node_data.get('tier', '') if node_data else ''}<br>"
+            f"<br>"
+            f"Baseline: {node_data.get('baseline', 0):.2%}<br>"
+            f"Goal: {node_data.get('goal', 0):.2%}<br>"
+            f"Contribution: {node_data.get('contribution', 0):.2%}<br>"
+            f"<br>"
+            f"Num: {node_data.get('num', 0):,}<br>"
+            f"Den: {node_data.get('den', 0):,}"
+            if node_data else data['name']
         )
 
         node_color.append(
-            colors.get(
-                data.get("type"),
-                "#B0BEC5"
-            )
+            colors.get(data.get("type"), "#B0BEC5")
         )
 
-        node_trace = go.Scatter(
-            x=node_x,
-            y=node_y,
-            mode="markers+text",
-            text=[
-                G.nodes[n]["name"]
-                for n in G.nodes()
-            ],
-            textposition="bottom center",
-            hovertext=node_text,
-            hoverinfo="text",
-            hoverlabel=dict(
-                bgcolor="#003366",
-                font_size=14,
-                font_color="white"
-            ),
-            marker=dict(
-                size=35,
-                color=node_color,
-                line=dict(
-                    width=2,
-                    color="black"
-                )
-            )
-)
-
-    fig = go.Figure(
-        data=[
-            edge_trace,
-            node_trace
-        ]
+    node_trace = go.Scatter(
+        x=node_x, y=node_y,
+        mode="markers+text",
+        text=[G.nodes[n]["name"] for n in G.nodes()],
+        textposition="bottom center",
+        hovertext=node_text,
+        hoverinfo="text",
+        hoverlabel=dict(
+            bgcolor="#003366",
+            font_size=14,
+            font_color="white"
+        ),
+        marker=dict(
+            size=35,
+            color=node_color,
+            line=dict(width=2, color="black")
+        )
     )
+
+    fig = go.Figure(data=[edge_trace, node_trace])
 
     fig.update_layout(
         showlegend=False,
         hovermode="closest",
-        margin=dict(
-            l=20,
-            r=20,
-            t=20,
-            b=20
-        ),
+        margin=dict(l=20, r=20, t=20, b=20),
         xaxis=dict(showgrid=False, zeroline=False),
         yaxis=dict(showgrid=False, zeroline=False)
     )
 
-    st.plotly_chart(
-        fig,
-        use_container_width=True
-    )
+    st.plotly_chart(fig, use_container_width=True)
+
+
+# ---------------------------------------------------------------------------
+# Statistics tab — cached data load
+# ---------------------------------------------------------------------------
 
 with statistics_tab:
-
     st.subheader("Statistics")
 
-    cache_file = "teradata_cache.parquet"
-    df = pd.read_parquet(cache_file)
+    csv_file = Path("cascaded_output") / "D0_cascaded.csv"
 
-    # if Path(cache_file).exists():
-    #     df = pd.read_parquet(cache_file)
-    # else:
-    #     df = pd.read_sql(query, conn)
-    #     df.to_parquet(cache_file)
+    if csv_file.exists():
+        # Read fresh each time — this file changes on cascade runs
+        df = pd.read_csv(csv_file)
+        st.dataframe(df, use_container_width=True, hide_index=True)
+    else:
+        st.info("No cascaded output found. Run cascade.py first.")
 
-    st.dataframe(
-        df,
-        use_container_width=True,
-        hide_index=True
-    )
 
-    # csv_file = Path("assets") / f"{selected_kpi}.csv"
+# ---------------------------------------------------------------------------
+# Footer info
+# ---------------------------------------------------------------------------
 
-    # stats_df = pd.read_csv(
-    #     csv_file
-    # )
-
-    # st.dataframe(
-    #     stats_df,
-    #     use_container_width=True,
-    #     hide_index=True
-    # )
-
-left, right = st.columns([2,1])
+left, right = st.columns([2, 1])
 
 with right:
-
     st.subheader("KPI Info")
-
-    st.write(
-        f"Root: {root_data['name']}"
-    )
-
-    st.write(
-        f"Children: {len(root_data['children'])}"
-    )
-
-
-
+    st.write(f"Root: {root_data['name']}")
+    st.write(f"Children: {len(root_data['children'])}")

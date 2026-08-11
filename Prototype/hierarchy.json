@@ -1,0 +1,64 @@
+{
+    "name": "D0 Hierarchy",
+    "version": "1.0.0",
+    "root": {
+        "id": "Nwk Sys",
+        "name": "Nwk Sys",
+        "category": "Enterprise"
+    },
+    "levels": [
+        {
+            "column": "sys",
+            "category": "system",
+            "children": [
+                {
+                    "column": "ml_dc_1",
+                    "category": "carrier",
+                    "children": [
+                        {
+                            "column": "ml_dc_2",
+                            "category": "dc_carrier",
+                            "children": [
+                                {
+                                    "column": "frst_flt_ind",
+                                    "category": "first_flt",
+                                    "transform": {
+                                        "type": "int_flag",
+                                        "map": {
+                                            "1": "First Flight",
+                                            "0": "Not First Flight"
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "column": "dom_int",
+                                            "category": "dom_int",
+                                            "children": [
+                                                {
+                                                    "column": "fleet",
+                                                    "category": "fleet",
+                                                    "children": [
+                                                        {
+                                                            "column": "vendor",
+                                                            "category": "vendor",
+                                                            "children": [
+                                                                {
+                                                                    "column": "station",
+                                                                    "category": "station"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

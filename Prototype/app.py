@@ -259,12 +259,8 @@ max_leaf_nodes = st.sidebar.slider(
     10
 )
 
-MAX_TREE_DEPTH = st.sidebar.slider(
-    "Tree Display Depth",
-    1,
-    10,
-    3
-)
+# Placeholder — will be set after tree loads
+MAX_TREE_DEPTH = 3
 
 json_file = OUTPUT_DIR / f"{selected_kpi}.json"
 
@@ -275,8 +271,27 @@ if ("tree_data" not in st.session_state or st.session_state.get("loaded_kpi") !=
     # Invalidate index on reload
     st.session_state.pop("path_index", None)
     st.session_state.pop("node_count", None)
+    st.session_state.pop("max_depth", None)
 
 root_data = st.session_state.tree_data
+
+# Compute max depth of the tree (once per load)
+if "max_depth" not in st.session_state:
+    def get_max_depth(node, depth=1):
+        children = node.get("children", [])
+        if not children:
+            return depth
+        return max(get_max_depth(c, depth + 1) for c in children)
+    st.session_state.max_depth = get_max_depth(root_data)
+
+tree_max_depth = st.session_state.max_depth
+
+MAX_TREE_DEPTH = st.sidebar.slider(
+    "Tree Display Depth",
+    1,
+    tree_max_depth,
+    min(3, tree_max_depth)
+)
 
 # Build path index (once per tree load)
 if "path_index" not in st.session_state:
@@ -504,7 +519,10 @@ with tree_tab:
 
         st.markdown(f"### {selected_node['name']}")
 
-        st.caption(selected_node.get("category", ""))
+        st.caption(
+            f"{selected_node.get('category', '')}  •  "
+            f"`{selected_node.get('path', '')}`"
+        )
 
         col1, col2 = st.columns(2)
 
@@ -670,121 +688,209 @@ with tree_tab:
 # ---------------------------------------------------------------------------
 
 with graph_tab:
-    G = nx.DiGraph()
+    graph_view = st.radio(
+        "View",
+        ["Graph", "Hierarchy"],
+        horizontal=True,
+        key="graph_view_selector"
+    )
 
-    # Use selected node as graph root for focused view
-    graph_root = selected_node if selected_node else root_data
+    if graph_view == "Hierarchy":
+        # Visualize hierarchy.json structure using actual field names
+        hierarchy_file = Path("hierarchy.json")
+        if hierarchy_file.exists():
+            with open(hierarchy_file, "r", encoding="utf-8") as f:
+                hierarchy_data = json.load(f)
 
-    build_graph(graph_root, G)
+            # Build a networkx graph from the hierarchy definition
+            H = nx.DiGraph()
 
-    def hierarchy_pos(G, root, width=1.0, vert_gap=0.2, vert_loc=0, xcenter=0.5):
-        children = list(G.successors(root))
+            def build_hierarchy_graph(node, parent_id=None, depth=0):
+                node_id = f"{depth}_{node['column']}"
+                H.add_node(node_id, column=node["column"], category=node["category"], depth=depth)
+                if parent_id:
+                    H.add_edge(parent_id, node_id)
+                for child in node.get("children", []):
+                    build_hierarchy_graph(child, node_id, depth + 1)
 
-        if not children:
-            return {root: (xcenter, vert_loc)}
+            for level in hierarchy_data.get("levels", []):
+                build_hierarchy_graph(level)
 
-        pos = {root: (xcenter, vert_loc)}
-        dx = width / len(children)
-        nextx = xcenter - width / 2 - dx / 2
+            # Layout — horizontal staircase with indentation
+            pos = {}
+            for n in H.nodes():
+                d = H.nodes[n]["depth"]
+                pos[n] = (d * 0.8, -d)  # x shifts right, y goes down
 
-        for child in children:
-            nextx += dx
-            pos.update(
-                hierarchy_pos(
-                    G, child,
-                    width=dx, vert_gap=vert_gap,
-                    vert_loc=vert_loc - vert_gap,
-                    xcenter=nextx
-                )
+            edge_x, edge_y = [], []
+            for e in H.edges():
+                x0, y0 = pos[e[0]]
+                x1, y1 = pos[e[1]]
+                edge_x += [x0, x1, None]
+                edge_y += [y0, y1, None]
+
+            edge_trace = go.Scatter(
+                x=edge_x, y=edge_y,
+                mode="lines",
+                line=dict(width=2, color="#888"),
+                hoverinfo="none"
             )
 
-        return pos
+            node_x, node_y, node_labels, node_hover = [], [], [], []
+            for n in H.nodes():
+                x, y = pos[n]
+                node_x.append(x)
+                node_y.append(y)
+                data = H.nodes[n]
+                node_labels.append(data["column"])
+                node_hover.append(
+                    f"<b>{data['column']}</b><br>"
+                    f"Category: {data['category']}<br>"
+                    f"Tier: {data['depth'] + 1}"
+                )
 
-    pos = hierarchy_pos(G, graph_root["path"])
+            node_trace = go.Scatter(
+                x=node_x, y=node_y,
+                mode="markers+text",
+                text=node_labels,
+                textposition="middle right",
+                textfont=dict(size=14, color="white"),
+                hovertext=node_hover,
+                hoverinfo="text",
+                marker=dict(size=30, color="#003366", line=dict(width=2, color="white"))
+            )
 
-    edge_x = []
-    edge_y = []
+            fig = go.Figure(data=[edge_trace, node_trace])
+            fig.update_layout(
+                showlegend=False,
+                hovermode="closest",
+                margin=dict(l=40, r=40, t=60, b=40),
+                xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+                yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+                title="Hierarchy Definition (hierarchy.json)",
+                height=500
+            )
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("hierarchy.json not found.")
 
-    for edge in G.edges():
-        x0, y0 = pos[edge[0]]
-        x1, y1 = pos[edge[1]]
-        edge_x += [x0, x1, None]
-        edge_y += [y0, y1, None]
+    else:
+        # Graph view of the KPI tree
+        G = nx.DiGraph()
 
-    edge_trace = go.Scatter(
-        x=edge_x, y=edge_y,
-        mode="lines",
-        line=dict(width=1, color="#888"),
-        hoverinfo="none"
-    )
+        # Use selected node as graph root for focused view
+        graph_root = selected_node if selected_node else root_data
 
-    node_x = []
-    node_y = []
-    node_text = []
-    node_color = []
+        build_graph(graph_root, G)
 
-    colors = {
-        "Goal": "#808080",
-        "Target": "#003366"
-    }
+        def hierarchy_pos(G, root, width=1.0, vert_gap=0.2, vert_loc=0, xcenter=0.5):
+            children = list(G.successors(root))
 
-    for node_path in G.nodes():
-        x, y = pos[node_path]
-        node_x.append(x)
-        node_y.append(y)
+            if not children:
+                return {root: (xcenter, vert_loc)}
 
-        data = G.nodes[node_path]
-        node_data = find_node(root_data, node_path)
+            pos = {root: (xcenter, vert_loc)}
+            dx = width / len(children)
+            nextx = xcenter - width / 2 - dx / 2
 
-        node_text.append(
-            f"<b>{data['name']}</b><br>"
-            f"Category: {data.get('category', '')}<br>"
-            f"Type: {data.get('type', '')}<br>"
-            f"Tier: {node_data.get('tier', '') if node_data else ''}<br>"
-            f"<br>"
-            f"Baseline: {node_data.get('baseline', 0):.2%}<br>"
-            f"Goal: {node_data.get('goal', 0):.2%}<br>"
-            f"Contribution: {node_data.get('contribution', 0):.2%}<br>"
-            f"<br>"
-            f"Num: {node_data.get('num', 0):,}<br>"
-            f"Den: {node_data.get('den', 0):,}"
-            if node_data else data['name']
+            for child in children:
+                nextx += dx
+                pos.update(
+                    hierarchy_pos(
+                        G, child,
+                        width=dx, vert_gap=vert_gap,
+                        vert_loc=vert_loc - vert_gap,
+                        xcenter=nextx
+                    )
+                )
+
+            return pos
+
+        pos = hierarchy_pos(G, graph_root["path"])
+
+        edge_x = []
+        edge_y = []
+
+        for edge in G.edges():
+            x0, y0 = pos[edge[0]]
+            x1, y1 = pos[edge[1]]
+            edge_x += [x0, x1, None]
+            edge_y += [y0, y1, None]
+
+        edge_trace = go.Scatter(
+            x=edge_x, y=edge_y,
+            mode="lines",
+            line=dict(width=1, color="#888"),
+            hoverinfo="none"
         )
 
-        node_color.append(
-            colors.get(data.get("type"), "#B0BEC5")
+        node_x = []
+        node_y = []
+        node_text = []
+        node_color = []
+
+        colors = {
+            "Goal": "#808080",
+            "Target": "#003366"
+        }
+
+        for node_path in G.nodes():
+            x, y = pos[node_path]
+            node_x.append(x)
+            node_y.append(y)
+
+            data = G.nodes[node_path]
+            node_data = find_node(root_data, node_path)
+
+            node_text.append(
+                f"<b>{data['name']}</b><br>"
+                f"Category: {data.get('category', '')}<br>"
+                f"Type: {data.get('type', '')}<br>"
+                f"Tier: {node_data.get('tier', '') if node_data else ''}<br>"
+                f"<br>"
+                f"Baseline: {node_data.get('baseline', 0):.2%}<br>"
+                f"Goal: {node_data.get('goal', 0):.2%}<br>"
+                f"Contribution: {node_data.get('contribution', 0):.2%}<br>"
+                f"<br>"
+                f"Num: {node_data.get('num', 0):,}<br>"
+                f"Den: {node_data.get('den', 0):,}"
+                if node_data else data['name']
+            )
+
+            node_color.append(
+                colors.get(data.get("type"), "#B0BEC5")
+            )
+
+        node_trace = go.Scatter(
+            x=node_x, y=node_y,
+            mode="markers+text",
+            text=[G.nodes[n]["name"] for n in G.nodes()],
+            textposition="bottom center",
+            hovertext=node_text,
+            hoverinfo="text",
+            hoverlabel=dict(
+                bgcolor="#003366",
+                font_size=14,
+                font_color="white"
+            ),
+            marker=dict(
+                size=35,
+                color=node_color,
+                line=dict(width=2, color="black")
+            )
         )
 
-    node_trace = go.Scatter(
-        x=node_x, y=node_y,
-        mode="markers+text",
-        text=[G.nodes[n]["name"] for n in G.nodes()],
-        textposition="bottom center",
-        hovertext=node_text,
-        hoverinfo="text",
-        hoverlabel=dict(
-            bgcolor="#003366",
-            font_size=14,
-            font_color="white"
-        ),
-        marker=dict(
-            size=35,
-            color=node_color,
-            line=dict(width=2, color="black")
+        fig = go.Figure(data=[edge_trace, node_trace])
+
+        fig.update_layout(
+            showlegend=False,
+            hovermode="closest",
+            margin=dict(l=20, r=20, t=20, b=20),
+            xaxis=dict(showgrid=False, zeroline=False),
+            yaxis=dict(showgrid=False, zeroline=False)
         )
-    )
 
-    fig = go.Figure(data=[edge_trace, node_trace])
-
-    fig.update_layout(
-        showlegend=False,
-        hovermode="closest",
-        margin=dict(l=20, r=20, t=20, b=20),
-        xaxis=dict(showgrid=False, zeroline=False),
-        yaxis=dict(showgrid=False, zeroline=False)
-    )
-
-    st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True)
 
 
 # ---------------------------------------------------------------------------
@@ -794,7 +900,7 @@ with graph_tab:
 with statistics_tab:
     st.subheader("Statistics")
 
-    csv_file = Path("cascaded_output") / "D0_cascaded.csv"
+    csv_file = Path("output") / f"{selected_kpi}.csv"
 
     if csv_file.exists():
         # Read fresh each time — this file changes on cascade runs

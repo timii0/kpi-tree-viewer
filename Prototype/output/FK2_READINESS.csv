@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FK2_READINESS,FK2_READINESS,,Root,0,1,Goal,Root,FK2_READINESS,1,No
+FK2_READINESS,TOP,FK2_READINESS,div,1,100.0,Goal,Root/div,FK2_READINESS/TOP,1,No
+FK2_READINESS,Materials,TOP,bu,2,100.0,Goal,Root/div/bu,FK2_READINESS/TOP/Materials,0,Yes

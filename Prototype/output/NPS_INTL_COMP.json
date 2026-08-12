@@ -1,0 +1,21 @@
+{
+    "id": "NPS_INTL_COMP",
+    "name": "NPS_INTL_COMP",
+    "category": "Root",
+    "tier": 0,
+    "path": "NPS_INTL_COMP",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ML",
+            "name": "ML",
+            "category": "carrier",
+            "path": "NPS_INTL_COMP/ML",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

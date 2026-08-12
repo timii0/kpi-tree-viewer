@@ -1,0 +1,32 @@
+{
+    "id": "DG_COMPLIANCE",
+    "name": "DG_COMPLIANCE",
+    "category": "Root",
+    "tier": 0,
+    "path": "DG_COMPLIANCE",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "DG_COMPLIANCE/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Distribution_Logistics",
+                    "name": "Distribution_Logistics",
+                    "category": "bu",
+                    "path": "DG_COMPLIANCE/TOP/Distribution_Logistics",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

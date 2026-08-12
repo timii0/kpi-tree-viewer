@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+RES_NSAT,RES_NSAT,,Root,0,1,Goal,Root,RES_NSAT,1,No
+RES_NSAT,RES,RES_NSAT,div,1,100.0,Goal,Root/div,RES_NSAT/RES,0,Yes

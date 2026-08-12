@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FAA_COMPL_RT,FAA_COMPL_RT,,Root,0,1,Goal,Root,FAA_COMPL_RT,1,No
+FAA_COMPL_RT,CSSC,FAA_COMPL_RT,div,1,100.0,Goal,Root/div,FAA_COMPL_RT/CSSC,1,No
+FAA_COMPL_RT,SCQ,CSSC,bu,2,100.0,Goal,Root/div/bu,FAA_COMPL_RT/CSSC/SCQ,0,Yes

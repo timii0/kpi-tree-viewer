@@ -1,0 +1,21 @@
+{
+    "id": "TOOL_DEFR",
+    "name": "TOOL_DEFR",
+    "category": "Root",
+    "tier": 0,
+    "path": "TOOL_DEFR",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "TOOL_DEFR/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

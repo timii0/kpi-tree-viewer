@@ -1,0 +1,21 @@
+{
+    "id": "3P_DLY",
+    "name": "3P_DLY",
+    "category": "Root",
+    "tier": 0,
+    "path": "3P_DLY",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "3P_DLY/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

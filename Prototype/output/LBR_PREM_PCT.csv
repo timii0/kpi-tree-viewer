@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+LBR_PREM_PCT,LBR_PREM_PCT,,Root,0,1,Goal,Root,LBR_PREM_PCT,1,No
+LBR_PREM_PCT,FOP,LBR_PREM_PCT,div,1,100.0,Goal,Root/div,LBR_PREM_PCT/FOP,0,Yes

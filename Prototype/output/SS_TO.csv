@@ -1,0 +1,277 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+SS_TO,SS_TO,,Root,0,1,Goal,Root,SS_TO,1,No
+SS_TO,GCS,SS_TO,div,1,100.0,Goal,Root/div,SS_TO/GCS,56,No
+SS_TO,ANC,GCS,station,2,2.44,Goal,Root/div/station,SS_TO/GCS/ANC,2,No
+SS_TO,",null,",ANC,vendor,3,22.99,Goal,Root/div/station/vendor,"SS_TO/GCS/ANC/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/ANC/,null,/Cabin",0,Yes
+SS_TO,Pegasus,ANC,vendor,3,77.01,Goal,Root/div/station/vendor,SS_TO/GCS/ANC/Pegasus,1,No
+SS_TO,Cabin,Pegasus,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/ANC/Pegasus/Cabin,0,Yes
+SS_TO,ATL,GCS,station,2,1.8,Goal,Root/div/station,SS_TO/GCS/ATL,2,No
+SS_TO,",null,",ATL,vendor,3,99.97,Goal,Root/div/station/vendor,"SS_TO/GCS/ATL/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/ATL/,null,/Cabin",0,Yes
+SS_TO,Delta,ATL,vendor,3,0.03,Goal,Root/div/station/vendor,SS_TO/GCS/ATL/Delta,1,No
+SS_TO,Cabin,Delta,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/ATL/Delta/Cabin,0,Yes
+SS_TO,AUS,GCS,station,2,0.28,Goal,Root/div/station,SS_TO/GCS/AUS,2,No
+SS_TO,",null,",AUS,vendor,3,5.83,Goal,Root/div/station/vendor,"SS_TO/GCS/AUS/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/AUS/,null,/Cabin",0,Yes
+SS_TO,Unifi,AUS,vendor,3,94.17,Goal,Root/div/station/vendor,SS_TO/GCS/AUS/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/AUS/Unifi/Cabin,0,Yes
+SS_TO,BNA,GCS,station,2,2.86,Goal,Root/div/station,SS_TO/GCS/BNA,3,No
+SS_TO,",null,",BNA,vendor,3,64.76,Goal,Root/div/station/vendor,"SS_TO/GCS/BNA/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/BNA/,null,/Cabin",0,Yes
+SS_TO,Prospect,BNA,vendor,3,7.06,Goal,Root/div/station/vendor,SS_TO/GCS/BNA/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/BNA/Prospect/Cabin,0,Yes
+SS_TO,Unifi,BNA,vendor,3,28.180000000000003,Goal,Root/div/station/vendor,SS_TO/GCS/BNA/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/BNA/Unifi/Cabin,0,Yes
+SS_TO,BOS,GCS,station,2,2.69,Goal,Root/div/station,SS_TO/GCS/BOS,4,No
+SS_TO,",null,",BOS,vendor,3,13.04,Goal,Root/div/station/vendor,"SS_TO/GCS/BOS/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/BOS/,null,/Cabin",0,Yes
+SS_TO,G2,BOS,vendor,3,37.94,Goal,Root/div/station/vendor,SS_TO/GCS/BOS/G2,1,No
+SS_TO,Cabin,G2,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/BOS/G2/Cabin,0,Yes
+SS_TO,HHS Aviation,BOS,vendor,3,11.48,Goal,Root/div/station/vendor,SS_TO/GCS/BOS/HHS Aviation,1,No
+SS_TO,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/BOS/HHS Aviation/Cabin,0,Yes
+SS_TO,Menzies Aviation,BOS,vendor,3,37.54,Goal,Root/div/station/vendor,SS_TO/GCS/BOS/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/BOS/Menzies Aviation/Cabin,0,Yes
+SS_TO,BWI,GCS,station,2,2.43,Goal,Root/div/station,SS_TO/GCS/BWI,2,No
+SS_TO,",null,",BWI,vendor,3,31.64,Goal,Root/div/station/vendor,"SS_TO/GCS/BWI/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/BWI/,null,/Cabin",0,Yes
+SS_TO,HHS Aviation,BWI,vendor,3,68.36,Goal,Root/div/station/vendor,SS_TO/GCS/BWI/HHS Aviation,1,No
+SS_TO,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/BWI/HHS Aviation/Cabin,0,Yes
+SS_TO,CMH,GCS,station,2,3.01,Goal,Root/div/station,SS_TO/GCS/CMH,3,No
+SS_TO,",null,",CMH,vendor,3,16.9,Goal,Root/div/station/vendor,"SS_TO/GCS/CMH/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/CMH/,null,/Cabin",0,Yes
+SS_TO,Prospect,CMH,vendor,3,51.44,Goal,Root/div/station/vendor,SS_TO/GCS/CMH/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/CMH/Prospect/Cabin,0,Yes
+SS_TO,Unifi,CMH,vendor,3,31.66,Goal,Root/div/station/vendor,SS_TO/GCS/CMH/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/CMH/Unifi/Cabin,0,Yes
+SS_TO,CVG,GCS,station,2,0.41,Goal,Root/div/station,SS_TO/GCS/CVG,2,No
+SS_TO,",null,",CVG,vendor,3,73.19,Goal,Root/div/station/vendor,"SS_TO/GCS/CVG/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/CVG/,null,/Cabin",0,Yes
+SS_TO,Unifi,CVG,vendor,3,26.81,Goal,Root/div/station/vendor,SS_TO/GCS/CVG/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/CVG/Unifi/Cabin,0,Yes
+SS_TO,DCA,GCS,station,2,0.69,Goal,Root/div/station,SS_TO/GCS/DCA,2,No
+SS_TO,",null,",DCA,vendor,3,69.17,Goal,Root/div/station/vendor,"SS_TO/GCS/DCA/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/DCA/,null,/Cabin",0,Yes
+SS_TO,Eulen,DCA,vendor,3,30.83,Goal,Root/div/station/vendor,SS_TO/GCS/DCA/Eulen,1,No
+SS_TO,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/DCA/Eulen/Cabin,0,Yes
+SS_TO,DEN,GCS,station,2,3.14,Goal,Root/div/station,SS_TO/GCS/DEN,2,No
+SS_TO,",null,",DEN,vendor,3,44.22,Goal,Root/div/station/vendor,"SS_TO/GCS/DEN/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/DEN/,null,/Cabin",0,Yes
+SS_TO,Unifi,DEN,vendor,3,55.78,Goal,Root/div/station/vendor,SS_TO/GCS/DEN/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/DEN/Unifi/Cabin,0,Yes
+SS_TO,DFW,GCS,station,2,1.13,Goal,Root/div/station,SS_TO/GCS/DFW,2,No
+SS_TO,",null,",DFW,vendor,3,38.6,Goal,Root/div/station/vendor,"SS_TO/GCS/DFW/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/DFW/,null,/Cabin",0,Yes
+SS_TO,HHS Aviation,DFW,vendor,3,61.4,Goal,Root/div/station/vendor,SS_TO/GCS/DFW/HHS Aviation,1,No
+SS_TO,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/DFW/HHS Aviation/Cabin,0,Yes
+SS_TO,DTW,GCS,station,2,1.1,Goal,Root/div/station,SS_TO/GCS/DTW,3,No
+SS_TO,",null,",DTW,vendor,3,4.09,Goal,Root/div/station/vendor,"SS_TO/GCS/DTW/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/DTW/,null,/Cabin",0,Yes
+SS_TO,G2,DTW,vendor,3,45.63,Goal,Root/div/station/vendor,SS_TO/GCS/DTW/G2,1,No
+SS_TO,Cabin,G2,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/DTW/G2/Cabin,0,Yes
+SS_TO,Menzies Aviation,DTW,vendor,3,50.28,Goal,Root/div/station/vendor,SS_TO/GCS/DTW/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/DTW/Menzies Aviation/Cabin,0,Yes
+SS_TO,EWR,GCS,station,2,0.91,Goal,Root/div/station,SS_TO/GCS/EWR,2,No
+SS_TO,",null,",EWR,vendor,3,51.88,Goal,Root/div/station/vendor,"SS_TO/GCS/EWR/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/EWR/,null,/Cabin",0,Yes
+SS_TO,Menzies Aviation,EWR,vendor,3,48.12,Goal,Root/div/station/vendor,SS_TO/GCS/EWR/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/EWR/Menzies Aviation/Cabin,0,Yes
+SS_TO,FLL,GCS,station,2,2.85,Goal,Root/div/station,SS_TO/GCS/FLL,2,No
+SS_TO,",null,",FLL,vendor,3,26.67,Goal,Root/div/station/vendor,"SS_TO/GCS/FLL/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/FLL/,null,/Cabin",0,Yes
+SS_TO,HHS Aviation,FLL,vendor,3,73.33,Goal,Root/div/station/vendor,SS_TO/GCS/FLL/HHS Aviation,1,No
+SS_TO,Cabin,HHS Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/FLL/HHS Aviation/Cabin,0,Yes
+SS_TO,GRB,GCS,station,2,1.85,Goal,Root/div/station,SS_TO/GCS/GRB,2,No
+SS_TO,",null,",GRB,vendor,3,13.44,Goal,Root/div/station/vendor,"SS_TO/GCS/GRB/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/GRB/,null,/Cabin",0,Yes
+SS_TO,Jet Air,GRB,vendor,3,86.56,Goal,Root/div/station/vendor,SS_TO/GCS/GRB/Jet Air,1,No
+SS_TO,Cabin,Jet Air,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/GRB/Jet Air/Cabin,0,Yes
+SS_TO,GRR,GCS,station,2,0.12,Goal,Root/div/station,SS_TO/GCS/GRR,3,No
+SS_TO,",null,",GRR,vendor,3,14.05,Goal,Root/div/station/vendor,"SS_TO/GCS/GRR/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/GRR/,null,/Cabin",0,Yes
+SS_TO,Prospect,GRR,vendor,3,25.06,Goal,Root/div/station/vendor,SS_TO/GCS/GRR/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/GRR/Prospect/Cabin,0,Yes
+SS_TO,Unifi,GRR,vendor,3,60.89,Goal,Root/div/station/vendor,SS_TO/GCS/GRR/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/GRR/Unifi/Cabin,0,Yes
+SS_TO,HNL,GCS,station,2,3.52,Goal,Root/div/station,SS_TO/GCS/HNL,2,No
+SS_TO,",null,",HNL,vendor,3,0.6,Goal,Root/div/station/vendor,"SS_TO/GCS/HNL/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/HNL/,null,/Cabin",0,Yes
+SS_TO,Unifi,HNL,vendor,3,99.4,Goal,Root/div/station/vendor,SS_TO/GCS/HNL/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/HNL/Unifi/Cabin,0,Yes
+SS_TO,IAD,GCS,station,2,1.53,Goal,Root/div/station,SS_TO/GCS/IAD,2,No
+SS_TO,",null,",IAD,vendor,3,30.12,Goal,Root/div/station/vendor,"SS_TO/GCS/IAD/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/IAD/,null,/Cabin",0,Yes
+SS_TO,Unifi,IAD,vendor,3,69.88,Goal,Root/div/station/vendor,SS_TO/GCS/IAD/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/IAD/Unifi/Cabin,0,Yes
+SS_TO,IAH,GCS,station,2,1.17,Goal,Root/div/station,SS_TO/GCS/IAH,2,No
+SS_TO,",null,",IAH,vendor,3,15.06,Goal,Root/div/station/vendor,"SS_TO/GCS/IAH/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/IAH/,null,/Cabin",0,Yes
+SS_TO,Menzies Aviation,IAH,vendor,3,84.94,Goal,Root/div/station/vendor,SS_TO/GCS/IAH/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/IAH/Menzies Aviation/Cabin,0,Yes
+SS_TO,IND,GCS,station,2,2.26,Goal,Root/div/station,SS_TO/GCS/IND,2,No
+SS_TO,",null,",IND,vendor,3,20.57,Goal,Root/div/station/vendor,"SS_TO/GCS/IND/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/IND/,null,/Cabin",0,Yes
+SS_TO,Menzies Aviation,IND,vendor,3,79.43,Goal,Root/div/station/vendor,SS_TO/GCS/IND/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/IND/Menzies Aviation/Cabin,0,Yes
+SS_TO,JFK,GCS,station,2,3.54,Goal,Root/div/station,SS_TO/GCS/JFK,2,No
+SS_TO,",null,",JFK,vendor,3,98.31,Goal,Root/div/station/vendor,"SS_TO/GCS/JFK/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/JFK/,null,/Cabin",0,Yes
+SS_TO,Unifi,JFK,vendor,3,1.69,Goal,Root/div/station/vendor,SS_TO/GCS/JFK/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/JFK/Unifi/Cabin,0,Yes
+SS_TO,LAS,GCS,station,2,2.31,Goal,Root/div/station,SS_TO/GCS/LAS,2,No
+SS_TO,",null,",LAS,vendor,3,41.87,Goal,Root/div/station/vendor,"SS_TO/GCS/LAS/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/LAS/,null,/Cabin",0,Yes
+SS_TO,Unifi,LAS,vendor,3,58.13,Goal,Root/div/station/vendor,SS_TO/GCS/LAS/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/LAS/Unifi/Cabin,0,Yes
+SS_TO,LAX,GCS,station,2,2.77,Goal,Root/div/station,SS_TO/GCS/LAX,2,No
+SS_TO,",null,",LAX,vendor,3,22.77,Goal,Root/div/station/vendor,"SS_TO/GCS/LAX/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/LAX/,null,/Cabin",0,Yes
+SS_TO,Unifi,LAX,vendor,3,77.23,Goal,Root/div/station/vendor,SS_TO/GCS/LAX/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/LAX/Unifi/Cabin,0,Yes
+SS_TO,LGA,GCS,station,2,3.37,Goal,Root/div/station,SS_TO/GCS/LGA,3,No
+SS_TO,",null,",LGA,vendor,3,12.88,Goal,Root/div/station/vendor,"SS_TO/GCS/LGA/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/LGA/,null,/Cabin",0,Yes
+SS_TO,G2,LGA,vendor,3,40.85,Goal,Root/div/station/vendor,SS_TO/GCS/LGA/G2,1,No
+SS_TO,Cabin,G2,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/LGA/G2/Cabin,0,Yes
+SS_TO,Menzies Aviation,LGA,vendor,3,46.27,Goal,Root/div/station/vendor,SS_TO/GCS/LGA/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/LGA/Menzies Aviation/Cabin,0,Yes
+SS_TO,MCI,GCS,station,2,1.46,Goal,Root/div/station,SS_TO/GCS/MCI,2,No
+SS_TO,",null,",MCI,vendor,3,79.87,Goal,Root/div/station/vendor,"SS_TO/GCS/MCI/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MCI/,null,/Cabin",0,Yes
+SS_TO,Unifi,MCI,vendor,3,20.13,Goal,Root/div/station/vendor,SS_TO/GCS/MCI/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MCI/Unifi/Cabin,0,Yes
+SS_TO,MCO,GCS,station,2,3.45,Goal,Root/div/station,SS_TO/GCS/MCO,2,No
+SS_TO,",null,",MCO,vendor,3,58.83,Goal,Root/div/station/vendor,"SS_TO/GCS/MCO/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MCO/,null,/Cabin",0,Yes
+SS_TO,Eulen,MCO,vendor,3,41.17,Goal,Root/div/station/vendor,SS_TO/GCS/MCO/Eulen,1,No
+SS_TO,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MCO/Eulen/Cabin,0,Yes
+SS_TO,MDW,GCS,station,2,3.43,Goal,Root/div/station,SS_TO/GCS/MDW,3,No
+SS_TO,",null,",MDW,vendor,3,27.28,Goal,Root/div/station/vendor,"SS_TO/GCS/MDW/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MDW/,null,/Cabin",0,Yes
+SS_TO,Prospect,MDW,vendor,3,38.1,Goal,Root/div/station/vendor,SS_TO/GCS/MDW/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MDW/Prospect/Cabin,0,Yes
+SS_TO,Unifi,MDW,vendor,3,34.62,Goal,Root/div/station/vendor,SS_TO/GCS/MDW/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MDW/Unifi/Cabin,0,Yes
+SS_TO,MEM,GCS,station,2,1.13,Goal,Root/div/station,SS_TO/GCS/MEM,2,No
+SS_TO,",null,",MEM,vendor,3,56.41,Goal,Root/div/station/vendor,"SS_TO/GCS/MEM/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MEM/,null,/Cabin",0,Yes
+SS_TO,Unifi,MEM,vendor,3,43.59,Goal,Root/div/station/vendor,SS_TO/GCS/MEM/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MEM/Unifi/Cabin,0,Yes
+SS_TO,MIA,GCS,station,2,3.17,Goal,Root/div/station,SS_TO/GCS/MIA,2,No
+SS_TO,",null,",MIA,vendor,3,57.82,Goal,Root/div/station/vendor,"SS_TO/GCS/MIA/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MIA/,null,/Cabin",0,Yes
+SS_TO,Eulen,MIA,vendor,3,42.18,Goal,Root/div/station/vendor,SS_TO/GCS/MIA/Eulen,1,No
+SS_TO,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MIA/Eulen/Cabin,0,Yes
+SS_TO,MKE,GCS,station,2,1.57,Goal,Root/div/station,SS_TO/GCS/MKE,3,No
+SS_TO,",null,",MKE,vendor,3,24.18,Goal,Root/div/station/vendor,"SS_TO/GCS/MKE/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MKE/,null,/Cabin",0,Yes
+SS_TO,Prospect,MKE,vendor,3,62.3,Goal,Root/div/station/vendor,SS_TO/GCS/MKE/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MKE/Prospect/Cabin,0,Yes
+SS_TO,Unifi,MKE,vendor,3,13.52,Goal,Root/div/station/vendor,SS_TO/GCS/MKE/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MKE/Unifi/Cabin,0,Yes
+SS_TO,MSN,GCS,station,2,2.36,Goal,Root/div/station,SS_TO/GCS/MSN,2,No
+SS_TO,",null,",MSN,vendor,3,76.3,Goal,Root/div/station/vendor,"SS_TO/GCS/MSN/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MSN/,null,/Cabin",0,Yes
+SS_TO,Menzies Aviation,MSN,vendor,3,23.7,Goal,Root/div/station/vendor,SS_TO/GCS/MSN/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MSN/Menzies Aviation/Cabin,0,Yes
+SS_TO,MSP,GCS,station,2,2.01,Goal,Root/div/station,SS_TO/GCS/MSP,2,No
+SS_TO,",null,",MSP,vendor,3,12.09,Goal,Root/div/station/vendor,"SS_TO/GCS/MSP/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MSP/,null,/Cabin",0,Yes
+SS_TO,Unifi,MSP,vendor,3,87.91,Goal,Root/div/station/vendor,SS_TO/GCS/MSP/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MSP/Unifi/Cabin,0,Yes
+SS_TO,MSY,GCS,station,2,1.07,Goal,Root/div/station,SS_TO/GCS/MSY,2,No
+SS_TO,",null,",MSY,vendor,3,26.31,Goal,Root/div/station/vendor,"SS_TO/GCS/MSY/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/MSY/,null,/Cabin",0,Yes
+SS_TO,GAT,MSY,vendor,3,73.69,Goal,Root/div/station/vendor,SS_TO/GCS/MSY/GAT,1,No
+SS_TO,Cabin,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/MSY/GAT/Cabin,0,Yes
+SS_TO,ORD,GCS,station,2,1.63,Goal,Root/div/station,SS_TO/GCS/ORD,3,No
+SS_TO,",null,",ORD,vendor,3,41.27,Goal,Root/div/station/vendor,"SS_TO/GCS/ORD/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/ORD/,null,/Cabin",0,Yes
+SS_TO,Prospect,ORD,vendor,3,29.02,Goal,Root/div/station/vendor,SS_TO/GCS/ORD/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/ORD/Prospect/Cabin,0,Yes
+SS_TO,Unifi,ORD,vendor,3,29.71,Goal,Root/div/station/vendor,SS_TO/GCS/ORD/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/ORD/Unifi/Cabin,0,Yes
+SS_TO,PDX,GCS,station,2,0.85,Goal,Root/div/station,SS_TO/GCS/PDX,3,No
+SS_TO,",null,",PDX,vendor,3,40.82,Goal,Root/div/station/vendor,"SS_TO/GCS/PDX/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/PDX/,null,/Cabin",0,Yes
+SS_TO,G2,PDX,vendor,3,2.96,Goal,Root/div/station/vendor,SS_TO/GCS/PDX/G2,1,No
+SS_TO,Cabin,G2,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/PDX/G2/Cabin,0,Yes
+SS_TO,Menzies Aviation,PDX,vendor,3,56.22,Goal,Root/div/station/vendor,SS_TO/GCS/PDX/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/PDX/Menzies Aviation/Cabin,0,Yes
+SS_TO,PHL,GCS,station,2,0.17,Goal,Root/div/station,SS_TO/GCS/PHL,3,No
+SS_TO,",null,",PHL,vendor,3,86.31,Goal,Root/div/station/vendor,"SS_TO/GCS/PHL/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/PHL/,null,/Cabin",0,Yes
+SS_TO,Unifi,PHL,vendor,3,12.6,Goal,Root/div/station/vendor,SS_TO/GCS/PHL/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/PHL/Unifi/Cabin,0,Yes
+SS_TO,US Aviation,PHL,vendor,3,1.09,Goal,Root/div/station/vendor,SS_TO/GCS/PHL/US Aviation,1,No
+SS_TO,Cabin,US Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/PHL/US Aviation/Cabin,0,Yes
+SS_TO,PHX,GCS,station,2,0.2,Goal,Root/div/station,SS_TO/GCS/PHX,3,No
+SS_TO,",null,",PHX,vendor,3,26.85,Goal,Root/div/station/vendor,"SS_TO/GCS/PHX/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/PHX/,null,/Cabin",0,Yes
+SS_TO,Prospect,PHX,vendor,3,21.66,Goal,Root/div/station/vendor,SS_TO/GCS/PHX/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/PHX/Prospect/Cabin,0,Yes
+SS_TO,Unifi,PHX,vendor,3,51.49,Goal,Root/div/station/vendor,SS_TO/GCS/PHX/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/PHX/Unifi/Cabin,0,Yes
+SS_TO,RDU,GCS,station,2,0.48,Goal,Root/div/station,SS_TO/GCS/RDU,2,No
+SS_TO,",null,",RDU,vendor,3,75.76,Goal,Root/div/station/vendor,"SS_TO/GCS/RDU/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/RDU/,null,/Cabin",0,Yes
+SS_TO,Unifi,RDU,vendor,3,24.24,Goal,Root/div/station/vendor,SS_TO/GCS/RDU/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/RDU/Unifi/Cabin,0,Yes
+SS_TO,RSW,GCS,station,2,1.81,Goal,Root/div/station,SS_TO/GCS/RSW,2,No
+SS_TO,",null,",RSW,vendor,3,58.37,Goal,Root/div/station/vendor,"SS_TO/GCS/RSW/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/RSW/,null,/Cabin",0,Yes
+SS_TO,Menzies Aviation,RSW,vendor,3,41.63,Goal,Root/div/station/vendor,SS_TO/GCS/RSW/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/RSW/Menzies Aviation/Cabin,0,Yes
+SS_TO,SEA,GCS,station,2,0.78,Goal,Root/div/station,SS_TO/GCS/SEA,2,No
+SS_TO,",null,",SEA,vendor,3,81.8,Goal,Root/div/station/vendor,"SS_TO/GCS/SEA/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/SEA/,null,/Cabin",0,Yes
+SS_TO,Unifi,SEA,vendor,3,18.2,Goal,Root/div/station/vendor,SS_TO/GCS/SEA/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/SEA/Unifi/Cabin,0,Yes
+SS_TO,SFO,GCS,station,2,2.44,Goal,Root/div/station,SS_TO/GCS/SFO,2,No
+SS_TO,",null,",SFO,vendor,3,38.35,Goal,Root/div/station/vendor,"SS_TO/GCS/SFO/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/SFO/,null,/Cabin",0,Yes
+SS_TO,Menzies Aviation,SFO,vendor,3,61.65,Goal,Root/div/station/vendor,SS_TO/GCS/SFO/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/SFO/Menzies Aviation/Cabin,0,Yes
+SS_TO,SLC,GCS,station,2,0.04,Goal,Root/div/station,SS_TO/GCS/SLC,3,No
+SS_TO,",null,",SLC,vendor,3,35.74,Goal,Root/div/station/vendor,"SS_TO/GCS/SLC/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/SLC/,null,/Cabin",0,Yes
+SS_TO,Delta,SLC,vendor,3,57.4,Goal,Root/div/station/vendor,SS_TO/GCS/SLC/Delta,1,No
+SS_TO,Cabin,Delta,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/SLC/Delta/Cabin,0,Yes
+SS_TO,Unifi,SLC,vendor,3,6.86,Goal,Root/div/station/vendor,SS_TO/GCS/SLC/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/SLC/Unifi/Cabin,0,Yes
+SS_TO,STL,GCS,station,2,1.87,Goal,Root/div/station,SS_TO/GCS/STL,3,No
+SS_TO,",null,",STL,vendor,3,31.3,Goal,Root/div/station/vendor,"SS_TO/GCS/STL/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/STL/,null,/Cabin",0,Yes
+SS_TO,Prospect,STL,vendor,3,15.03,Goal,Root/div/station/vendor,SS_TO/GCS/STL/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/STL/Prospect/Cabin,0,Yes
+SS_TO,Unifi,STL,vendor,3,53.669999999999995,Goal,Root/div/station/vendor,SS_TO/GCS/STL/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/STL/Unifi/Cabin,0,Yes
+SS_TO,TPA,GCS,station,2,3.24,Goal,Root/div/station,SS_TO/GCS/TPA,2,No
+SS_TO,",null,",TPA,vendor,3,58.94,Goal,Root/div/station/vendor,"SS_TO/GCS/TPA/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,"SS_TO/GCS/TPA/,null,/Cabin",0,Yes
+SS_TO,Eulen,TPA,vendor,3,41.06,Goal,Root/div/station/vendor,SS_TO/GCS/TPA/Eulen,1,No
+SS_TO,Cabin,Eulen,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,SS_TO/GCS/TPA/Eulen/Cabin,0,Yes
+SS_TO,",null,",GCS,vendor,2,1.16,Goal,Root/div/vendor,"SS_TO/GCS/,null,",1,No
+SS_TO,Cabin,",null,",vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,"SS_TO/GCS/,null,/Cabin",0,Yes
+SS_TO,Delta,GCS,vendor,2,0.16,Goal,Root/div/vendor,SS_TO/GCS/Delta,1,No
+SS_TO,Cabin,Delta,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Delta/Cabin,0,Yes
+SS_TO,Eulen,GCS,vendor,2,1.52,Goal,Root/div/vendor,SS_TO/GCS/Eulen,1,No
+SS_TO,Cabin,Eulen,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Eulen/Cabin,0,Yes
+SS_TO,G2,GCS,vendor,2,1.36,Goal,Root/div/vendor,SS_TO/GCS/G2,1,No
+SS_TO,Cabin,G2,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/G2/Cabin,0,Yes
+SS_TO,GAT,GCS,vendor,2,2.35,Goal,Root/div/vendor,SS_TO/GCS/GAT,1,No
+SS_TO,Cabin,GAT,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/GAT/Cabin,0,Yes
+SS_TO,HHS Aviation,GCS,vendor,2,2.87,Goal,Root/div/vendor,SS_TO/GCS/HHS Aviation,1,No
+SS_TO,Cabin,HHS Aviation,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/HHS Aviation/Cabin,0,Yes
+SS_TO,Jet Air,GCS,vendor,2,0.14,Goal,Root/div/vendor,SS_TO/GCS/Jet Air,1,No
+SS_TO,Cabin,Jet Air,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Jet Air/Cabin,0,Yes
+SS_TO,Menzies Aviation,GCS,vendor,2,2.69,Goal,Root/div/vendor,SS_TO/GCS/Menzies Aviation,1,No
+SS_TO,Cabin,Menzies Aviation,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Menzies Aviation/Cabin,0,Yes
+SS_TO,Pegasus,GCS,vendor,2,1.15,Goal,Root/div/vendor,SS_TO/GCS/Pegasus,1,No
+SS_TO,Cabin,Pegasus,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Pegasus/Cabin,0,Yes
+SS_TO,Prospect,GCS,vendor,2,0.91,Goal,Root/div/vendor,SS_TO/GCS/Prospect,1,No
+SS_TO,Cabin,Prospect,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Prospect/Cabin,0,Yes
+SS_TO,Unifi,GCS,vendor,2,3.43,Goal,Root/div/vendor,SS_TO/GCS/Unifi,1,No
+SS_TO,Cabin,Unifi,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/Unifi/Cabin,0,Yes
+SS_TO,US Aviation,GCS,vendor,2,0.92,Goal,Root/div/vendor,SS_TO/GCS/US Aviation,1,No
+SS_TO,Cabin,US Aviation,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,SS_TO/GCS/US Aviation/Cabin,0,Yes

@@ -1,0 +1,3822 @@
+{
+    "id": "EMPL_ACCTBLTY",
+    "name": "EMPL_ACCTBLTY",
+    "category": "Root",
+    "tier": 0,
+    "path": "EMPL_ACCTBLTY",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ACS",
+            "name": "ACS",
+            "category": "div",
+            "path": "EMPL_ACCTBLTY/ACS",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "APAC_Director",
+                    "name": "APAC_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/APAC_Director",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_Director",
+                    "name": "AUS_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/AUS_Director",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CANMEX_Director",
+                    "name": "CANMEX_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/CANMEX_Director",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Caribbean_Director",
+                    "name": "Caribbean_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Caribbean_Director",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CASA_Director",
+                    "name": "CASA_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/CASA_Director",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG_Director",
+                    "name": "CDG_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/CDG_Director",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Director",
+                    "name": "Central_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Central_Director",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_Director",
+                    "name": "East_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/East_Director",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EMEA-A",
+                    "name": "EMEA-A",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/EMEA-A",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Director",
+                    "name": "Florida_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Florida_Director",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_ATL",
+                    "name": "Hub_ATL",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_ATL",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_BOS",
+                    "name": "Hub_BOS",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_BOS",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_DTW",
+                    "name": "Hub_DTW",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_DTW",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_JFK",
+                    "name": "Hub_JFK",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_JFK",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LAX",
+                    "name": "Hub_LAX",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_LAX",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LGA",
+                    "name": "Hub_LGA",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_LGA",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_MSP",
+                    "name": "Hub_MSP",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_MSP",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SEA",
+                    "name": "Hub_SEA",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_SEA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SLC",
+                    "name": "Hub_SLC",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/Hub_SLC",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Director",
+                    "name": "West_Director",
+                    "category": "director",
+                    "path": "EMPL_ACCTBLTY/ACS/West_Director",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACSATL",
+                    "name": "ACSATL",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/ACSATL",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_AUS_FL",
+                    "name": "DTW_AUS_FL",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/DTW_AUS_FL",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East",
+                    "name": "East",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/East",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "International",
+                    "name": "International",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/International",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_BOS",
+                    "name": "JFK_BOS",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/JFK_BOS",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_SEA_SLC",
+                    "name": "MSP_SEA_SLC",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/MSP_SEA_SLC",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central",
+                    "name": "West_Central",
+                    "category": "division",
+                    "path": "EMPL_ACCTBLTY/ACS/West_Central",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_Region",
+                    "name": "AUS_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/AUS_Region",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Canada_Region",
+                    "name": "Canada_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Canada_Region",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Caribbean_Region",
+                    "name": "Caribbean_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Caribbean_Region",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG_Region",
+                    "name": "CDG_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/CDG_Region",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Region",
+                    "name": "Central_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Central_Region",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EastAsia_Region",
+                    "name": "EastAsia_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/EastAsia_Region",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Region",
+                    "name": "Florida_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Florida_Region",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GreatLakes_Region",
+                    "name": "GreatLakes_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/GreatLakes_Region",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO_Region",
+                    "name": "MCO_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/MCO_Region",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Mexico_Region",
+                    "name": "Mexico_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Mexico_Region",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA_Region",
+                    "name": "MIA_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/MIA_Region",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northeast_Region",
+                    "name": "Northeast_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Northeast_Region",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthAmerica_Region",
+                    "name": "SouthAmerica_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/SouthAmerica_Region",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Southeast_Region",
+                    "name": "Southeast_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/Southeast_Region",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthWest_Region",
+                    "name": "SouthWest_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/SouthWest_Region",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Region",
+                    "name": "West_Region",
+                    "category": "region",
+                    "path": "EMPL_ACCTBLTY/ACS/West_Region",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": ",null,",
+                    "name": ",null,",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/,null,",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABE",
+                    "name": "ABE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ABE",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABQ",
+                    "name": "ABQ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ABQ",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABR",
+                    "name": "ABR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ABR",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABY",
+                    "name": "ABY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ABY",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACC",
+                    "name": "ACC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ACC",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACK",
+                    "name": "ACK",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ACK",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AEX",
+                    "name": "AEX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AEX",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AGS",
+                    "name": "AGS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AGS",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AKL",
+                    "name": "AKL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AKL",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ALB",
+                    "name": "ALB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ALB",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS",
+                    "name": "AMS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AMS",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ANC",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANU",
+                    "name": "ANU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ANU",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "APN",
+                    "name": "APN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/APN",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ARN",
+                    "name": "ARN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ARN",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ASE",
+                    "name": "ASE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ASE",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATG",
+                    "name": "ATG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ATG",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATH",
+                    "name": "ATH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ATH",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ATL",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATW",
+                    "name": "ATW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ATW",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATY",
+                    "name": "ATY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ATY",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUA",
+                    "name": "AUA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AUA",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AUS",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AVL",
+                    "name": "AVL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AVL",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AZO",
+                    "name": "AZO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/AZO",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BCN",
+                    "name": "BCN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BCN",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDA",
+                    "name": "BDA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BDA",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDL",
+                    "name": "BDL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BDL",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BER",
+                    "name": "BER",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BER",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGI",
+                    "name": "BGI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BGI",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGM",
+                    "name": "BGM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BGM",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGR",
+                    "name": "BGR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BGR",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BHM",
+                    "name": "BHM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BHM",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIL",
+                    "name": "BIL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BIL",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIS",
+                    "name": "BIS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BIS",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BJI",
+                    "name": "BJI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BJI",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BMI",
+                    "name": "BMI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BMI",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BNA",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNE",
+                    "name": "BNE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BNE",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOG",
+                    "name": "BOG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BOG",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOI",
+                    "name": "BOI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BOI",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BON",
+                    "name": "BON",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BON",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BOS",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BQK",
+                    "name": "BQK",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BQK",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRD",
+                    "name": "BRD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BRD",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRU",
+                    "name": "BRU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BRU",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTM",
+                    "name": "BTM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BTM",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTR",
+                    "name": "BTR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BTR",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTV",
+                    "name": "BTV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BTV",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUF",
+                    "name": "BUF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BUF",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUR",
+                    "name": "BUR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BUR",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BWI",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZE",
+                    "name": "BZE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BZE",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZN",
+                    "name": "BZN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/BZN",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CAE",
+                    "name": "CAE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CAE",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDC",
+                    "name": "CDC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CDC",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG",
+                    "name": "CDG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CDG",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHA",
+                    "name": "CHA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CHA",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHO",
+                    "name": "CHO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CHO",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHS",
+                    "name": "CHS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CHS",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CID",
+                    "name": "CID",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CID",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CIU",
+                    "name": "CIU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CIU",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLE",
+                    "name": "CLE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CLE",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CLT",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CMH",
+                    "name": "CMH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CMH",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CNY",
+                    "name": "CNY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CNY",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "COS",
+                    "name": "COS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/COS",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPH",
+                    "name": "CPH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CPH",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPT",
+                    "name": "CPT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CPT",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CRW",
+                    "name": "CRW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CRW",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CSG",
+                    "name": "CSG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CSG",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTA",
+                    "name": "CTA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CTA",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTG",
+                    "name": "CTG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CTG",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUN",
+                    "name": "CUN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CUN",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUR",
+                    "name": "CUR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CUR",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CVG",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CWA",
+                    "name": "CWA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CWA",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CZM",
+                    "name": "CZM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/CZM",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAB",
+                    "name": "DAB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DAB",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAL",
+                    "name": "DAL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DAL",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAY",
+                    "name": "DAY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DAY",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DCA",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DEN",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DFW",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DHN",
+                    "name": "DHN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DHN",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DLH",
+                    "name": "DLH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DLH",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSM",
+                    "name": "DSM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DSM",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSS",
+                    "name": "DSS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DSS",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DTW",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DUB",
+                    "name": "DUB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/DUB",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ECP",
+                    "name": "ECP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ECP",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EDI",
+                    "name": "EDI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EDI",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EGE",
+                    "name": "EGE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EGE",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EKO",
+                    "name": "EKO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EKO",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELH",
+                    "name": "ELH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ELH",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELM",
+                    "name": "ELM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ELM",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELP",
+                    "name": "ELP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ELP",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ESC",
+                    "name": "ESC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ESC",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EUG",
+                    "name": "EUG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EUG",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EVV",
+                    "name": "EVV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EVV",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EWR",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EYW",
+                    "name": "EYW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EYW",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EZE",
+                    "name": "EZE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/EZE",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAI",
+                    "name": "FAI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FAI",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAR",
+                    "name": "FAR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FAR",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAT",
+                    "name": "FAT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FAT",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAY",
+                    "name": "FAY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FAY",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCA",
+                    "name": "FCA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FCA",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCO",
+                    "name": "FCO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FCO",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FLL",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FRA",
+                    "name": "FRA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FRA",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FSD",
+                    "name": "FSD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FSD",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FWA",
+                    "name": "FWA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/FWA",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GCM",
+                    "name": "GCM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GCM",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GDL",
+                    "name": "GDL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GDL",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GEG",
+                    "name": "GEG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GEG",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GFK",
+                    "name": "GFK",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GFK",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GGT",
+                    "name": "GGT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GGT",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GIG",
+                    "name": "GIG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GIG",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GJT",
+                    "name": "GJT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GJT",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GND",
+                    "name": "GND",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GND",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GNV",
+                    "name": "GNV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GNV",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GPT",
+                    "name": "GPT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GPT",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRB",
+                    "name": "GRB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GRB",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRR",
+                    "name": "GRR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GRR",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRU",
+                    "name": "GRU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GRU",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSO",
+                    "name": "GSO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GSO",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSP",
+                    "name": "GSP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GSP",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GTF",
+                    "name": "GTF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GTF",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GTR",
+                    "name": "GTR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GTR",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GUA",
+                    "name": "GUA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GUA",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GVA",
+                    "name": "GVA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/GVA",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HAV",
+                    "name": "HAV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HAV",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HDN",
+                    "name": "HDN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HDN",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HHH",
+                    "name": "HHH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HHH",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HIB",
+                    "name": "HIB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HIB",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HKG",
+                    "name": "HKG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HKG",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HLN",
+                    "name": "HLN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HLN",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HND",
+                    "name": "HND",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HND",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HNL",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HOU",
+                    "name": "HOU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HOU",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HPN",
+                    "name": "HPN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HPN",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HRL",
+                    "name": "HRL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HRL",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HSV",
+                    "name": "HSV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/HSV",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/IAD",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/IAH",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICN",
+                    "name": "ICN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ICN",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICT",
+                    "name": "ICT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ICT",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IDA",
+                    "name": "IDA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/IDA",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ILM",
+                    "name": "ILM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ILM",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IMT",
+                    "name": "IMT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/IMT",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/IND",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "INL",
+                    "name": "INL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/INL",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ITH",
+                    "name": "ITH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ITH",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAC",
+                    "name": "JAC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/JAC",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAN",
+                    "name": "JAN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/JAN",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAX",
+                    "name": "JAX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/JAX",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/JFK",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNB",
+                    "name": "JNB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/JNB",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNU",
+                    "name": "JNU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/JNU",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KEF",
+                    "name": "KEF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/KEF",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KIN",
+                    "name": "KIN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/KIN",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/KOA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAN",
+                    "name": "LAN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LAN",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LAS",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LAX",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LEX",
+                    "name": "LEX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LEX",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LFT",
+                    "name": "LFT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LFT",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LGA",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGB",
+                    "name": "LGB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LGB",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGW",
+                    "name": "LGW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LGW",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LHR",
+                    "name": "LHR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LHR",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LIH",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIM",
+                    "name": "LIM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LIM",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIR",
+                    "name": "LIR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LIR",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIS",
+                    "name": "LIS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LIS",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIT",
+                    "name": "LIT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LIT",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LOS",
+                    "name": "LOS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LOS",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LWS",
+                    "name": "LWS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/LWS",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MAD",
+                    "name": "MAD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MAD",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBJ",
+                    "name": "MBJ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MBJ",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBS",
+                    "name": "MBS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MBS",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCI",
+                    "name": "MCI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MCI",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MCO",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDT",
+                    "name": "MDT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MDT",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDW",
+                    "name": "MDW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MDW",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEL",
+                    "name": "MEL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MEL",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MEM",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEX",
+                    "name": "MEX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MEX",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFE",
+                    "name": "MFE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MFE",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFR",
+                    "name": "MFR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MFR",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MGM",
+                    "name": "MGM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MGM",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MHH",
+                    "name": "MHH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MHH",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MIA",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MKE",
+                    "name": "MKE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MKE",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLA",
+                    "name": "MLA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MLA",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLB",
+                    "name": "MLB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MLB",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLI",
+                    "name": "MLI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MLI",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLU",
+                    "name": "MLU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MLU",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOB",
+                    "name": "MOB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MOB",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOT",
+                    "name": "MOT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MOT",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MQT",
+                    "name": "MQT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MQT",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSN",
+                    "name": "MSN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MSN",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSO",
+                    "name": "MSO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MSO",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MSP",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MSY",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MTJ",
+                    "name": "MTJ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MTJ",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MTY",
+                    "name": "MTY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MTY",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MUC",
+                    "name": "MUC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MUC",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MVY",
+                    "name": "MVY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MVY",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MXP",
+                    "name": "MXP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MXP",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MYR",
+                    "name": "MYR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MYR",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MZT",
+                    "name": "MZT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/MZT",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAP",
+                    "name": "NAP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/NAP",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAS",
+                    "name": "NAS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/NAS",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NCE",
+                    "name": "NCE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/NCE",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAJ",
+                    "name": "OAJ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OAJ",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAK",
+                    "name": "OAK",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OAK",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OGG",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OKC",
+                    "name": "OKC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OKC",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OLB",
+                    "name": "OLB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OLB",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OMA",
+                    "name": "OMA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OMA",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ONT",
+                    "name": "ONT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ONT",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OPO",
+                    "name": "OPO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/OPO",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ORD",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORF",
+                    "name": "ORF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ORF",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORH",
+                    "name": "ORH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ORH",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PBI",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PDX",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PHL",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PHX",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIH",
+                    "name": "PIH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PIH",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PIT",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PKX",
+                    "name": "PKX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PKX",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PLN",
+                    "name": "PLN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PLN",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PLS",
+                    "name": "PLS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PLS",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PNS",
+                    "name": "PNS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PNS",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "POP",
+                    "name": "POP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/POP",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PPT",
+                    "name": "PPT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PPT",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PRG",
+                    "name": "PRG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PRG",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSC",
+                    "name": "PSC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PSC",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSP",
+                    "name": "PSP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PSP",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PTY",
+                    "name": "PTY",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PTY",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PUJ",
+                    "name": "PUJ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PUJ",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVD",
+                    "name": "PVD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PVD",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVG",
+                    "name": "PVG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PVG",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVR",
+                    "name": "PVR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PVR",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PWM",
+                    "name": "PWM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/PWM",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAK",
+                    "name": "RAK",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RAK",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAP",
+                    "name": "RAP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RAP",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDM",
+                    "name": "RDM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RDM",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RDU",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RHI",
+                    "name": "RHI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RHI",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RIC",
+                    "name": "RIC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RIC",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RNO",
+                    "name": "RNO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RNO",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROA",
+                    "name": "ROA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ROA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROC",
+                    "name": "ROC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ROC",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RST",
+                    "name": "RST",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RST",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RSW",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RTB",
+                    "name": "RTB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RTB",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RUH",
+                    "name": "RUH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/RUH",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAL",
+                    "name": "SAL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SAL",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SAN",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAP",
+                    "name": "SAP",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SAP",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SAT",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAV",
+                    "name": "SAV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SAV",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBA",
+                    "name": "SBA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SBA",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBN",
+                    "name": "SBN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SBN",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SCL",
+                    "name": "SCL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SCL",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDF",
+                    "name": "SDF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SDF",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDQ",
+                    "name": "SDQ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SDQ",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SEA",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SFO",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SGF",
+                    "name": "SGF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SGF",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SGU",
+                    "name": "SGU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SGU",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SHV",
+                    "name": "SHV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SHV",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SJC",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJD",
+                    "name": "SJD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SJD",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJO",
+                    "name": "SJO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SJO",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJU",
+                    "name": "SJU",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SJU",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SKB",
+                    "name": "SKB",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SKB",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SLC",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SMF",
+                    "name": "SMF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SMF",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SNA",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNN",
+                    "name": "SNN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SNN",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SRQ",
+                    "name": "SRQ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SRQ",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STI",
+                    "name": "STI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/STI",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/STL",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STT",
+                    "name": "STT",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/STT",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STX",
+                    "name": "STX",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/STX",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SUN",
+                    "name": "SUN",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SUN",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SVD",
+                    "name": "SVD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SVD",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SXM",
+                    "name": "SXM",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SXM",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYD",
+                    "name": "SYD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SYD",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYR",
+                    "name": "SYR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/SYR",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLH",
+                    "name": "TLH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TLH",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLV",
+                    "name": "TLV",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TLV",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TPA",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPE",
+                    "name": "TPE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TPE",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TQO",
+                    "name": "TQO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TQO",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TRI",
+                    "name": "TRI",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TRI",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUL",
+                    "name": "TUL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TUL",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUS",
+                    "name": "TUS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TUS",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TVC",
+                    "name": "TVC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TVC",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TWF",
+                    "name": "TWF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TWF",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TYS",
+                    "name": "TYS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/TYS",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UIO",
+                    "name": "UIO",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/UIO",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UVF",
+                    "name": "UVF",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/UVF",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VCE",
+                    "name": "VCE",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/VCE",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VLD",
+                    "name": "VLD",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/VLD",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VPS",
+                    "name": "VPS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/VPS",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "WYS",
+                    "name": "WYS",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/WYS",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XNA",
+                    "name": "XNA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/XNA",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XWA",
+                    "name": "XWA",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/XWA",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YHZ",
+                    "name": "YHZ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/YHZ",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YUL",
+                    "name": "YUL",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/YUL",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YVR",
+                    "name": "YVR",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/YVR",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YWG",
+                    "name": "YWG",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/YWG",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YYC",
+                    "name": "YYC",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/YYC",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YYZ",
+                    "name": "YYZ",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/YYZ",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ZRH",
+                    "name": "ZRH",
+                    "category": "station",
+                    "path": "EMPL_ACCTBLTY/ACS/ZRH",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "APAC_VP",
+                    "name": "APAC_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/APAC_VP",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_VP",
+                    "name": "ATL_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/ATL_VP",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_FL_VP",
+                    "name": "AUS_FL_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/AUS_FL_VP",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS_VP",
+                    "name": "BOS_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/BOS_VP",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_VP",
+                    "name": "DTW_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/DTW_VP",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_VP",
+                    "name": "East_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/East_VP",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EMEAI_VP",
+                    "name": "EMEAI_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/EMEAI_VP",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_VP",
+                    "name": "JFK_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/JFK_VP",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LACC_VP",
+                    "name": "LACC_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/LACC_VP",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX_VP",
+                    "name": "LAX_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/LAX_VP",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA_VP",
+                    "name": "LGA_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/LGA_VP",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_VP",
+                    "name": "MSP_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/MSP_VP",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA_VP",
+                    "name": "SEA_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/SEA_VP",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC_VP",
+                    "name": "SLC_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/SLC_VP",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central_VP",
+                    "name": "West_Central_VP",
+                    "category": "vp",
+                    "path": "EMPL_ACCTBLTY/ACS/West_Central_VP",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

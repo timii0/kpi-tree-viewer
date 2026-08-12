@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+ED_1010,ED_1010,,Root,0,1,Goal,Root,ED_1010,1,No
+ED_1010,TOP,ED_1010,div,1,100.0,Goal,Root/div,ED_1010/TOP,1,No
+ED_1010,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,ED_1010/TOP/Distribution_Logistics,0,Yes

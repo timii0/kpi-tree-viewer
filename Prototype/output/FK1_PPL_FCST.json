@@ -1,0 +1,21 @@
+{
+    "id": "FK1_PPL_FCST",
+    "name": "FK1_PPL_FCST",
+    "category": "Root",
+    "tier": 0,
+    "path": "FK1_PPL_FCST",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "FK1_PPL_FCST/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

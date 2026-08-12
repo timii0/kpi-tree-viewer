@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NSAT_SERV_RATE,NSAT_SERV_RATE,,Root,0,1,Goal,Root,NSAT_SERV_RATE,1,No
+NSAT_SERV_RATE,TOP,NSAT_SERV_RATE,div,1,100.0,Goal,Root/div,NSAT_SERV_RATE/TOP,1,No
+NSAT_SERV_RATE,Cabin Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,NSAT_SERV_RATE/TOP/Cabin Maintenance,0,Yes

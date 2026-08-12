@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FK1_FULFILLMENT,FK1_FULFILLMENT,,Root,0,1,Goal,Root,FK1_FULFILLMENT,1,No
+FK1_FULFILLMENT,TOP,FK1_FULFILLMENT,div,1,100.0,Goal,Root/div,FK1_FULFILLMENT/TOP,1,No
+FK1_FULFILLMENT,Materials,TOP,bu,2,100.0,Goal,Root/div/bu,FK1_FULFILLMENT/TOP/Materials,0,Yes

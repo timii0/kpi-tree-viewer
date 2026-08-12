@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CGO_ULD_MTCG,CGO_ULD_MTCG,,Root,0,1,Goal,Root,CGO_ULD_MTCG,1,No
+CGO_ULD_MTCG,DL,CGO_ULD_MTCG,sys,1,100.0,Goal,Root/sys,CGO_ULD_MTCG/DL,0,Yes

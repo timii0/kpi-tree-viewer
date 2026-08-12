@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+SLA_ACC_FM,SLA_ACC_FM,,Root,0,1,Goal,Root,SLA_ACC_FM,1,No
+SLA_ACC_FM,CSSC,SLA_ACC_FM,div,1,100.0,Goal,Root/div,SLA_ACC_FM/CSSC,1,No
+SLA_ACC_FM,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,SLA_ACC_FM/CSSC/CS,0,Yes

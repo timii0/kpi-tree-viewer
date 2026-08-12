@@ -1,0 +1,21 @@
+{
+    "id": "DOT_DISAB_CPLT",
+    "name": "DOT_DISAB_CPLT",
+    "category": "Root",
+    "tier": 0,
+    "path": "DOT_DISAB_CPLT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "DOT_DISAB_CPLT/DL",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

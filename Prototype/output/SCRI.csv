@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+SCRI,SCRI,,Root,0,1,Goal,Root,SCRI,1,No
+SCRI,DL,SCRI,sys,1,100.0,Goal,Root/sys,SCRI/DL,0,Yes

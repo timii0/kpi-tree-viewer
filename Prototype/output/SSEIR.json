@@ -1,0 +1,32 @@
+{
+    "id": "SSEIR",
+    "name": "SSEIR",
+    "category": "Root",
+    "tier": 0,
+    "path": "SSEIR",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "CSSC",
+            "name": "CSSC",
+            "category": "div",
+            "path": "SSEIR/CSSC",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "CS",
+                    "name": "CS",
+                    "category": "bu",
+                    "path": "SSEIR/CSSC/CS",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

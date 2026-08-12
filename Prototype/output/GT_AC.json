@@ -1,0 +1,31 @@
+{
+    "id": "GT_AC",
+    "name": "GT_AC",
+    "category": "Root",
+    "tier": 0,
+    "path": "GT_AC",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "N",
+            "name": "N",
+            "category": "body_type_cd",
+            "path": "GT_AC/N",
+            "tier": 1,
+            "contribution": 75.29,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "W",
+            "name": "W",
+            "category": "body_type_cd",
+            "path": "GT_AC/W",
+            "tier": 1,
+            "contribution": 24.71,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "NM_COS_BH",
+    "name": "NM_COS_BH",
+    "category": "Root",
+    "tier": 0,
+    "path": "NM_COS_BH",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DC",
+            "name": "DC",
+            "category": "div",
+            "path": "NM_COS_BH/DC",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

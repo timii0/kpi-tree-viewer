@@ -1,0 +1,121 @@
+{
+    "id": "MEL_INOP_RATE",
+    "name": "MEL_INOP_RATE",
+    "category": "Root",
+    "tier": 0,
+    "path": "MEL_INOP_RATE",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ACARS",
+            "name": "ACARS",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/ACARS",
+            "tier": 1,
+            "contribution": 0.24,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "APU_BLEED_INOP",
+            "name": "APU_BLEED_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/APU_BLEED_INOP",
+            "tier": 1,
+            "contribution": 14.35,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "APU_INOP",
+            "name": "APU_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/APU_INOP",
+            "tier": 1,
+            "contribution": 14.88,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "CARGO_INOP",
+            "name": "CARGO_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/CARGO_INOP",
+            "tier": 1,
+            "contribution": 3.87,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "CAT_II_III",
+            "name": "CAT_II_III",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/CAT_II_III",
+            "tier": 1,
+            "contribution": 6.62,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ENGINE_BLEED_INOP",
+            "name": "ENGINE_BLEED_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/ENGINE_BLEED_INOP",
+            "tier": 1,
+            "contribution": 6.58,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "GENERATOR_INOP",
+            "name": "GENERATOR_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/GENERATOR_INOP",
+            "tier": 1,
+            "contribution": 9.36,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "LAV_INOP",
+            "name": "LAV_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/LAV_INOP",
+            "tier": 1,
+            "contribution": 13.01,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "PACK_INOP",
+            "name": "PACK_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/PACK_INOP",
+            "tier": 1,
+            "contribution": 13.59,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "SEAT_INOP",
+            "name": "SEAT_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/SEAT_INOP",
+            "tier": 1,
+            "contribution": 9.19,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "WATER_INOP",
+            "name": "WATER_INOP",
+            "category": "defr_desc",
+            "path": "MEL_INOP_RATE/WATER_INOP",
+            "tier": 1,
+            "contribution": 8.31,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

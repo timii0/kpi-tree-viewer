@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+90_DAY_LEADING,90_DAY_LEADING,,Root,0,1,Goal,Root,90_DAY_LEADING,1,No
+90_DAY_LEADING,DL,90_DAY_LEADING,sys,1,100.0,Goal,Root/sys,90_DAY_LEADING/DL,0,Yes

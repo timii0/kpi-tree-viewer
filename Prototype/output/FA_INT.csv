@@ -1,0 +1,7 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+FA_INT,FA_INT,,Root,0,1,Goal,Root,FA_INT,5,No
+FA_INT,DC,FA_INT,carrier,1,24.32,Goal,Root/carrier,FA_INT/DC,0,Yes
+FA_INT,ML,FA_INT,carrier,1,19.18,Goal,Root/carrier,FA_INT/ML,0,Yes
+FA_INT,9E,FA_INT,dc_carrier,1,29.14,Goal,Root/dc_carrier,FA_INT/9E,0,Yes
+FA_INT,OO,FA_INT,dc_carrier,1,8.63,Goal,Root/dc_carrier,FA_INT/OO,0,Yes
+FA_INT,YX,FA_INT,dc_carrier,1,18.73,Goal,Root/dc_carrier,FA_INT/YX,0,Yes

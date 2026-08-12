@@ -1,0 +1,32 @@
+{
+    "id": "ED_1010",
+    "name": "ED_1010",
+    "category": "Root",
+    "tier": 0,
+    "path": "ED_1010",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "ED_1010/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Distribution_Logistics",
+                    "name": "Distribution_Logistics",
+                    "category": "bu",
+                    "path": "ED_1010/TOP/Distribution_Logistics",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

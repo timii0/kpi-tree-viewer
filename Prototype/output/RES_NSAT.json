@@ -1,0 +1,21 @@
+{
+    "id": "RES_NSAT",
+    "name": "RES_NSAT",
+    "category": "Root",
+    "tier": 0,
+    "path": "RES_NSAT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "RES",
+            "name": "RES",
+            "category": "div",
+            "path": "RES_NSAT/RES",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

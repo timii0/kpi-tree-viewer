@@ -1,0 +1,21 @@
+{
+    "id": "OCC_PPL",
+    "name": "OCC_PPL",
+    "category": "Root",
+    "tier": 0,
+    "path": "OCC_PPL",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "OCC",
+            "name": "OCC",
+            "category": "div",
+            "path": "OCC_PPL/OCC",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

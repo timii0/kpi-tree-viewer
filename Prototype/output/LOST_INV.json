@@ -1,0 +1,32 @@
+{
+    "id": "LOST_INV",
+    "name": "LOST_INV",
+    "category": "Root",
+    "tier": 0,
+    "path": "LOST_INV",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "LOST_INV/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Distribution_Logistics",
+                    "name": "Distribution_Logistics",
+                    "category": "bu",
+                    "path": "LOST_INV/TOP/Distribution_Logistics",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

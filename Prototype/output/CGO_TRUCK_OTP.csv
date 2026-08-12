@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CGO_TRUCK_OTP,CGO_TRUCK_OTP,,Root,0,1,Goal,Root,CGO_TRUCK_OTP,1,No
+CGO_TRUCK_OTP,I,CGO_TRUCK_OTP,dom_int,1,100.0,Goal,Root/dom_int,CGO_TRUCK_OTP/I,0,Yes

@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+ON_TIME_TRANSIT,ON_TIME_TRANSIT,,Root,0,1,Goal,Root,ON_TIME_TRANSIT,1,No
+ON_TIME_TRANSIT,TOP,ON_TIME_TRANSIT,div,1,100.0,Goal,Root/div,ON_TIME_TRANSIT/TOP,1,No
+ON_TIME_TRANSIT,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,ON_TIME_TRANSIT/TOP/Distribution_Logistics,0,Yes

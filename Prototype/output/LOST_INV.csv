@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+LOST_INV,LOST_INV,,Root,0,1,Goal,Root,LOST_INV,1,No
+LOST_INV,TOP,LOST_INV,div,1,100.0,Goal,Root/div,LOST_INV/TOP,1,No
+LOST_INV,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,LOST_INV/TOP/Distribution_Logistics,0,Yes

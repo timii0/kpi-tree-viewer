@@ -1,0 +1,51 @@
+{
+    "id": "CBN_AUDIT",
+    "name": "CBN_AUDIT",
+    "category": "Root",
+    "tier": 0,
+    "path": "CBN_AUDIT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DC",
+            "name": "DC",
+            "category": "carrier",
+            "path": "CBN_AUDIT/DC",
+            "tier": 1,
+            "contribution": 40.31,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "9E",
+            "name": "9E",
+            "category": "dc_carrier",
+            "path": "CBN_AUDIT/9E",
+            "tier": 1,
+            "contribution": 29.82,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "OO",
+            "name": "OO",
+            "category": "dc_carrier",
+            "path": "CBN_AUDIT/OO",
+            "tier": 1,
+            "contribution": 28.03,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "YX",
+            "name": "YX",
+            "category": "dc_carrier",
+            "path": "CBN_AUDIT/YX",
+            "tier": 1,
+            "contribution": 1.84,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

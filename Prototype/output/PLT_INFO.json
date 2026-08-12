@@ -1,0 +1,61 @@
+{
+    "id": "PLT_INFO",
+    "name": "PLT_INFO",
+    "category": "Root",
+    "tier": 0,
+    "path": "PLT_INFO",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DC",
+            "name": "DC",
+            "category": "carrier",
+            "path": "PLT_INFO/DC",
+            "tier": 1,
+            "contribution": 23.4,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ML",
+            "name": "ML",
+            "category": "carrier",
+            "path": "PLT_INFO/ML",
+            "tier": 1,
+            "contribution": 9.96,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "9E",
+            "name": "9E",
+            "category": "dc_carrier",
+            "path": "PLT_INFO/9E",
+            "tier": 1,
+            "contribution": 33.15,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "OO",
+            "name": "OO",
+            "category": "dc_carrier",
+            "path": "PLT_INFO/OO",
+            "tier": 1,
+            "contribution": 27.74,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "YX",
+            "name": "YX",
+            "category": "dc_carrier",
+            "path": "PLT_INFO/YX",
+            "tier": 1,
+            "contribution": 5.75,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

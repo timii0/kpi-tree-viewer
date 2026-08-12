@@ -1,0 +1,32 @@
+{
+    "id": "ACDC",
+    "name": "ACDC",
+    "category": "Root",
+    "tier": 0,
+    "path": "ACDC",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "FOP",
+            "name": "FOP",
+            "category": "div",
+            "path": "ACDC/FOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "In-Op",
+                    "name": "In-Op",
+                    "category": "op_timing",
+                    "path": "ACDC/FOP/In-Op",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+HARD_GROUND_DEL,HARD_GROUND_DEL,,Root,0,1,Goal,Root,HARD_GROUND_DEL,1,No
+HARD_GROUND_DEL,TOP,HARD_GROUND_DEL,div,1,100.0,Goal,Root/div,HARD_GROUND_DEL/TOP,1,No
+HARD_GROUND_DEL,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,HARD_GROUND_DEL/TOP/Distribution_Logistics,0,Yes

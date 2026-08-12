@@ -1,0 +1,32 @@
+{
+    "id": "CBN_APP_VISIT",
+    "name": "CBN_APP_VISIT",
+    "category": "Root",
+    "tier": 0,
+    "path": "CBN_APP_VISIT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "CBN_APP_VISIT/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Airframe Maintenance",
+                    "name": "Airframe Maintenance",
+                    "category": "bu",
+                    "path": "CBN_APP_VISIT/TOP/Airframe Maintenance",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

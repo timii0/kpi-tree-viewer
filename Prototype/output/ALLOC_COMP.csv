@@ -1,0 +1,6 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+ALLOC_COMP,ALLOC_COMP,,Root,0,1,Goal,Root,ALLOC_COMP,4,No
+ALLOC_COMP,ESSN1,ALLOC_COMP,essn_cd,1,27.71,Goal,Root/essn_cd,ALLOC_COMP/ESSN1,0,Yes
+ALLOC_COMP,ESSN2,ALLOC_COMP,essn_cd,1,29.74,Goal,Root/essn_cd,ALLOC_COMP/ESSN2,0,Yes
+ALLOC_COMP,ESSN3,ALLOC_COMP,essn_cd,1,28.44,Goal,Root/essn_cd,ALLOC_COMP/ESSN3,0,Yes
+ALLOC_COMP,KILLER,ALLOC_COMP,essn_cd,1,14.11,Goal,Root/essn_cd,ALLOC_COMP/KILLER,0,Yes

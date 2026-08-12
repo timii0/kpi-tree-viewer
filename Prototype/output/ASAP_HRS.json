@@ -1,0 +1,31 @@
+{
+    "id": "ASAP_HRS",
+    "name": "ASAP_HRS",
+    "category": "Root",
+    "tier": 0,
+    "path": "ASAP_HRS",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ACS",
+            "name": "ACS",
+            "category": "div",
+            "path": "ASAP_HRS/ACS",
+            "tier": 1,
+            "contribution": 57.68,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "CGO",
+            "name": "CGO",
+            "category": "div",
+            "path": "ASAP_HRS/CGO",
+            "tier": 1,
+            "contribution": 42.32,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

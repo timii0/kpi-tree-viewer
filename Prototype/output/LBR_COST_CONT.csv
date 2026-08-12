@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+LBR_COST_CONT,LBR_COST_CONT,,Root,0,1,Goal,Root,LBR_COST_CONT,1,No
+LBR_COST_CONT,RES,LBR_COST_CONT,div,1,100.0,Goal,Root/div,LBR_COST_CONT/RES,0,Yes

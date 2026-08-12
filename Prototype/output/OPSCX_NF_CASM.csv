@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+OPSCX_NF_CASM,OPSCX_NF_CASM,,Root,0,1,Goal,Root,OPSCX_NF_CASM,1,No
+OPSCX_NF_CASM,DL,OPSCX_NF_CASM,sys,1,100.0,Goal,Root/sys,OPSCX_NF_CASM/DL,0,Yes

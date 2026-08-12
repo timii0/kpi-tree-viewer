@@ -1,0 +1,21 @@
+{
+    "id": "CGO_ULD_ALLC",
+    "name": "CGO_ULD_ALLC",
+    "category": "Root",
+    "tier": 0,
+    "path": "CGO_ULD_ALLC",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "CGO_ULD_ALLC/DL",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

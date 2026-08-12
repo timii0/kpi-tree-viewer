@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+TAT_DLY_RATE,TAT_DLY_RATE,,Root,0,1,Goal,Root,TAT_DLY_RATE,1,No
+TAT_DLY_RATE,DL,TAT_DLY_RATE,sys,1,100.0,Goal,Root/sys,TAT_DLY_RATE/DL,0,Yes

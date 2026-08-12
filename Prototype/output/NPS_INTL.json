@@ -1,0 +1,94 @@
+{
+    "id": "NPS_INTL",
+    "name": "NPS_INTL",
+    "category": "Root",
+    "tier": 0,
+    "path": "NPS_INTL",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ML",
+            "name": "ML",
+            "category": "carrier",
+            "path": "NPS_INTL/ML",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "TATL",
+                    "name": "TATL",
+                    "category": "entity",
+                    "path": "NPS_INTL/ML/TATL",
+                    "tier": 2,
+                    "contribution": 42.82,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "D1",
+                            "name": "D1",
+                            "category": "cabin",
+                            "path": "NPS_INTL/ML/TATL/D1",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "LATIN",
+                    "name": "LATIN",
+                    "category": "entity",
+                    "path": "NPS_INTL/ML/LATIN",
+                    "tier": 2,
+                    "contribution": 44.39,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "LH",
+                            "name": "LH",
+                            "category": "variant",
+                            "path": "NPS_INTL/ML/LATIN/LH",
+                            "tier": 3,
+                            "contribution": 1.56,
+                            "type": "Goal",
+                            "children": []
+                        },
+                        {
+                            "id": "SH",
+                            "name": "SH",
+                            "category": "variant",
+                            "path": "NPS_INTL/ML/LATIN/SH",
+                            "tier": 3,
+                            "contribution": 98.44,
+                            "type": "Goal",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "Latin",
+                    "name": "Latin",
+                    "category": "entity",
+                    "path": "NPS_INTL/ML/Latin",
+                    "tier": 2,
+                    "contribution": 9.64,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPAC",
+                    "name": "TPAC",
+                    "category": "entity",
+                    "path": "NPS_INTL/ML/TPAC",
+                    "tier": 2,
+                    "contribution": 3.15,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

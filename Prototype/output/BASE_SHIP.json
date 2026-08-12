@@ -1,0 +1,21 @@
+{
+    "id": "BASE_SHIP",
+    "name": "BASE_SHIP",
+    "category": "Root",
+    "tier": 0,
+    "path": "BASE_SHIP",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "BASE_SHIP/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

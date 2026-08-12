@@ -1,0 +1,21 @@
+{
+    "id": "FOP_TRAIN_LEN",
+    "name": "FOP_TRAIN_LEN",
+    "category": "Root",
+    "tier": 0,
+    "path": "FOP_TRAIN_LEN",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "FOP_TRAIN_LEN/DL",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

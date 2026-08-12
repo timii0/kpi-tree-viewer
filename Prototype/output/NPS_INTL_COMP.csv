@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NPS_INTL_COMP,NPS_INTL_COMP,,Root,0,1,Goal,Root,NPS_INTL_COMP,1,No
+NPS_INTL_COMP,ML,NPS_INTL_COMP,carrier,1,100.0,Goal,Root/carrier,NPS_INTL_COMP/ML,0,Yes

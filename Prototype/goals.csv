@@ -1,2 +1,4 @@
-KPI_Name,Node_Name,Baseline,Stretch,KPI_Num,KPI_Den,Goal
-D0,carrier;ML,66.3,5%,393304,1165961,69.6
+KPI_Name,Node_Name,Baseline,Baseline_Num,Baseline_Den,Stretch,KPI_Num,KPI_Den,Goal
+D0,system;sys,68.29,1216941,1782026,5%,1339263,1867760,71.70
+D0,carrier;ML,66.24,769980,1162327,5%,847375,1218247,69.56
+D0,carrier;DC,72.13,446961,619699,5%,491888,649513,75.73

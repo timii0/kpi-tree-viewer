@@ -37,12 +37,13 @@ query = """
         where 
             data_cut = 'STANDARD'
             and DOT_OA_Sub_Op_Ct = 1
-            and flt_orig_dt between '2026-06-29' and '2026-06-30'
+            and flt_orig_dt between '2025-06-01' and '2026-05-30'
 
         """
 
 with td_connect() as conn:
     df = pd.read_sql(query, conn)
+    df = df.dropna()
     df.to_parquet("teradata_cache.parquet")
 
 print(df.head())

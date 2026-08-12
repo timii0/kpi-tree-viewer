@@ -20,31 +20,37 @@
                             "category": "dc_carrier",
                             "children": [
                                 {
-                                    "column": "frst_flt_ind",
-                                    "category": "first_flt",
-                                    "transform": {
-                                        "type": "int_flag",
-                                        "map": {
-                                            "1": "First Flight",
-                                            "0": "Not First Flight"
-                                        }
-                                    },
+                                    "column": "Mo_Nb",
+                                    "category": "month",
                                     "children": [
                                         {
-                                            "column": "dom_int",
-                                            "category": "dom_int",
+                                            "column": "frst_flt_ind",
+                                            "category": "first_flt",
+                                            "transform": {
+                                                "type": "int_flag",
+                                                "map": {
+                                                    "1": "First Flight",
+                                                    "0": "Not First Flight"
+                                                }
+                                            },
                                             "children": [
                                                 {
-                                                    "column": "fleet",
-                                                    "category": "fleet",
+                                                    "column": "dom_int",
+                                                    "category": "dom_int",
                                                     "children": [
                                                         {
-                                                            "column": "vendor",
-                                                            "category": "vendor",
+                                                            "column": "fleet",
+                                                            "category": "fleet",
                                                             "children": [
                                                                 {
-                                                                    "column": "station",
-                                                                    "category": "station"
+                                                                    "column": "vendor",
+                                                                    "category": "vendor",
+                                                                    "children": [
+                                                                        {
+                                                                            "column": "station",
+                                                                            "category": "station"
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         }

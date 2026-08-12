@@ -262,7 +262,7 @@ max_leaf_nodes = st.sidebar.slider(
 MAX_TREE_DEPTH = st.sidebar.slider(
     "Tree Display Depth",
     1,
-    8,
+    10,
     3
 )
 

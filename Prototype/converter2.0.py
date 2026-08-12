@@ -1,14 +1,16 @@
 import pandas as pd
 import json
 from pathlib import Path
+import time
 
 OUTPUT_FILE = Path("output") / "D0 2.0.json"
 HIERARCHY_FILE = Path("hierarchy.json")
 
 cache_file = "teradata_cache.parquet"
-df = pd.read_parquet(cache_file)
 
-print(df)
+start = time.time()
+df = pd.read_parquet(cache_file)
+print(f"Loaded {len(df):,} rows in {time.time() - start:.2f}s")
 
 # Load hierarchy definition from JSON
 with open(HIERARCHY_FILE, "r", encoding="utf-8") as f:
@@ -40,113 +42,145 @@ def parse_levels(hierarchy):
 LEVELS = parse_levels(HIERARCHY)
 
 
-def apply_transform(transform, raw_value):
+def apply_transform_series(series, transform):
     """
-    Apply a transform rule from the hierarchy definition.
-    Supports:
-      - "map": dict of raw_value -> display_name
-      - "type": coercion type ("int_flag" maps 1/0 to labels)
-    Falls back to str(raw_value) if no rule matches.
+    Apply a transform to an entire pandas Series (vectorized).
+    Returns the transformed Series.
     """
     if not transform:
-        return str(raw_value).strip()
+        return series.astype(str).str.strip()
 
     kind = transform.get("type")
 
     if kind == "int_flag":
         mapping = transform.get("map", {})
-        try:
-            key = str(int(float(raw_value)))
-        except (ValueError, TypeError):
-            key = str(raw_value).strip()
-        return mapping.get(key, key)
+        # Convert to int-string keys for mapping
+        int_series = pd.to_numeric(series, errors="coerce").fillna(-1).astype(int).astype(str)
+        return int_series.map(mapping).fillna(series.astype(str).str.strip())
 
     if kind == "map":
         mapping = transform.get("map", {})
-        key = str(raw_value).strip()
-        return mapping.get(key, key)
+        return series.astype(str).str.strip().map(mapping).fillna(series.astype(str).str.strip())
 
-    return str(raw_value).strip()
+    return series.astype(str).str.strip()
 
-root = {
-    "id": "Nwk Sys",
-    "name": "Nwk Sys",
-    "category": "Enterprise",
-    "type": "Goal",
-    "path": "",
-    "num": 0,
-    "den": 0,
-    "baseline": 0,
-    "goal": 0,
-    "contribution": 1.0,
-    "children": []
-}
 
-def find_or_create(parent, name, category):
-    for child in parent["children"]:
+# ---------------------------------------------------------------------------
+# Vectorized tree building using multi-level groupby
+# ---------------------------------------------------------------------------
 
-        if (
-            child["name"] == name and
-            child["category"] == category
-        ):
-            return child
+def build_tree_fast(df, levels):
+    """
+    Build the tree using a single groupby on all levels at once,
+    then assemble the tree from aggregated groups.
+    """
+    # Pre-transform all columns into clean string values
+    col_names = []
+    for column, category, transform in levels:
+        col_name = f"_lvl_{category}"
+        df[col_name] = apply_transform_series(df[column], transform)
+        col_names.append(col_name)
 
-    node = {
-        "id": f"{category};{name}",
-        "name": name,
-        "category": category,
-        "tier": 0,
+    # Root aggregation
+    total_num = int(df["num"].sum())
+    total_den = int(df["den"].sum())
+
+    root = {
+        "id": "Nwk Sys",
+        "name": "Nwk Sys",
+        "category": "Enterprise",
         "type": "Goal",
         "path": "",
-        "num": 0,
-        "den": 0,
+        "num": total_num,
+        "den": total_den,
         "baseline": 0,
         "goal": 0,
         "contribution": 1.0,
         "children": []
     }
 
-    parent["children"].append(
-        node
-    )
+    # Pre-aggregate at every prefix length in one pass
+    # For N levels, we do N groupby operations (not per-row)
+    print("Aggregating levels...")
+    agg_start = time.time()
 
-    return node
+    # Build aggregations for each depth
+    level_aggs = {}
+    for depth in range(1, len(col_names) + 1):
+        group_cols = col_names[:depth]
+        agg = df.groupby(group_cols, sort=False).agg(
+            num=("num", "sum"),
+            den=("den", "sum")
+        ).reset_index()
+        level_aggs[depth] = agg
 
-for _, row in df.iterrows():
+    print(f"Aggregation done in {time.time() - agg_start:.2f}s")
 
-    num = int(row["num"])
-    den = int(row["den"])
+    # Now assemble the tree from aggregated data
+    print("Assembling tree...")
+    assemble_start = time.time()
 
-    current = root
+    # Build a lookup: tuple of values -> (num, den) for each depth
+    def assemble_level(parent_node, parent_key, depth):
+        """Add children at this depth under parent_key."""
+        if depth > len(col_names):
+            return
 
-    current["num"] += num
-    current["den"] += den
+        agg = level_aggs[depth]
+        category = levels[depth - 1][1]
 
-    for column, category, transform in LEVELS:
+        # Filter to rows matching parent key
+        if parent_key:
+            mask = True
+            for i, val in enumerate(parent_key):
+                mask = mask & (agg[col_names[i]] == val)
+            subset = agg[mask]
+        else:
+            subset = agg
 
-        value = str(row[column]).strip()
+        # Get unique values at this level
+        col = col_names[depth - 1]
+        unique_at_level = subset.groupby(col, sort=False).agg(
+            num=("num", "sum"),
+            den=("den", "sum")
+        ).reset_index()
 
-        # Skip empty values
-        if (
-            not value
-            or value.lower() == "nan"
-        ):
-            continue
+        for _, row in unique_at_level.iterrows():
+            name = str(row[col])
+            if not name or name.lower() == "nan":
+                continue
 
-        # Apply transform rules from hierarchy definition
-        if transform:
-            value = apply_transform(
-                transform, row[column]
-            )
+            num = int(row["num"])
+            den = int(row["den"])
 
-        current = find_or_create(
-            current,
-            value,
-            category
-        )
+            node = {
+                "id": f"{category};{name}",
+                "name": name,
+                "category": category,
+                "tier": 0,
+                "type": "Goal",
+                "path": "",
+                "num": num,
+                "den": den,
+                "baseline": 0,
+                "goal": 0,
+                "contribution": 1.0,
+                "children": []
+            }
 
-        current["num"] += num
-        current["den"] += den
+            parent_node["children"].append(node)
+
+            # Recurse
+            child_key = parent_key + (name,) if parent_key else (name,)
+            assemble_level(node, child_key, depth + 1)
+
+    assemble_level(root, (), 1)
+    print(f"Assembly done in {time.time() - assemble_start:.2f}s")
+
+    return root
+
+
+root = build_tree_fast(df, LEVELS)
 
 def calculate_baselines(node):
 

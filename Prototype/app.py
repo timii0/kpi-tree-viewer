@@ -20,7 +20,7 @@ CATEGORIES = [
     "dom_int",
     "dc_carrier",
     "ml_station",
-    "enterprise"
+    "enterprise",
     "unknown",
 ]
 
@@ -165,9 +165,8 @@ summary {
 # Cached data loading
 # ---------------------------------------------------------------------------
 
-@st.cache_data
 def load_tree(json_path):
-    """Load and cache tree JSON from disk."""
+    """Load tree JSON from disk (no cache — always reads fresh)."""
     with open(json_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -390,7 +389,8 @@ def validate_contributions(node):
 
 def validate_rollup(node):
     """Validate that children's num sums to parent's num and contributions
-    sum to 1.0 at every level. Returns a list of issue dicts."""
+    sum to 1.0 at every level. Returns a list of issue dicts.
+    Allows a small rounding tolerance for proportional distribution."""
     issues = []
     children = node.get("children", [])
 
@@ -402,7 +402,9 @@ def validate_rollup(node):
         if primary_children:
             children_num_total = sum(c.get("num", 0) for c in primary_children)
             parent_num = node.get("num", 0)
-            if parent_num > 0 and abs(children_num_total - parent_num) > 0:
+            # Allow rounding tolerance: 1 per child (proportional distribution rounding)
+            tolerance = len(primary_children)
+            if parent_num > 0 and abs(children_num_total - parent_num) > tolerance:
                 issues.append({
                     "type": "num_rollup",
                     "node": node["name"],
@@ -451,8 +453,7 @@ def find_parent_node(root, target_path):
 
 def reallocate_num(parent_node, source_name, dest_name, amount):
     """Move `amount` of num from source sibling to dest sibling within the
-    same parent. Recalculates baselines for affected children.
-    Contributions are NOT changed — they remain den-based.
+    same parent. Recalculates baselines and contributions for affected children.
 
     Args:
         parent_node: The parent node whose children are being reallocated
@@ -494,12 +495,113 @@ def reallocate_num(parent_node, source_name, dest_name, amount):
     if dest.get("den", 0) > 0:
         dest["baseline"] = dest["num"] / dest["den"]
 
-    # Contributions stay unchanged — they are den-based and den doesn't move
+    # Recalculate contributions for ALL primary children
+    # Contribution = child_num / parent_num (reflects new num distribution)
+    for child in primary_children:
+        if parent_num > 0:
+            child["contribution"] = child["num"] / parent_num
+        else:
+            child["contribution"] = 0
 
     return True, (
         f"Moved {amount:,} num from {source_name} to {dest_name}. "
         f"Parent {parent_node['name']} num unchanged at {parent_num:,}."
     )
+
+
+# ---------------------------------------------------------------------------
+# Tree-to-CSV export (regenerates the statistics CSV from tree state)
+# ---------------------------------------------------------------------------
+
+# Hierarchy column order used in the CSV output
+_HIERARCHY_COLUMNS = ["sys", "ml_dc_1", "ml_dc_2", "Mo_Nb", "frst_flt_ind",
+                      "dom_int", "vendor", "station", "fleet"]
+
+# Map category -> column name for placing node names in the right column
+_CATEGORY_TO_COLUMN = {
+    "system": "sys",
+    "carrier": "ml_dc_1",
+    "dc_carrier": "ml_dc_2",
+    "month": "Mo_Nb",
+    "first_flt": "frst_flt_ind",
+    "dom_int": "dom_int",
+    "vendor": "vendor",
+    "station": "station",
+    "fleet": "fleet",
+}
+
+
+def tree_to_csv(root_node, kpi_name):
+    """Flatten tree into a DataFrame matching the statistics CSV format."""
+    rows = []
+
+    def walk(node, ancestors):
+        # Build the hierarchy column values from ancestors
+        current = dict(ancestors)
+        col = _CATEGORY_TO_COLUMN.get(node.get("category", ""))
+        if col:
+            current[col] = node["name"]
+
+        # Determine parent path and node name from the path field
+        path = node.get("path", "")
+        if "/" in path:
+            parent_path = path.rsplit("/", 1)[0]
+            # Strip the root prefix for display
+            parts = parent_path.split("/")
+            parent_display = "/".join(parts[1:]) if len(parts) > 1 else ""
+        else:
+            parent_display = ""
+
+        node_name = node["name"]
+        # For root enterprise node, skip it (start from first real level)
+        if node.get("category") == "Enterprise":
+            for child in node.get("children", []):
+                walk(child, current)
+            return
+
+        den = node.get("den", 0)
+        num = node.get("num", 0)
+        baseline = node.get("baseline", 0)
+        goal = node.get("goal", 0)
+
+        # Stretch as percentage
+        if baseline > 0:
+            stretch = ((goal - baseline) / baseline) * 100
+        else:
+            stretch = 0
+
+        row = {"KPI_Name": kpi_name, "parent": parent_display, "node": node_name}
+        row["Tier"] = node.get("tier", 1) - 1  # offset tier to start at 1
+
+        # Fill hierarchy columns
+        for hcol in _HIERARCHY_COLUMNS:
+            row[hcol] = current.get(hcol, "")
+
+        row["Baseline"] = round(baseline * 100, 2)
+        row["Baseline_Num"] = num  # after reallocation, num IS the current state
+        row["Baseline_Den"] = den
+        row["Goal"] = round(goal * 100, 2)
+        row["Stretch"] = f"{stretch:.2f}%"
+        row["Contribution"] = node.get("contribution", 0)
+        row["KPI_Num"] = num
+        row["KPI_Den"] = den
+        row["Goal_Yr"] = 2027
+        row["YTD_Yr"] = 2026
+        row["YTD_Num"] = ""
+        row["YTD_Den"] = ""
+
+        if node.get("split"):
+            row["Split"] = True
+        else:
+            row["Split"] = False
+
+        rows.append(row)
+
+        for child in node.get("children", []):
+            walk(child, current)
+
+    walk(root_node, {})
+    return pd.DataFrame(rows)
 
 
 # ---------------------------------------------------------------------------
@@ -603,7 +705,8 @@ def build_graph(node, graph, depth=0, max_depth=4):
         node["path"],
         name=node["name"],
         category=node.get("category", ""),
-        type=node.get("type", "")
+        type=node.get("type", ""),
+        split=node.get("split", False)
     )
 
     if depth >= max_depth:
@@ -995,8 +1098,13 @@ with tree_tab:
                     st.session_state.tree_data, f,
                     indent=4, ensure_ascii=False
                 )
+            # Also regenerate the statistics CSV from the tree
+            csv_output = OUTPUT_DIR / f"{selected_kpi}.csv"
+            stats_df = tree_to_csv(st.session_state.tree_data, selected_kpi)
+            stats_df.to_csv(csv_output, index=False)
+
             st.session_state.unsaved_changes = False
-            st.success("Tree saved successfully")
+            st.success("Tree and statistics saved")
 
 
 # ---------------------------------------------------------------------------
@@ -1023,7 +1131,8 @@ with graph_tab:
 
             def build_hierarchy_graph(node, parent_id=None, depth=0):
                 node_id = f"{depth}_{node['column']}"
-                H.add_node(node_id, column=node["column"], category=node["category"], depth=depth)
+                H.add_node(node_id, column=node["column"], category=node["category"],
+                           depth=depth, split=node.get("split", False))
                 if parent_id:
                     H.add_edge(parent_id, node_id)
                 for child in node.get("children", []):
@@ -1075,7 +1184,7 @@ with graph_tab:
                 hoverinfo="none"
             )
 
-            node_x, node_y, node_labels, node_hover = [], [], [], []
+            node_x, node_y, node_labels, node_hover, node_colors = [], [], [], [], []
             for n in H.nodes():
                 x, y = pos[n]
                 node_x.append(x)
@@ -1087,6 +1196,11 @@ with graph_tab:
                     f"Category: {data['category']}<br>"
                     f"Tier: {data['depth'] + 1}"
                 )
+                # Delta purple for split branches, default blue otherwise
+                if data.get("split"):
+                    node_colors.append("#6B2D8B")
+                else:
+                    node_colors.append("#003366")
 
             node_trace = go.Scatter(
                 x=node_x, y=node_y,
@@ -1096,7 +1210,7 @@ with graph_tab:
                 textfont=dict(size=14, color="white"),
                 hovertext=node_hover,
                 hoverinfo="text",
-                marker=dict(size=30, color="#003366", line=dict(width=2, color="white"))
+                marker=dict(size=30, color=node_colors, line=dict(width=2, color="white"))
             )
 
             fig = go.Figure(data=[edge_trace, node_trace])
@@ -1172,6 +1286,7 @@ with graph_tab:
             "Goal": "#808080",
             "Target": "#003366"
         }
+        SPLIT_COLOR = "#6B2D8B"  # Delta purple for split branches
 
         for node_path in G.nodes():
             x, y = pos[node_path]
@@ -1196,8 +1311,12 @@ with graph_tab:
                 if node_data else data['name']
             )
 
-            node_color.append(
-                colors.get(data.get("type"), "#B0BEC5")
+            # Split branches get Delta purple; otherwise color by type
+            if data.get("split"):
+                node_color.append(SPLIT_COLOR)
+            else:
+                node_color.append(
+                    colors.get(data.get("type"), "#B0BEC5")
             )
 
         node_trace = go.Scatter(

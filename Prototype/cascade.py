@@ -3,19 +3,19 @@ cascade.py - Goal Cascading Engine
 
 Takes cascading instructions (goal inputs), the hierarchy definition,
 and the raw data cache, then cascades goals down the tree proportionally
-based on each node's contribution to its parent.
+based on each node's num contribution to its parent.
 
 Usage:
     python cascade.py
 
 Inputs:
-    - goals.csv         : Goals received (KPI_Name, Node_Name, Baseline, Stretch, etc.)
-    - hierarchy.json    : Hierarchy definition engine
+    - goals.csv              : Goal targets (KPI_Name, Node_Name, Baseline, Stretch, etc.)
+    - hierarchy.json         : Hierarchy definition (nesting order + transforms)
     - teradata_cache.parquet : Raw data for building the tree
 
 Output:
-    - output/cascaded_goals.json : Full tree with cascaded goals
-    - Prints a summary table of cascaded goals
+    - output/D0 2.0.json             : Full tree with cascaded goal values
+    - cascaded_output/D0_cascaded.csv : Flat summary with YTD actuals
 """
 
 import pandas as pd
@@ -353,7 +353,7 @@ def cascade_goals(node):
         child_baseline_den = child["den"]
         child_baseline_rate = child_baseline_num / child_baseline_den if child_baseline_den > 0 else 0
 
-        # Contribution = child's share of parent's baseline num
+        # Num-based contribution for distributing the delta proportionally
         child_contribution = child_baseline_num / parent_baseline_num if parent_baseline_num > 0 else 0
 
         # Distribute num delta proportionally by num contribution, den stays the same
@@ -371,7 +371,8 @@ def cascade_goals(node):
         child["_baseline_den"] = child_baseline_den
         child["_stretch"] = child_stretch
         child["goal"] = child_goal_rate
-        child["contribution"] = child_contribution
+        # Keep contribution den-based (set by _calculate_contributions) —
+        # do NOT overwrite with num-based contribution here
 
         # Recurse
         cascade_goals(child)
@@ -428,6 +429,25 @@ def apply_goals_from_csv(tree, goals_df):
         else:
             print(f"  WARNING: Could not find node for '{node_name}' "
                   f"(resolved to '{node_id}')")
+
+
+def propagate_goal_nums(node):
+    """After cascading, write _goal_num back into num so the tree JSON
+    is internally consistent (children num sums to parent num at every level).
+    Also updates the root/enterprise node to match its children's goal totals."""
+    if "_goal_num" in node:
+        node["num"] = int(round(node["_goal_num"]))
+    # Recurse
+    for child in node.get("children", []):
+        propagate_goal_nums(child)
+
+    # After recursing children, if this node was NOT an anchor but has
+    # children that were cascaded, update this node's num to match
+    children = node.get("children", [])
+    if children and "_goal_num" not in node and not node.get("_goal_set"):
+        primary = [c for c in children if not c.get("split")]
+        if primary and any("_goal_num" in c for c in primary):
+            node["num"] = sum(c.get("num", 0) for c in primary)
 
 
 def clean_internal_flags(node):
@@ -695,7 +715,9 @@ def cascade(
     all_goals_df.to_csv(csv_output_path, index=False)
     print(f"Wrote cascaded CSV to {csv_output_path}")
 
-    # Now clean internal flags and write JSON
+    # Now propagate goal nums into the num field for consistent rollup,
+    # then clean internal flags and write JSON
+    propagate_goal_nums(tree)
     clean_internal_flags(tree)
 
     with open(output_file, "w", encoding="utf-8") as f:

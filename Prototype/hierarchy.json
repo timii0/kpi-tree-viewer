@@ -39,22 +39,21 @@
                                                     "category": "dom_int",
                                                     "children": [
                                                         {
-                                                            "column": "fleet",
-                                                            "category": "fleet",
+                                                            "column": "vendor",
+                                                            "category": "vendor",
                                                             "children": [
                                                                 {
-                                                                    "column": "vendor",
-                                                                    "category": "vendor",
-                                                                    "children": [
-                                                                        {
-                                                                            "column": "station",
-                                                                            "category": "station"
-                                                                        }
-                                                                    ]
+                                                                    "column": "station",
+                                                                    "category": "station"
                                                                 }
                                                             ]
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "column": "fleet",
+                                                    "category": "fleet",
+                                                    "split": true
                                                 }
                                             ]
                                         }

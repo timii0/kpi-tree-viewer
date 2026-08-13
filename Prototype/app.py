@@ -247,9 +247,15 @@ kpis = sorted(
     for file in OUTPUT_DIR.glob("*.json")
 )
 
+# Default to "D0 2.0" if available
+default_kpi_index = 0
+if "D0 2.0" in kpis:
+    default_kpi_index = kpis.index("D0 2.0")
+
 selected_kpi = st.sidebar.selectbox(
     "Select KPI",
-    kpis
+    kpis,
+    index=default_kpi_index
 )
 
 max_leaf_nodes = st.sidebar.slider(
@@ -272,6 +278,7 @@ if ("tree_data" not in st.session_state or st.session_state.get("loaded_kpi") !=
     st.session_state.pop("path_index", None)
     st.session_state.pop("node_count", None)
     st.session_state.pop("max_depth", None)
+    st.session_state.pop("validation_issues", None)
 
 root_data = st.session_state.tree_data
 
@@ -290,7 +297,7 @@ MAX_TREE_DEPTH = st.sidebar.slider(
     "Tree Display Depth",
     1,
     tree_max_depth,
-    min(3, tree_max_depth)
+    min(5, tree_max_depth)
 )
 
 # Build path index (once per tree load)
@@ -339,6 +346,8 @@ def rebuild_index():
     """Rebuild path index after tree mutations."""
     st.session_state.path_index = build_path_index(root_data)
     st.session_state.node_count = count_nodes_cached(root_data)
+    st.session_state.pop("validation_issues", None)
+    st.session_state.pop("rollup_issues", None)
 
 
 def validate_contributions(node):
@@ -346,20 +355,151 @@ def validate_contributions(node):
     children = node.get("children", [])
 
     if children:
-        total = sum(
-            child.get("contribution", 0)
-            for child in children
-        )
-        if abs(total - 1.0) > 0.001:
-            issues.append({
-                "node": node["name"],
-                "total": total
-            })
+        # Primary children and split children are independent groups —
+        # each should sum to 100% of the parent separately.
+        primary_children = [c for c in children if not c.get("split")]
+        split_children = [c for c in children if c.get("split")]
+
+        if primary_children:
+            total = sum(
+                child.get("contribution", 0)
+                for child in primary_children
+            )
+            if abs(total - 1.0) > 0.001:
+                issues.append({
+                    "node": node["name"],
+                    "total": total
+                })
+
+        if split_children:
+            split_total = sum(
+                child.get("contribution", 0)
+                for child in split_children
+            )
+            if abs(split_total - 1.0) > 0.001:
+                issues.append({
+                    "node": f"{node['name']} (split)",
+                    "total": split_total
+                })
 
     for child in children:
         issues.extend(validate_contributions(child))
 
     return issues
+
+
+def validate_rollup(node):
+    """Validate that children's num sums to parent's num and contributions
+    sum to 1.0 at every level. Returns a list of issue dicts."""
+    issues = []
+    children = node.get("children", [])
+
+    if children:
+        primary_children = [c for c in children if not c.get("split")]
+        split_children = [c for c in children if c.get("split")]
+
+        # Check num rollup for primary branch
+        if primary_children:
+            children_num_total = sum(c.get("num", 0) for c in primary_children)
+            parent_num = node.get("num", 0)
+            if parent_num > 0 and abs(children_num_total - parent_num) > 0:
+                issues.append({
+                    "type": "num_rollup",
+                    "node": node["name"],
+                    "parent_num": parent_num,
+                    "children_num": children_num_total,
+                    "diff": children_num_total - parent_num,
+                })
+
+            # Check contribution sum
+            contribution_total = sum(
+                c.get("contribution", 0) for c in primary_children
+            )
+            if abs(contribution_total - 1.0) > 0.001:
+                issues.append({
+                    "type": "contribution_sum",
+                    "node": node["name"],
+                    "total": contribution_total,
+                })
+
+        # Same checks for split branch (split children share parent den/num
+        # independently so their contributions should also sum to 1.0)
+        if split_children:
+            split_contribution_total = sum(
+                c.get("contribution", 0) for c in split_children
+            )
+            if abs(split_contribution_total - 1.0) > 0.001:
+                issues.append({
+                    "type": "contribution_sum",
+                    "node": f"{node['name']} (split)",
+                    "total": split_contribution_total,
+                })
+
+    for child in children:
+        issues.extend(validate_rollup(child))
+
+    return issues
+
+
+def find_parent_node(root, target_path):
+    """Find the parent of a node by its path."""
+    if "/" not in target_path:
+        return None  # root has no parent
+    parent_path = target_path.rsplit("/", 1)[0]
+    return path_index.get(parent_path)
+
+
+def reallocate_num(parent_node, source_name, dest_name, amount):
+    """Move `amount` of num from source sibling to dest sibling within the
+    same parent. Recalculates baselines for affected children.
+    Contributions are NOT changed — they remain den-based.
+
+    Args:
+        parent_node: The parent node whose children are being reallocated
+        source_name: Name of the child giving up num
+        dest_name: Name of the child receiving num
+        amount: Integer amount of num to transfer
+
+    Returns:
+        (success: bool, message: str)
+    """
+    children = parent_node.get("children", [])
+    primary_children = [c for c in children if not c.get("split")]
+
+    source = next((c for c in primary_children if c["name"] == source_name), None)
+    dest = next((c for c in primary_children if c["name"] == dest_name), None)
+
+    if not source or not dest:
+        return False, "Source or destination node not found among siblings."
+
+    if amount <= 0:
+        return False, "Amount must be greater than zero."
+
+    if amount > source.get("num", 0):
+        return False, (
+            f"Cannot transfer {amount:,} — {source_name} only has "
+            f"{source['num']:,} num available."
+        )
+
+    # Transfer the num
+    source["num"] -= amount
+    dest["num"] += amount
+
+    # Parent num stays the same (it's a redistribution within the tier)
+    parent_num = parent_node.get("num", 0)
+
+    # Recalculate baseline (num/den) for source and dest
+    if source.get("den", 0) > 0:
+        source["baseline"] = source["num"] / source["den"]
+    if dest.get("den", 0) > 0:
+        dest["baseline"] = dest["num"] / dest["den"]
+
+    # Contributions stay unchanged — they are den-based and den doesn't move
+
+    return True, (
+        f"Moved {amount:,} num from {source_name} to {dest_name}. "
+        f"Parent {parent_node['name']} num unchanged at {parent_num:,}."
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -402,7 +542,8 @@ def get_ancestor_paths(path):
 
 
 def display_tree(node, depth=0, ancestor_paths=None):
-    """Render tree lazily — only expand to MAX_TREE_DEPTH or along selection path."""
+    """Render tree lazily — only expand to MAX_TREE_DEPTH or along selection path.
+    Split branches are collapsed by default to reduce widget count."""
     if ancestor_paths is None:
         ancestor_paths = get_ancestor_paths(st.session_state.selected_path)
 
@@ -410,10 +551,12 @@ def display_tree(node, depth=0, ancestor_paths=None):
 
     is_selected = (node["path"] == st.session_state.selected_path)
     is_ancestor = (node["path"] in ancestor_paths)
+    is_split = node.get("split", False)
 
     label = (
         f"✅ {node['name']}"
         if is_selected
+        else f"⑂ {node['name']}" if is_split
         else node["name"]
     )
 
@@ -431,8 +574,17 @@ def display_tree(node, depth=0, ancestor_paths=None):
                 st.rerun()
 
             if should_render_children:
-                for child in children:
+                # Render primary children first, then split children
+                primary = [c for c in children if not c.get("split")]
+                splits = [c for c in children if c.get("split")]
+
+                for child in primary:
                     display_tree(child, depth + 1, ancestor_paths)
+
+                if splits:
+                    with st.expander(f"⑂ Split branches ({len(splits)})", expanded=False):
+                        for child in splits:
+                            display_tree(child, depth + 1, ancestor_paths)
             else:
                 st.caption(f"({len(children)} children hidden — increase Tree Display Depth)")
     else:
@@ -485,7 +637,7 @@ with tree_tab:
         if "edit_mode" not in st.session_state:
             st.session_state.edit_mode = None
 
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
 
         with col1:
             if st.button("Edit", use_container_width=True):
@@ -496,25 +648,62 @@ with tree_tab:
                 st.session_state.edit_mode = "add"
 
         with col3:
+            if st.button("Reallocate", use_container_width=True):
+                st.session_state.edit_mode = "reallocate"
+
+        with col4:
             if st.button("Delete", use_container_width=True):
                 st.session_state.edit_mode = "delete"
 
         st.subheader("Properties")
 
-        issues = validate_contributions(root_data)
+        # Cache validation to avoid re-walking the tree on every rerun
+        if "validation_issues" not in st.session_state:
+            st.session_state.validation_issues = validate_contributions(root_data)
 
-        if issues:
-            st.error(f"{len(issues)} contribution issue(s)")
+        if "rollup_issues" not in st.session_state:
+            st.session_state.rollup_issues = validate_rollup(root_data)
+
+        issues = st.session_state.validation_issues
+        rollup_issues = st.session_state.rollup_issues
+
+        total_issues = len(issues) + len(rollup_issues)
+        if total_issues:
+            st.error(f"{total_issues} validation issue(s)")
         else:
-            st.success("✓ All contribution groups total 100%")
+            st.success("✓ All contributions and rollups valid")
 
         with st.expander("QA Validation"):
+            # Contribution validation
+            st.markdown("**Contribution Sum Check**")
             if not issues:
-                st.success("✓ All contributions balance")
+                st.success("✓ All contribution groups total 100%")
 
             for issue in issues:
                 st.warning(
                     f"{issue['node']} = {issue['total']:.1%}"
+                )
+
+            # Rollup validation
+            st.markdown("**Num Rollup Check**")
+            num_issues = [i for i in rollup_issues if i["type"] == "num_rollup"]
+            contrib_issues = [i for i in rollup_issues if i["type"] == "contribution_sum"]
+
+            if not num_issues:
+                st.success("✓ Children num sums match parent at all levels")
+            for issue in num_issues:
+                st.warning(
+                    f"{issue['node']}: children num = {issue['children_num']:,}, "
+                    f"parent num = {issue['parent_num']:,} "
+                    f"(diff: {issue['diff']:+,})"
+                )
+
+            if not contrib_issues:
+                st.success("✓ Contributions sum to 100% at all levels")
+            for issue in contrib_issues:
+                st.warning(
+                    f"{issue['node']}: contributions sum = {issue['total']:.4f} "
+                    f"(expected 1.0)"
                 )
 
         st.markdown(f"### {selected_node['name']}")
@@ -671,6 +860,133 @@ with tree_tab:
                         st.session_state.edit_mode = None
                         st.rerun()
 
+        # --- Reallocate Mode ---
+        if st.session_state.get("edit_mode") == "reallocate":
+            st.markdown("---")
+            st.subheader("Reallocate Num")
+
+            # Find the parent of the selected node to get siblings
+            parent_node = find_parent_node(root_data, selected_node["path"])
+
+            if parent_node is None:
+                st.error("Cannot reallocate from the root node. Select a child node.")
+            else:
+                # Get primary siblings (same tier, same parent)
+                siblings = [
+                    c for c in parent_node.get("children", [])
+                    if not c.get("split")
+                ]
+
+                if len(siblings) < 2:
+                    st.error("Need at least 2 siblings to reallocate between.")
+                else:
+                    sibling_names = [c["name"] for c in siblings]
+
+                    st.caption(
+                        f"Moving num between children of **{parent_node['name']}** "
+                        f"(Tier {selected_node.get('tier', '?')})"
+                    )
+
+                    # Show current state of siblings
+                    sibling_data = []
+                    for sib in siblings:
+                        sibling_data.append({
+                            "Name": sib["name"],
+                            "Num": f"{sib['num']:,}",
+                            "Den": f"{sib['den']:,}",
+                            "Baseline": f"{sib.get('baseline', 0):.2%}",
+                            "Contribution": f"{sib.get('contribution', 0):.2%}",
+                        })
+                    st.dataframe(
+                        pd.DataFrame(sibling_data),
+                        use_container_width=True,
+                        hide_index=True
+                    )
+
+                    # Default source to currently selected node
+                    default_source_idx = (
+                        sibling_names.index(selected_node["name"])
+                        if selected_node["name"] in sibling_names
+                        else 0
+                    )
+
+                    source_name = st.selectbox(
+                        "Source (giving num)",
+                        sibling_names,
+                        index=default_source_idx,
+                        key="realloc_source"
+                    )
+
+                    # Destination defaults to next sibling
+                    dest_options = [n for n in sibling_names if n != source_name]
+                    dest_name = st.selectbox(
+                        "Destination (receiving num)",
+                        dest_options,
+                        key="realloc_dest"
+                    )
+
+                    source_node = next(
+                        (c for c in siblings if c["name"] == source_name), None
+                    )
+                    max_amount = source_node["num"] if source_node else 0
+
+                    amount = st.number_input(
+                        f"Amount to transfer (max {max_amount:,})",
+                        min_value=0,
+                        max_value=max_amount,
+                        value=0,
+                        step=100,
+                        key="realloc_amount"
+                    )
+
+                    # Preview what would happen
+                    if amount > 0 and source_node:
+                        dest_node_ref = next(
+                            (c for c in siblings if c["name"] == dest_name), None
+                        )
+                        if dest_node_ref:
+                            new_source_num = source_node["num"] - amount
+                            new_dest_num = dest_node_ref["num"] + amount
+                            new_source_baseline = (
+                                new_source_num / source_node["den"]
+                                if source_node["den"] > 0 else 0
+                            )
+                            new_dest_baseline = (
+                                new_dest_num / dest_node_ref["den"]
+                                if dest_node_ref["den"] > 0 else 0
+                            )
+                            st.info(
+                                f"Preview: {source_name} num {source_node['num']:,} → "
+                                f"{new_source_num:,} "
+                                f"({new_source_baseline:.2%}), "
+                                f"{dest_name} num {dest_node_ref['num']:,} → "
+                                f"{new_dest_num:,} "
+                                f"({new_dest_baseline:.2%})"
+                            )
+
+                    col1, col2 = st.columns(2)
+
+                    with col1:
+                        if st.button("Apply Reallocation", key="confirm_realloc"):
+                            if amount <= 0:
+                                st.error("Enter an amount greater than 0.")
+                            else:
+                                success, msg = reallocate_num(
+                                    parent_node, source_name, dest_name, amount
+                                )
+                                if success:
+                                    rebuild_index()
+                                    st.session_state.unsaved_changes = True
+                                    st.session_state.edit_mode = None
+                                    st.rerun()
+                                else:
+                                    st.error(msg)
+
+                    with col2:
+                        if st.button("Cancel", key="cancel_realloc"):
+                            st.session_state.edit_mode = None
+                            st.rerun()
+
         st.markdown("---")
 
         if st.button("Save Tree", use_container_width=True):
@@ -716,11 +1032,34 @@ with graph_tab:
             for level in hierarchy_data.get("levels", []):
                 build_hierarchy_graph(level)
 
-            # Layout — horizontal staircase with indentation
-            pos = {}
-            for n in H.nodes():
-                d = H.nodes[n]["depth"]
-                pos[n] = (d * 0.8, -d)  # x shifts right, y goes down
+            # Layout — top-down tree with branching support
+            def hierarchy_layout(G):
+                """Assign positions using a top-down tree layout."""
+                # Find root nodes (no predecessors)
+                roots = [n for n in G.nodes() if G.in_degree(n) == 0]
+
+                positions = {}
+                x_counter = [0]  # mutable counter for leaf x-positions
+
+                def assign_pos(node, depth):
+                    children = list(G.successors(node))
+                    if not children:
+                        # Leaf node — assign next x slot
+                        positions[node] = (x_counter[0], -depth)
+                        x_counter[0] += 1
+                    else:
+                        # Recurse children first, then center parent above them
+                        for child in children:
+                            assign_pos(child, depth + 1)
+                        child_xs = [positions[c][0] for c in children]
+                        positions[node] = (sum(child_xs) / len(child_xs), -depth)
+
+                for root in roots:
+                    assign_pos(root, 0)
+
+                return positions
+
+            pos = hierarchy_layout(H)
 
             edge_x, edge_y = [], []
             for e in H.edges():

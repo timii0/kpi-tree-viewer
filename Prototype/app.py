@@ -665,171 +665,218 @@ with stats_tab:
         st.info("No data. Run cascade.py first.")
 
 # ===== HIERARCHY BUILDER TAB =====
+
+# ===== HIERARCHY BUILDER TAB =====
 with builder_tab:
+    from streamlit_sortables import sort_items
+
     st.subheader("Hierarchy Builder")
-    st.caption("Build a custom hierarchy and generate a new KPI tree variant.")
+    st.caption("Drag to reorder. Add from the dropdown or create a custom dimension.")
 
-    if "hier_tree" not in st.session_state:
+    # -----------------------------------------------------------------------
+    # State: flat list of dimensions [{column, category, split, transform?}]
+    # -----------------------------------------------------------------------
+
+    if "builder_dims" not in st.session_state:
+        # Initialize from hierarchy.json (flatten the nested structure)
+        def _flatten_hier(node, out):
+            out.append({
+                "column": node["column"],
+                "category": node["category"],
+                "split": node.get("split", False),
+                **({"transform": node["transform"]} if "transform" in node else {}),
+            })
+            for child in node.get("children", []):
+                _flatten_hier(child, out)
+
         hf = Path("hierarchy.json")
-        st.session_state.hier_tree = copy.deepcopy(
-            json.loads(hf.read_text(encoding="utf-8")).get("levels", [])
-        ) if hf.exists() else []
-    if "hier_selected" not in st.session_state:
-        st.session_state.hier_selected = None
+        dims = []
+        if hf.exists():
+            hdata = json.loads(hf.read_text(encoding="utf-8"))
+            for top in hdata.get("levels", []):
+                _flatten_hier(top, dims)
+        st.session_state.builder_dims = dims
 
-    ht = st.session_state.hier_tree
+    dims = st.session_state.builder_dims
 
-    def _get_hn(pt):
-        nodes = ht
-        node = None
-        for idx in pt:
-            if idx < len(nodes):
-                node = nodes[idx]
-                nodes = node.get("children", [])
-            else:
-                return None
-        return node
+    # -----------------------------------------------------------------------
+    # Drag-and-drop reorder
+    # -----------------------------------------------------------------------
 
-    def _get_pl(pt):
-        if not pt or len(pt) == 1:
-            return ht
-        p = _get_hn(pt[:-1])
-        return p.get("children", []) if p else ht
+    st.markdown("**Dimension Order** (drag to reorder)")
 
-    tc, ac = st.columns([1, 1])
+    # Build labels for sortable display
+    dim_labels = [
+        f"{d['category']} ({d['column']}){' \u2442' if d.get('split') else ''}"
+        for d in dims
+    ]
 
-    with tc:
-        st.markdown("**Structure**")
+    if dim_labels:
+        sorted_labels = sort_items(dim_labels, direction="vertical")
 
-        def _rht(nodes, pfx=(), depth=0):
-            for i, node in enumerate(nodes):
-                pt = pfx + (i,)
-                sel = st.session_state.hier_selected == pt
-                sp = " \u2442" if node.get("split") else ""
-                indent = "\u2003" * depth * 2
-                lbl = f"{indent}{'▸ **' if sel else '\u251c\u2500 '}{node['category']} ({node['column']}){sp}{'**' if sel else ''}"
-                lc, bc = st.columns([6, 1])
-                with lc:
-                    st.markdown(lbl)
-                with bc:
-                    if st.button("\u25c9" if sel else "\u25cb", key=f"hs_{pt}"):
-                        st.session_state.hier_selected = pt
-                        st.rerun()
-                for c in node.get("children", []):
-                    pass  # handled by recursion
-                if node.get("children"):
-                    _rht(node["children"], pt, depth + 1)
+        # If order changed, reorder dims to match
+        if sorted_labels != dim_labels:
+            label_to_dim = {lbl: dim for lbl, dim in zip(dim_labels, dims)}
+            st.session_state.builder_dims = [label_to_dim[lbl] for lbl in sorted_labels]
+            st.rerun()
+    else:
+        st.info("No dimensions yet. Add one below.")
 
-        if ht:
-            _rht(ht)
-        else:
-            st.info("Empty. Add a dimension.")
+    # -----------------------------------------------------------------------
+    # Add / Remove / Toggle
+    # -----------------------------------------------------------------------
 
-    with ac:
-        sph = st.session_state.hier_selected
-        shn = _get_hn(sph) if sph else None
+    st.markdown("---")
+    add_col, action_col = st.columns([1, 1])
 
-        if shn:
-            st.markdown(f"**Selected:** {shn['category']} (`{shn['column']}`)")
-        else:
-            st.caption("Select a node or add a root dimension.")
-
-        st.markdown("---")
+    with add_col:
         st.markdown("**Add Dimension**")
-        method = st.radio("Method", ["Select", "Custom"], horizontal=True, key="hm")
 
-        if method == "Select":
-            dl = st.selectbox("Column", [d["label"] for d in AVAILABLE_DIMENSIONS], key="hd")
-            sp = st.checkbox("Split", key="hsp")
-            if st.button("Add as Child" if shn else "Add as Root", key="hab"):
-                dim = next(d for d in AVAILABLE_DIMENSIONS if d["label"] == dl)
-                nn = {"column": dim["column"], "category": dim["category"]}
-                if dim.get("transform"):
-                    nn["transform"] = dim["transform"]
-                if sp:
-                    nn["split"] = True
-                (shn.setdefault("children", []) if shn else ht).append(nn)
-                st.rerun()
-        else:
-            cc = st.text_input("Column", key="hcc")
-            ct = st.text_input("Category", key="hct")
-            sp = st.checkbox("Split", key="hsp2")
-            if st.button("Add as Child" if shn else "Add as Root", key="hac"):
-                if cc.strip() and ct.strip():
-                    nn = {"column": cc.strip(), "category": ct.strip()}
-                    if sp:
-                        nn["split"] = True
-                    (shn.setdefault("children", []) if shn else ht).append(nn)
+        # Dropdown of available dimensions
+        dim_options = [""] + [d["label"] for d in AVAILABLE_DIMENSIONS]
+        selected_label = st.selectbox("Select dimension", dim_options, key="bld_sel_dim")
+
+        if st.button("Add", key="bld_add", disabled=(selected_label == "")):
+            dim_def = next(d for d in AVAILABLE_DIMENSIONS if d["label"] == selected_label)
+            new_dim = {"column": dim_def["column"], "category": dim_def["category"], "split": False}
+            if "transform" in dim_def:
+                new_dim["transform"] = dim_def["transform"]
+            dims.append(new_dim)
+            st.rerun()
+
+        # Custom dimension
+        with st.expander("Add custom dimension"):
+            cc = st.text_input("Column name", key="bld_cc")
+            cat = st.text_input("Category label", key="bld_cat")
+            if st.button("Add Custom", key="bld_add_cust"):
+                if cc.strip() and cat.strip():
+                    dims.append({"column": cc.strip(), "category": cat.strip(), "split": False})
                     st.rerun()
 
-        if shn and sph:
-            st.markdown("---")
-            pl = _get_pl(sph)
-            ni = sph[-1]
-            c1, c2, c3 = st.columns(3)
-            if ni > 0 and c1.button("\u2191 Up", key="hu", use_container_width=True):
-                pl[ni], pl[ni-1] = pl[ni-1], pl[ni]
-                st.session_state.hier_selected = sph[:-1] + (ni-1,)
-                st.rerun()
-            if ni < len(pl)-1 and c2.button("\u2193 Down", key="hdn", use_container_width=True):
-                pl[ni], pl[ni+1] = pl[ni+1], pl[ni]
-                st.session_state.hier_selected = sph[:-1] + (ni+1,)
-                st.rerun()
-            if c3.button("Delete", key="hdl", use_container_width=True):
-                pl.pop(ni)
-                st.session_state.hier_selected = None
-                st.rerun()
-            cs = shn.get("split", False)
-            if st.checkbox("Split branch", cs, key="hst") != cs:
-                shn["split"] = not cs
-                if not shn.get("split"):
-                    shn.pop("split", None)
+    with action_col:
+        st.markdown("**Edit Selected**")
+
+        if dims:
+            # Select which dimension to edit
+            edit_options = [f"{d['category']} ({d['column']})" for d in dims]
+            edit_idx = st.selectbox("Dimension", range(len(edit_options)),
+                                   format_func=lambda i: edit_options[i], key="bld_edit_sel")
+
+            selected_dim = dims[edit_idx]
+
+            # Split toggle
+            is_split = st.checkbox("Split branch", value=selected_dim.get("split", False),
+                                   key="bld_split_toggle")
+            if is_split != selected_dim.get("split", False):
+                selected_dim["split"] = is_split
                 st.rerun()
 
-        st.markdown("---")
-        st.markdown("**Preview**")
+            # Delete
+            if st.button("Remove dimension", key="bld_remove"):
+                dims.pop(edit_idx)
+                st.rerun()
 
-        def _rp(nodes, d=0):
-            lines = []
-            for n in nodes:
-                sp = " (split)" if n.get("split") else ""
-                lines.append(f"{'    '*d}\u2514\u2500 {n['category']} [{n['column']}]{sp}")
-                lines.extend(_rp(n.get("children", []), d+1))
-            return lines
+    # -----------------------------------------------------------------------
+    # Preview
+    # -----------------------------------------------------------------------
 
-        st.code("\n".join(_rp(ht)) if ht else "(empty)", language=None)
+    st.markdown("---")
+    st.markdown("**Preview**")
 
-        st.markdown("---")
-        kpi_name = st.text_input("KPI Name", key="nkn")
-        if st.button("Build Tree", type="primary", key="bld"):
-            if not kpi_name.strip():
-                st.error("Name required.")
-            elif not ht:
-                st.error("Add dimensions first.")
-            elif (OUTPUT_DIR / f"{kpi_name.strip()}.json").exists():
-                st.error("Already exists.")
-            else:
-                kn = kpi_name.strip()
-                with st.spinner(f"Building {kn}..."):
-                    cp = Path("teradata_cache.parquet")
-                    if not cp.exists():
-                        st.error("No parquet cache.")
-                    else:
-                        hdef = {"levels": ht}
-                        HIERARCHIES_DIR.mkdir(exist_ok=True)
-                        hp = HIERARCHIES_DIR / f"{kn}.json"
-                        hp.write_text(json.dumps(hdef, indent=4, ensure_ascii=False), encoding="utf-8")
-                        bdf = pd.read_parquet(cp)
-                        tree = build_tree_from_hierarchy(bdf, hdef)
-                        op = OUTPUT_DIR / f"{kn}.json"
-                        op.write_text(json.dumps(tree, indent=4, ensure_ascii=False), encoding="utf-8")
-                        from cascade import cascade
-                        try:
-                            cascade(goals_file=Path("goals.csv"), hierarchy_file=hp,
-                                    cache_file=cp, output_file=op)
-                        except Exception:
-                            pass
-                        ft = load_tree(str(op))
-                        tree_to_csv(ft, kn).to_csv(OUTPUT_DIR / f"{kn}.csv", index=False)
-                        st.success(f"Built '{kn}'")
-                        st.rerun()
+    def _build_preview(dims_list):
+        lines = []
+        depth = 0
+        for d in dims_list:
+            sp = " (split)" if d.get("split") else ""
+            lines.append(f"{'    ' * depth}\u2514\u2500 {d['category']} [{d['column']}]{sp}")
+            if not d.get("split"):
+                depth += 1
+        return "\n".join(lines) if lines else "(empty)"
+
+    st.code(_build_preview(dims), language=None)
+
+    # -----------------------------------------------------------------------
+    # Build
+    # -----------------------------------------------------------------------
+
+    st.markdown("---")
+    kpi_name = st.text_input("KPI Name (e.g. 'D0 3.0')", key="bld_kpi_name")
+
+    if st.button("Build Tree", type="primary", key="bld_build"):
+        if not kpi_name.strip():
+            st.error("Enter a KPI name.")
+        elif not dims:
+            st.error("Add at least one dimension.")
+        elif (OUTPUT_DIR / f"{kpi_name.strip()}.json").exists():
+            st.error(f"'{kpi_name.strip()}' already exists.")
+        else:
+            kn = kpi_name.strip()
+
+            # Convert flat list to nested hierarchy definition
+            def _nest_dims(dim_list):
+                """Convert flat ordered dims into nested hierarchy JSON."""
+                if not dim_list:
+                    return {"levels": []}
+
+                def _build(idx):
+                    if idx >= len(dim_list):
+                        return None
+                    d = dim_list[idx]
+                    node = {"column": d["column"], "category": d["category"]}
+                    if d.get("transform"):
+                        node["transform"] = d["transform"]
+                    if d.get("split"):
+                        node["split"] = True
+                        return node  # splits have no children in the primary chain
+
+                    # Collect children: next items until end
+                    children = []
+                    next_idx = idx + 1
+                    while next_idx < len(dim_list):
+                        child = _build(next_idx)
+                        if child:
+                            children.append(child)
+                            if not dim_list[next_idx].get("split"):
+                                break  # only one primary child
+                        next_idx += 1
+                    if children:
+                        node["children"] = children
+                    return node
+
+                top = _build(0)
+                return {"levels": [top]} if top else {"levels": []}
+
+            hdef = _nest_dims(dims)
+
+            with st.spinner(f"Building '{kn}'..."):
+                cp = Path("teradata_cache.parquet")
+                if not cp.exists():
+                    st.error("teradata_cache.parquet not found.")
+                else:
+                    # Save hierarchy
+                    HIERARCHIES_DIR.mkdir(exist_ok=True)
+                    hp = HIERARCHIES_DIR / f"{kn}.json"
+                    hp.write_text(json.dumps(hdef, indent=4, ensure_ascii=False), encoding="utf-8")
+
+                    # Build tree
+                    bdf = pd.read_parquet(cp)
+                    tree = build_tree_from_hierarchy(bdf, hdef)
+
+                    # Save tree JSON
+                    op = OUTPUT_DIR / f"{kn}.json"
+                    op.write_text(json.dumps(tree, indent=4, ensure_ascii=False), encoding="utf-8")
+
+                    # Run cascade
+                    from cascade import cascade
+                    try:
+                        cascade(goals_file=Path("goals.csv"), hierarchy_file=hp,
+                                cache_file=cp, output_file=op)
+                    except Exception:
+                        pass
+
+                    # Generate CSV
+                    ft = load_tree(str(op))
+                    tree_to_csv(ft, kn).to_csv(OUTPUT_DIR / f"{kn}.csv", index=False)
+
+                    st.success(f"Built '{kn}' — select from sidebar.")
+                    st.rerun()

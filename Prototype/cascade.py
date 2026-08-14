@@ -22,7 +22,7 @@ import json
 from pathlib import Path
 
 # Re-use tree building from converter
-from converter2_0 import build_tree, apply_transform_series
+from converter import build_tree, apply_transform_series
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -141,7 +141,7 @@ def apply_goals_from_csv(tree, goals_df):
 def propagate_goal_nums(node):
     """Write _goal_num back into num for consistent rollup."""
     if "_goal_num" in node:
-        node["num"] = int(round(node["_goal_num"]))
+        node["num"] = node["_goal_num"]
     for child in node.get("children", []):
         propagate_goal_nums(child)
     # Sync parent with children if not an anchor
@@ -199,7 +199,6 @@ def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None
         "contribution": node["contribution"],
         "num": node.get("_goal_num", node["num"]),
         "den": node.get("_goal_den", node["den"]),
-        "split": node.get("split", False),
         "source": "Goal Input" if node.get("_goal_set") else "Cascaded",
     })
     rows.append(row)
@@ -229,8 +228,8 @@ def compute_ytd(df, levels):
     has_month = df[month_col].astype(str).str.strip() != ""
 
     if not has_month.any():
-        df["YTD_Num"] = df["num"].astype(int)
-        df["YTD_Den"] = df["den"].astype(int)
+        df["YTD_Num"] = df["num"]
+        df["YTD_Den"] = df["den"]
         return df
 
     with_month = df[has_month].copy()
@@ -246,17 +245,17 @@ def compute_ytd(df, levels):
 
     # Cumulative sum for month-level rows
     ml = with_month[with_month["_is_month"]].sort_values(["_pkey", "_month_int"]).copy()
-    ml["YTD_Num"] = ml.groupby("_pkey")["num"].cumsum().astype(int)
-    ml["YTD_Den"] = ml.groupby("_pkey")["den"].cumsum().astype(int)
+    ml["YTD_Num"] = ml.groupby("_pkey")["num"].cumsum()
+    ml["YTD_Den"] = ml.groupby("_pkey")["den"].cumsum()
 
     # Below-month rows: YTD = own goal
     bl = with_month[~with_month["_is_month"]].copy()
-    bl["YTD_Num"] = bl["num"].astype(int)
-    bl["YTD_Den"] = bl["den"].astype(int)
+    bl["YTD_Num"] = bl["num"]
+    bl["YTD_Den"] = bl["den"]
 
     # Without month: YTD = full year goal
-    without_month["YTD_Num"] = without_month["num"].astype(int)
-    without_month["YTD_Den"] = without_month["den"].astype(int)
+    without_month["YTD_Num"] = without_month["num"]
+    without_month["YTD_Den"] = without_month["den"]
 
     result = pd.concat([ml, bl, without_month]).sort_index()
     df["YTD_Num"] = result["YTD_Num"]
@@ -308,7 +307,13 @@ def cascade(
 
     top_anchor = anchors[0] if anchors else tree
     rows = collect_goal_table(top_anchor, levels)
-    out_df = pd.DataFrame(rows).sort_values(["parent", "node"]).reset_index(drop=True)
+    out_df = pd.DataFrame(rows)
+
+    # Sort by tier, then month numerically, then node name
+    out_df["_tier_sort"] = out_df["tier"]
+    out_df["_month_sort"] = pd.to_numeric(out_df.get("Mo_Nb", ""), errors="coerce").fillna(0).astype(int)
+    out_df = out_df.sort_values(["_tier_sort", "parent", "_month_sort", "node"]).reset_index(drop=True)
+    out_df.drop(columns=["_tier_sort", "_month_sort"], inplace=True)
 
     # Add Goal_Yr and compute YTD
     out_df["Goal_Yr"] = 2027
@@ -320,12 +325,12 @@ def cascade(
     out_df["baseline"] = (out_df["baseline"] * 100).round(2)
     out_df["goal"] = (out_df["goal"] * 100).round(2)
     for c in ("baseline_num", "baseline_den", "num", "den"):
-        out_df[c] = out_df[c].round(0).astype(int)
+        out_df[c] = out_df[c].round(2)
 
     out_df = out_df.rename(columns={
         "baseline": "Baseline", "baseline_num": "Baseline_Num", "baseline_den": "Baseline_Den",
         "goal": "Goal", "stretch": "Stretch", "contribution": "Contribution",
-        "num": "KPI_Num", "den": "KPI_Den", "tier": "Tier", "split": "Split", "source": "Source",
+        "num": "Goal_Num", "den": "Goal_Den", "tier": "Tier", "source": "Source",
     })
 
     CASCADED_CSV_DIR.mkdir(parents=True, exist_ok=True)

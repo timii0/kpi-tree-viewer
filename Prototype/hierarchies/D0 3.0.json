@@ -1,0 +1,62 @@
+{
+    "levels": [
+        {
+            "column": "sys",
+            "category": "system",
+            "children": [
+                {
+                    "column": "ml_dc_1",
+                    "category": "carrier",
+                    "children": [
+                        {
+                            "column": "ml_dc_2",
+                            "category": "dc_carrier",
+                            "children": [
+                                {
+                                    "column": "Mo_Nb",
+                                    "category": "month",
+                                    "children": [
+                                        {
+                                            "column": "fleet",
+                                            "category": "fleet",
+                                            "split": true
+                                        },
+                                        {
+                                            "column": "dom_int",
+                                            "category": "dom_int",
+                                            "children": [
+                                                {
+                                                    "column": "frst_flt_ind",
+                                                    "category": "first_flt",
+                                                    "transform": {
+                                                        "type": "int_flag",
+                                                        "map": {
+                                                            "1": "First Flight",
+                                                            "0": "Not First Flight"
+                                                        }
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "column": "station",
+                                                            "category": "station",
+                                                            "children": [
+                                                                {
+                                                                    "column": "vendor",
+                                                                    "category": "vendor"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

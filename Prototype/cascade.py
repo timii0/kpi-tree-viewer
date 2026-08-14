@@ -1,27 +1,28 @@
 """
 cascade.py - Goal Cascading Engine
 
-Takes cascading instructions (goal inputs), the hierarchy definition,
-and the raw data cache, then cascades goals down the tree proportionally
-based on each node's num contribution to its parent.
+Builds a KPI tree, applies goal targets from goals.csv, cascades stretch
+proportionally to all descendants, and outputs the enriched tree + CSV.
 
 Usage:
     python cascade.py
 
 Inputs:
-    - goals.csv              : Goal targets (KPI_Name, Node_Name, Baseline, Stretch, etc.)
-    - hierarchy.json         : Hierarchy definition (nesting order + transforms)
-    - teradata_cache.parquet : Raw data for building the tree
+    - goals.csv              : Goal targets per anchor node
+    - hierarchy.json         : Hierarchy definition (nesting + transforms)
+    - teradata_cache.parquet : Raw data
 
 Output:
-    - output/D0 2.0.json             : Full tree with cascaded goal values
-    - cascaded_output/D0_cascaded.csv : Flat summary with YTD actuals
+    - output/D0 2.0.json             : Tree with cascaded goals
+    - cascaded_output/D0_cascaded.csv : Flat summary with YTD expectations
 """
 
 import pandas as pd
 import json
 from pathlib import Path
 
+# Re-use tree building from converter
+from converter2_0 import build_tree, apply_transform_series
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -33,257 +34,25 @@ CACHE_FILE = Path("teradata_cache.parquet")
 OUTPUT_FILE = Path("output") / "D0 2.0.json"
 CASCADED_CSV_DIR = Path("cascaded_output")
 
-# Mapping of known aliases in goal inputs to actual data values
-# "ML" in goal input means "DL" in the data
-CARRIER_ALIASES = {
-    "ML": "DL",
-    "DL": "DL",
-    "DC": "DC",
-}
+CARRIER_ALIASES = {"ML": "DL", "DL": "DL", "DC": "DC"}
 
 
 # ---------------------------------------------------------------------------
-# Hierarchy parsing (shared logic with converter2.0)
+# Hierarchy helpers
 # ---------------------------------------------------------------------------
 
 def parse_levels(hierarchy):
-    """
-    Flatten the nested hierarchy JSON into an ordered list of
-    (column, category, transform, split) tuples by walking depth-first.
-    Only follows the primary path (non-split branches).
-    """
+    """Flatten hierarchy into ordered (column, category, transform, split) tuples."""
     levels = []
 
     def walk(node):
-        is_split = node.get("split", False)
-        levels.append((
-            node["column"],
-            node["category"],
-            node.get("transform"),
-            is_split
-        ))
+        levels.append((node["column"], node["category"], node.get("transform"), node.get("split", False)))
         for child in node.get("children", []):
             walk(child)
 
     for top in hierarchy.get("levels", []):
         walk(top)
-
     return levels
-
-
-def apply_transform(transform, raw_value):
-    """Apply a transform rule from the hierarchy definition."""
-    if not transform:
-        return str(raw_value).strip()
-
-    kind = transform.get("type")
-
-    if kind == "int_flag":
-        mapping = transform.get("map", {})
-        try:
-            key = str(int(float(raw_value)))
-        except (ValueError, TypeError):
-            key = str(raw_value).strip()
-        return mapping.get(key, key)
-
-    if kind == "map":
-        mapping = transform.get("map", {})
-        key = str(raw_value).strip()
-        return mapping.get(key, key)
-
-    return str(raw_value).strip()
-
-
-# ---------------------------------------------------------------------------
-# Tree building (hierarchy-aware, supports branching)
-# ---------------------------------------------------------------------------
-
-def collect_hierarchy_columns(hierarchy):
-    """Walk the hierarchy and collect all (column, category, transform) entries."""
-    columns = []
-
-    def walk(node):
-        columns.append((node["column"], node["category"], node.get("transform")))
-        for child in node.get("children", []):
-            walk(child)
-
-    for top in hierarchy.get("levels", []):
-        walk(top)
-
-    return columns
-
-
-def build_tree(df, levels, hierarchy=None):
-    """Build the aggregated tree by walking the hierarchy definition recursively.
-    
-    This correctly handles branching — sibling nodes in the hierarchy
-    (like dom_int and fleet under first_flt_ind) become sibling children
-    in the tree at the same tier, not a linear chain.
-    """
-    if hierarchy is None:
-        raise ValueError("hierarchy dict is required for build_tree")
-
-    # Pre-transform all referenced columns
-    all_columns = collect_hierarchy_columns(hierarchy)
-    col_map = {}  # category -> transformed column name in df
-
-    for column, category, transform in all_columns:
-        col_name = f"_lvl_{category}"
-        if col_name not in df.columns:
-            df[col_name] = _apply_transform_series(df[column], transform)
-        col_map[category] = col_name
-
-    # Root aggregation
-    total_num = int(df["num"].sum())
-    total_den = int(df["den"].sum())
-
-    root = {
-        "id": "Nwk Sys",
-        "name": "Nwk Sys",
-        "category": "Enterprise",
-        "type": "Goal",
-        "path": "",
-        "tier": 1,
-        "num": total_num,
-        "den": total_den,
-        "baseline": 0,
-        "goal": 0,
-        "contribution": 1.0,
-        "children": []
-    }
-
-    def build_level(parent_node, parent_df, hierarchy_nodes, tier):
-        """
-        For each hierarchy node at this level, aggregate the data,
-        create tree nodes, and recurse into children.
-        """
-        # Count split branches for decimal tier assignment
-        split_index = 0
-
-        for h_node in hierarchy_nodes:
-            category = h_node["category"]
-            col_name = col_map[category]
-            is_split = h_node.get("split", False)
-            h_children = h_node.get("children", [])
-
-            # Determine tier: primary gets integer, split gets decimal
-            if is_split:
-                split_index += 1
-                node_tier = tier + split_index * 0.1
-            else:
-                node_tier = tier
-
-            # Aggregate at this level
-            agg = parent_df.groupby(col_name, sort=False).agg(
-                num=("num", "sum"),
-                den=("den", "sum")
-            ).reset_index()
-
-            for _, row in agg.iterrows():
-                name = str(row[col_name])
-                if not name or name.lower() == "nan":
-                    continue
-
-                num = int(row["num"])
-                den = int(row["den"])
-
-                node = {
-                    "id": f"{category};{name}",
-                    "name": name,
-                    "category": category,
-                    "tier": node_tier,
-                    "type": "Goal",
-                    "path": "",
-                    "num": num,
-                    "den": den,
-                    "baseline": 0,
-                    "goal": 0,
-                    "contribution": 1.0,
-                    "children": []
-                }
-
-                if is_split:
-                    node["split"] = True
-
-                parent_node["children"].append(node)
-
-                # Recurse into this hierarchy node's children
-                if h_children:
-                    child_df = parent_df[parent_df[col_name] == name]
-                    build_level(node, child_df, h_children, tier + 1)
-
-    # Start from the top-level hierarchy nodes
-    top_levels = hierarchy.get("levels", [])
-    build_level(root, df, top_levels, 2)
-
-    # Post-processing (tiers already set during build_level)
-    _calculate_baselines(root)
-    _calculate_contributions(root)
-    _update_paths(root)
-
-    return root
-
-
-def _apply_transform_series(series, transform):
-    """Apply a transform to an entire pandas Series (vectorized)."""
-    if not transform:
-        return series.astype(str).str.strip()
-
-    kind = transform.get("type")
-
-    if kind == "int_flag":
-        mapping = transform.get("map", {})
-        int_series = pd.to_numeric(series, errors="coerce").fillna(-1).astype(int).astype(str)
-        return int_series.map(mapping).fillna(series.astype(str).str.strip())
-
-    if kind == "map":
-        mapping = transform.get("map", {})
-        return series.astype(str).str.strip().map(mapping).fillna(series.astype(str).str.strip())
-
-    return series.astype(str).str.strip()
-
-
-def _update_tiers(node, tier=1):
-    node["tier"] = tier
-    for child in node["children"]:
-        _update_tiers(child, tier + 1)
-
-
-def _calculate_baselines(node):
-    if node["den"] > 0:
-        node["baseline"] = node["num"] / node["den"]
-    else:
-        node["baseline"] = 0
-
-    node["goal"] = node["baseline"]
-
-    for child in node["children"]:
-        _calculate_baselines(child)
-
-
-def _calculate_contributions(node):
-    children = node.get("children", [])
-    if not children:
-        return
-
-    parent_den = node["den"]
-
-    for child in children:
-        if parent_den > 0:
-            child["contribution"] = child["den"] / parent_den
-        else:
-            child["contribution"] = 0
-        _calculate_contributions(child)
-
-
-def _update_paths(node, parent_path=""):
-    if parent_path:
-        node["path"] = f"{parent_path}/{node['name']}"
-    else:
-        node["path"] = node["name"]
-
-    for child in node["children"]:
-        _update_paths(child, node["path"])
 
 
 # ---------------------------------------------------------------------------
@@ -291,158 +60,91 @@ def _update_paths(node, parent_path=""):
 # ---------------------------------------------------------------------------
 
 def find_node_by_id(node, node_id):
-    """Find a node in the tree by its id (category;name format)."""
+    """Find a node by its id field (depth-first)."""
     if node["id"] == node_id:
         return node
-
     for child in node.get("children", []):
         result = find_node_by_id(child, node_id)
         if result:
             return result
-
     return None
 
 
 def resolve_goal_target(node_name):
-    """
-    Resolve a goal target node_name like 'carrier;ML' into the
-    actual node id used in the tree (e.g. 'carrier;DL').
-    """
+    """Resolve alias: 'carrier;ML' -> 'carrier;DL'."""
     parts = node_name.split(";", 1)
     if len(parts) != 2:
         return node_name
-
     category, name = parts
-    resolved_name = CARRIER_ALIASES.get(name.upper(), name)
-    return f"{category};{resolved_name}"
+    return f"{category};{CARRIER_ALIASES.get(name.upper(), name)}"
 
 
 def cascade_goals(node):
-    """
-    Cascade goals down the tree using the delta-proportional method.
-
-    The den stays constant (goal_den == baseline_den) so only the num
-    increases. The parent's num delta is distributed to each child
-    proportionally based on that child's contribution (den share of parent).
-    
-    Because den is held constant and num grows by contribution-weighted
-    share, every child's stretch equals the parent's stretch exactly
-    (rate = num/den, so if den is fixed, rate growth == num growth).
-
-    Split branches receive the same cascade independently.
-    """
+    """Distribute parent's num delta to children proportionally by num share."""
     children = node.get("children", [])
-
     if not children:
         return
 
-    # Parent's baseline and goal values
     parent_baseline_num = node.get("_baseline_num", node["num"])
-    parent_baseline_den = node.get("_baseline_den", node["den"])
     parent_goal_num = node.get("_goal_num", node["num"])
-
-    # Only num delta is distributed — den stays constant
     num_delta = parent_goal_num - parent_baseline_num
 
     for child in children:
-        # Skip children that have their own explicit goal
         if child.get("_goal_set"):
             continue
 
-        child_baseline_num = child["num"]
-        child_baseline_den = child["den"]
-        child_baseline_rate = child_baseline_num / child_baseline_den if child_baseline_den > 0 else 0
+        cbn = child["num"]
+        cbd = child["den"]
+        cbr = cbn / cbd if cbd > 0 else 0
+        contribution = cbn / parent_baseline_num if parent_baseline_num > 0 else 0
 
-        # Num-based contribution for distributing the delta proportionally
-        child_contribution = child_baseline_num / parent_baseline_num if parent_baseline_num > 0 else 0
+        child_goal_num = cbn + num_delta * contribution
+        child_goal_rate = child_goal_num / cbd if cbd > 0 else 0
 
-        # Distribute num delta proportionally by num contribution, den stays the same
-        child_goal_num = child_baseline_num + (num_delta * child_contribution)
-        child_goal_den = child_baseline_den  # unchanged
-
-        # Derive goal rate and stretch from the assigned volumes
-        child_goal_rate = child_goal_num / child_goal_den if child_goal_den > 0 else 0
-        child_stretch = (child_goal_rate - child_baseline_rate) / child_baseline_rate if child_baseline_rate > 0 else 0
-
-        # Store for recursion and output
         child["_goal_num"] = child_goal_num
-        child["_goal_den"] = child_goal_den
-        child["_baseline_num"] = child_baseline_num
-        child["_baseline_den"] = child_baseline_den
-        child["_stretch"] = child_stretch
+        child["_goal_den"] = cbd
+        child["_baseline_num"] = cbn
+        child["_baseline_den"] = cbd
+        child["_stretch"] = (child_goal_rate - cbr) / cbr if cbr > 0 else 0
         child["goal"] = child_goal_rate
-        # Keep contribution den-based (set by _calculate_contributions) —
-        # do NOT overwrite with num-based contribution here
 
-        # Recurse
         cascade_goals(child)
 
 
-def parse_stretch(stretch_str):
-    """Parse stretch value like '5%' into a decimal (0.05)."""
-    s = str(stretch_str).strip().replace("%", "")
-    return float(s) / 100.0
-
-
 def apply_goals_from_csv(tree, goals_df):
-    """
-    Apply explicit goals from the input CSV to matching nodes in the tree.
-    
-    The anchor node:
-    - Baseline, Baseline_Num, Baseline_Den from CSV
-    - KPI_Num / KPI_Den represent the GOAL num/den
-    - Delta for both num and den is cascaded down proportionally
-    """
+    """Apply explicit goals from CSV to matching tree nodes."""
     for _, row in goals_df.iterrows():
-        node_name = str(row["Node_Name"]).strip()
-        baseline_value = float(row["Baseline"]) / 100.0
-        stretch = parse_stretch(row["Stretch"])
+        node_id = resolve_goal_target(str(row["Node_Name"]).strip())
+        target = find_node_by_id(tree, node_id)
+        if not target:
+            print(f"  WARNING: node '{row['Node_Name']}' not found (resolved: {node_id})")
+            continue
+
         baseline_num = int(str(row["Baseline_Num"]).replace(",", ""))
         baseline_den = int(str(row["Baseline_Den"]).replace(",", ""))
         goal_num = int(str(row["KPI_Num"]).replace(",", ""))
         goal_den = int(str(row["KPI_Den"]).replace(",", ""))
+        stretch = float(str(row["Stretch"]).strip().replace("%", "")) / 100.0
 
-        # Resolve aliases
-        node_id = resolve_goal_target(node_name)
-        target_node = find_node_by_id(tree, node_id)
-
-        if target_node:
-            # CSV is truth for the anchor node
-            target_node["baseline"] = baseline_value
-            target_node["num"] = goal_num
-            target_node["den"] = goal_den
-            target_node["_goal_num"] = goal_num
-            target_node["_goal_den"] = goal_den
-            target_node["_baseline_num"] = baseline_num
-            target_node["_baseline_den"] = baseline_den
-            target_node["goal"] = goal_num / goal_den if goal_den > 0 else 0
-            target_node["_goal_set"] = True
-            target_node["_stretch"] = stretch
-
-            num_delta = goal_num - baseline_num
-            print(f"  Set goal on '{target_node['name']}' "
-                  f"(id={node_id}): baseline={baseline_value:.4f}, "
-                  f"goal={target_node['goal']:.4f}, stretch={stretch:.2%}")
-            print(f"    baseline_num={baseline_num:,}, goal_num={goal_num:,}, "
-                  f"num_delta={num_delta:,}")
-            print(f"    baseline_den={baseline_den:,}, goal_den={goal_den:,}")
-        else:
-            print(f"  WARNING: Could not find node for '{node_name}' "
-                  f"(resolved to '{node_id}')")
+        target.update({
+            "baseline": float(row["Baseline"]) / 100.0,
+            "num": goal_num, "den": goal_den,
+            "_goal_num": goal_num, "_goal_den": goal_den,
+            "_baseline_num": baseline_num, "_baseline_den": baseline_den,
+            "goal": goal_num / goal_den if goal_den > 0 else 0,
+            "_goal_set": True, "_stretch": stretch,
+        })
+        print(f"  Set goal: {target['name']} baseline_num={baseline_num:,} "
+              f"goal_num={goal_num:,} stretch={stretch:.2%}")
 
 
 def propagate_goal_nums(node):
-    """After cascading, write _goal_num back into num so the tree JSON
-    is internally consistent (children num sums to parent num at every level).
-    Also updates the root/enterprise node to match its children's goal totals."""
+    """Write _goal_num back into num for consistent rollup."""
     if "_goal_num" in node:
         node["num"] = int(round(node["_goal_num"]))
-    # Recurse
     for child in node.get("children", []):
         propagate_goal_nums(child)
-
-    # After recursing children, if this node was NOT an anchor but has
-    # children that were cascaded, update this node's num to match
+    # Sync parent with children if not an anchor
     children = node.get("children", [])
     if children and "_goal_num" not in node and not node.get("_goal_set"):
         primary = [c for c in children if not c.get("split")]
@@ -450,103 +152,116 @@ def propagate_goal_nums(node):
             node["num"] = sum(c.get("num", 0) for c in primary)
 
 
-def clean_internal_flags(node):
-    """Remove internal flags used during cascading."""
-    node.pop("_goal_set", None)
-    node.pop("_parent_baseline", None)
-    node.pop("_stretch", None)
-    node.pop("_goal_num", None)
-    node.pop("_goal_den", None)
-    node.pop("_baseline_num", None)
-    node.pop("_baseline_den", None)
+def clean_flags(node):
+    """Remove internal cascade flags."""
+    for key in ("_goal_set", "_parent_baseline", "_stretch",
+                "_goal_num", "_goal_den", "_baseline_num", "_baseline_den"):
+        node.pop(key, None)
     for child in node.get("children", []):
-        clean_internal_flags(child)
+        clean_flags(child)
 
 
 # ---------------------------------------------------------------------------
 # Reporting
 # ---------------------------------------------------------------------------
 
-def collect_goal_table(node, rows=None, ancestors=None, levels=None, tier_offset=None):
-    """Flatten the tree into a table showing cascaded goals.
-    
-    Each row has a column for every hierarchy level (using the source
-    column name from the query), filled with the ancestor value at that
-    level (showing context of where the node sits).
-    
-    Split branches are included with their decimal tier and marked in output.
-    """
+def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None):
+    """Flatten tree into rows for CSV export."""
     if rows is None:
         rows = []
     if ancestors is None:
         ancestors = {}
-    if levels is None:
-        levels = []
     if tier_offset is None:
-        # First call — calculate offset so this node becomes tier 1
         tier_offset = node["tier"] - 1
 
-    # Build a category -> column name lookup (levels are 4-tuples now)
     cat_to_col = {cat: col for col, cat, _, _ in levels}
-
-    # Update ancestors dict with this node's category (keyed by column name)
-    current_ancestors = dict(ancestors)
+    current = dict(ancestors)
     if node["category"] in cat_to_col:
-        current_ancestors[cat_to_col[node["category"]]] = node["name"]
+        current[cat_to_col[node["category"]]] = node["name"]
 
-    # Build path from ancestor values in order
-    path_parts = [
-        current_ancestors[col]
-        for col, _, _, _ in levels
-        if col in current_ancestors
-    ]
-    path = "/".join(path_parts)
-    parent_path = "/".join(path_parts[:-1]) if len(path_parts) > 1 else ""
-    node_name = path_parts[-1] if path_parts else ""
+    # Compute baseline rate for stretch calc
+    bnum = node.get("_baseline_num", node["num"])
+    bden = node.get("_baseline_den", node["den"])
+    baseline_rate = bnum / bden if bden > 0 else node["baseline"]
+    stretch = ((node["goal"] - baseline_rate) / baseline_rate * 100) if baseline_rate > 0 else 0
 
-    # Build row with a column for each hierarchy level (using query column names)
-    row = {
-        "parent": parent_path,
-        "node": node_name,
-        "tier": node["tier"] - tier_offset,
-    }
+    row = {"parent": "/".join(current[col] for col, _, _, _ in levels if col in current and col != cat_to_col.get(node["category"], "?")),
+           "node": node["name"],
+           "tier": node["tier"] - tier_offset}
 
     for col, _, _, _ in levels:
-        row[col] = current_ancestors.get(col, "")
+        row[col] = current.get(col, "")
 
     row.update({
-        "baseline": (
-            node.get("_baseline_num", node["num"]) / node.get("_baseline_den", node["den"])
-            if node.get("_baseline_den", node["den"]) > 0
-            else node["baseline"]
-        ),
-        "baseline_num": node.get("_baseline_num", node["num"]),
-        "baseline_den": node.get("_baseline_den", node["den"]),
-        "goal": node["goal"],
-        "stretch": (
-            (node["goal"] - (
-                node.get("_baseline_num", node["num"]) / node.get("_baseline_den", node["den"])
-                if node.get("_baseline_den", node["den"]) > 0 else node["baseline"]
-            )) / (
-                node.get("_baseline_num", node["num"]) / node.get("_baseline_den", node["den"])
-                if node.get("_baseline_den", node["den"]) > 0 else node["baseline"]
-            ) * 100
-            if (node.get("_baseline_den", node["den"]) > 0 and
-                node.get("_baseline_num", node["num"]) > 0)
-            else 0
-        ),
+        "baseline": baseline_rate,
+        "baseline_num": bnum, "baseline_den": bden,
+        "goal": node["goal"], "stretch": stretch,
         "contribution": node["contribution"],
         "num": node.get("_goal_num", node["num"]),
         "den": node.get("_goal_den", node["den"]),
         "split": node.get("split", False),
+        "source": "Goal Input" if node.get("_goal_set") else "Cascaded",
     })
-
     rows.append(row)
 
     for child in node.get("children", []):
-        collect_goal_table(child, rows, current_ancestors, levels, tier_offset)
-
+        collect_goal_table(child, levels, rows, current, tier_offset)
     return rows
+
+
+# ---------------------------------------------------------------------------
+# YTD computation
+# ---------------------------------------------------------------------------
+
+def compute_ytd(df, levels):
+    """Compute cumulative YTD goal expectations by month."""
+    month_col = "Mo_Nb"
+
+    # Columns before and after month in the hierarchy
+    before_month, after_month = [], []
+    found = False
+    for col, _, _, _ in levels:
+        if col == month_col:
+            found = True
+            continue
+        (after_month if found else before_month).append(col)
+
+    has_month = df[month_col].astype(str).str.strip() != ""
+
+    if not has_month.any():
+        df["YTD_Num"] = df["num"].astype(int)
+        df["YTD_Den"] = df["den"].astype(int)
+        return df
+
+    with_month = df[has_month].copy()
+    without_month = df[~has_month].copy()
+
+    with_month["_month_int"] = pd.to_numeric(with_month[month_col], errors="coerce").fillna(0).astype(int)
+    with_month["_pkey"] = with_month.apply(
+        lambda r: "/".join(str(r[c]) for c in before_month if str(r[c]).strip()), axis=1)
+
+    # Month-level = no deeper dimensions filled
+    with_month["_is_month"] = with_month.apply(
+        lambda r: all(str(r.get(c, "")).strip() == "" for c in after_month), axis=1)
+
+    # Cumulative sum for month-level rows
+    ml = with_month[with_month["_is_month"]].sort_values(["_pkey", "_month_int"]).copy()
+    ml["YTD_Num"] = ml.groupby("_pkey")["num"].cumsum().astype(int)
+    ml["YTD_Den"] = ml.groupby("_pkey")["den"].cumsum().astype(int)
+
+    # Below-month rows: YTD = own goal
+    bl = with_month[~with_month["_is_month"]].copy()
+    bl["YTD_Num"] = bl["num"].astype(int)
+    bl["YTD_Den"] = bl["den"].astype(int)
+
+    # Without month: YTD = full year goal
+    without_month["YTD_Num"] = without_month["num"].astype(int)
+    without_month["YTD_Den"] = without_month["den"].astype(int)
+
+    result = pd.concat([ml, bl, without_month]).sort_index()
+    df["YTD_Num"] = result["YTD_Num"]
+    df["YTD_Den"] = result["YTD_Den"]
+    return df
 
 
 # ---------------------------------------------------------------------------
@@ -559,180 +274,75 @@ def cascade(
     cache_file=CACHE_FILE,
     output_file=OUTPUT_FILE
 ):
-    """
-    Main cascading function.
+    """Run the full cascade pipeline: build tree, apply goals, cascade, export."""
 
-    Args:
-        goals_file: Path to CSV with goal inputs
-        hierarchy_file: Path to hierarchy JSON definition
-        cache_file: Path to parquet data cache
-        output_file: Path for output JSON
-
-    Returns:
-        The enriched tree dict with cascaded goals
-    """
-    # Load hierarchy
     with open(hierarchy_file, "r", encoding="utf-8") as f:
         hierarchy = json.load(f)
 
     levels = parse_levels(hierarchy)
-
-    # Load data
     df = pd.read_parquet(cache_file)
     print(f"Loaded {len(df):,} rows from {cache_file}")
 
-    # Build tree
-    tree = build_tree(df, levels, hierarchy=hierarchy)
-    print(f"Built tree with root: {tree['name']}")
+    tree = build_tree(df, hierarchy)
+    print(f"Built tree: root={tree['name']}")
 
-    # Load and apply goals
     goals_df = pd.read_csv(goals_file)
-    print(f"\nApplying {len(goals_df)} goal(s) from {goals_file}:")
+    print(f"\nApplying {len(goals_df)} goal(s):")
     apply_goals_from_csv(tree, goals_df)
 
-    # Cascade goals down — process anchors top-down (by tier)
-    # Higher-level anchors cascade first, skipping children that have their own goals
-    print("\nCascading goals (distributing goal num proportionally)...")
-
-    # Collect all anchor nodes sorted by tier (top-down)
+    # Cascade top-down by tier
+    print("\nCascading...")
     anchors = []
     for _, row in goals_df.iterrows():
-        node_name = str(row["Node_Name"]).strip()
-        node_id = resolve_goal_target(node_name)
+        node_id = resolve_goal_target(str(row["Node_Name"]).strip())
         anchor = find_node_by_id(tree, node_id)
         if anchor:
             anchors.append(anchor)
-
     anchors.sort(key=lambda n: n.get("tier", 0))
-
     for anchor in anchors:
         cascade_goals(anchor)
 
-    # Write output (clean flags first for the JSON)
+    # Export CSV (before cleaning flags)
     output_file.parent.mkdir(parents=True, exist_ok=True)
-
-    # Export cascaded goals as CSV BEFORE cleaning flags
-    # (we need _goal_num for the output)
-    # Include all anchor nodes and their descendants
     kpi_name = goals_df["KPI_Name"].iloc[0]
-    anchor_rows = []
 
-    # Find the top-most anchor and collect from there
-    top_anchor = anchors[0] if anchors else None
-    if top_anchor:
-        anchor_rows.extend(
-            collect_goal_table(top_anchor, levels=levels)
-        )
+    top_anchor = anchors[0] if anchors else tree
+    rows = collect_goal_table(top_anchor, levels)
+    out_df = pd.DataFrame(rows).sort_values(["parent", "node"]).reset_index(drop=True)
 
-    all_goals_df = pd.DataFrame(anchor_rows)
+    # Add Goal_Yr and compute YTD
+    out_df["Goal_Yr"] = 2027
+    out_df = compute_ytd(out_df, levels)
 
-    # Sort by parent then node (tree order)
-    all_goals_df = all_goals_df.sort_values(["parent", "node"]).reset_index(drop=True)
+    # Format for output
+    out_df.insert(0, "KPI_Name", kpi_name)
+    out_df["stretch"] = out_df["stretch"].apply(lambda x: f"{x:.2f}%")
+    out_df["baseline"] = (out_df["baseline"] * 100).round(2)
+    out_df["goal"] = (out_df["goal"] * 100).round(2)
+    for c in ("baseline_num", "baseline_den", "num", "den"):
+        out_df[c] = out_df[c].round(0).astype(int)
 
-    # Compute YTD actuals (Jan-May 2026) from the parquet
-    current_year = int(df["Yr_Nb"].max())
-    ytd_df = df[df["Yr_Nb"] == current_year].copy()
-
-    # Build YTD lookup by computing a path key for each row
-    # Transform columns the same way as the tree builder
-    col_names = []
-    for column, category, transform, _split in levels:
-        col_name = f"_lvl_{category}"
-        if col_name not in ytd_df.columns:
-            ytd_df = ytd_df.copy()
-            ytd_df[col_name] = _apply_transform_series(ytd_df[column], transform)
-        col_names.append(col_name)
-
-    # Aggregate YTD at every depth and build a path -> (num, den) lookup
-    ytd_lookup = {}
-
-    # For each depth, group by all columns up to that depth
-    for depth in range(1, len(col_names) + 1):
-        group_cols = col_names[:depth]
-        agg = ytd_df.groupby(group_cols, sort=False).agg(
-            ytd_num=("num", "sum"),
-            ytd_den=("den", "sum")
-        ).reset_index()
-
-        for _, agg_row in agg.iterrows():
-            path_key = "/".join(str(agg_row[c]) for c in group_cols)
-            ytd_lookup[path_key] = (int(agg_row["ytd_num"]), int(agg_row["ytd_den"]))
-
-    # Build path for each row in output to match against ytd_lookup
-    def build_full_path(row):
-        parts = []
-        for col, _, _, _ in levels:
-            val = row.get(col, "")
-            if val and str(val).strip():
-                parts.append(str(val))
-            else:
-                break
-        return "/".join(parts)
-
-    all_goals_df["_full_path"] = all_goals_df.apply(build_full_path, axis=1)
-    all_goals_df["Goal_Yr"] = 2027
-    all_goals_df["YTD_Yr"] = current_year
-    all_goals_df["YTD_Num"] = all_goals_df["_full_path"].map(
-        lambda p: ytd_lookup.get(p, (0, 0))[0]
-    )
-    all_goals_df["YTD_Den"] = all_goals_df["_full_path"].map(
-        lambda p: ytd_lookup.get(p, (0, 0))[1]
-    )
-    all_goals_df.drop(columns=["_full_path"], inplace=True)
-
-    # Build export with KPI_Name prepended
-    all_goals_df.insert(0, "KPI_Name", kpi_name)
-
-    # Format stretch as percentage string
-    all_goals_df["stretch"] = all_goals_df["stretch"].apply(
-        lambda x: f"{x:.2f}%"
-    )
-    # Round baseline and goal to 2 decimal places (as %)
-    all_goals_df["baseline"] = (all_goals_df["baseline"] * 100).round(2)
-    all_goals_df["goal"] = (all_goals_df["goal"] * 100).round(2)
-    # Round num/den columns
-    all_goals_df["baseline_num"] = all_goals_df["baseline_num"].round(0).astype(int)
-    all_goals_df["baseline_den"] = all_goals_df["baseline_den"].round(0).astype(int)
-    all_goals_df["num"] = all_goals_df["num"].round(0).astype(int)
-    all_goals_df["den"] = all_goals_df["den"].round(0).astype(int)
-
-    # Rename columns for output clarity
-    all_goals_df = all_goals_df.rename(columns={
-        "baseline": "Baseline",
-        "baseline_num": "Baseline_Num",
-        "baseline_den": "Baseline_Den",
-        "goal": "Goal",
-        "stretch": "Stretch",
-        "contribution": "Contribution",
-        "num": "KPI_Num",
-        "den": "KPI_Den",
-        "tier": "Tier",
-        "split": "Split",
+    out_df = out_df.rename(columns={
+        "baseline": "Baseline", "baseline_num": "Baseline_Num", "baseline_den": "Baseline_Den",
+        "goal": "Goal", "stretch": "Stretch", "contribution": "Contribution",
+        "num": "KPI_Num", "den": "KPI_Den", "tier": "Tier", "split": "Split", "source": "Source",
     })
 
     CASCADED_CSV_DIR.mkdir(parents=True, exist_ok=True)
-    csv_output_path = CASCADED_CSV_DIR / f"{kpi_name}_cascaded.csv"
-    all_goals_df.to_csv(csv_output_path, index=False)
-    print(f"Wrote cascaded CSV to {csv_output_path}")
+    csv_path = CASCADED_CSV_DIR / f"{kpi_name}_cascaded.csv"
+    out_df.to_csv(csv_path, index=False)
+    print(f"Wrote {csv_path}")
 
-    # Now propagate goal nums into the num field for consistent rollup,
-    # then clean internal flags and write JSON
+    # Write tree JSON
     propagate_goal_nums(tree)
-    clean_internal_flags(tree)
-
+    clean_flags(tree)
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(tree, f, indent=4, ensure_ascii=False)
+    print(f"Wrote {output_file}")
 
-    print(f"Wrote cascaded tree to {output_file}")
-
-    # Print summary table
-    display_df = all_goals_df[all_goals_df["Tier"] <= 5].head(20).copy()
-
-    print(f"\n{'=' * 80}")
-    print("CASCADED GOALS SUMMARY")
-    print("=" * 80)
-    print(display_df.to_string(index=False))
-
+    # Summary
+    print(f"\n{'='*80}\nCASCADED GOALS SUMMARY\n{'='*80}")
+    print(out_df[out_df["Tier"] <= 5].head(20).to_string(index=False))
     return tree
 
 

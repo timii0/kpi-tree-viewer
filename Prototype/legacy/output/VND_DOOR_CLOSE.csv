@@ -1,0 +1,156 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+VND_DOOR_CLOSE,VND_DOOR_CLOSE,,Root,0,1,Goal,Root,VND_DOOR_CLOSE,1,No
+VND_DOOR_CLOSE,VND,VND_DOOR_CLOSE,div,1,100.0,Goal,Root/div,VND_DOOR_CLOSE/VND,53,No
+VND_DOOR_CLOSE,ABQ,VND,station,2,1.01,Goal,Root/div/station,VND_DOOR_CLOSE/VND/ABQ,1,No
+VND_DOOR_CLOSE,Unifi,ABQ,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/ABQ/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/ABQ/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,ALB,VND,station,2,2.8,Goal,Root/div/station,VND_DOOR_CLOSE/VND/ALB,1,No
+VND_DOOR_CLOSE,Unifi,ALB,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/ALB/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/ALB/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,BDL,VND,station,2,0.1,Goal,Root/div/station,VND_DOOR_CLOSE/VND/BDL,1,No
+VND_DOOR_CLOSE,Menzies Aviation,BDL,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/BDL/Menzies Aviation,1,No
+VND_DOOR_CLOSE,Blended,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/BDL/Menzies Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,BHM,VND,station,2,2.65,Goal,Root/div/station,VND_DOOR_CLOSE/VND/BHM,1,No
+VND_DOOR_CLOSE,Unifi,BHM,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/BHM/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/BHM/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,BOI,VND,station,2,0.51,Goal,Root/div/station,VND_DOOR_CLOSE/VND/BOI,1,No
+VND_DOOR_CLOSE,Unifi,BOI,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/BOI/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/BOI/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,BZN,VND,station,2,2.31,Goal,Root/div/station,VND_DOOR_CLOSE/VND/BZN,1,No
+VND_DOOR_CLOSE,WFS -Worldwide Flight Services,BZN,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/BZN/WFS -Worldwide Flight Services,1,No
+VND_DOOR_CLOSE,Blended,WFS -Worldwide Flight Services,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/BZN/WFS -Worldwide Flight Services/Blended,0,Yes
+VND_DOOR_CLOSE,CAE,VND,station,2,2.61,Goal,Root/div/station,VND_DOOR_CLOSE/VND/CAE,1,No
+VND_DOOR_CLOSE,Unifi,CAE,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/CAE/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/CAE/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,CHS,VND,station,2,0.28,Goal,Root/div/station,VND_DOOR_CLOSE/VND/CHS,1,No
+VND_DOOR_CLOSE,Unifi,CHS,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/CHS/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/CHS/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,CLE,VND,station,2,2.29,Goal,Root/div/station,VND_DOOR_CLOSE/VND/CLE,1,No
+VND_DOOR_CLOSE,Unifi,CLE,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/CLE/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/CLE/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,CLT,VND,station,2,2.91,Goal,Root/div/station,VND_DOOR_CLOSE/VND/CLT,1,No
+VND_DOOR_CLOSE,Unifi,CLT,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/CLT/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/CLT/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,COS,VND,station,2,1.95,Goal,Root/div/station,VND_DOOR_CLOSE/VND/COS,1,No
+VND_DOOR_CLOSE,Unifi,COS,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/COS/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/COS/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,DAB,VND,station,2,0.89,Goal,Root/div/station,VND_DOOR_CLOSE/VND/DAB,1,No
+VND_DOOR_CLOSE,Menzies Aviation,DAB,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/DAB/Menzies Aviation,1,No
+VND_DOOR_CLOSE,Blended,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/DAB/Menzies Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,DAY,VND,station,2,2.5,Goal,Root/div/station,VND_DOOR_CLOSE/VND/DAY,1,No
+VND_DOOR_CLOSE,Unifi,DAY,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/DAY/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/DAY/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,ELP,VND,station,2,0.83,Goal,Root/div/station,VND_DOOR_CLOSE/VND/ELP,1,No
+VND_DOOR_CLOSE,GAT,ELP,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/ELP/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/ELP/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,GSO,VND,station,2,1.9,Goal,Root/div/station,VND_DOOR_CLOSE/VND/GSO,1,No
+VND_DOOR_CLOSE,Unifi,GSO,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/GSO/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/GSO/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,GSP,VND,station,2,1.47,Goal,Root/div/station,VND_DOOR_CLOSE/VND/GSP,1,No
+VND_DOOR_CLOSE,Unifi,GSP,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/GSP/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/GSP/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,HOU,VND,station,2,2.72,Goal,Root/div/station,VND_DOOR_CLOSE/VND/HOU,1,No
+VND_DOOR_CLOSE,GAT,HOU,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/HOU/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/HOU/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,HSV,VND,station,2,1.64,Goal,Root/div/station,VND_DOOR_CLOSE/VND/HSV,1,No
+VND_DOOR_CLOSE,GAT,HSV,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/HSV/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/HSV/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,JAN,VND,station,2,2.93,Goal,Root/div/station,VND_DOOR_CLOSE/VND/JAN,1,No
+VND_DOOR_CLOSE,GAT,JAN,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/JAN/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/JAN/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,JAX,VND,station,2,1.6,Goal,Root/div/station,VND_DOOR_CLOSE/VND/JAX,1,No
+VND_DOOR_CLOSE,Unifi,JAX,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/JAX/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/JAX/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,KOA,VND,station,2,2.21,Goal,Root/div/station,VND_DOOR_CLOSE/VND/KOA,1,No
+VND_DOOR_CLOSE,Unifi,KOA,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/KOA/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/KOA/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,LEX,VND,station,2,3.84,Goal,Root/div/station,VND_DOOR_CLOSE/VND/LEX,1,No
+VND_DOOR_CLOSE,Unifi,LEX,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/LEX/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/LEX/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,LIH,VND,station,2,0.95,Goal,Root/div/station,VND_DOOR_CLOSE/VND/LIH,1,No
+VND_DOOR_CLOSE,Unifi,LIH,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/LIH/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/LIH/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,LIT,VND,station,2,0.82,Goal,Root/div/station,VND_DOOR_CLOSE/VND/LIT,1,No
+VND_DOOR_CLOSE,Unifi,LIT,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/LIT/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/LIT/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,MLB,VND,station,2,0.45,Goal,Root/div/station,VND_DOOR_CLOSE/VND/MLB,1,No
+VND_DOOR_CLOSE,CITY OF MELBOURNE,MLB,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/MLB/CITY OF MELBOURNE,1,No
+VND_DOOR_CLOSE,Blended,CITY OF MELBOURNE,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/MLB/CITY OF MELBOURNE/Blended,0,Yes
+VND_DOOR_CLOSE,MOB,VND,station,2,3.77,Goal,Root/div/station,VND_DOOR_CLOSE/VND/MOB,1,No
+VND_DOOR_CLOSE,GAT,MOB,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/MOB/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/MOB/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,OGG,VND,station,2,3.36,Goal,Root/div/station,VND_DOOR_CLOSE/VND/OGG,1,No
+VND_DOOR_CLOSE,Unifi,OGG,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/OGG/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/OGG/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,OKC,VND,station,2,0.19,Goal,Root/div/station,VND_DOOR_CLOSE/VND/OKC,1,No
+VND_DOOR_CLOSE,US Aviation,OKC,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/OKC/US Aviation,1,No
+VND_DOOR_CLOSE,Blended,US Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/OKC/US Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,ONT,VND,station,2,3.77,Goal,Root/div/station,VND_DOOR_CLOSE/VND/ONT,1,No
+VND_DOOR_CLOSE,US Aviation,ONT,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/ONT/US Aviation,1,No
+VND_DOOR_CLOSE,Blended,US Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/ONT/US Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,ORF,VND,station,2,2.47,Goal,Root/div/station,VND_DOOR_CLOSE/VND/ORF,1,No
+VND_DOOR_CLOSE,Unifi,ORF,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/ORF/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/ORF/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,PBI,VND,station,2,2.97,Goal,Root/div/station,VND_DOOR_CLOSE/VND/PBI,1,No
+VND_DOOR_CLOSE,Unifi,PBI,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/PBI/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/PBI/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,PIT,VND,station,2,1.33,Goal,Root/div/station,VND_DOOR_CLOSE/VND/PIT,1,No
+VND_DOOR_CLOSE,Unifi,PIT,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/PIT/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/PIT/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,PNS,VND,station,2,0.02,Goal,Root/div/station,VND_DOOR_CLOSE/VND/PNS,1,No
+VND_DOOR_CLOSE,Unifi,PNS,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/PNS/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/PNS/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,PVD,VND,station,2,0.89,Goal,Root/div/station,VND_DOOR_CLOSE/VND/PVD,1,No
+VND_DOOR_CLOSE,Unifi,PVD,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/PVD/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/PVD/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,RIC,VND,station,2,3.89,Goal,Root/div/station,VND_DOOR_CLOSE/VND/RIC,1,No
+VND_DOOR_CLOSE,Unifi,RIC,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/RIC/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/RIC/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SAN,VND,station,2,0.74,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SAN,1,No
+VND_DOOR_CLOSE,Unifi,SAN,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SAN/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SAN/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SAT,VND,station,2,1.53,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SAT,1,No
+VND_DOOR_CLOSE,Unifi,SAT,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SAT/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SAT/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SAV,VND,station,2,0.05,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SAV,1,No
+VND_DOOR_CLOSE,Unifi,SAV,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SAV/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SAV/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SDF,VND,station,2,0.32,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SDF,1,No
+VND_DOOR_CLOSE,Unifi,SDF,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SDF/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SDF/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SJC,VND,station,2,3.02,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SJC,1,No
+VND_DOOR_CLOSE,Unifi,SJC,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SJC/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SJC/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SMF,VND,station,2,0.92,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SMF,1,No
+VND_DOOR_CLOSE,Menzies Aviation,SMF,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SMF/Menzies Aviation,1,No
+VND_DOOR_CLOSE,Blended,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SMF/Menzies Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,SNA,VND,station,2,1.79,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SNA,1,No
+VND_DOOR_CLOSE,Unifi,SNA,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SNA/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SNA/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,SRQ,VND,station,2,3.2,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SRQ,1,No
+VND_DOOR_CLOSE,GAT,SRQ,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SRQ/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SRQ/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,SYR,VND,station,2,1.56,Goal,Root/div/station,VND_DOOR_CLOSE/VND/SYR,1,No
+VND_DOOR_CLOSE,Unifi,SYR,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/SYR/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/SYR/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,TLH,VND,station,2,1.6,Goal,Root/div/station,VND_DOOR_CLOSE/VND/TLH,1,No
+VND_DOOR_CLOSE,GAT,TLH,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/TLH/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/TLH/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,TUS,VND,station,2,3.05,Goal,Root/div/station,VND_DOOR_CLOSE/VND/TUS,1,No
+VND_DOOR_CLOSE,Unifi,TUS,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/TUS/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/TUS/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,TYS,VND,station,2,2.61,Goal,Root/div/station,VND_DOOR_CLOSE/VND/TYS,1,No
+VND_DOOR_CLOSE,Menzies Aviation,TYS,vendor,3,100.0,Goal,Root/div/station/vendor,VND_DOOR_CLOSE/VND/TYS/Menzies Aviation,1,No
+VND_DOOR_CLOSE,Blended,Menzies Aviation,vnd_typ,4,100.0,Goal,Root/div/station/vendor/vnd_typ,VND_DOOR_CLOSE/VND/TYS/Menzies Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,CITY OF MELBOURNE,VND,vendor,2,0.13,Goal,Root/div/vendor,VND_DOOR_CLOSE/VND/CITY OF MELBOURNE,1,No
+VND_DOOR_CLOSE,Blended,CITY OF MELBOURNE,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,VND_DOOR_CLOSE/VND/CITY OF MELBOURNE/Blended,0,Yes
+VND_DOOR_CLOSE,GAT,VND,vendor,2,1.5,Goal,Root/div/vendor,VND_DOOR_CLOSE/VND/GAT,1,No
+VND_DOOR_CLOSE,Blended,GAT,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,VND_DOOR_CLOSE/VND/GAT/Blended,0,Yes
+VND_DOOR_CLOSE,Menzies Aviation,VND,vendor,2,3.31,Goal,Root/div/vendor,VND_DOOR_CLOSE/VND/Menzies Aviation,1,No
+VND_DOOR_CLOSE,Blended,Menzies Aviation,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,VND_DOOR_CLOSE/VND/Menzies Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,Unifi,VND,vendor,2,3.88,Goal,Root/div/vendor,VND_DOOR_CLOSE/VND/Unifi,1,No
+VND_DOOR_CLOSE,Blended,Unifi,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,VND_DOOR_CLOSE/VND/Unifi/Blended,0,Yes
+VND_DOOR_CLOSE,US Aviation,VND,vendor,2,2.97,Goal,Root/div/vendor,VND_DOOR_CLOSE/VND/US Aviation,1,No
+VND_DOOR_CLOSE,Blended,US Aviation,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,VND_DOOR_CLOSE/VND/US Aviation/Blended,0,Yes
+VND_DOOR_CLOSE,WFS -Worldwide Flight Services,VND,vendor,2,0.99,Goal,Root/div/vendor,VND_DOOR_CLOSE/VND/WFS -Worldwide Flight Services,1,No
+VND_DOOR_CLOSE,Blended,WFS -Worldwide Flight Services,vnd_typ,3,100.0,Goal,Root/div/vendor/vnd_typ,VND_DOOR_CLOSE/VND/WFS -Worldwide Flight Services/Blended,0,Yes

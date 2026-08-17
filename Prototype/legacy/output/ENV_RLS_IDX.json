@@ -1,0 +1,32 @@
+{
+    "id": "ENV_RLS_IDX",
+    "name": "ENV_RLS_IDX",
+    "category": "Root",
+    "tier": 0,
+    "path": "ENV_RLS_IDX",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "CSSC",
+            "name": "CSSC",
+            "category": "div",
+            "path": "ENV_RLS_IDX/CSSC",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "CERC",
+                    "name": "CERC",
+                    "category": "bu",
+                    "path": "ENV_RLS_IDX/CSSC/CERC",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-20LCANCEL,20LCANCEL,,Root,0,1,Goal,Root,20LCANCEL,1,No
-20LCANCEL,WB,20LCANCEL,body_type,1,100.0,Goal,Root/body_type,20LCANCEL/WB,1,No
-20LCANCEL,I,WB,dom_int,2,100.0,Goal,Root/body_type/dom_int,20LCANCEL/WB/I,1,No
-20LCANCEL,MTC,I,rsn_grp,3,100.0,Goal,Root/body_type/dom_int/rsn_grp,20LCANCEL/WB/I/MTC,0,Yes

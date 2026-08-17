@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-NFDDOM,NFDDOM,,Root,0,1,Goal,Root,NFDDOM,1,No
-NFDDOM,DL,NFDDOM,sys,1,100.0,Goal,Root/sys,NFDDOM/DL,0,Yes

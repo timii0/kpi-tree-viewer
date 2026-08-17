@@ -1,0 +1,21 @@
+{
+    "id": "IFSR",
+    "name": "IFSR",
+    "category": "Root",
+    "tier": 0,
+    "path": "IFSR",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "RES",
+            "name": "RES",
+            "category": "div",
+            "path": "IFSR/RES",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

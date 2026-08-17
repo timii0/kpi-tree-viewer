@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-QUALITY_EFF,QUALITY_EFF,,Root,0,1,Goal,Root,QUALITY_EFF,1,No
-QUALITY_EFF,TOP,QUALITY_EFF,div,1,100.0,Goal,Root/div,QUALITY_EFF/TOP,1,No
-QUALITY_EFF,Engineering_Quality,TOP,bu,2,100.0,Goal,Root/div/bu,QUALITY_EFF/TOP/Engineering_Quality,0,Yes

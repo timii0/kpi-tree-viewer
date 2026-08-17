@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-DOT_DISAB_CPLT,DOT_DISAB_CPLT,,Root,0,1,Goal,Root,DOT_DISAB_CPLT,1,No
-DOT_DISAB_CPLT,DL,DOT_DISAB_CPLT,sys,1,100.0,Goal,Root/sys,DOT_DISAB_CPLT/DL,0,Yes

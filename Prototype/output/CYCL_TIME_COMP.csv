@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CYCL_TIME_COMP,CYCL_TIME_COMP,,Root,0,1,Goal,Root,CYCL_TIME_COMP,1,No
-CYCL_TIME_COMP,TOP,CYCL_TIME_COMP,div,1,100.0,Goal,Root/div,CYCL_TIME_COMP/TOP,1,No
-CYCL_TIME_COMP,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,CYCL_TIME_COMP/TOP/Distribution_Logistics,0,Yes

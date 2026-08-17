@@ -1,28 +1,31 @@
 # KPI Tree Viewer
 
-Interactive tool for visualizing KPI goal trees, cascading stretch targets down organizational hierarchies, and reallocating num between nodes within a tier.
+Interactive tool for visualizing KPI goal trees, cascading stretch targets down organizational hierarchies, and inspecting performance at every level.
 
 ## What It Does
 
 1. **Extracts KPI data** from Teradata into a local parquet cache
-2. **Builds a KPI tree** from the cached data using a configurable hierarchy definition (`hierarchy.json`)
-3. **Cascades goals** from leadership targets down to every node proportionally based on num contribution
-4. **Visualizes the tree** in a Streamlit app with interactive graph view, node editing, reallocation, and statistics
-5. **Validates rollup** — ensures children's num sums to parent at every level and contributions are consistent
+2. **Designs hierarchy definitions** via a Tkinter editor (`editor.py`)
+3. **Builds a KPI tree** from the cached data using a configurable hierarchy definition
+4. **Cascades goals** from leadership targets down to every node proportionally based on num contribution
+5. **Visualizes the tree** in a Streamlit app with interactive graph view, hierarchy diagram, and statistics
+6. **Validates rollup** — ensures children's num sums to parent at every level and contributions are consistent
 
 ## Project Structure
 
 ```
 Prototype/
-├── app.py                  # Streamlit viewer/editor (main UI)
+├── app.py                  # Streamlit viewer (main UI)
+├── editor.py               # Tkinter hierarchy designer (create/edit hierarchy definitions)
 ├── kpi_statistics.py       # Teradata query → teradata_cache.parquet
-├── converter2.0.py         # Builds the base tree JSON from parquet + hierarchy
+├── converter.py            # Builds the base tree JSON from parquet + hierarchy
 ├── cascade.py              # Applies goals from goals.csv and cascades stretch down
-├── hierarchy.json          # Hierarchy definition (nesting order + transforms)
+├── hierarchy.json          # Default hierarchy definition (nesting order + transforms)
+├── hierarchies/            # Saved hierarchy definitions (one per KPI variant)
 ├── goals.csv               # Leadership goal targets (truth source for anchors)
 ├── teradata_cache.parquet  # Cached raw data (flat rows with dimensions + num/den)
-├── output/                 # Generated tree JSONs + per-KPI CSVs (consumed by app.py)
-├── cascaded_output/        # Cascaded goal CSVs (summary tables with YTD actuals)
+├── output/                 # Generated tree JSONs + cascaded CSVs (consumed by app.py)
+├── legacy/                 # Archived output files (non-D0 KPIs)
 ├── assets/                 # Logo and static files
 └── requirements.txt        # Python dependencies
 ```
@@ -58,19 +61,21 @@ python kpi_statistics.py
 
 Skip this step if the parquet cache is already up to date.
 
-### Step 2: Build the base tree
+### Step 2: Design a hierarchy
 
-Reads `teradata_cache.parquet` and `hierarchy.json`, outputs `output/D0 2.0.json`:
+Launch the Tkinter hierarchy editor to create or modify hierarchy definitions:
 
 ```bash
-python converter2.0.py
+python editor.py
 ```
 
-### Step 3: Cascade goals
+Add dimensions (column + category), arrange nesting order, toggle split branches. Saving a hierarchy also builds the tree and runs cascade automatically, outputting results to `output/`.
 
-Reads `goals.csv`, applies stretch to anchor nodes, cascades proportionally to all descendants, and writes:
-- `output/D0 2.0.json` (updated tree with goal values)
-- `cascaded_output/D0_cascaded.csv` (flat summary with YTD actuals)
+### Step 3: Build and cascade (standalone)
+
+If running without the editor, use cascade.py directly. It reads the hierarchy, builds the tree, applies goals from `goals.csv`, cascades stretch, and writes:
+- `output/{name}.json` (tree with cascaded goal values)
+- `output/{name}_cascaded.csv` (flat summary with YTD expectations)
 
 ```bash
 python cascade.py
@@ -86,44 +91,19 @@ Opens at `http://localhost:8501`. Use the sidebar to select a KPI, adjust max st
 
 ## App Features
 
-- **Tree Tab** — Expandable tree with lazy rendering (depth-limited). Select any node to view properties (baseline, goal, contribution, num, den). Actions:
-  - *Edit*: Change name, category, type, or contribution
-  - *Add Child*: Insert a new child node
-  - *Reallocate*: Move num between siblings within the same tier (see below)
-  - *Delete*: Remove a node and its subtree
-  - *Save Tree*: Persists both the tree JSON and regenerates the statistics CSV
+- **Tree Tab** — Expandable tree with lazy rendering (depth-limited). Select any node to view properties (baseline, goal, contribution, num, den). Includes QA validation showing contribution sums and rollup checks.
 
 - **Graph Tab** — Two views:
-  - *Graph*: Plotly network diagram rooted at the selected node. Color-coded by type (Goal vs Target). Hover for full node details.
-  - *Hierarchy*: Renders the `hierarchy.json` definition as a visual diagram.
+  - *Graph*: Plotly network diagram rooted at the selected node. Color-coded by type. Hover for full node details.
+  - *Hierarchy*: Renders the hierarchy definition used to build the currently selected tree. Automatically matches the hierarchy file from `hierarchies/` by KPI name, falling back to `hierarchy.json`.
 
-- **Statistics Tab** — Displays the per-KPI CSV from the output directory. Updated on Save Tree.
+- **Statistics Tab** — Displays the cascaded CSV for the selected KPI from the output directory.
+
+- **Hierarchy Builder Tab** — Select a saved hierarchy and build a new KPI tree directly from the Streamlit UI. Runs cascade and outputs to `output/`.
 
 - **QA Validation** — Two checks run at every level:
   - *Contribution Sum*: Verifies primary and split children contributions each sum to 100%
   - *Num Rollup*: Verifies children's num sums to parent's num (with rounding tolerance for cascaded values)
-
-## Num Reallocation
-
-The Reallocate feature allows moving num between sibling nodes at the same tier within the primary branch. This models scenarios like a carrier deciding to shift volume targets between its sub-carriers to meet overall goals.
-
-**How it works:**
-1. Select a node in the tree, click "Reallocate"
-2. The UI shows all siblings of the selected node (children of the same parent)
-3. Pick a source (giving num) and destination (receiving num)
-4. Enter the amount to transfer — a live preview shows the resulting baselines
-5. Click "Apply Reallocation"
-
-**What gets recalculated:**
-- Source and destination `num` values (sum stays constant at parent level)
-- Source and destination `baseline` (num/den)
-- All sibling `contribution` values (child_num / parent_num)
-- Parent num is unchanged — the rollup stays valid
-
-**What does NOT change:**
-- Denominator (`den`) — only num moves
-- Parent's num, baseline, or goal
-- Nodes outside the affected tier
 
 ## Cascading Logic
 
@@ -135,16 +115,36 @@ The Reallocate feature allows moving num between sibling nodes at the same tier 
 6. Children with their own explicit goals are skipped during cascading
 7. After cascading, `propagate_goal_nums` writes goal_num back into the `num` field at every level so the tree is internally consistent
 
+## Split Branches and Tier Numbering
+
+Split branches provide alternate dimensional views of the same data without affecting the primary rollup. They are marked with `"split": true` in the hierarchy definition.
+
+**Tier numbering rules:**
+- Primary (non-split) nodes use integer tiers: 1, 2, 3, 4, ...
+- The first split at a level gets offset `.1` (e.g. tier 3.1)
+- A second split at the same level gets offset `.2` (e.g. tier 3.2)
+- All descendants of a split branch inherit their parent's offset (e.g. fleet at 3.1 → station at 4.1)
+
+**Example** (D0 4.0 hierarchy):
+```
+sys (1) → carrier (2) → dc_carrier (3.0) → dom_int (4.0) → station (5.0)   [primary]
+                       → fleet (3.1, split) → station (4.1)                   [split branch]
+```
+
+This allows split branches to be visually and logically distinguished from the primary hierarchy at every depth level.
+
 ## Key Files
 
 | File | Role |
 |------|------|
-| `hierarchy.json` | Declares nesting order of dimensions and optional value transforms. Edit this to restructure the tree without touching Python. |
+| `hierarchy.json` | Default hierarchy definition. Declares nesting order of dimensions and optional value transforms. |
+| `hierarchies/` | Directory of saved hierarchy definitions (one per KPI variant, e.g. `D0 4.0.json`). |
 | `goals.csv` | Truth source for anchor nodes. Format: `KPI_Name, Node_Name, Baseline, Baseline_Num, Baseline_Den, Stretch, KPI_Num, KPI_Den, Goal`. |
 | `kpi_statistics.py` | Connects to Teradata and pulls flight-level KPI data into `teradata_cache.parquet`. |
-| `converter2.0.py` | Reads parquet + hierarchy, aggregates at each level, computes baselines and contributions. |
-| `cascade.py` | Overlays goals onto matching nodes, cascades stretch proportionally, computes YTD actuals, exports JSON and CSV. |
-| `app.py` | Streamlit app with tree navigation, node editing, num reallocation, graph visualization, statistics, and QA validation. |
+| `converter.py` | Reads parquet + hierarchy, aggregates at each level, computes baselines and contributions. |
+| `cascade.py` | Overlays goals onto matching nodes, cascades stretch proportionally, computes YTD expectations, exports JSON and CSV. |
+| `editor.py` | Tkinter app for visually designing hierarchy definitions. Supports split branches. On save, builds the tree and runs cascade. |
+| `app.py` | Streamlit app with tree navigation, graph visualization, hierarchy view, statistics, and QA validation. |
 
 ## Data Flow
 
@@ -157,23 +157,27 @@ The Reallocate feature allows moving num between sibling nodes at the same tier 
             ┌──────────────────┼──────────────────┐
             │                  │                  │
             ▼                  ▼                  ▼
-     hierarchy.json     converter2.0.py      cascade.py
-                               │                  │
-                               ▼                  │
-                        output/D0 2.0.json ◄──────┘
-                               │            goals.csv
+     hierarchy.json      converter.py        cascade.py
+     hierarchies/              │                  │
+            │                  ▼                  │
+            │           output/{name}.json ◄──────┘
+            │                                goals.csv
+            ▼                                     │
+       editor.py ─────────────────────────────────┘
+            │                                     
+            ▼                                     
+     output/{name}.json                           
+     output/{name}_cascaded.csv                   
+                               │
                                ▼
                        app.py (Streamlit)
-                          │         │
-                          ▼         ▼
-                   output/*.csv   cascaded_output/
-                  (on Save Tree)  D0_cascaded.csv
 ```
 
 ## Notes
 
 - `goals.csv` baseline num/den must match the parquet data exactly. If the parquet is refreshed, re-derive the goal values to avoid rollup mismatches.
 - The graph view roots from the currently selected node, not the full tree root.
-- Tree JSON files in `output/` can be edited in the app and saved back. Saving also regenerates the statistics CSV.
 - The parquet cache covers flight data from 2025-06-01 to 2026-05-30.
-- YTD actuals in the cascaded CSV use the latest year present in the data.
+- YTD expectations in the cascaded CSV use cumulative month-level rollups.
+- The hierarchy view under Graph automatically shows the hierarchy matching the selected KPI name.
+- Non-D0 legacy output files are archived under `legacy/output/`.

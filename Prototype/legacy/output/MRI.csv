@@ -1,0 +1,22 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+MRI,MRI,,Root,0,1,Goal,Root,MRI,1,No
+MRI,TOP,MRI,div,1,100.0,Goal,Root/div,MRI/TOP,19,No
+MRI,A220-ALL,TOP,hgst_fleet,2,9.34,Goal,Root/div/hgst_fleet,MRI/TOP/A220-ALL,0,Yes
+MRI,A319,TOP,hgst_fleet,2,3.55,Goal,Root/div/hgst_fleet,MRI/TOP/A319,0,Yes
+MRI,A330-ALL,TOP,hgst_fleet,2,1.62,Goal,Root/div/hgst_fleet,MRI/TOP/A330-ALL,0,Yes
+MRI,A350-ALL,TOP,hgst_fleet,2,8.42,Goal,Root/div/hgst_fleet,MRI/TOP/A350-ALL,0,Yes
+MRI,B717-200,TOP,hgst_fleet,2,8.06,Goal,Root/div/hgst_fleet,MRI/TOP/B717-200,0,Yes
+MRI,B737-ALL,TOP,hgst_fleet,2,3.67,Goal,Root/div/hgst_fleet,MRI/TOP/B737-ALL,0,Yes
+MRI,B757-ALL,TOP,hgst_fleet,2,9.15,Goal,Root/div/hgst_fleet,MRI/TOP/B757-ALL,0,Yes
+MRI,B767-300,TOP,hgst_fleet,2,7.23,Goal,Root/div/hgst_fleet,MRI/TOP/B767-300,0,Yes
+MRI,B767-400,TOP,hgst_fleet,2,5.39,Goal,Root/div/hgst_fleet,MRI/TOP/B767-400,0,Yes
+MRI,A221,TOP,lwst_fleet,2,2.74,Goal,Root/div/lwst_fleet,MRI/TOP/A221,0,Yes
+MRI,A223,TOP,lwst_fleet,2,7.36,Goal,Root/div/lwst_fleet,MRI/TOP/A223,0,Yes
+MRI,A321,TOP,lwst_fleet,2,0.02,Goal,Root/div/lwst_fleet,MRI/TOP/A321,0,Yes
+MRI,A321CEO,TOP,lwst_fleet,2,1.0,Goal,Root/div/lwst_fleet,MRI/TOP/A321CEO,0,Yes
+MRI,A321NEO,TOP,lwst_fleet,2,0.02,Goal,Root/div/lwst_fleet,MRI/TOP/A321NEO,0,Yes
+MRI,A330CEO,TOP,lwst_fleet,2,2.77,Goal,Root/div/lwst_fleet,MRI/TOP/A330CEO,0,Yes
+MRI,A330NEO,TOP,lwst_fleet,2,9.34,Goal,Root/div/lwst_fleet,MRI/TOP/A330NEO,0,Yes
+MRI,A350-941,TOP,lwst_fleet,2,8.56,Goal,Root/div/lwst_fleet,MRI/TOP/A350-941,0,Yes
+MRI,B737-800,TOP,lwst_fleet,2,10.59,Goal,Root/div/lwst_fleet,MRI/TOP/B737-800,0,Yes
+MRI,B737-900,TOP,lwst_fleet,2,1.17,Goal,Root/div/lwst_fleet,MRI/TOP/B737-900,0,Yes

@@ -1,0 +1,31 @@
+{
+    "id": "INOP_MEL",
+    "name": "INOP_MEL",
+    "category": "Root",
+    "tier": 0,
+    "path": "INOP_MEL",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "Customer",
+            "name": "Customer",
+            "category": "impact_type",
+            "path": "INOP_MEL/Customer",
+            "tier": 1,
+            "contribution": 66.04,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "Flight Attendant",
+            "name": "Flight Attendant",
+            "category": "impact_type",
+            "path": "INOP_MEL/Flight Attendant",
+            "tier": 1,
+            "contribution": 33.96,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

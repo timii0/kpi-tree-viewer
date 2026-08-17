@@ -1,0 +1,32 @@
+{
+    "id": "QUALITY_EFF",
+    "name": "QUALITY_EFF",
+    "category": "Root",
+    "tier": 0,
+    "path": "QUALITY_EFF",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "QUALITY_EFF/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Engineering_Quality",
+                    "name": "Engineering_Quality",
+                    "category": "bu",
+                    "path": "QUALITY_EFF/TOP/Engineering_Quality",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

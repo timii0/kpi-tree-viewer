@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-SRVFAIL_2HDLY,SRVFAIL_2HDLY,,Root,0,1,Goal,Root,SRVFAIL_2HDLY,1,No
-SRVFAIL_2HDLY,DL,SRVFAIL_2HDLY,sys,1,100.0,Goal,Root/sys,SRVFAIL_2HDLY/DL,0,Yes

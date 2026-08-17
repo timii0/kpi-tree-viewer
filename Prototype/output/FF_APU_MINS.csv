@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FF_APU_MINS,FF_APU_MINS,,Root,0,1,Goal,Root,FF_APU_MINS,1,No
-FF_APU_MINS,TOP,FF_APU_MINS,div,1,100.0,Goal,Root/div,FF_APU_MINS/TOP,0,Yes

@@ -1,0 +1,3588 @@
+{
+    "id": "BOARD_SAT",
+    "name": "BOARD_SAT",
+    "category": "Root",
+    "tier": 0,
+    "path": "BOARD_SAT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ACS",
+            "name": "ACS",
+            "category": "div",
+            "path": "BOARD_SAT/ACS",
+            "tier": 1,
+            "contribution": 1.78,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "AUS_Director",
+                    "name": "AUS_Director",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/AUS_Director",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Director",
+                    "name": "Central_Director",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Central_Director",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_Director",
+                    "name": "East_Director",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/East_Director",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations_Director",
+                    "name": "FieldStations_Director",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/FieldStations_Director",
+                    "tier": 2,
+                    "contribution": 0.57,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Director",
+                    "name": "Florida_Director",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Florida_Director",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_ATL",
+                    "name": "Hub_ATL",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_ATL",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_BOS",
+                    "name": "Hub_BOS",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_BOS",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_DTW",
+                    "name": "Hub_DTW",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_DTW",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_JFK",
+                    "name": "Hub_JFK",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_JFK",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LAX",
+                    "name": "Hub_LAX",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_LAX",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LGA",
+                    "name": "Hub_LGA",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_LGA",
+                    "tier": 2,
+                    "contribution": 0.75,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_MSP",
+                    "name": "Hub_MSP",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_MSP",
+                    "tier": 2,
+                    "contribution": 0.76,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SEA",
+                    "name": "Hub_SEA",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_SEA",
+                    "tier": 2,
+                    "contribution": 0.57,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SLC",
+                    "name": "Hub_SLC",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/Hub_SLC",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Director",
+                    "name": "West_Director",
+                    "category": "director",
+                    "path": "BOARD_SAT/ACS/West_Director",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACSATL",
+                    "name": "ACSATL",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/ACSATL",
+                    "tier": 2,
+                    "contribution": 0.95,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_AUS_FL",
+                    "name": "DTW_AUS_FL",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/DTW_AUS_FL",
+                    "tier": 2,
+                    "contribution": 0.79,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East",
+                    "name": "East",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/East",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations",
+                    "name": "FieldStations",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/FieldStations",
+                    "tier": 2,
+                    "contribution": 0.79,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_BOS",
+                    "name": "JFK_BOS",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/JFK_BOS",
+                    "tier": 2,
+                    "contribution": 0.6,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_SEA_SLC",
+                    "name": "MSP_SEA_SLC",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/MSP_SEA_SLC",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central",
+                    "name": "West_Central",
+                    "category": "division",
+                    "path": "BOARD_SAT/ACS/West_Central",
+                    "tier": 2,
+                    "contribution": 0.73,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_Region",
+                    "name": "AUS_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/AUS_Region",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Region",
+                    "name": "Central_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/Central_Region",
+                    "tier": 2,
+                    "contribution": 0.9,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Region",
+                    "name": "Florida_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/Florida_Region",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_Central",
+                    "name": "FS_Central",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/FS_Central",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_East",
+                    "name": "FS_East",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/FS_East",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_MountainWest",
+                    "name": "FS_MountainWest",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/FS_MountainWest",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_South",
+                    "name": "FS_South",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/FS_South",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_West",
+                    "name": "FS_West",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/FS_West",
+                    "tier": 2,
+                    "contribution": 0.65,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GreatLakes_Region",
+                    "name": "GreatLakes_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/GreatLakes_Region",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO_Region",
+                    "name": "MCO_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/MCO_Region",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA_Region",
+                    "name": "MIA_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/MIA_Region",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northeast_Region",
+                    "name": "Northeast_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/Northeast_Region",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Southeast_Region",
+                    "name": "Southeast_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/Southeast_Region",
+                    "tier": 2,
+                    "contribution": 0.64,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthWest_Region",
+                    "name": "SouthWest_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/SouthWest_Region",
+                    "tier": 2,
+                    "contribution": 0.59,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Region",
+                    "name": "West_Region",
+                    "category": "region",
+                    "path": "BOARD_SAT/ACS/West_Region",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABE",
+                    "name": "ABE",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ABE",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABQ",
+                    "name": "ABQ",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ABQ",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AGS",
+                    "name": "AGS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/AGS",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ALB",
+                    "name": "ALB",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ALB",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ANC",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ATL",
+                    "tier": 2,
+                    "contribution": 0.57,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATW",
+                    "name": "ATW",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ATW",
+                    "tier": 2,
+                    "contribution": 1.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/AUS",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AVL",
+                    "name": "AVL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/AVL",
+                    "tier": 2,
+                    "contribution": 0.58,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDL",
+                    "name": "BDL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BDL",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BHM",
+                    "name": "BHM",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BHM",
+                    "tier": 2,
+                    "contribution": 0.61,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIL",
+                    "name": "BIL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BIL",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIS",
+                    "name": "BIS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BIS",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BNA",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOI",
+                    "name": "BOI",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BOI",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BOS",
+                    "tier": 2,
+                    "contribution": 0.57,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTR",
+                    "name": "BTR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BTR",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTV",
+                    "name": "BTV",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BTV",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUF",
+                    "name": "BUF",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BUF",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUR",
+                    "name": "BUR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BUR",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BWI",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZN",
+                    "name": "BZN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/BZN",
+                    "tier": 2,
+                    "contribution": 0.84,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CAE",
+                    "name": "CAE",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CAE",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHA",
+                    "name": "CHA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CHA",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHO",
+                    "name": "CHO",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CHO",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHS",
+                    "name": "CHS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CHS",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CID",
+                    "name": "CID",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CID",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLE",
+                    "name": "CLE",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CLE",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CLT",
+                    "tier": 2,
+                    "contribution": 0.68,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CMH",
+                    "name": "CMH",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CMH",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "COS",
+                    "name": "COS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/COS",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/CVG",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAB",
+                    "name": "DAB",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DAB",
+                    "tier": 2,
+                    "contribution": 0.93,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAL",
+                    "name": "DAL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DAL",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAY",
+                    "name": "DAY",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DAY",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DCA",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DEN",
+                    "tier": 2,
+                    "contribution": 0.92,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DFW",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSM",
+                    "name": "DSM",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DSM",
+                    "tier": 2,
+                    "contribution": 0.61,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/DTW",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ECP",
+                    "name": "ECP",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ECP",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EUG",
+                    "name": "EUG",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/EUG",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/EWR",
+                    "tier": 2,
+                    "contribution": 1.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EYW",
+                    "name": "EYW",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/EYW",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAR",
+                    "name": "FAR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/FAR",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAT",
+                    "name": "FAT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/FAT",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCA",
+                    "name": "FCA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/FCA",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/FLL",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FSD",
+                    "name": "FSD",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/FSD",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FWA",
+                    "name": "FWA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/FWA",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GEG",
+                    "name": "GEG",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GEG",
+                    "tier": 2,
+                    "contribution": 0.58,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GNV",
+                    "name": "GNV",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GNV",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GPT",
+                    "name": "GPT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GPT",
+                    "tier": 2,
+                    "contribution": 0.65,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRB",
+                    "name": "GRB",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GRB",
+                    "tier": 2,
+                    "contribution": 0.76,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRR",
+                    "name": "GRR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GRR",
+                    "tier": 2,
+                    "contribution": 0.77,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSO",
+                    "name": "GSO",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GSO",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSP",
+                    "name": "GSP",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/GSP",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/HNL",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HOU",
+                    "name": "HOU",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/HOU",
+                    "tier": 2,
+                    "contribution": 0.95,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HPN",
+                    "name": "HPN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/HPN",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HSV",
+                    "name": "HSV",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/HSV",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/IAD",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/IAH",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICT",
+                    "name": "ICT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ICT",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ILM",
+                    "name": "ILM",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ILM",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/IND",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAN",
+                    "name": "JAN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/JAN",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAX",
+                    "name": "JAX",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/JAX",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/JFK",
+                    "tier": 2,
+                    "contribution": 0.58,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/KOA",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LAS",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LAX",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LEX",
+                    "name": "LEX",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LEX",
+                    "tier": 2,
+                    "contribution": 0.81,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LGA",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGB",
+                    "name": "LGB",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LGB",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LIH",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIT",
+                    "name": "LIT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/LIT",
+                    "tier": 2,
+                    "contribution": 0.85,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCI",
+                    "name": "MCI",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MCI",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MCO",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDT",
+                    "name": "MDT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MDT",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDW",
+                    "name": "MDW",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MDW",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MEM",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFR",
+                    "name": "MFR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MFR",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MIA",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MKE",
+                    "name": "MKE",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MKE",
+                    "tier": 2,
+                    "contribution": 1.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLB",
+                    "name": "MLB",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MLB",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSN",
+                    "name": "MSN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MSN",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSO",
+                    "name": "MSO",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MSO",
+                    "tier": 2,
+                    "contribution": 0.79,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MSP",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MSY",
+                    "tier": 2,
+                    "contribution": 0.52,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MYR",
+                    "name": "MYR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/MYR",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAK",
+                    "name": "OAK",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/OAK",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/OGG",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OKC",
+                    "name": "OKC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/OKC",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OMA",
+                    "name": "OMA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/OMA",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ONT",
+                    "name": "ONT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ONT",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ORD",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORF",
+                    "name": "ORF",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ORF",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PBI",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PDX",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PHL",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PHX",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PIT",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PNS",
+                    "name": "PNS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PNS",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSC",
+                    "name": "PSC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PSC",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVD",
+                    "name": "PVD",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PVD",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PWM",
+                    "name": "PWM",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/PWM",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAP",
+                    "name": "RAP",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/RAP",
+                    "tier": 2,
+                    "contribution": 0.79,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDM",
+                    "name": "RDM",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/RDM",
+                    "tier": 2,
+                    "contribution": 1.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/RDU",
+                    "tier": 2,
+                    "contribution": 0.97,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RIC",
+                    "name": "RIC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/RIC",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RNO",
+                    "name": "RNO",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/RNO",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROA",
+                    "name": "ROA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ROA",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROC",
+                    "name": "ROC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/ROC",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/RSW",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SAN",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SAT",
+                    "tier": 2,
+                    "contribution": 0.85,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAV",
+                    "name": "SAV",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SAV",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBA",
+                    "name": "SBA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SBA",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBN",
+                    "name": "SBN",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SBN",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDF",
+                    "name": "SDF",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SDF",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SEA",
+                    "tier": 2,
+                    "contribution": 0.7,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SFO",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SHV",
+                    "name": "SHV",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SHV",
+                    "tier": 2,
+                    "contribution": 0.52,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SJC",
+                    "tier": 2,
+                    "contribution": 0.96,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SLC",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SMF",
+                    "name": "SMF",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SMF",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SNA",
+                    "tier": 2,
+                    "contribution": 0.88,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SRQ",
+                    "name": "SRQ",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SRQ",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/STL",
+                    "tier": 2,
+                    "contribution": 0.95,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYR",
+                    "name": "SYR",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/SYR",
+                    "tier": 2,
+                    "contribution": 0.81,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLH",
+                    "name": "TLH",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/TLH",
+                    "tier": 2,
+                    "contribution": 0.93,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/TPA",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUL",
+                    "name": "TUL",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/TUL",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUS",
+                    "name": "TUS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/TUS",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TYS",
+                    "name": "TYS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/TYS",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VPS",
+                    "name": "VPS",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/VPS",
+                    "tier": 2,
+                    "contribution": 1.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XNA",
+                    "name": "XNA",
+                    "category": "station",
+                    "path": "BOARD_SAT/ACS/XNA",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_VP",
+                    "name": "ATL_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/ATL_VP",
+                    "tier": 2,
+                    "contribution": 0.89,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_FL_VP",
+                    "name": "AUS_FL_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/AUS_FL_VP",
+                    "tier": 2,
+                    "contribution": 0.75,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS_VP",
+                    "name": "BOS_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/BOS_VP",
+                    "tier": 2,
+                    "contribution": 0.53,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_VP",
+                    "name": "DTW_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/DTW_VP",
+                    "tier": 2,
+                    "contribution": 0.78,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_VP",
+                    "name": "East_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/East_VP",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations_VP",
+                    "name": "FieldStations_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/FieldStations_VP",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_VP",
+                    "name": "JFK_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/JFK_VP",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX_VP",
+                    "name": "LAX_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/LAX_VP",
+                    "tier": 2,
+                    "contribution": 0.9,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA_VP",
+                    "name": "LGA_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/LGA_VP",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_VP",
+                    "name": "MSP_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/MSP_VP",
+                    "tier": 2,
+                    "contribution": 0.61,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA_VP",
+                    "name": "SEA_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/SEA_VP",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC_VP",
+                    "name": "SLC_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/SLC_VP",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central_VP",
+                    "name": "West_Central_VP",
+                    "category": "vp",
+                    "path": "BOARD_SAT/ACS/West_Central_VP",
+                    "tier": 2,
+                    "contribution": 0.47000000000000003,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "BOARD_SAT/DL",
+            "tier": 1,
+            "contribution": 65.3,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "VND",
+            "name": "VND",
+            "category": "div",
+            "path": "BOARD_SAT/VND",
+            "tier": 1,
+            "contribution": 32.919999999999995,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "DC",
+                    "name": "DC",
+                    "category": "carrier",
+                    "path": "BOARD_SAT/VND/DC",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "DTW",
+                            "name": "DTW",
+                            "category": "station",
+                            "path": "BOARD_SAT/VND/DC/DTW",
+                            "tier": 3,
+                            "contribution": 63.13,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "BOARD_SAT/VND/DC/DTW/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "PAX",
+                                            "name": "PAX",
+                                            "category": "function",
+                                            "path": "BOARD_SAT/VND/DC/DTW/Unifi/PAX",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": [
+                                                {
+                                                    "id": "MSPDTW",
+                                                    "name": "MSPDTW",
+                                                    "category": "variant",
+                                                    "path": "BOARD_SAT/VND/DC/DTW/Unifi/PAX/MSPDTW",
+                                                    "tier": 6,
+                                                    "contribution": 100.0,
+                                                    "type": "Goal",
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MSP",
+                            "name": "MSP",
+                            "category": "station",
+                            "path": "BOARD_SAT/VND/DC/MSP",
+                            "tier": 3,
+                            "contribution": 36.87,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "BOARD_SAT/VND/DC/MSP/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "PAX",
+                                            "name": "PAX",
+                                            "category": "function",
+                                            "path": "BOARD_SAT/VND/DC/MSP/Unifi/PAX",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": [
+                                                {
+                                                    "id": "MSPDTW",
+                                                    "name": "MSPDTW",
+                                                    "category": "variant",
+                                                    "path": "BOARD_SAT/VND/DC/MSP/Unifi/PAX/MSPDTW",
+                                                    "tier": 6,
+                                                    "contribution": 100.0,
+                                                    "type": "Goal",
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ABE",
+                    "name": "ABE",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ABE",
+                    "tier": 2,
+                    "contribution": 3.21,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ABE/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ABE/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "AGS",
+                    "name": "AGS",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/AGS",
+                    "tier": 2,
+                    "contribution": 2.45,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/AGS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/AGS/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ATW",
+                    "name": "ATW",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ATW",
+                    "tier": 2,
+                    "contribution": 1.42,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ATW/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ATW/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "AVL",
+                    "name": "AVL",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/AVL",
+                    "tier": 2,
+                    "contribution": 1.14,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/AVL/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/AVL/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BIL",
+                    "name": "BIL",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/BIL",
+                    "tier": 2,
+                    "contribution": 3.97,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/BIL/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/BIL/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BIS",
+                    "name": "BIS",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/BIS",
+                    "tier": 2,
+                    "contribution": 3.6,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/BIS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/BIS/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BTR",
+                    "name": "BTR",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/BTR",
+                    "tier": 2,
+                    "contribution": 2.66,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/BTR/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/BTR/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BTV",
+                    "name": "BTV",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/BTV",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/BTV/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/BTV/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BUF",
+                    "name": "BUF",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/BUF",
+                    "tier": 2,
+                    "contribution": 1.1,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/BUF/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/BUF/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BUR",
+                    "name": "BUR",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/BUR",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/BUR/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/BUR/GAT/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CHA",
+                    "name": "CHA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/CHA",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/CHA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/CHA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CHO",
+                    "name": "CHO",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/CHO",
+                    "tier": 2,
+                    "contribution": 1.15,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/CHO/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/CHO/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CID",
+                    "name": "CID",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/CID",
+                    "tier": 2,
+                    "contribution": 3.56,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/CID/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/CID/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DAL",
+                    "name": "DAL",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/DAL",
+                    "tier": 2,
+                    "contribution": 3.49,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/DAL/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/DAL/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DSM",
+                    "name": "DSM",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/DSM",
+                    "tier": 2,
+                    "contribution": 2.88,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/DSM/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/DSM/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ECP",
+                    "name": "ECP",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ECP",
+                    "tier": 2,
+                    "contribution": 3.8,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ECP/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ECP/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "EUG",
+                    "name": "EUG",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/EUG",
+                    "tier": 2,
+                    "contribution": 2.42,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/EUG/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/EUG/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "EYW",
+                    "name": "EYW",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/EYW",
+                    "tier": 2,
+                    "contribution": 1.72,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/EYW/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/EYW/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "FAR",
+                    "name": "FAR",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/FAR",
+                    "tier": 2,
+                    "contribution": 3.37,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/FAR/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/FAR/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "FAT",
+                    "name": "FAT",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/FAT",
+                    "tier": 2,
+                    "contribution": 1.59,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/FAT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/FAT/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "FCA",
+                    "name": "FCA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/FCA",
+                    "tier": 2,
+                    "contribution": 1.87,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/FCA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/FCA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "FSD",
+                    "name": "FSD",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/FSD",
+                    "tier": 2,
+                    "contribution": 4.63,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/FSD/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/FSD/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "FWA",
+                    "name": "FWA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/FWA",
+                    "tier": 2,
+                    "contribution": 1.22,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/FWA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/FWA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GEG",
+                    "name": "GEG",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/GEG",
+                    "tier": 2,
+                    "contribution": 1.52,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/GEG/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/GEG/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GNV",
+                    "name": "GNV",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/GNV",
+                    "tier": 2,
+                    "contribution": 1.55,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/GNV/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/GNV/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GPT",
+                    "name": "GPT",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/GPT",
+                    "tier": 2,
+                    "contribution": 1.62,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/GPT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/GPT/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "HPN",
+                    "name": "HPN",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/HPN",
+                    "tier": 2,
+                    "contribution": 2.82,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/HPN/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/HPN/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ICT",
+                    "name": "ICT",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ICT",
+                    "tier": 2,
+                    "contribution": 1.75,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ICT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ICT/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ILM",
+                    "name": "ILM",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ILM",
+                    "tier": 2,
+                    "contribution": 2.4,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ILM/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ILM/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LGB",
+                    "name": "LGB",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/LGB",
+                    "tier": 2,
+                    "contribution": 1.6,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/LGB/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/LGB/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MDT",
+                    "name": "MDT",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/MDT",
+                    "tier": 2,
+                    "contribution": 3.55,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/MDT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/MDT/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MFR",
+                    "name": "MFR",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/MFR",
+                    "tier": 2,
+                    "contribution": 2.53,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/MFR/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/MFR/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MSO",
+                    "name": "MSO",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/MSO",
+                    "tier": 2,
+                    "contribution": 2.62,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/MSO/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/MSO/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MYR",
+                    "name": "MYR",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/MYR",
+                    "tier": 2,
+                    "contribution": 1.07,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/MYR/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/MYR/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "OAK",
+                    "name": "OAK",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/OAK",
+                    "tier": 2,
+                    "contribution": 2.21,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/OAK/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/OAK/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "OMA",
+                    "name": "OMA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/OMA",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/OMA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/OMA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PSC",
+                    "name": "PSC",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/PSC",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Menzies Aviation",
+                            "name": "Menzies Aviation",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/PSC/Menzies Aviation",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/PSC/Menzies Aviation/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PWM",
+                    "name": "PWM",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/PWM",
+                    "tier": 2,
+                    "contribution": 0.65,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/PWM/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/PWM/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "RAP",
+                    "name": "RAP",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/RAP",
+                    "tier": 2,
+                    "contribution": 2.87,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/RAP/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/RAP/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "RDM",
+                    "name": "RDM",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/RDM",
+                    "tier": 2,
+                    "contribution": 1.74,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/RDM/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/RDM/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "RNO",
+                    "name": "RNO",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/RNO",
+                    "tier": 2,
+                    "contribution": 1.76,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/RNO/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/RNO/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ROA",
+                    "name": "ROA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ROA",
+                    "tier": 2,
+                    "contribution": 1.38,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ROA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ROA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ROC",
+                    "name": "ROC",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/ROC",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/ROC/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/ROC/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SBA",
+                    "name": "SBA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/SBA",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/SBA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/SBA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SBN",
+                    "name": "SBN",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/SBN",
+                    "tier": 2,
+                    "contribution": 0.97,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/SBN/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/SBN/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SHV",
+                    "name": "SHV",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/SHV",
+                    "tier": 2,
+                    "contribution": 3.98,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/SHV/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/SHV/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "TUL",
+                    "name": "TUL",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/TUL",
+                    "tier": 2,
+                    "contribution": 3.21,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/TUL/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/TUL/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "VPS",
+                    "name": "VPS",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/VPS",
+                    "tier": 2,
+                    "contribution": 2.08,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/VPS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/VPS/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "XNA",
+                    "name": "XNA",
+                    "category": "station",
+                    "path": "BOARD_SAT/VND/XNA",
+                    "tier": 2,
+                    "contribution": 1.96,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "BOARD_SAT/VND/XNA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "FS",
+                                    "name": "FS",
+                                    "category": "vnd_typ",
+                                    "path": "BOARD_SAT/VND/XNA/Unifi/FS",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

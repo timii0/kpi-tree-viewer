@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+HP_PFK,HP_PFK,,Root,0,1,Goal,Root,HP_PFK,1,No
+HP_PFK,TOP,HP_PFK,div,1,100.0,Goal,Root/div,HP_PFK/TOP,0,Yes

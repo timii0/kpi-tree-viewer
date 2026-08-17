@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-TOOL_DEFR,TOOL_DEFR,,Root,0,1,Goal,Root,TOOL_DEFR,1,No
-TOOL_DEFR,TOP,TOOL_DEFR,div,1,100.0,Goal,Root/div,TOOL_DEFR/TOP,0,Yes

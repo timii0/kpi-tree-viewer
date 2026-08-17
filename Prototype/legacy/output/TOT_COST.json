@@ -1,0 +1,1543 @@
+{
+    "id": "TOT_COST",
+    "name": "TOT_COST",
+    "category": "Root",
+    "tier": 0,
+    "path": "TOT_COST",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ACS",
+            "name": "ACS",
+            "category": "div",
+            "path": "TOT_COST/ACS",
+            "tier": 1,
+            "contribution": 8.44,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "AUS_Director",
+                    "name": "AUS_Director",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/AUS_Director",
+                    "tier": 2,
+                    "contribution": 1.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Director",
+                    "name": "Central_Director",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Central_Director",
+                    "tier": 2,
+                    "contribution": 1.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_Director",
+                    "name": "East_Director",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/East_Director",
+                    "tier": 2,
+                    "contribution": 1.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations_Director",
+                    "name": "FieldStations_Director",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/FieldStations_Director",
+                    "tier": 2,
+                    "contribution": 1.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Director",
+                    "name": "Florida_Director",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Florida_Director",
+                    "tier": 2,
+                    "contribution": 1.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_ATL",
+                    "name": "Hub_ATL",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_ATL",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_BOS",
+                    "name": "Hub_BOS",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_BOS",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_DTW",
+                    "name": "Hub_DTW",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_DTW",
+                    "tier": 2,
+                    "contribution": 1.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_JFK",
+                    "name": "Hub_JFK",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_JFK",
+                    "tier": 2,
+                    "contribution": 1.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LAX",
+                    "name": "Hub_LAX",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_LAX",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LGA",
+                    "name": "Hub_LGA",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_LGA",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_MSP",
+                    "name": "Hub_MSP",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_MSP",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SEA",
+                    "name": "Hub_SEA",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_SEA",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SLC",
+                    "name": "Hub_SLC",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/Hub_SLC",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Director",
+                    "name": "West_Director",
+                    "category": "director",
+                    "path": "TOT_COST/ACS/West_Director",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACSATL",
+                    "name": "ACSATL",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/ACSATL",
+                    "tier": 2,
+                    "contribution": 0.78,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central",
+                    "name": "Central",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/Central",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East",
+                    "name": "East",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/East",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations",
+                    "name": "FieldStations",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/FieldStations",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_BOS",
+                    "name": "JFK_BOS",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/JFK_BOS",
+                    "tier": 2,
+                    "contribution": 1.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_SEA_SLC",
+                    "name": "MSP_SEA_SLC",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/MSP_SEA_SLC",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West",
+                    "name": "West",
+                    "category": "division",
+                    "path": "TOT_COST/ACS/West",
+                    "tier": 2,
+                    "contribution": 1.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_Region",
+                    "name": "AUS_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/AUS_Region",
+                    "tier": 2,
+                    "contribution": 1.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Region",
+                    "name": "Central_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/Central_Region",
+                    "tier": 2,
+                    "contribution": 1.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Region",
+                    "name": "Florida_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/Florida_Region",
+                    "tier": 2,
+                    "contribution": 1.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_Central",
+                    "name": "FS_Central",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/FS_Central",
+                    "tier": 2,
+                    "contribution": 0.96,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_East",
+                    "name": "FS_East",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/FS_East",
+                    "tier": 2,
+                    "contribution": 0.84,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_MountainWest",
+                    "name": "FS_MountainWest",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/FS_MountainWest",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_South",
+                    "name": "FS_South",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/FS_South",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_West",
+                    "name": "FS_West",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/FS_West",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GreatLakes_Region",
+                    "name": "GreatLakes_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/GreatLakes_Region",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO_Region",
+                    "name": "MCO_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/MCO_Region",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA_Region",
+                    "name": "MIA_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/MIA_Region",
+                    "tier": 2,
+                    "contribution": 1.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northeast_Region",
+                    "name": "Northeast_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/Northeast_Region",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Southeast_Region",
+                    "name": "Southeast_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/Southeast_Region",
+                    "tier": 2,
+                    "contribution": 1.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthWest_Region",
+                    "name": "SouthWest_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/SouthWest_Region",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Region",
+                    "name": "West_Region",
+                    "category": "region",
+                    "path": "TOT_COST/ACS/West_Region",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABQ",
+                    "name": "ABQ",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ABQ",
+                    "tier": 2,
+                    "contribution": 1.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ALB",
+                    "name": "ALB",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ALB",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ANC",
+                    "tier": 2,
+                    "contribution": 0.77,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ATL",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/AUS",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDL",
+                    "name": "BDL",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BDL",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BHM",
+                    "name": "BHM",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BHM",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BNA",
+                    "tier": 2,
+                    "contribution": 1.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOI",
+                    "name": "BOI",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BOI",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BOS",
+                    "tier": 2,
+                    "contribution": 1.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BWI",
+                    "tier": 2,
+                    "contribution": 1.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZN",
+                    "name": "BZN",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/BZN",
+                    "tier": 2,
+                    "contribution": 1.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CAE",
+                    "name": "CAE",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/CAE",
+                    "tier": 2,
+                    "contribution": 1.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHS",
+                    "name": "CHS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/CHS",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLE",
+                    "name": "CLE",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/CLE",
+                    "tier": 2,
+                    "contribution": 1.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/CLT",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CMH",
+                    "name": "CMH",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/CMH",
+                    "tier": 2,
+                    "contribution": 1.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "COS",
+                    "name": "COS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/COS",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/CVG",
+                    "tier": 2,
+                    "contribution": 1.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAB",
+                    "name": "DAB",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/DAB",
+                    "tier": 2,
+                    "contribution": 0.7,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAY",
+                    "name": "DAY",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/DAY",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/DCA",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/DEN",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/DFW",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/DTW",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELP",
+                    "name": "ELP",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ELP",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/EWR",
+                    "tier": 2,
+                    "contribution": 1.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/FLL",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRB",
+                    "name": "GRB",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/GRB",
+                    "tier": 2,
+                    "contribution": 0.54,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRR",
+                    "name": "GRR",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/GRR",
+                    "tier": 2,
+                    "contribution": 0.52,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSO",
+                    "name": "GSO",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/GSO",
+                    "tier": 2,
+                    "contribution": 1.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSP",
+                    "name": "GSP",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/GSP",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/HNL",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HOU",
+                    "name": "HOU",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/HOU",
+                    "tier": 2,
+                    "contribution": 0.95,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HSV",
+                    "name": "HSV",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/HSV",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/IAD",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/IAH",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/IND",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAN",
+                    "name": "JAN",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/JAN",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAX",
+                    "name": "JAX",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/JAX",
+                    "tier": 2,
+                    "contribution": 1.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/JFK",
+                    "tier": 2,
+                    "contribution": 1.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/KOA",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/LAS",
+                    "tier": 2,
+                    "contribution": 0.53,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/LAX",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LEX",
+                    "name": "LEX",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/LEX",
+                    "tier": 2,
+                    "contribution": 1.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/LGA",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/LIH",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIT",
+                    "name": "LIT",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/LIT",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCI",
+                    "name": "MCI",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MCI",
+                    "tier": 2,
+                    "contribution": 0.77,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MCO",
+                    "tier": 2,
+                    "contribution": 1.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDW",
+                    "name": "MDW",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MDW",
+                    "tier": 2,
+                    "contribution": 0.92,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MEM",
+                    "tier": 2,
+                    "contribution": 0.95,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MIA",
+                    "tier": 2,
+                    "contribution": 1.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MKE",
+                    "name": "MKE",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MKE",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLB",
+                    "name": "MLB",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MLB",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOB",
+                    "name": "MOB",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MOB",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSN",
+                    "name": "MSN",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MSN",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MSP",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/MSY",
+                    "tier": 2,
+                    "contribution": 1.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/OGG",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OKC",
+                    "name": "OKC",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/OKC",
+                    "tier": 2,
+                    "contribution": 0.89,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ONT",
+                    "name": "ONT",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ONT",
+                    "tier": 2,
+                    "contribution": 1.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ORD",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORF",
+                    "name": "ORF",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/ORF",
+                    "tier": 2,
+                    "contribution": 1.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PBI",
+                    "tier": 2,
+                    "contribution": 1.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PDX",
+                    "tier": 2,
+                    "contribution": 0.82,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PHL",
+                    "tier": 2,
+                    "contribution": 1.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PHX",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PIT",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PNS",
+                    "name": "PNS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PNS",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVD",
+                    "name": "PVD",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/PVD",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/RDU",
+                    "tier": 2,
+                    "contribution": 1.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RIC",
+                    "name": "RIC",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/RIC",
+                    "tier": 2,
+                    "contribution": 1.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/RSW",
+                    "tier": 2,
+                    "contribution": 1.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SAN",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SAT",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAV",
+                    "name": "SAV",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SAV",
+                    "tier": 2,
+                    "contribution": 0.93,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDF",
+                    "name": "SDF",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SDF",
+                    "tier": 2,
+                    "contribution": 1.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SEA",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SFO",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SJC",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SLC",
+                    "tier": 2,
+                    "contribution": 1.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SMF",
+                    "name": "SMF",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SMF",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SNA",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SRQ",
+                    "name": "SRQ",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SRQ",
+                    "tier": 2,
+                    "contribution": 1.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/STL",
+                    "tier": 2,
+                    "contribution": 0.63,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYR",
+                    "name": "SYR",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/SYR",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLH",
+                    "name": "TLH",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/TLH",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/TPA",
+                    "tier": 2,
+                    "contribution": 1.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUS",
+                    "name": "TUS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/TUS",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TYS",
+                    "name": "TYS",
+                    "category": "station",
+                    "path": "TOT_COST/ACS/TYS",
+                    "tier": 2,
+                    "contribution": 1.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_VP",
+                    "name": "ATL_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/ATL_VP",
+                    "tier": 2,
+                    "contribution": 0.68,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_FL_VP",
+                    "name": "AUS_FL_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/AUS_FL_VP",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS_VP",
+                    "name": "BOS_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/BOS_VP",
+                    "tier": 2,
+                    "contribution": 0.52,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_VP",
+                    "name": "DTW_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/DTW_VP",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_VP",
+                    "name": "East_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/East_VP",
+                    "tier": 2,
+                    "contribution": 0.57,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations_VP",
+                    "name": "FieldStations_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/FieldStations_VP",
+                    "tier": 2,
+                    "contribution": 0.79,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_VP",
+                    "name": "JFK_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/JFK_VP",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX_VP",
+                    "name": "LAX_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/LAX_VP",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA_VP",
+                    "name": "LGA_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/LGA_VP",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_VP",
+                    "name": "MSP_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/MSP_VP",
+                    "tier": 2,
+                    "contribution": 0.89,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA_VP",
+                    "name": "SEA_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/SEA_VP",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC_VP",
+                    "name": "SLC_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/SLC_VP",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central_VP",
+                    "name": "West_Central_VP",
+                    "category": "vp",
+                    "path": "TOT_COST/ACS/West_Central_VP",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "CGO",
+            "name": "CGO",
+            "category": "div",
+            "path": "TOT_COST/CGO",
+            "tier": 1,
+            "contribution": 80.75,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "TOT_COST/TOP",
+            "tier": 1,
+            "contribution": 10.81,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Airframe Maintenance",
+                    "name": "Airframe Maintenance",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Airframe Maintenance",
+                    "tier": 2,
+                    "contribution": 1.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Cabin Maintenance",
+                    "name": "Cabin Maintenance",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Cabin Maintenance",
+                    "tier": 2,
+                    "contribution": 25.93,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Component Maintenance",
+                    "name": "Component Maintenance",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Component Maintenance",
+                    "tier": 2,
+                    "contribution": 3.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Distribution_Logistics",
+                    "name": "Distribution_Logistics",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Distribution_Logistics",
+                    "tier": 2,
+                    "contribution": 2.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Engine Maintenance",
+                    "name": "Engine Maintenance",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Engine Maintenance",
+                    "tier": 2,
+                    "contribution": 4.55,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Engineering_Quality",
+                    "name": "Engineering_Quality",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Engineering_Quality",
+                    "tier": 2,
+                    "contribution": 21.68,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Line Maintenance_MCC",
+                    "name": "Line Maintenance_MCC",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Line Maintenance_MCC",
+                    "tier": 2,
+                    "contribution": 3.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Materials",
+                    "name": "Materials",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Materials",
+                    "tier": 2,
+                    "contribution": 13.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Planning",
+                    "name": "Planning",
+                    "category": "bu",
+                    "path": "TOT_COST/TOP/Planning",
+                    "tier": 2,
+                    "contribution": 23.83,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NPSSRVFAIL,NPSSRVFAIL,,Root,0,1,Goal,Root,NPSSRVFAIL,1,No
+NPSSRVFAIL,ML,NPSSRVFAIL,carrier,1,100.0,Goal,Root/carrier,NPSSRVFAIL/ML,0,Yes

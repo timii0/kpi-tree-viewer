@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-ACDC,ACDC,,Root,0,1,Goal,Root,ACDC,1,No
-ACDC,FOP,ACDC,div,1,100.0,Goal,Root/div,ACDC/FOP,1,No
-ACDC,In-Op,FOP,op_timing,2,100.0,Goal,Root/div/op_timing,ACDC/FOP/In-Op,0,Yes

@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NFDINT48,NFDINT48,,Root,0,1,Goal,Root,NFDINT48,1,No
+NFDINT48,DL,NFDINT48,sys,1,100.0,Goal,Root/sys,NFDINT48/DL,0,Yes

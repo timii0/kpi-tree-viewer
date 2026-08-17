@@ -1,0 +1,5141 @@
+{
+    "id": "DMG_MBR",
+    "name": "DMG_MBR",
+    "category": "Root",
+    "tier": 0,
+    "path": "DMG_MBR",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ACS",
+            "name": "ACS",
+            "category": "div",
+            "path": "DMG_MBR/ACS",
+            "tier": 1,
+            "contribution": 7.37,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "APAC_Director",
+                    "name": "APAC_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/APAC_Director",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_Director",
+                    "name": "AUS_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/AUS_Director",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CANMEX_Director",
+                    "name": "CANMEX_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/CANMEX_Director",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Caribbean_Director",
+                    "name": "Caribbean_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Caribbean_Director",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CASA_Director",
+                    "name": "CASA_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/CASA_Director",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Director",
+                    "name": "Central_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Central_Director",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_Director",
+                    "name": "East_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/East_Director",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations_Director",
+                    "name": "FieldStations_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/FieldStations_Director",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Director",
+                    "name": "Florida_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Florida_Director",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_ATL",
+                    "name": "Hub_ATL",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_ATL",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_BOS",
+                    "name": "Hub_BOS",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_BOS",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_DTW",
+                    "name": "Hub_DTW",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_DTW",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_JFK",
+                    "name": "Hub_JFK",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_JFK",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LAX",
+                    "name": "Hub_LAX",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_LAX",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_LGA",
+                    "name": "Hub_LGA",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_LGA",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_MSP",
+                    "name": "Hub_MSP",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_MSP",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SEA",
+                    "name": "Hub_SEA",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_SEA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Hub_SLC",
+                    "name": "Hub_SLC",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/Hub_SLC",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Director",
+                    "name": "West_Director",
+                    "category": "director",
+                    "path": "DMG_MBR/ACS/West_Director",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACSATL",
+                    "name": "ACSATL",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/ACSATL",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACSJFK",
+                    "name": "ACSJFK",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/ACSJFK",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_AUS_FL",
+                    "name": "DTW_AUS_FL",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/DTW_AUS_FL",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East",
+                    "name": "East",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/East",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations",
+                    "name": "FieldStations",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/FieldStations",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "International",
+                    "name": "International",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/International",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_SEA_SLC",
+                    "name": "MSP_SEA_SLC",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/MSP_SEA_SLC",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central",
+                    "name": "West_Central",
+                    "category": "division",
+                    "path": "DMG_MBR/ACS/West_Central",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS_Region",
+                    "name": "AMS_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/AMS_Region",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_Region",
+                    "name": "AUS_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/AUS_Region",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Canada_Region",
+                    "name": "Canada_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Canada_Region",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Caribbean_Region",
+                    "name": "Caribbean_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Caribbean_Region",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG_Region",
+                    "name": "CDG_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/CDG_Region",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CentralAmerica_Region",
+                    "name": "CentralAmerica_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/CentralAmerica_Region",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central_Region",
+                    "name": "Central_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Central_Region",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EastAsia_Region",
+                    "name": "EastAsia_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/EastAsia_Region",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EMEA-A",
+                    "name": "EMEA-A",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/EMEA-A",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EMEA-B",
+                    "name": "EMEA-B",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/EMEA-B",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida_Region",
+                    "name": "Florida_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Florida_Region",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_Central",
+                    "name": "FS_Central",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/FS_Central",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_East",
+                    "name": "FS_East",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/FS_East",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_MountainWest",
+                    "name": "FS_MountainWest",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/FS_MountainWest",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_South",
+                    "name": "FS_South",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/FS_South",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FS_West",
+                    "name": "FS_West",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/FS_West",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GreatLakes_Region",
+                    "name": "GreatLakes_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/GreatLakes_Region",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO_Region",
+                    "name": "MCO_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/MCO_Region",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Mexico_Region",
+                    "name": "Mexico_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Mexico_Region",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA_Region",
+                    "name": "MIA_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/MIA_Region",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northeast_Region",
+                    "name": "Northeast_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Northeast_Region",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthAmerica_Region",
+                    "name": "SouthAmerica_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/SouthAmerica_Region",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Southeast_Region",
+                    "name": "Southeast_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/Southeast_Region",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthPacific_Region",
+                    "name": "SouthPacific_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/SouthPacific_Region",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SouthWest_Region",
+                    "name": "SouthWest_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/SouthWest_Region",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Region",
+                    "name": "West_Region",
+                    "category": "region",
+                    "path": "DMG_MBR/ACS/West_Region",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABE",
+                    "name": "ABE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ABE",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABQ",
+                    "name": "ABQ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ABQ",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABR",
+                    "name": "ABR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ABR",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ABY",
+                    "name": "ABY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ABY",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACC",
+                    "name": "ACC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ACC",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACK",
+                    "name": "ACK",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ACK",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AEX",
+                    "name": "AEX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AEX",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AGS",
+                    "name": "AGS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AGS",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AKL",
+                    "name": "AKL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AKL",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ALB",
+                    "name": "ALB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ALB",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS",
+                    "name": "AMS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AMS",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ANC",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANU",
+                    "name": "ANU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ANU",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "APN",
+                    "name": "APN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/APN",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ARN",
+                    "name": "ARN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ARN",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ASE",
+                    "name": "ASE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ASE",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATH",
+                    "name": "ATH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ATH",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ATL",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATW",
+                    "name": "ATW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ATW",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATY",
+                    "name": "ATY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ATY",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUA",
+                    "name": "AUA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AUA",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AUS",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AVL",
+                    "name": "AVL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AVL",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AZO",
+                    "name": "AZO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/AZO",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BCN",
+                    "name": "BCN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BCN",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDA",
+                    "name": "BDA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BDA",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDL",
+                    "name": "BDL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BDL",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BER",
+                    "name": "BER",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BER",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGI",
+                    "name": "BGI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BGI",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGM",
+                    "name": "BGM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BGM",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BGR",
+                    "name": "BGR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BGR",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BHM",
+                    "name": "BHM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BHM",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIL",
+                    "name": "BIL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BIL",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BIS",
+                    "name": "BIS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BIS",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BJI",
+                    "name": "BJI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BJI",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BMI",
+                    "name": "BMI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BMI",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BNA",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNE",
+                    "name": "BNE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BNE",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOG",
+                    "name": "BOG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BOG",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOI",
+                    "name": "BOI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BOI",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BON",
+                    "name": "BON",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BON",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BOS",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BQK",
+                    "name": "BQK",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BQK",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRD",
+                    "name": "BRD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BRD",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRU",
+                    "name": "BRU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BRU",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTM",
+                    "name": "BTM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BTM",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTR",
+                    "name": "BTR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BTR",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BTV",
+                    "name": "BTV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BTV",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUF",
+                    "name": "BUF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BUF",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BUR",
+                    "name": "BUR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BUR",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BWI",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZE",
+                    "name": "BZE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BZE",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BZN",
+                    "name": "BZN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/BZN",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CAE",
+                    "name": "CAE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CAE",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDC",
+                    "name": "CDC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CDC",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG",
+                    "name": "CDG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CDG",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHA",
+                    "name": "CHA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CHA",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHO",
+                    "name": "CHO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CHO",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CHS",
+                    "name": "CHS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CHS",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CID",
+                    "name": "CID",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CID",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CIU",
+                    "name": "CIU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CIU",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLE",
+                    "name": "CLE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CLE",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CLT",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CMH",
+                    "name": "CMH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CMH",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "COS",
+                    "name": "COS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/COS",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPH",
+                    "name": "CPH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CPH",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPT",
+                    "name": "CPT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CPT",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CRW",
+                    "name": "CRW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CRW",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CSG",
+                    "name": "CSG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CSG",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTA",
+                    "name": "CTA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CTA",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTG",
+                    "name": "CTG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CTG",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUN",
+                    "name": "CUN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CUN",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUR",
+                    "name": "CUR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CUR",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CVG",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CWA",
+                    "name": "CWA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CWA",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CZM",
+                    "name": "CZM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/CZM",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAB",
+                    "name": "DAB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DAB",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAL",
+                    "name": "DAL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DAL",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DAY",
+                    "name": "DAY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DAY",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DCA",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DEN",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DFW",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DHN",
+                    "name": "DHN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DHN",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DLH",
+                    "name": "DLH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DLH",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSM",
+                    "name": "DSM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DSM",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSS",
+                    "name": "DSS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DSS",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DTW",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DUB",
+                    "name": "DUB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/DUB",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ECP",
+                    "name": "ECP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ECP",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EDI",
+                    "name": "EDI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EDI",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EGE",
+                    "name": "EGE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EGE",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EKO",
+                    "name": "EKO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EKO",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELH",
+                    "name": "ELH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ELH",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELM",
+                    "name": "ELM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ELM",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ELP",
+                    "name": "ELP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ELP",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ESC",
+                    "name": "ESC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ESC",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EUG",
+                    "name": "EUG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EUG",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EVV",
+                    "name": "EVV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EVV",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EWR",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EYW",
+                    "name": "EYW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EYW",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EZE",
+                    "name": "EZE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/EZE",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAI",
+                    "name": "FAI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FAI",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAR",
+                    "name": "FAR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FAR",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAT",
+                    "name": "FAT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FAT",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FAY",
+                    "name": "FAY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FAY",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCA",
+                    "name": "FCA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FCA",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCO",
+                    "name": "FCO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FCO",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FLL",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FRA",
+                    "name": "FRA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FRA",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FSD",
+                    "name": "FSD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FSD",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FWA",
+                    "name": "FWA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/FWA",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GCM",
+                    "name": "GCM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GCM",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GDL",
+                    "name": "GDL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GDL",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GEG",
+                    "name": "GEG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GEG",
+                    "tier": 2,
+                    "contribution": 0.11,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GFK",
+                    "name": "GFK",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GFK",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GGT",
+                    "name": "GGT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GGT",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GIG",
+                    "name": "GIG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GIG",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GJT",
+                    "name": "GJT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GJT",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GND",
+                    "name": "GND",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GND",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GNV",
+                    "name": "GNV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GNV",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GPT",
+                    "name": "GPT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GPT",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRB",
+                    "name": "GRB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GRB",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRR",
+                    "name": "GRR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GRR",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRU",
+                    "name": "GRU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GRU",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSO",
+                    "name": "GSO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GSO",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GSP",
+                    "name": "GSP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GSP",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GTF",
+                    "name": "GTF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GTF",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GTR",
+                    "name": "GTR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GTR",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GUA",
+                    "name": "GUA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GUA",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GVA",
+                    "name": "GVA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/GVA",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HAV",
+                    "name": "HAV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HAV",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HDN",
+                    "name": "HDN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HDN",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HHH",
+                    "name": "HHH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HHH",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HIB",
+                    "name": "HIB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HIB",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HKG",
+                    "name": "HKG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HKG",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HLN",
+                    "name": "HLN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HLN",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HND",
+                    "name": "HND",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HND",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HNL",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HOU",
+                    "name": "HOU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HOU",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HPN",
+                    "name": "HPN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HPN",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HRL",
+                    "name": "HRL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HRL",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HSV",
+                    "name": "HSV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/HSV",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/IAD",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/IAH",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICN",
+                    "name": "ICN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ICN",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICT",
+                    "name": "ICT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ICT",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IDA",
+                    "name": "IDA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/IDA",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ILM",
+                    "name": "ILM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ILM",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IMT",
+                    "name": "IMT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/IMT",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/IND",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "INL",
+                    "name": "INL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/INL",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ITH",
+                    "name": "ITH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ITH",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAC",
+                    "name": "JAC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/JAC",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAN",
+                    "name": "JAN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/JAN",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JAX",
+                    "name": "JAX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/JAX",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/JFK",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNB",
+                    "name": "JNB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/JNB",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNU",
+                    "name": "JNU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/JNU",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KEF",
+                    "name": "KEF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/KEF",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KIN",
+                    "name": "KIN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/KIN",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/KOA",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAN",
+                    "name": "LAN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LAN",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LAS",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LAX",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LEX",
+                    "name": "LEX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LEX",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LFT",
+                    "name": "LFT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LFT",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LGA",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGB",
+                    "name": "LGB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LGB",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGW",
+                    "name": "LGW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LGW",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LHR",
+                    "name": "LHR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LHR",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LIH",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIM",
+                    "name": "LIM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LIM",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIR",
+                    "name": "LIR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LIR",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIS",
+                    "name": "LIS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LIS",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIT",
+                    "name": "LIT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LIT",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LOS",
+                    "name": "LOS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LOS",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LWS",
+                    "name": "LWS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/LWS",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MAD",
+                    "name": "MAD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MAD",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBJ",
+                    "name": "MBJ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MBJ",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBS",
+                    "name": "MBS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MBS",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCI",
+                    "name": "MCI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MCI",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MCO",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDT",
+                    "name": "MDT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MDT",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MDW",
+                    "name": "MDW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MDW",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEL",
+                    "name": "MEL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MEL",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MEM",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEX",
+                    "name": "MEX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MEX",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFE",
+                    "name": "MFE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MFE",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MFR",
+                    "name": "MFR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MFR",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MGM",
+                    "name": "MGM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MGM",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MHH",
+                    "name": "MHH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MHH",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MIA",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MKE",
+                    "name": "MKE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MKE",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLA",
+                    "name": "MLA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MLA",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLB",
+                    "name": "MLB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MLB",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLI",
+                    "name": "MLI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MLI",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MLU",
+                    "name": "MLU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MLU",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOB",
+                    "name": "MOB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MOB",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MOT",
+                    "name": "MOT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MOT",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MQT",
+                    "name": "MQT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MQT",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSN",
+                    "name": "MSN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MSN",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSO",
+                    "name": "MSO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MSO",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MSP",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MSY",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MTJ",
+                    "name": "MTJ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MTJ",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MTY",
+                    "name": "MTY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MTY",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MUC",
+                    "name": "MUC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MUC",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MVY",
+                    "name": "MVY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MVY",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MXP",
+                    "name": "MXP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MXP",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MYR",
+                    "name": "MYR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MYR",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MZT",
+                    "name": "MZT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/MZT",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAP",
+                    "name": "NAP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/NAP",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAS",
+                    "name": "NAS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/NAS",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NCE",
+                    "name": "NCE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/NCE",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAJ",
+                    "name": "OAJ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OAJ",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OAK",
+                    "name": "OAK",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OAK",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OGG",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OKC",
+                    "name": "OKC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OKC",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OLB",
+                    "name": "OLB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OLB",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OMA",
+                    "name": "OMA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OMA",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ONT",
+                    "name": "ONT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ONT",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OPO",
+                    "name": "OPO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/OPO",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ORD",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORF",
+                    "name": "ORF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ORF",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORH",
+                    "name": "ORH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ORH",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PBI",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PDX",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PHL",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PHX",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIH",
+                    "name": "PIH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PIH",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PIT",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PLN",
+                    "name": "PLN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PLN",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PLS",
+                    "name": "PLS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PLS",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PNS",
+                    "name": "PNS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PNS",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "POP",
+                    "name": "POP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/POP",
+                    "tier": 2,
+                    "contribution": 0.18,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PRG",
+                    "name": "PRG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PRG",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSC",
+                    "name": "PSC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PSC",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSP",
+                    "name": "PSP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PSP",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PTY",
+                    "name": "PTY",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PTY",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PUJ",
+                    "name": "PUJ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PUJ",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVD",
+                    "name": "PVD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PVD",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVG",
+                    "name": "PVG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PVG",
+                    "tier": 2,
+                    "contribution": 0.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVR",
+                    "name": "PVR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PVR",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PWM",
+                    "name": "PWM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/PWM",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAK",
+                    "name": "RAK",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RAK",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAP",
+                    "name": "RAP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RAP",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDM",
+                    "name": "RDM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RDM",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RDU",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RHI",
+                    "name": "RHI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RHI",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RIC",
+                    "name": "RIC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RIC",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RNO",
+                    "name": "RNO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RNO",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROA",
+                    "name": "ROA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ROA",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ROC",
+                    "name": "ROC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ROC",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RST",
+                    "name": "RST",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RST",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RSW",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RTB",
+                    "name": "RTB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RTB",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RUH",
+                    "name": "RUH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/RUH",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAL",
+                    "name": "SAL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SAL",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SAN",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAP",
+                    "name": "SAP",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SAP",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SAT",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAV",
+                    "name": "SAV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SAV",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBA",
+                    "name": "SBA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SBA",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBN",
+                    "name": "SBN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SBN",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SCL",
+                    "name": "SCL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SCL",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDF",
+                    "name": "SDF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SDF",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDQ",
+                    "name": "SDQ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SDQ",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SEA",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SFO",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SGF",
+                    "name": "SGF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SGF",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SGU",
+                    "name": "SGU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SGU",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SHV",
+                    "name": "SHV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SHV",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SJC",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJD",
+                    "name": "SJD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SJD",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJO",
+                    "name": "SJO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SJO",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJU",
+                    "name": "SJU",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SJU",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SKB",
+                    "name": "SKB",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SKB",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SLC",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SMF",
+                    "name": "SMF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SMF",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SNA",
+                    "tier": 2,
+                    "contribution": 0.1,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNN",
+                    "name": "SNN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SNN",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SRQ",
+                    "name": "SRQ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SRQ",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STI",
+                    "name": "STI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/STI",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/STL",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STT",
+                    "name": "STT",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/STT",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STX",
+                    "name": "STX",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/STX",
+                    "tier": 2,
+                    "contribution": 0.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SUN",
+                    "name": "SUN",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SUN",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SXM",
+                    "name": "SXM",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SXM",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYD",
+                    "name": "SYD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SYD",
+                    "tier": 2,
+                    "contribution": 0.51,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYR",
+                    "name": "SYR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/SYR",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLH",
+                    "name": "TLH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TLH",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLV",
+                    "name": "TLV",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TLV",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TPA",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPE",
+                    "name": "TPE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TPE",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TQO",
+                    "name": "TQO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TQO",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TRI",
+                    "name": "TRI",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TRI",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUL",
+                    "name": "TUL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TUL",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TUS",
+                    "name": "TUS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TUS",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TVC",
+                    "name": "TVC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TVC",
+                    "tier": 2,
+                    "contribution": 0.22,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TWF",
+                    "name": "TWF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TWF",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TYS",
+                    "name": "TYS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/TYS",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UIO",
+                    "name": "UIO",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/UIO",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UVF",
+                    "name": "UVF",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/UVF",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VCE",
+                    "name": "VCE",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/VCE",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VLD",
+                    "name": "VLD",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/VLD",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VPS",
+                    "name": "VPS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/VPS",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "WYS",
+                    "name": "WYS",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/WYS",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XNA",
+                    "name": "XNA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/XNA",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "XWA",
+                    "name": "XWA",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/XWA",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YHZ",
+                    "name": "YHZ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/YHZ",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YUL",
+                    "name": "YUL",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/YUL",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YVR",
+                    "name": "YVR",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/YVR",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YWG",
+                    "name": "YWG",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/YWG",
+                    "tier": 2,
+                    "contribution": 0.47,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YYC",
+                    "name": "YYC",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/YYC",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "YYZ",
+                    "name": "YYZ",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/YYZ",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ZRH",
+                    "name": "ZRH",
+                    "category": "station",
+                    "path": "DMG_MBR/ACS/ZRH",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "APAC_VP",
+                    "name": "APAC_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/APAC_VP",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_VP",
+                    "name": "ATL_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/ATL_VP",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS_FL_VP",
+                    "name": "AUS_FL_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/AUS_FL_VP",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS_VP",
+                    "name": "BOS_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/BOS_VP",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW_VP",
+                    "name": "DTW_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/DTW_VP",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East_VP",
+                    "name": "East_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/East_VP",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EMEAI_VP",
+                    "name": "EMEAI_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/EMEAI_VP",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FieldStations_VP",
+                    "name": "FieldStations_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/FieldStations_VP",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK_VP",
+                    "name": "JFK_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/JFK_VP",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LACC_VP",
+                    "name": "LACC_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/LACC_VP",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX_VP",
+                    "name": "LAX_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/LAX_VP",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA_VP",
+                    "name": "LGA_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/LGA_VP",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP_VP",
+                    "name": "MSP_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/MSP_VP",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA_VP",
+                    "name": "SEA_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/SEA_VP",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC_VP",
+                    "name": "SLC_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/SLC_VP",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Central_VP",
+                    "name": "West_Central_VP",
+                    "category": "vp",
+                    "path": "DMG_MBR/ACS/West_Central_VP",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "VND",
+            "name": "VND",
+            "category": "div",
+            "path": "DMG_MBR/VND",
+            "tier": 1,
+            "contribution": 58.82,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "ABQ",
+                    "name": "ABQ",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/ABQ",
+                    "tier": 2,
+                    "contribution": 0.93,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/ABQ/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/ABQ/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ALB",
+                    "name": "ALB",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/ALB",
+                    "tier": 2,
+                    "contribution": 3.38,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/ALB/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/ALB/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BHM",
+                    "name": "BHM",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/BHM",
+                    "tier": 2,
+                    "contribution": 4.24,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/BHM/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/BHM/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BOI",
+                    "name": "BOI",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/BOI",
+                    "tier": 2,
+                    "contribution": 1.0,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/BOI/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/BOI/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CAE",
+                    "name": "CAE",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/CAE",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/CAE/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/CAE/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CHS",
+                    "name": "CHS",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/CHS",
+                    "tier": 2,
+                    "contribution": 1.2,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/CHS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/CHS/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CLE",
+                    "name": "CLE",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/CLE",
+                    "tier": 2,
+                    "contribution": 3.61,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/CLE/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/CLE/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/CLT",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/CLT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/CLT/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "COS",
+                    "name": "COS",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/COS",
+                    "tier": 2,
+                    "contribution": 2.92,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/COS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/COS/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "DAY",
+                    "name": "DAY",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/DAY",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/DAY/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/DAY/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ELP",
+                    "name": "ELP",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/ELP",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/ELP/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/ELP/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GSO",
+                    "name": "GSO",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/GSO",
+                    "tier": 2,
+                    "contribution": 3.33,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/GSO/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/GSO/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "GSP",
+                    "name": "GSP",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/GSP",
+                    "tier": 2,
+                    "contribution": 0.7,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/GSP/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/GSP/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "HOU",
+                    "name": "HOU",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/HOU",
+                    "tier": 2,
+                    "contribution": 3.91,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/HOU/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/HOU/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "HSV",
+                    "name": "HSV",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/HSV",
+                    "tier": 2,
+                    "contribution": 5.02,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/HSV/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/HSV/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "JAN",
+                    "name": "JAN",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/JAN",
+                    "tier": 2,
+                    "contribution": 4.34,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/JAN/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/JAN/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "JAX",
+                    "name": "JAX",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/JAX",
+                    "tier": 2,
+                    "contribution": 4.1,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/JAX/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/JAX/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/KOA",
+                    "tier": 2,
+                    "contribution": 1.51,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/KOA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/KOA/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LEX",
+                    "name": "LEX",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/LEX",
+                    "tier": 2,
+                    "contribution": 2.84,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/LEX/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/LEX/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/LIH",
+                    "tier": 2,
+                    "contribution": 1.26,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/LIH/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/LIH/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "LIT",
+                    "name": "LIT",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/LIT",
+                    "tier": 2,
+                    "contribution": 4.32,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/LIT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/LIT/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MOB",
+                    "name": "MOB",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/MOB",
+                    "tier": 2,
+                    "contribution": 4.84,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/MOB/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/MOB/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/OGG",
+                    "tier": 2,
+                    "contribution": 1.94,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/OGG/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/OGG/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ORF",
+                    "name": "ORF",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/ORF",
+                    "tier": 2,
+                    "contribution": 3.94,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/ORF/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/ORF/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/PBI",
+                    "tier": 2,
+                    "contribution": 4.31,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/PBI/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/PBI/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/PIT",
+                    "tier": 2,
+                    "contribution": 3.32,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/PIT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/PIT/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PNS",
+                    "name": "PNS",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/PNS",
+                    "tier": 2,
+                    "contribution": 4.77,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/PNS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/PNS/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "PVD",
+                    "name": "PVD",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/PVD",
+                    "tier": 2,
+                    "contribution": 1.41,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/PVD/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/PVD/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "RIC",
+                    "name": "RIC",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/RIC",
+                    "tier": 2,
+                    "contribution": 2.22,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/RIC/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/RIC/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SAN",
+                    "tier": 2,
+                    "contribution": 2.44,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SAN/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SAN/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SAT",
+                    "tier": 2,
+                    "contribution": 2.69,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SAT/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SAT/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SAV",
+                    "name": "SAV",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SAV",
+                    "tier": 2,
+                    "contribution": 1.78,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SAV/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SAV/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SDF",
+                    "name": "SDF",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SDF",
+                    "tier": 2,
+                    "contribution": 3.58,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SDF/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SDF/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SJC",
+                    "tier": 2,
+                    "contribution": 1.53,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SJC/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SJC/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SNA",
+                    "tier": 2,
+                    "contribution": 0.79,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SNA/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SNA/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SRQ",
+                    "name": "SRQ",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SRQ",
+                    "tier": 2,
+                    "contribution": 3.23,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SRQ/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SRQ/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "SYR",
+                    "name": "SYR",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/SYR",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/SYR/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/SYR/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "TLH",
+                    "name": "TLH",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/TLH",
+                    "tier": 2,
+                    "contribution": 2.96,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "GAT",
+                            "name": "GAT",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/TLH/GAT",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/TLH/GAT/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "TUS",
+                    "name": "TUS",
+                    "category": "station",
+                    "path": "DMG_MBR/VND/TUS",
+                    "tier": 2,
+                    "contribution": 3.93,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "Unifi",
+                            "name": "Unifi",
+                            "category": "vendor",
+                            "path": "DMG_MBR/VND/TUS/Unifi",
+                            "tier": 3,
+                            "contribution": 100.0,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "RMP",
+                                    "name": "RMP",
+                                    "category": "function",
+                                    "path": "DMG_MBR/VND/TUS/Unifi/RMP",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "DMG_MBR/DL",
+            "tier": 1,
+            "contribution": 33.81,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,212 @@
+{
+    "id": "MRI",
+    "name": "MRI",
+    "category": "Root",
+    "tier": 0,
+    "path": "MRI",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "MRI/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "A220-ALL",
+                    "name": "A220-ALL",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/A220-ALL",
+                    "tier": 2,
+                    "contribution": 9.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A319",
+                    "name": "A319",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/A319",
+                    "tier": 2,
+                    "contribution": 3.55,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A330-ALL",
+                    "name": "A330-ALL",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/A330-ALL",
+                    "tier": 2,
+                    "contribution": 1.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A350-ALL",
+                    "name": "A350-ALL",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/A350-ALL",
+                    "tier": 2,
+                    "contribution": 8.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B717-200",
+                    "name": "B717-200",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/B717-200",
+                    "tier": 2,
+                    "contribution": 8.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B737-ALL",
+                    "name": "B737-ALL",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/B737-ALL",
+                    "tier": 2,
+                    "contribution": 3.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B757-ALL",
+                    "name": "B757-ALL",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/B757-ALL",
+                    "tier": 2,
+                    "contribution": 9.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B767-300",
+                    "name": "B767-300",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/B767-300",
+                    "tier": 2,
+                    "contribution": 7.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B767-400",
+                    "name": "B767-400",
+                    "category": "hgst_fleet",
+                    "path": "MRI/TOP/B767-400",
+                    "tier": 2,
+                    "contribution": 5.39,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A221",
+                    "name": "A221",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A221",
+                    "tier": 2,
+                    "contribution": 2.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A223",
+                    "name": "A223",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A223",
+                    "tier": 2,
+                    "contribution": 7.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A321",
+                    "name": "A321",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A321",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A321CEO",
+                    "name": "A321CEO",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A321CEO",
+                    "tier": 2,
+                    "contribution": 1.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A321NEO",
+                    "name": "A321NEO",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A321NEO",
+                    "tier": 2,
+                    "contribution": 0.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A330CEO",
+                    "name": "A330CEO",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A330CEO",
+                    "tier": 2,
+                    "contribution": 2.77,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A330NEO",
+                    "name": "A330NEO",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A330NEO",
+                    "tier": 2,
+                    "contribution": 9.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "A350-941",
+                    "name": "A350-941",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/A350-941",
+                    "tier": 2,
+                    "contribution": 8.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B737-800",
+                    "name": "B737-800",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/B737-800",
+                    "tier": 2,
+                    "contribution": 10.59,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "B737-900",
+                    "name": "B737-900",
+                    "category": "lwst_fleet",
+                    "path": "MRI/TOP/B737-900",
+                    "tier": 2,
+                    "contribution": 1.17,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

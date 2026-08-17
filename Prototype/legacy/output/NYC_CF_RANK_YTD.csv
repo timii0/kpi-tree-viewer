@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+NYC_CF_RANK_YTD,NYC_CF_RANK_YTD,,Root,0,1,Goal,Root,NYC_CF_RANK_YTD,1,No
+NYC_CF_RANK_YTD,DL,NYC_CF_RANK_YTD,carrier,1,100.0,Goal,Root/carrier,NYC_CF_RANK_YTD/DL,0,Yes

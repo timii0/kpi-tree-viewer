@@ -1,0 +1,32 @@
+{
+    "id": "EMPL_INSP_SCRD",
+    "name": "EMPL_INSP_SCRD",
+    "category": "Root",
+    "tier": 0,
+    "path": "EMPL_INSP_SCRD",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "CSSC",
+            "name": "CSSC",
+            "category": "div",
+            "path": "EMPL_INSP_SCRD/CSSC",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "CS",
+                    "name": "CS",
+                    "category": "bu",
+                    "path": "EMPL_INSP_SCRD/CSSC/CS",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

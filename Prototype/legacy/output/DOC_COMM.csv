@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DOC_COMM,DOC_COMM,,Root,0,1,Goal,Root,DOC_COMM,1,No
+DOC_COMM,DL,DOC_COMM,sys,1,100.0,Goal,Root/sys,DOC_COMM/DL,0,Yes

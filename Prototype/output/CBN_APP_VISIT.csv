@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CBN_APP_VISIT,CBN_APP_VISIT,,Root,0,1,Goal,Root,CBN_APP_VISIT,1,No
-CBN_APP_VISIT,TOP,CBN_APP_VISIT,div,1,100.0,Goal,Root/div,CBN_APP_VISIT/TOP,1,No
-CBN_APP_VISIT,Airframe Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,CBN_APP_VISIT/TOP/Airframe Maintenance,0,Yes

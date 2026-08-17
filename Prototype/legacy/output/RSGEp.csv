@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+RSGEp,RSGEp,,Root,0,1,Goal,Root,RSGEp,1,No
+RSGEp,ML,RSGEp,carrier,1,100.0,Goal,Root/carrier,RSGEp/ML,0,Yes

@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+MEL_RATE,MEL_RATE,,Root,0,1,Goal,Root,MEL_RATE,1,No
+MEL_RATE,DL,MEL_RATE,sys,1,100.0,Goal,Root/sys,MEL_RATE/DL,0,Yes

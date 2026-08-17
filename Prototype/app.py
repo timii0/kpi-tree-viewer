@@ -152,14 +152,21 @@ def build_tree_from_hierarchy(df, hierarchy_def):
         "baseline": 0, "goal": 0, "contribution": 1.0, "children": []
     }
 
-    def build_level(parent_node, parent_df, hierarchy_nodes, tier):
+    def build_level(parent_node, parent_df, hierarchy_nodes, tier, split_offset=0):
         split_idx = 0
         for h_node in hierarchy_nodes:
             category = h_node["category"]
             col_name = col_map[category]
             is_split = h_node.get("split", False)
             h_children = h_node.get("children", [])
-            node_tier = tier + (split_idx := split_idx + 1) * 0.1 if is_split else tier
+
+            if is_split:
+                split_idx += 1
+                node_tier = tier + split_idx * 0.1
+                child_offset = split_idx * 0.1
+            else:
+                node_tier = tier + split_offset
+                child_offset = split_offset
 
             agg = parent_df.groupby(col_name, sort=False).agg(
                 num=("num", "sum"), den=("den", "sum")).reset_index()
@@ -179,7 +186,7 @@ def build_tree_from_hierarchy(df, hierarchy_def):
                     node["split"] = True
                 parent_node["children"].append(node)
                 if h_children:
-                    build_level(node, parent_df[parent_df[col_name] == name], h_children, tier + 1)
+                    build_level(node, parent_df[parent_df[col_name] == name], h_children, tier + 1, child_offset)
 
     # Start from the first level's CHILDREN (skip sys level since root IS sys)
     top_levels = hierarchy_def.get("levels", [])

@@ -1,5 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CYCL_TIME,CYCL_TIME,,Root,0,1,Goal,Root,CYCL_TIME,1,No
-CYCL_TIME,TOP,CYCL_TIME,div,1,100.0,Goal,Root/div,CYCL_TIME/TOP,2,No
-CYCL_TIME,Component Maintenance,TOP,bu,2,3.37,Goal,Root/div/bu,CYCL_TIME/TOP/Component Maintenance,0,Yes
-CYCL_TIME,Engine Maintenance,TOP,bu,2,96.63,Goal,Root/div/bu,CYCL_TIME/TOP/Engine Maintenance,0,Yes

@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DLC_VIP,DLC_VIP,,Root,0,1,Goal,Root,DLC_VIP,1,No
+DLC_VIP,CSSC,DLC_VIP,div,1,100.0,Goal,Root/div,DLC_VIP/CSSC,1,No
+DLC_VIP,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,DLC_VIP/CSSC/CS,0,Yes

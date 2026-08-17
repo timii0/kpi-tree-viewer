@@ -1,0 +1,32 @@
+{
+    "id": "WIFI_DSP_RLBY",
+    "name": "WIFI_DSP_RLBY",
+    "category": "Root",
+    "tier": 0,
+    "path": "WIFI_DSP_RLBY",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "WIFI_DSP_RLBY/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Cabin Maintenance",
+                    "name": "Cabin Maintenance",
+                    "category": "bu",
+                    "path": "WIFI_DSP_RLBY/TOP/Cabin Maintenance",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

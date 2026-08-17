@@ -1,6 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-SVC_LVL,SVC_LVL,,Root,0,1,Goal,Root,SVC_LVL,4,No
-SVC_LVL,ESSN1,SVC_LVL,essn_cd,1,40.69,Goal,Root/essn_cd,SVC_LVL/ESSN1,0,Yes
-SVC_LVL,ESSN2,SVC_LVL,essn_cd,1,7.6,Goal,Root/essn_cd,SVC_LVL/ESSN2,0,Yes
-SVC_LVL,ESSN3,SVC_LVL,essn_cd,1,38.47,Goal,Root/essn_cd,SVC_LVL/ESSN3,0,Yes
-SVC_LVL,KILLER,SVC_LVL,essn_cd,1,13.24,Goal,Root/essn_cd,SVC_LVL/KILLER,0,Yes

@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-SCRI_TSA,SCRI_TSA,,Root,0,1,Goal,Root,SCRI_TSA,2,No
-SCRI_TSA,CGO,SCRI_TSA,div,1,51.84,Goal,Root/div,SCRI_TSA/CGO,0,Yes
-SCRI_TSA,DL,SCRI_TSA,sys,1,48.16,Goal,Root/sys,SCRI_TSA/DL,0,Yes

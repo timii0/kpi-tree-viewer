@@ -1,0 +1,6 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+OJI_DC,OJI_DC,,Root,0,1,Goal,Root,OJI_DC,4,No
+OJI_DC,9E,OJI_DC,dc_carrier,1,23.63,Goal,Root/dc_carrier,OJI_DC/9E,0,Yes
+OJI_DC,OO,OJI_DC,dc_carrier,1,19.36,Goal,Root/dc_carrier,OJI_DC/OO,0,Yes
+OJI_DC,YX,OJI_DC,dc_carrier,1,35.67,Goal,Root/dc_carrier,OJI_DC/YX,0,Yes
+OJI_DC,DC,OJI_DC,div,1,21.34,Goal,Root/div,OJI_DC/DC,0,Yes

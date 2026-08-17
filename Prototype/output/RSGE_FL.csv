@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-RSGE_FL,RSGE_FL,,Root,0,1,Goal,Root,RSGE_FL,2,No
-RSGE_FL,ML,RSGE_FL,carrier,1,82.39,Goal,Root/carrier,RSGE_FL/ML,0,Yes
-RSGE_FL,DL,RSGE_FL,sys,1,17.61,Goal,Root/sys,RSGE_FL/DL,0,Yes

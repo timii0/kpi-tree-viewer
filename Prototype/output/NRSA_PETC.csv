@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-NRSA_PETC,NRSA_PETC,,Root,0,1,Goal,Root,NRSA_PETC,1,No
-NRSA_PETC,CSSC,NRSA_PETC,div,1,100.0,Goal,Root/div,NRSA_PETC/CSSC,1,No
-NRSA_PETC,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,NRSA_PETC/CSSC/CS,0,Yes

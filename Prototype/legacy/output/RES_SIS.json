@@ -1,0 +1,21 @@
+{
+    "id": "RES_SIS",
+    "name": "RES_SIS",
+    "category": "Root",
+    "tier": 0,
+    "path": "RES_SIS",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "RES",
+            "name": "RES",
+            "category": "div",
+            "path": "RES_SIS/RES",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CAMS_EFF,CAMS_EFF,,Root,0,1,Goal,Root,CAMS_EFF,1,No
-CAMS_EFF,TOP,CAMS_EFF,div,1,100.0,Goal,Root/div,CAMS_EFF/TOP,1,No
-CAMS_EFF,Component Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,CAMS_EFF/TOP/Component Maintenance,0,Yes

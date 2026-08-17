@@ -1,0 +1,119 @@
+{
+    "id": "FLT_GATE_OPEN",
+    "name": "FLT_GATE_OPEN",
+    "category": "Root",
+    "tier": 0,
+    "path": "FLT_GATE_OPEN",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "VND",
+            "name": "VND",
+            "category": "div",
+            "path": "FLT_GATE_OPEN/VND",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "DC",
+                    "name": "DC",
+                    "category": "carrier",
+                    "path": "FLT_GATE_OPEN/VND/DC",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": [
+                        {
+                            "id": "DTW",
+                            "name": "DTW",
+                            "category": "station",
+                            "path": "FLT_GATE_OPEN/VND/DC/DTW",
+                            "tier": 3,
+                            "contribution": 91.54,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "FLT_GATE_OPEN/VND/DC/DTW/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "PAX",
+                                            "name": "PAX",
+                                            "category": "function",
+                                            "path": "FLT_GATE_OPEN/VND/DC/DTW/Unifi/PAX",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": [
+                                                {
+                                                    "id": "MSPDTW",
+                                                    "name": "MSPDTW",
+                                                    "category": "variant",
+                                                    "path": "FLT_GATE_OPEN/VND/DC/DTW/Unifi/PAX/MSPDTW",
+                                                    "tier": 6,
+                                                    "contribution": 100.0,
+                                                    "type": "Goal",
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MSP",
+                            "name": "MSP",
+                            "category": "station",
+                            "path": "FLT_GATE_OPEN/VND/DC/MSP",
+                            "tier": 3,
+                            "contribution": 8.46,
+                            "type": "Goal",
+                            "children": [
+                                {
+                                    "id": "Unifi",
+                                    "name": "Unifi",
+                                    "category": "vendor",
+                                    "path": "FLT_GATE_OPEN/VND/DC/MSP/Unifi",
+                                    "tier": 4,
+                                    "contribution": 100.0,
+                                    "type": "Goal",
+                                    "children": [
+                                        {
+                                            "id": "PAX",
+                                            "name": "PAX",
+                                            "category": "function",
+                                            "path": "FLT_GATE_OPEN/VND/DC/MSP/Unifi/PAX",
+                                            "tier": 5,
+                                            "contribution": 100.0,
+                                            "type": "Goal",
+                                            "children": [
+                                                {
+                                                    "id": "MSPDTW",
+                                                    "name": "MSPDTW",
+                                                    "category": "variant",
+                                                    "path": "FLT_GATE_OPEN/VND/DC/MSP/Unifi/PAX/MSPDTW",
+                                                    "tier": 6,
+                                                    "contribution": 100.0,
+                                                    "type": "Goal",
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

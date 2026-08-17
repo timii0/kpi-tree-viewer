@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+CGO_CSAT,CGO_CSAT,,Root,0,1,Goal,Root,CGO_CSAT,1,No
+CGO_CSAT,CGO,CGO_CSAT,div,1,100.0,Goal,Root/div,CGO_CSAT/CGO,0,Yes

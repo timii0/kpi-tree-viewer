@@ -1,0 +1,21 @@
+{
+    "id": "HP_PFK",
+    "name": "HP_PFK",
+    "category": "Root",
+    "tier": 0,
+    "path": "HP_PFK",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "HP_PFK/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

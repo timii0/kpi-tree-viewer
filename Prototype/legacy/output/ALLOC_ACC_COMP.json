@@ -1,0 +1,32 @@
+{
+    "id": "ALLOC_ACC_COMP",
+    "name": "ALLOC_ACC_COMP",
+    "category": "Root",
+    "tier": 0,
+    "path": "ALLOC_ACC_COMP",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "TOP",
+            "name": "TOP",
+            "category": "div",
+            "path": "ALLOC_ACC_COMP/TOP",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Materials",
+                    "name": "Materials",
+                    "category": "bu",
+                    "path": "ALLOC_ACC_COMP/TOP/Materials",
+                    "tier": 2,
+                    "contribution": 100.0,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

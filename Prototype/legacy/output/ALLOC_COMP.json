@@ -1,0 +1,51 @@
+{
+    "id": "ALLOC_COMP",
+    "name": "ALLOC_COMP",
+    "category": "Root",
+    "tier": 0,
+    "path": "ALLOC_COMP",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "ESSN1",
+            "name": "ESSN1",
+            "category": "essn_cd",
+            "path": "ALLOC_COMP/ESSN1",
+            "tier": 1,
+            "contribution": 27.71,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ESSN2",
+            "name": "ESSN2",
+            "category": "essn_cd",
+            "path": "ALLOC_COMP/ESSN2",
+            "tier": 1,
+            "contribution": 29.74,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "ESSN3",
+            "name": "ESSN3",
+            "category": "essn_cd",
+            "path": "ALLOC_COMP/ESSN3",
+            "tier": 1,
+            "contribution": 28.44,
+            "type": "Goal",
+            "children": []
+        },
+        {
+            "id": "KILLER",
+            "name": "KILLER",
+            "category": "essn_cd",
+            "path": "ALLOC_COMP/KILLER",
+            "tier": 1,
+            "contribution": 14.11,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

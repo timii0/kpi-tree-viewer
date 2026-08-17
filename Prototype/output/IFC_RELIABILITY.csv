@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-IFC_RELIABILITY,IFC_RELIABILITY,,Root,0,1,Goal,Root,IFC_RELIABILITY,1,No
-IFC_RELIABILITY,DL,IFC_RELIABILITY,sys,1,100.0,Goal,Root/sys,IFC_RELIABILITY/DL,0,Yes

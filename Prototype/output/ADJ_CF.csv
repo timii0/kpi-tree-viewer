@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-ADJ_CF,ADJ_CF,,Root,0,1,Goal,Root,ADJ_CF,1,No
-ADJ_CF,WB,ADJ_CF,body_type,1,100.0,Goal,Root/body_type,ADJ_CF/WB,1,No
-ADJ_CF,I,WB,dom_int,2,100.0,Goal,Root/body_type/dom_int,ADJ_CF/WB/I,0,Yes

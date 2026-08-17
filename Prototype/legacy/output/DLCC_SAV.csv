@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DLCC_SAV,DLCC_SAV,,Root,0,1,Goal,Root,DLCC_SAV,1,No
+DLCC_SAV,CGO,DLCC_SAV,div,1,100.0,Goal,Root/div,DLCC_SAV/CGO,0,Yes

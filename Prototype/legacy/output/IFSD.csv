@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+IFSD,IFSD,,Root,0,1,Goal,Root,IFSD,1,No
+IFSD,DL,IFSD,sys,1,100.0,Goal,Root/sys,IFSD/DL,0,Yes

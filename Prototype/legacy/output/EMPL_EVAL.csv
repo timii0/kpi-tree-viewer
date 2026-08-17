@@ -1,0 +1,10 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+EMPL_EVAL,EMPL_EVAL,,Root,0,1,Goal,Root,EMPL_EVAL,1,No
+EMPL_EVAL,TOP,EMPL_EVAL,div,1,100.0,Goal,Root/div,EMPL_EVAL/TOP,7,No
+EMPL_EVAL,Airframe Maintenance,TOP,bu,2,4.5,Goal,Root/div/bu,EMPL_EVAL/TOP/Airframe Maintenance,0,Yes
+EMPL_EVAL,Cabin Maintenance,TOP,bu,2,23.26,Goal,Root/div/bu,EMPL_EVAL/TOP/Cabin Maintenance,0,Yes
+EMPL_EVAL,Component Maintenance,TOP,bu,2,11.36,Goal,Root/div/bu,EMPL_EVAL/TOP/Component Maintenance,0,Yes
+EMPL_EVAL,Distribution_Logistics,TOP,bu,2,0.63,Goal,Root/div/bu,EMPL_EVAL/TOP/Distribution_Logistics,0,Yes
+EMPL_EVAL,Engine Maintenance,TOP,bu,2,22.51,Goal,Root/div/bu,EMPL_EVAL/TOP/Engine Maintenance,0,Yes
+EMPL_EVAL,Engineering_Quality,TOP,bu,2,26.03,Goal,Root/div/bu,EMPL_EVAL/TOP/Engineering_Quality,0,Yes
+EMPL_EVAL,Line Maintenance_MCC,TOP,bu,2,11.71,Goal,Root/div/bu,EMPL_EVAL/TOP/Line Maintenance_MCC,0,Yes

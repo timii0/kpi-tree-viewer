@@ -1,0 +1,25 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+AC_HEALTH,AC_HEALTH,,Root,0,1,Goal,Root,AC_HEALTH,2,No
+AC_HEALTH,TOP,AC_HEALTH,div,1,56.43,Goal,Root/div,AC_HEALTH/TOP,21,No
+AC_HEALTH,N,TOP,body_type_cd,2,3.51,Goal,Root/div/body_type_cd,AC_HEALTH/TOP/N,0,Yes
+AC_HEALTH,W,TOP,body_type_cd,2,3.3,Goal,Root/div/body_type_cd,AC_HEALTH/TOP/W,0,Yes
+AC_HEALTH,A220-ALL,TOP,hgst_fleet,2,7.58,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/A220-ALL,0,Yes
+AC_HEALTH,A319,TOP,hgst_fleet,2,3.87,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/A319,0,Yes
+AC_HEALTH,A330-ALL,TOP,hgst_fleet,2,0.9,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/A330-ALL,0,Yes
+AC_HEALTH,A350-ALL,TOP,hgst_fleet,2,7.1,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/A350-ALL,0,Yes
+AC_HEALTH,B717-200,TOP,hgst_fleet,2,1.82,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/B717-200,0,Yes
+AC_HEALTH,B737-ALL,TOP,hgst_fleet,2,0.72,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/B737-ALL,0,Yes
+AC_HEALTH,B757-ALL,TOP,hgst_fleet,2,7.95,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/B757-ALL,0,Yes
+AC_HEALTH,B767-300,TOP,hgst_fleet,2,4.71,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/B767-300,0,Yes
+AC_HEALTH,B767-400,TOP,hgst_fleet,2,7.19,Goal,Root/div/hgst_fleet,AC_HEALTH/TOP/B767-400,0,Yes
+AC_HEALTH,A221,TOP,lwst_fleet,2,1.89,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A221,0,Yes
+AC_HEALTH,A223,TOP,lwst_fleet,2,4.62,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A223,0,Yes
+AC_HEALTH,A321,TOP,lwst_fleet,2,6.29,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A321,0,Yes
+AC_HEALTH,A321CEO,TOP,lwst_fleet,2,8.15,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A321CEO,0,Yes
+AC_HEALTH,A321NEO,TOP,lwst_fleet,2,1.09,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A321NEO,0,Yes
+AC_HEALTH,A330CEO,TOP,lwst_fleet,2,7.76,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A330CEO,0,Yes
+AC_HEALTH,A330NEO,TOP,lwst_fleet,2,6.86,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A330NEO,0,Yes
+AC_HEALTH,A350-941,TOP,lwst_fleet,2,8.72,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/A350-941,0,Yes
+AC_HEALTH,B737-800,TOP,lwst_fleet,2,1.74,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/B737-800,0,Yes
+AC_HEALTH,B737-900,TOP,lwst_fleet,2,4.2299999999999995,Goal,Root/div/lwst_fleet,AC_HEALTH/TOP/B737-900,0,Yes
+AC_HEALTH,DL,AC_HEALTH,sys,1,43.57,Goal,Root/sys,AC_HEALTH/DL,0,Yes

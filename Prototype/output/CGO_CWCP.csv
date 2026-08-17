@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CGO_CWCP,CGO_CWCP,,Root,0,1,Goal,Root,CGO_CWCP,1,No
-CGO_CWCP,DL,CGO_CWCP,sys,1,100.0,Goal,Root/sys,CGO_CWCP/DL,0,Yes

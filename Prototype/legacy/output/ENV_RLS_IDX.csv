@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+ENV_RLS_IDX,ENV_RLS_IDX,,Root,0,1,Goal,Root,ENV_RLS_IDX,1,No
+ENV_RLS_IDX,CSSC,ENV_RLS_IDX,div,1,100.0,Goal,Root/div,ENV_RLS_IDX/CSSC,1,No
+ENV_RLS_IDX,CERC,CSSC,bu,2,100.0,Goal,Root/div/bu,ENV_RLS_IDX/CSSC/CERC,0,Yes

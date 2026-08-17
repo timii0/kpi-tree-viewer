@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-SAME_DAY_REP,SAME_DAY_REP,,Root,0,1,Goal,Root,SAME_DAY_REP,1,No
-SAME_DAY_REP,TOP,SAME_DAY_REP,div,1,100.0,Goal,Root/div,SAME_DAY_REP/TOP,1,No
-SAME_DAY_REP,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,SAME_DAY_REP/TOP/Distribution_Logistics,0,Yes

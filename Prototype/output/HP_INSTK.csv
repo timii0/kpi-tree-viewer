@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-HP_INSTK,HP_INSTK,,Root,0,1,Goal,Root,HP_INSTK,1,No
-HP_INSTK,TOP,HP_INSTK,div,1,100.0,Goal,Root/div,HP_INSTK/TOP,0,Yes

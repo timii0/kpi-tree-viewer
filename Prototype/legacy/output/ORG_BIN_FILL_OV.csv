@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+ORG_BIN_FILL_OV,ORG_BIN_FILL_OV,,Root,0,1,Goal,Root,ORG_BIN_FILL_OV,2,No
+ORG_BIN_FILL_OV,N,ORG_BIN_FILL_OV,body_type_cd,1,54.36,Goal,Root/body_type_cd,ORG_BIN_FILL_OV/N,0,Yes
+ORG_BIN_FILL_OV,W,ORG_BIN_FILL_OV,body_type_cd,1,45.64,Goal,Root/body_type_cd,ORG_BIN_FILL_OV/W,0,Yes

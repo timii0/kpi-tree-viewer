@@ -1,0 +1,3 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+WHLBRKS_SHIP,WHLBRKS_SHIP,,Root,0,1,Goal,Root,WHLBRKS_SHIP,1,No
+WHLBRKS_SHIP,TOP,WHLBRKS_SHIP,div,1,100.0,Goal,Root/div,WHLBRKS_SHIP/TOP,0,Yes

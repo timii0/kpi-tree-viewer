@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-RSGE_PCT,RSGE_PCT,,Root,0,1,Goal,Root,RSGE_PCT,1,No
-RSGE_PCT,DL,RSGE_PCT,sys,1,100.0,Goal,Root/sys,RSGE_PCT/DL,0,Yes

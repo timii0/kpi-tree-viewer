@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CHK_IN_SAT,CHK_IN_SAT,,Root,0,1,Goal,Root,CHK_IN_SAT,1,No
-CHK_IN_SAT,1,CHK_IN_SAT,checked_bag,1,100.0,Goal,Root/checked_bag,CHK_IN_SAT/1,0,Yes

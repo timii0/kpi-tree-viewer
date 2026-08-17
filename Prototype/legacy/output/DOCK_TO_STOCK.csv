@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DOCK_TO_STOCK,DOCK_TO_STOCK,,Root,0,1,Goal,Root,DOCK_TO_STOCK,1,No
+DOCK_TO_STOCK,TOP,DOCK_TO_STOCK,div,1,100.0,Goal,Root/div,DOCK_TO_STOCK/TOP,1,No
+DOCK_TO_STOCK,Distribution_Logistics,TOP,bu,2,100.0,Goal,Root/div/bu,DOCK_TO_STOCK/TOP/Distribution_Logistics,0,Yes

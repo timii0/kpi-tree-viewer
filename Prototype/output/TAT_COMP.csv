@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-TAT_COMP,TAT_COMP,,Root,0,1,Goal,Root,TAT_COMP,1,No
-TAT_COMP,TOP,TAT_COMP,div,1,100.0,Goal,Root/div,TAT_COMP/TOP,1,No
-TAT_COMP,Engineering_Quality,TOP,bu,2,100.0,Goal,Root/div/bu,TAT_COMP/TOP/Engineering_Quality,0,Yes

@@ -1,0 +1,21 @@
+{
+    "id": "MIN_FUEL_FLTS",
+    "name": "MIN_FUEL_FLTS",
+    "category": "Root",
+    "tier": 0,
+    "path": "MIN_FUEL_FLTS",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "MIN_FUEL_FLTS/DL",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

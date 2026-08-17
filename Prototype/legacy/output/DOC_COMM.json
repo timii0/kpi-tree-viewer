@@ -1,0 +1,21 @@
+{
+    "id": "DOC_COMM",
+    "name": "DOC_COMM",
+    "category": "Root",
+    "tier": 0,
+    "path": "DOC_COMM",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "DL",
+            "name": "DL",
+            "category": "sys",
+            "path": "DOC_COMM/DL",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

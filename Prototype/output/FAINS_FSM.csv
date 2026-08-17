@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-FAINS_FSM,FAINS_FSM,,Root,0,1,Goal,Root,FAINS_FSM,1,No
-FAINS_FSM,IFS,FAINS_FSM,div,1,100.0,Goal,Root/div,FAINS_FSM/IFS,0,Yes

@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-AIR_EXIT,AIR_EXIT,,Root,0,1,Goal,Root,AIR_EXIT,1,No
-AIR_EXIT,CSSC,AIR_EXIT,div,1,100.0,Goal,Root/div,AIR_EXIT/CSSC,1,No
-AIR_EXIT,CS,CSSC,bu,2,100.0,Goal,Root/div/bu,AIR_EXIT/CSSC/CS,0,Yes

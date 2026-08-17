@@ -1,6 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-MSI_DC,MSI_DC,,Root,0,1,Goal,Root,MSI_DC,4,No
-MSI_DC,9E,MSI_DC,dc_carrier,1,29.42,Goal,Root/dc_carrier,MSI_DC/9E,0,Yes
-MSI_DC,OO,MSI_DC,dc_carrier,1,17.22,Goal,Root/dc_carrier,MSI_DC/OO,0,Yes
-MSI_DC,YX,MSI_DC,dc_carrier,1,10.2,Goal,Root/dc_carrier,MSI_DC/YX,0,Yes
-MSI_DC,DC,MSI_DC,div,1,43.160000000000004,Goal,Root/div,MSI_DC/DC,0,Yes

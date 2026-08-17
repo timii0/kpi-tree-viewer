@@ -1,0 +1,1782 @@
+{
+    "id": "IMP_DLY_PER_FLT",
+    "name": "IMP_DLY_PER_FLT",
+    "category": "Root",
+    "tier": 0,
+    "path": "IMP_DLY_PER_FLT",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "OBS",
+            "name": "OBS",
+            "category": "div",
+            "path": "IMP_DLY_PER_FLT/OBS",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": [
+                {
+                    "id": "Aerococina",
+                    "name": "Aerococina",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Aerococina",
+                    "tier": 2,
+                    "contribution": 0.9,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AirFayre",
+                    "name": "AirFayre",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/AirFayre",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Alpha",
+                    "name": "Alpha",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Alpha",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Canonica",
+                    "name": "Canonica",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Canonica",
+                    "tier": 2,
+                    "contribution": 0.97,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CasaProveedora",
+                    "name": "CasaProveedora",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/CasaProveedora",
+                    "tier": 2,
+                    "contribution": 0.42,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CateringPor",
+                    "name": "CateringPor",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/CateringPor",
+                    "tier": 2,
+                    "contribution": 0.71,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Dakar",
+                    "name": "Dakar",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Dakar",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "dnata",
+                    "name": "dnata",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/dnata",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DOCO",
+                    "name": "DOCO",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/DOCO",
+                    "tier": 2,
+                    "contribution": 0.99,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EFG",
+                    "name": "EFG",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/EFG",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EGSC",
+                    "name": "EGSC",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/EGSC",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FlyFoodGrp",
+                    "name": "FlyFoodGrp",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/FlyFoodGrp",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GG",
+                    "name": "GG",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/GG",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Goddard",
+                    "name": "Goddard",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Goddard",
+                    "tier": 2,
+                    "contribution": 0.95,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IMC",
+                    "name": "IMC",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/IMC",
+                    "tier": 2,
+                    "contribution": 0.32,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ISS",
+                    "name": "ISS",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/ISS",
+                    "tier": 2,
+                    "contribution": 0.53,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LSG",
+                    "name": "LSG",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/LSG",
+                    "tier": 2,
+                    "contribution": 1.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Mainline",
+                    "name": "Mainline",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Mainline",
+                    "tier": 2,
+                    "contribution": 0.68,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Newrest",
+                    "name": "Newrest",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Newrest",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Servair",
+                    "name": "Servair",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Servair",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ShanghaiEast",
+                    "name": "ShanghaiEast",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/ShanghaiEast",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Sharp-DOCO",
+                    "name": "Sharp-DOCO",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/Sharp-DOCO",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SkyCater",
+                    "name": "SkyCater",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/SkyCater",
+                    "tier": 2,
+                    "contribution": 0.57,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TFK",
+                    "name": "TFK",
+                    "category": "caterer",
+                    "path": "IMP_DLY_PER_FLT/OBS/TFK",
+                    "tier": 2,
+                    "contribution": 0.55,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Africa",
+                    "name": "Africa",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Africa",
+                    "tier": 2,
+                    "contribution": 0.68,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Asia",
+                    "name": "Asia",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Asia",
+                    "tier": 2,
+                    "contribution": 0.89,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Australia",
+                    "name": "Australia",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Australia",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Europe",
+                    "name": "Europe",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Europe",
+                    "tier": 2,
+                    "contribution": 0.64,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Latin_America_Caribbean",
+                    "name": "Latin_America_Caribbean",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Latin_America_Caribbean",
+                    "tier": 2,
+                    "contribution": 0.49,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "North_America",
+                    "name": "North_America",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/North_America",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "South_America",
+                    "name": "South_America",
+                    "category": "continental_region",
+                    "path": "IMP_DLY_PER_FLT/OBS/South_America",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL-Director",
+                    "name": "ATL-Director",
+                    "category": "director",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL-Director",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "International",
+                    "name": "International",
+                    "category": "director",
+                    "path": "IMP_DLY_PER_FLT/OBS/International",
+                    "tier": 2,
+                    "contribution": 0.31,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northeast_Hubs",
+                    "name": "Northeast_Hubs",
+                    "category": "director",
+                    "path": "IMP_DLY_PER_FLT/OBS/Northeast_Hubs",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "T2_East",
+                    "name": "T2_East",
+                    "category": "director",
+                    "path": "IMP_DLY_PER_FLT/OBS/T2_East",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "T2_West",
+                    "name": "T2_West",
+                    "category": "director",
+                    "path": "IMP_DLY_PER_FLT/OBS/T2_West",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West_Hubs",
+                    "name": "West_Hubs",
+                    "category": "director",
+                    "path": "IMP_DLY_PER_FLT/OBS/West_Hubs",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS_BRU",
+                    "name": "AMS_BRU",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/AMS_BRU",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL-Commissary",
+                    "name": "ATL-Commissary",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL-Commissary",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL-Kitchen",
+                    "name": "ATL-Kitchen",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL-Kitchen",
+                    "tier": 2,
+                    "contribution": 0.81,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS-Hub",
+                    "name": "BOS-Hub",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/BOS-Hub",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Central",
+                    "name": "Central",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Central",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW-Hub",
+                    "name": "DTW-Hub",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/DTW-Hub",
+                    "tier": 2,
+                    "contribution": 0.15,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "East",
+                    "name": "East",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/East",
+                    "tier": 2,
+                    "contribution": 0.4,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Florida",
+                    "name": "Florida",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Florida",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Germany",
+                    "name": "Germany",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Germany",
+                    "tier": 2,
+                    "contribution": 0.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Italy",
+                    "name": "Italy",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Italy",
+                    "tier": 2,
+                    "contribution": 1.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX-Hub",
+                    "name": "LAX-Hub",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/LAX-Hub",
+                    "tier": 2,
+                    "contribution": 0.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP-Hub",
+                    "name": "MSP-Hub",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/MSP-Hub",
+                    "tier": 2,
+                    "contribution": 0.56,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Northern_Eastern_Europe",
+                    "name": "Northern_Eastern_Europe",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Northern_Eastern_Europe",
+                    "tier": 2,
+                    "contribution": 0.92,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NYC",
+                    "name": "NYC",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/NYC",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Pacific",
+                    "name": "Pacific",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Pacific",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA-Hub",
+                    "name": "SEA-Hub",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/SEA-Hub",
+                    "tier": 2,
+                    "contribution": 0.53,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC-Hub",
+                    "name": "SLC-Hub",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/SLC-Hub",
+                    "tier": 2,
+                    "contribution": 0.45,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "West",
+                    "name": "West",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/West",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "Western_Europe",
+                    "name": "Western_Europe",
+                    "category": "region",
+                    "path": "IMP_DLY_PER_FLT/OBS/Western_Europe",
+                    "tier": 2,
+                    "contribution": 0.03,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ACC",
+                    "name": "ACC",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ACC",
+                    "tier": 2,
+                    "contribution": 0.43,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AKL",
+                    "name": "AKL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/AKL",
+                    "tier": 2,
+                    "contribution": 0.71,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AMS",
+                    "name": "AMS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/AMS",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ANC",
+                    "name": "ANC",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ANC",
+                    "tier": 2,
+                    "contribution": 1.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ARN",
+                    "name": "ARN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ARN",
+                    "tier": 2,
+                    "contribution": 0.33,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATH",
+                    "name": "ATH",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATH",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL",
+                    "name": "ATL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUA",
+                    "name": "AUA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/AUA",
+                    "tier": 2,
+                    "contribution": 0.99,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "AUS",
+                    "name": "AUS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/AUS",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BCN",
+                    "name": "BCN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BCN",
+                    "tier": 2,
+                    "contribution": 0.41,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BDL",
+                    "name": "BDL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BDL",
+                    "tier": 2,
+                    "contribution": 0.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BER",
+                    "name": "BER",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BER",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNA",
+                    "name": "BNA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BNA",
+                    "tier": 2,
+                    "contribution": 0.84,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BNE",
+                    "name": "BNE",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BNE",
+                    "tier": 2,
+                    "contribution": 0.27,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOG",
+                    "name": "BOG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BOG",
+                    "tier": 2,
+                    "contribution": 0.91,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BOS",
+                    "name": "BOS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BOS",
+                    "tier": 2,
+                    "contribution": 0.96,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BRU",
+                    "name": "BRU",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BRU",
+                    "tier": 2,
+                    "contribution": 0.12,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "BWI",
+                    "name": "BWI",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/BWI",
+                    "tier": 2,
+                    "contribution": 0.82,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CDG",
+                    "name": "CDG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CDG",
+                    "tier": 2,
+                    "contribution": 0.88,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CLT",
+                    "name": "CLT",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CLT",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPH",
+                    "name": "CPH",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CPH",
+                    "tier": 2,
+                    "contribution": 0.19,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CPT",
+                    "name": "CPT",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CPT",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTA",
+                    "name": "CTA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CTA",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CTG",
+                    "name": "CTG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CTG",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CUN",
+                    "name": "CUN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CUN",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "CVG",
+                    "name": "CVG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/CVG",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DCA",
+                    "name": "DCA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/DCA",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DEN",
+                    "name": "DEN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/DEN",
+                    "tier": 2,
+                    "contribution": 0.82,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DFW",
+                    "name": "DFW",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/DFW",
+                    "tier": 2,
+                    "contribution": 0.74,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DSS",
+                    "name": "DSS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/DSS",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DTW",
+                    "name": "DTW",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/DTW",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "DUB",
+                    "name": "DUB",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/DUB",
+                    "tier": 2,
+                    "contribution": 0.81,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EDI",
+                    "name": "EDI",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/EDI",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EWR",
+                    "name": "EWR",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/EWR",
+                    "tier": 2,
+                    "contribution": 0.82,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "EZE",
+                    "name": "EZE",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/EZE",
+                    "tier": 2,
+                    "contribution": 0.89,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FCO",
+                    "name": "FCO",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/FCO",
+                    "tier": 2,
+                    "contribution": 0.29,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FLL",
+                    "name": "FLL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/FLL",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "FRA",
+                    "name": "FRA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/FRA",
+                    "tier": 2,
+                    "contribution": 0.24,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GDL",
+                    "name": "GDL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/GDL",
+                    "tier": 2,
+                    "contribution": 0.69,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GIG",
+                    "name": "GIG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/GIG",
+                    "tier": 2,
+                    "contribution": 0.99,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GRU",
+                    "name": "GRU",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/GRU",
+                    "tier": 2,
+                    "contribution": 1.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "GVA",
+                    "name": "GVA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/GVA",
+                    "tier": 2,
+                    "contribution": 0.35,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HND",
+                    "name": "HND",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/HND",
+                    "tier": 2,
+                    "contribution": 0.23,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "HNL",
+                    "name": "HNL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/HNL",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAD",
+                    "name": "IAD",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/IAD",
+                    "tier": 2,
+                    "contribution": 1.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IAH",
+                    "name": "IAH",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/IAH",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ICN",
+                    "name": "ICN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ICN",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "IND",
+                    "name": "IND",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/IND",
+                    "tier": 2,
+                    "contribution": 0.28,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JFK",
+                    "name": "JFK",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/JFK",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "JNB",
+                    "name": "JNB",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/JNB",
+                    "tier": 2,
+                    "contribution": 0.6,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KEF",
+                    "name": "KEF",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/KEF",
+                    "tier": 2,
+                    "contribution": 0.73,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "KOA",
+                    "name": "KOA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/KOA",
+                    "tier": 2,
+                    "contribution": 0.96,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAS",
+                    "name": "LAS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LAS",
+                    "tier": 2,
+                    "contribution": 0.88,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LAX",
+                    "name": "LAX",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LAX",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGA",
+                    "name": "LGA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LGA",
+                    "tier": 2,
+                    "contribution": 0.09,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LGW",
+                    "name": "LGW",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LGW",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LHR",
+                    "name": "LHR",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LHR",
+                    "tier": 2,
+                    "contribution": 0.97,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIH",
+                    "name": "LIH",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LIH",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIM",
+                    "name": "LIM",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LIM",
+                    "tier": 2,
+                    "contribution": 0.83,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIR",
+                    "name": "LIR",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LIR",
+                    "tier": 2,
+                    "contribution": 0.94,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LIS",
+                    "name": "LIS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LIS",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "LOS",
+                    "name": "LOS",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/LOS",
+                    "tier": 2,
+                    "contribution": 0.93,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MAD",
+                    "name": "MAD",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MAD",
+                    "tier": 2,
+                    "contribution": 0.38,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MBJ",
+                    "name": "MBJ",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MBJ",
+                    "tier": 2,
+                    "contribution": 1.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MCO",
+                    "name": "MCO",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MCO",
+                    "tier": 2,
+                    "contribution": 0.34,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEL",
+                    "name": "MEL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MEL",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEM",
+                    "name": "MEM",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MEM",
+                    "tier": 2,
+                    "contribution": 0.52,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MEX",
+                    "name": "MEX",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MEX",
+                    "tier": 2,
+                    "contribution": 0.46,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MIA",
+                    "name": "MIA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MIA",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSP",
+                    "name": "MSP",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MSP",
+                    "tier": 2,
+                    "contribution": 0.72,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MSY",
+                    "name": "MSY",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MSY",
+                    "tier": 2,
+                    "contribution": 1.04,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MUC",
+                    "name": "MUC",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MUC",
+                    "tier": 2,
+                    "contribution": 0.67,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "MXP",
+                    "name": "MXP",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/MXP",
+                    "tier": 2,
+                    "contribution": 0.13,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NAP",
+                    "name": "NAP",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/NAP",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "NCE",
+                    "name": "NCE",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/NCE",
+                    "tier": 2,
+                    "contribution": 0.36,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "OGG",
+                    "name": "OGG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/OGG",
+                    "tier": 2,
+                    "contribution": 0.78,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ONT",
+                    "name": "ONT",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ONT",
+                    "tier": 2,
+                    "contribution": 0.98,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ORD",
+                    "name": "ORD",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ORD",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PBI",
+                    "name": "PBI",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PBI",
+                    "tier": 2,
+                    "contribution": 1.02,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PDX",
+                    "name": "PDX",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PDX",
+                    "tier": 2,
+                    "contribution": 0.81,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHL",
+                    "name": "PHL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PHL",
+                    "tier": 2,
+                    "contribution": 0.17,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PHX",
+                    "name": "PHX",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PHX",
+                    "tier": 2,
+                    "contribution": 0.25,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PIT",
+                    "name": "PIT",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PIT",
+                    "tier": 2,
+                    "contribution": 0.68,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PPT",
+                    "name": "PPT",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PPT",
+                    "tier": 2,
+                    "contribution": 0.89,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PRG",
+                    "name": "PRG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PRG",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PSP",
+                    "name": "PSP",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PSP",
+                    "tier": 2,
+                    "contribution": 1.0,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PTY",
+                    "name": "PTY",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PTY",
+                    "tier": 2,
+                    "contribution": 0.87,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVG",
+                    "name": "PVG",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PVG",
+                    "tier": 2,
+                    "contribution": 0.73,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "PVR",
+                    "name": "PVR",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/PVR",
+                    "tier": 2,
+                    "contribution": 0.3,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RAK",
+                    "name": "RAK",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/RAK",
+                    "tier": 2,
+                    "contribution": 0.5,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RDU",
+                    "name": "RDU",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/RDU",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "RSW",
+                    "name": "RSW",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/RSW",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAN",
+                    "name": "SAN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SAN",
+                    "tier": 2,
+                    "contribution": 0.62,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SAT",
+                    "name": "SAT",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SAT",
+                    "tier": 2,
+                    "contribution": 0.63,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SBA",
+                    "name": "SBA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SBA",
+                    "tier": 2,
+                    "contribution": 0.05,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SCL",
+                    "name": "SCL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SCL",
+                    "tier": 2,
+                    "contribution": 0.21,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SDQ",
+                    "name": "SDQ",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SDQ",
+                    "tier": 2,
+                    "contribution": 0.63,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SEA",
+                    "name": "SEA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SEA",
+                    "tier": 2,
+                    "contribution": 1.08,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SFO",
+                    "name": "SFO",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SFO",
+                    "tier": 2,
+                    "contribution": 0.6,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJC",
+                    "name": "SJC",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SJC",
+                    "tier": 2,
+                    "contribution": 0.26,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJD",
+                    "name": "SJD",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SJD",
+                    "tier": 2,
+                    "contribution": 0.48,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJO",
+                    "name": "SJO",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SJO",
+                    "tier": 2,
+                    "contribution": 0.65,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SJU",
+                    "name": "SJU",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SJU",
+                    "tier": 2,
+                    "contribution": 0.52,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SLC",
+                    "name": "SLC",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SLC",
+                    "tier": 2,
+                    "contribution": 0.96,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SMF",
+                    "name": "SMF",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SMF",
+                    "tier": 2,
+                    "contribution": 0.14,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNA",
+                    "name": "SNA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SNA",
+                    "tier": 2,
+                    "contribution": 1.06,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SNN",
+                    "name": "SNN",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SNN",
+                    "tier": 2,
+                    "contribution": 0.88,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STL",
+                    "name": "STL",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/STL",
+                    "tier": 2,
+                    "contribution": 0.8,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "STR",
+                    "name": "STR",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/STR",
+                    "tier": 2,
+                    "contribution": 0.37,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "SYD",
+                    "name": "SYD",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/SYD",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TLV",
+                    "name": "TLV",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/TLV",
+                    "tier": 2,
+                    "contribution": 0.44,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPA",
+                    "name": "TPA",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/TPA",
+                    "tier": 2,
+                    "contribution": 0.92,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "TPE",
+                    "name": "TPE",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/TPE",
+                    "tier": 2,
+                    "contribution": 0.2,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UIO",
+                    "name": "UIO",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/UIO",
+                    "tier": 2,
+                    "contribution": 0.66,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "UVF",
+                    "name": "UVF",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/UVF",
+                    "tier": 2,
+                    "contribution": 0.53,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "VCE",
+                    "name": "VCE",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/VCE",
+                    "tier": 2,
+                    "contribution": 0.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ZRH",
+                    "name": "ZRH",
+                    "category": "station",
+                    "path": "IMP_DLY_PER_FLT/OBS/ZRH",
+                    "tier": 2,
+                    "contribution": 1.01,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_DFK",
+                    "name": "ATL_DFK",
+                    "category": "stn_kitchen",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL_DFK",
+                    "tier": 2,
+                    "contribution": 0.07,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_IFK",
+                    "name": "ATL_IFK",
+                    "category": "stn_kitchen",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL_IFK",
+                    "tier": 2,
+                    "contribution": 0.16,
+                    "type": "Goal",
+                    "children": []
+                },
+                {
+                    "id": "ATL_MLC",
+                    "name": "ATL_MLC",
+                    "category": "stn_kitchen",
+                    "path": "IMP_DLY_PER_FLT/OBS/ATL_MLC",
+                    "tier": 2,
+                    "contribution": 0.9500000000000001,
+                    "type": "Goal",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

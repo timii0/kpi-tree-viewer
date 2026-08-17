@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-CTR_FA_SAT,CTR_FA_SAT,,Root,0,1,Goal,Root,CTR_FA_SAT,1,No
-CTR_FA_SAT,OBS,CTR_FA_SAT,div,1,100.0,Goal,Root/div,CTR_FA_SAT/OBS,0,Yes

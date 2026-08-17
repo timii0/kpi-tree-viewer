@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-IEP_IMP_EFF_SCR,IEP_IMP_EFF_SCR,,Root,0,1,Goal,Root,IEP_IMP_EFF_SCR,1,No
-IEP_IMP_EFF_SCR,CSSC,IEP_IMP_EFF_SCR,div,1,100.0,Goal,Root/div,IEP_IMP_EFF_SCR/CSSC,1,No
-IEP_IMP_EFF_SCR,SCQ,CSSC,bu,2,100.0,Goal,Root/div/bu,IEP_IMP_EFF_SCR/CSSC/SCQ,0,Yes

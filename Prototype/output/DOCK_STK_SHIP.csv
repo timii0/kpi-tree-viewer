@@ -1,3 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-DOCK_STK_SHIP,DOCK_STK_SHIP,,Root,0,1,Goal,Root,DOCK_STK_SHIP,1,No
-DOCK_STK_SHIP,TOP,DOCK_STK_SHIP,div,1,100.0,Goal,Root/div,DOCK_STK_SHIP/TOP,0,Yes

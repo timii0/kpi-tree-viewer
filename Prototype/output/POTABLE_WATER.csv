@@ -1,4 +1,0 @@
-KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
-POTABLE_WATER,POTABLE_WATER,,Root,0,1,Goal,Root,POTABLE_WATER,1,No
-POTABLE_WATER,TOP,POTABLE_WATER,div,1,100.0,Goal,Root/div,POTABLE_WATER/TOP,1,No
-POTABLE_WATER,Cabin Maintenance,TOP,bu,2,100.0,Goal,Root/div/bu,POTABLE_WATER/TOP/Cabin Maintenance,0,Yes

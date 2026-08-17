@@ -1,0 +1,21 @@
+{
+    "id": "LaborCost_Conta",
+    "name": "LaborCost_Conta",
+    "category": "Root",
+    "tier": 0,
+    "path": "LaborCost_Conta",
+    "score": 0,
+    "contribution": 1,
+    "children": [
+        {
+            "id": "RES",
+            "name": "RES",
+            "category": "div",
+            "path": "LaborCost_Conta/RES",
+            "tier": 1,
+            "contribution": 100.0,
+            "type": "Goal",
+            "children": []
+        }
+    ]
+}

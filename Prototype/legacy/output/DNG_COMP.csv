@@ -1,0 +1,4 @@
+KPI,Node Name,Parent,Category,Tier,Contribution,Target/Goal,Category Path,Node Path,Child Count,Leaf
+DNG_COMP,DNG_COMP,,Root,0,1,Goal,Root,DNG_COMP,1,No
+DNG_COMP,CSSC,DNG_COMP,div,1,100.0,Goal,Root/div,DNG_COMP/CSSC,1,No
+DNG_COMP,CERC,CSSC,bu,2,100.0,Goal,Root/div/bu,DNG_COMP/CSSC/CERC,0,Yes

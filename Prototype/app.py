@@ -1,6 +1,5 @@
 # Imports
 import json
-import copy
 from pathlib import Path
 import streamlit as st
 import networkx as nx
@@ -13,28 +12,6 @@ import pandas as pd
 
 OUTPUT_DIR = Path("output")
 HIERARCHIES_DIR = Path("hierarchies")
-
-CATEGORIES = [
-    "system", "carrier", "dc_carrier", "month", "first_flt",
-    "dom_int", "vendor", "station", "fleet", "enterprise", "unknown",
-]
-
-TYPES = ["Goal", "Target"]
-
-AVAILABLE_DIMENSIONS = [
-    {"column": "sys", "category": "system", "label": "System (sys)"},
-    {"column": "ml_dc_1", "category": "carrier", "label": "Carrier (ml_dc_1)"},
-    {"column": "ml_dc_2", "category": "dc_carrier", "label": "DC Carrier (ml_dc_2)"},
-    {"column": "Mo_Nb", "category": "month", "label": "Month (Mo_Nb)"},
-    {"column": "frst_flt_ind", "category": "first_flt", "label": "First Flight (frst_flt_ind)",
-     "transform": {"type": "int_flag", "map": {"1": "First Flight", "0": "Not First Flight"}}},
-    {"column": "dom_int", "category": "dom_int", "label": "Dom/Int (dom_int)"},
-    {"column": "vendor", "category": "vendor", "label": "Vendor"},
-    {"column": "station", "category": "station", "label": "Station"},
-    {"column": "fleet", "category": "fleet", "label": "Fleet (schd_fleet)"},
-]
-
-_CATEGORY_TO_COLUMN = {d["category"]: d["column"] for d in AVAILABLE_DIMENSIONS}
 
 # ---------------------------------------------------------------------------
 # Page config & styling
@@ -93,12 +70,6 @@ def count_nodes(node):
     return 1 + sum(count_nodes(c) for c in node.get("children", []))
 
 
-def update_paths(node, parent_path=""):
-    node["path"] = f"{parent_path}/{node['name']}" if parent_path else node["name"]
-    for child in node.get("children", []):
-        update_paths(child, node["path"])
-
-
 def validate_contributions(node):
     issues = []
     children = node.get("children", [])
@@ -135,39 +106,6 @@ def validate_rollup(node):
         issues.extend(validate_rollup(child))
     return issues
 
-
-def tree_to_csv(root_node, kpi_name):
-    rows = []
-
-    def walk(node, ancestors):
-        current = dict(ancestors)
-        col = _CATEGORY_TO_COLUMN.get(node.get("category", ""))
-        if col:
-            current[col] = node["name"]
-        path = node.get("path", "")
-        parent_display = "/".join(path.split("/")[1:-1]) if "/" in path else ""
-        den = node.get("den", 0)
-        num = node.get("num", 0)
-        baseline = node.get("baseline", 0)
-        goal = node.get("goal", 0)
-        stretch = ((goal - baseline) / baseline * 100) if baseline > 0 else 0
-
-        row = {"KPI_Name": kpi_name, "parent": parent_display, "node": node["name"],
-               "Tier": node.get("tier", 1)}
-        for hcol in _CATEGORY_TO_COLUMN.values():
-            row[hcol] = current.get(hcol, "")
-        row.update({"Baseline": round(baseline * 100, 2), "Baseline_Num": num,
-                    "Baseline_Den": den, "Goal": round(goal * 100, 2),
-                    "Stretch": f"{stretch:.2f}%",
-                    "Contribution": node.get("contribution", 0),
-                    "KPI_Num": num, "KPI_Den": den,
-                    "Split": node.get("split", False)})
-        rows.append(row)
-        for child in node.get("children", []):
-            walk(child, current)
-
-    walk(root_node, {})
-    return pd.DataFrame(rows)
 
 
 # ---------------------------------------------------------------------------
@@ -331,23 +269,12 @@ def find_node(path):
     return path_index.get(path)
 
 
-def rebuild_index():
-    st.session_state.path_index = build_path_index(root_data)
-    st.session_state.node_count = count_nodes(root_data)
-    st.session_state.pop("validation_issues", None)
-    st.session_state.pop("rollup_issues", None)
-
-
 # ---------------------------------------------------------------------------
 # State
 # ---------------------------------------------------------------------------
 
 if "selected_path" not in st.session_state:
     st.session_state.selected_path = root_data.get("path") or root_data["name"]
-if "unsaved_changes" not in st.session_state:
-    st.session_state.unsaved_changes = False
-if "edit_mode" not in st.session_state:
-    st.session_state.edit_mode = None
 
 selected_node = find_node(st.session_state.selected_path) or root_data
 
@@ -411,20 +338,6 @@ with tree_tab:
         display_tree(root_data)
 
     with detail_col:
-        if st.session_state.unsaved_changes:
-            st.warning("Unsaved changes")
-
-        c1, c2, c3 = st.columns(3)
-        with c1:
-            if st.button("Edit", use_container_width=True):
-                st.session_state.edit_mode = "edit"
-        with c2:
-            if st.button("Add Child", use_container_width=True):
-                st.session_state.edit_mode = "add"
-        with c3:
-            if st.button("Delete", use_container_width=True):
-                st.session_state.edit_mode = "delete"
-
         # Validation
         if "validation_issues" not in st.session_state:
             st.session_state.validation_issues = validate_contributions(root_data)
@@ -460,97 +373,18 @@ with tree_tab:
         c2.metric("Den", f"{selected_node['den']:,}")
         st.metric("Contribution", f"{selected_node['contribution']:.2%}")
 
-        # Edit mode
-        if st.session_state.edit_mode == "edit":
-            st.markdown("---")
-            name = st.text_input("Name", selected_node["name"], key="e_name")
-            cat = st.selectbox("Category", CATEGORIES,
-                               index=CATEGORIES.index(selected_node.get("category", CATEGORIES[0]))
-                               if selected_node.get("category") in CATEGORIES else 0, key="e_cat")
-            typ = st.selectbox("Type", TYPES, index=TYPES.index(selected_node.get("type", "Goal")), key="e_type")
-            contrib = st.number_input("Contribution %", 0.0, 100.0,
-                                      selected_node.get("contribution", 0) * 100, 0.1)
-            c1, c2 = st.columns(2)
-            if c1.button("Save", key="e_save"):
-                selected_node.update(name=name, category=cat, type=typ, contribution=contrib / 100)
-                update_paths(root_data)
-                rebuild_index()
-                st.session_state.selected_path = selected_node["path"]
-                st.session_state.unsaved_changes = True
-                st.session_state.edit_mode = None
-                st.rerun()
-            if c2.button("Cancel", key="e_cancel"):
-                st.session_state.edit_mode = None
-                st.rerun()
-
-        elif st.session_state.edit_mode == "add":
-            st.markdown("---")
-            cname = st.text_input("Child Name", key="a_name")
-            ccat = st.selectbox("Category", CATEGORIES, key="a_cat")
-            c1, c2 = st.columns(2)
-            if c1.button("Add", key="a_add"):
-                if cname.strip():
-                    selected_node.setdefault("children", []).append({
-                        "id": cname, "name": cname,
-                        "path": f"{selected_node['path']}/{cname}",
-                        "category": ccat, "type": "Goal",
-                        "tier": selected_node.get("tier", 0) + 1,
-                        "baseline": 0, "goal": 0, "contribution": 0,
-                        "num": 0, "den": 0, "children": []
-                    })
-                    update_paths(root_data)
-                    rebuild_index()
-                    st.session_state.unsaved_changes = True
-                    st.session_state.edit_mode = None
-                    st.rerun()
-            if c2.button("Cancel", key="a_cancel"):
-                st.session_state.edit_mode = None
-                st.rerun()
-
-        elif st.session_state.edit_mode == "delete":
-            st.markdown("---")
-            st.warning(f"Delete '{selected_node['name']}'?")
-            if selected_node["path"] == root_data["path"]:
-                st.error("Cannot delete root.")
-            else:
-                c1, c2 = st.columns(2)
-                if c1.button("Confirm", key="d_confirm", type="primary"):
-                    # delete
-                    def _del(parent, path):
-                        for i, c in enumerate(parent.get("children", [])):
-                            if c["path"] == path:
-                                del parent["children"][i]
-                                return True
-                            if _del(c, path):
-                                return True
-                        return False
-                    _del(root_data, selected_node["path"])
-                    rebuild_index()
-                    st.session_state.selected_path = root_data["path"]
-                    st.session_state.unsaved_changes = True
-                    st.session_state.edit_mode = None
-                    st.rerun()
-                if c2.button("Cancel", key="d_cancel"):
-                    st.session_state.edit_mode = None
-                    st.rerun()
-
-        st.markdown("---")
-        if st.button("Save Tree", use_container_width=True):
-            with open(json_file, "w", encoding="utf-8") as f:
-                json.dump(st.session_state.tree_data, f, indent=4, ensure_ascii=False)
-            tree_to_csv(st.session_state.tree_data, selected_kpi).to_csv(
-                OUTPUT_DIR / f"{selected_kpi}.csv", index=False)
-            st.session_state.unsaved_changes = False
-            st.success("Saved")
-
 # ===== GRAPH TAB =====
 with graph_tab:
     view = st.radio("View", ["Graph", "Hierarchy"], horizontal=True, key="gv")
 
     if view == "Hierarchy":
-        hier_file = Path("hierarchy.json")
+        # Try to find the hierarchy used to build the currently selected KPI
+        hier_file = HIERARCHIES_DIR / f"{selected_kpi}.json"
+        if not hier_file.exists():
+            hier_file = Path("hierarchy.json")
         if hier_file.exists():
             hdata = json.loads(hier_file.read_text(encoding="utf-8"))
+            st.caption(f"Hierarchy: `{hier_file.name}`")
             H = nx.DiGraph()
 
             def _bh(node, pid=None, d=0):
@@ -602,6 +436,8 @@ with graph_tab:
                               yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
                               title="Hierarchy Definition")
             st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info(f"No hierarchy definition found for '{selected_kpi}'.")
     else:
         G = nx.DiGraph()
         graph_root = selected_node or root_data
@@ -658,225 +494,48 @@ with graph_tab:
 
 # ===== STATISTICS TAB =====
 with stats_tab:
-    csv_file = OUTPUT_DIR / f"{selected_kpi}.csv"
+    csv_file = OUTPUT_DIR / f"{selected_kpi}_cascaded.csv"
     if csv_file.exists():
         st.dataframe(pd.read_csv(csv_file), use_container_width=True, hide_index=True)
     else:
-        st.info("No data. Run cascade.py first.")
-
-# ===== HIERARCHY BUILDER TAB =====
+        st.info("No cascaded data. Run the Hierarchy Builder or cascade.py first.")
 
 # ===== HIERARCHY BUILDER TAB =====
 with builder_tab:
-    from streamlit_sortables import sort_items
+    st.subheader("Build from Hierarchy")
+    st.caption(
+        "Select a saved hierarchy (designed in the editor) and build a new KPI tree. "
+        "Run `python editor.py` to design hierarchies."
+    )
 
-    st.subheader("Hierarchy Builder")
-    st.caption("Drag to reorder. Add from the dropdown or create a custom dimension.")
+    # List available hierarchies
+    hier_files = sorted(f.stem for f in HIERARCHIES_DIR.glob("*.json")) if HIERARCHIES_DIR.exists() else []
 
-    # -----------------------------------------------------------------------
-    # State: flat list of dimensions [{column, category, split, transform?}]
-    # -----------------------------------------------------------------------
-
-    if "builder_dims" not in st.session_state:
-        # Initialize from hierarchy.json (flatten the nested structure)
-        def _flatten_hier(node, out):
-            out.append({
-                "column": node["column"],
-                "category": node["category"],
-                "split": node.get("split", False),
-                **({"transform": node["transform"]} if "transform" in node else {}),
-            })
-            for child in node.get("children", []):
-                _flatten_hier(child, out)
-
-        hf = Path("hierarchy.json")
-        dims = []
-        if hf.exists():
-            hdata = json.loads(hf.read_text(encoding="utf-8"))
-            for top in hdata.get("levels", []):
-                _flatten_hier(top, dims)
-        st.session_state.builder_dims = dims
-
-    dims = st.session_state.builder_dims
-
-    # -----------------------------------------------------------------------
-    # Drag-and-drop reorder
-    # -----------------------------------------------------------------------
-
-    st.markdown("**Dimension Order** (drag to reorder)")
-
-    # Build labels for sortable display
-    dim_labels = [
-        f"{d['category']} ({d['column']}){' \u2442' if d.get('split') else ''}"
-        for d in dims
-    ]
-
-    if dim_labels:
-        sorted_labels = sort_items(dim_labels, direction="vertical")
-
-        # If order changed, reorder dims to match
-        if sorted_labels != dim_labels:
-            label_to_dim = {lbl: dim for lbl, dim in zip(dim_labels, dims)}
-            st.session_state.builder_dims = [label_to_dim[lbl] for lbl in sorted_labels]
-            st.rerun()
+    if not hier_files:
+        st.info("No hierarchies found. Run `python editor.py` to create one.")
     else:
-        st.info("No dimensions yet. Add one below.")
+        selected_hier = st.selectbox("Hierarchy", hier_files, key="bld_hier")
+        kpi_name = st.text_input("KPI Name for output", value=selected_hier, key="bld_name")
 
-    # -----------------------------------------------------------------------
-    # Add / Remove / Toggle
-    # -----------------------------------------------------------------------
-
-    st.markdown("---")
-    add_col, action_col = st.columns([1, 1])
-
-    with add_col:
-        st.markdown("**Add Dimension**")
-
-        # Dropdown of available dimensions
-        dim_options = [""] + [d["label"] for d in AVAILABLE_DIMENSIONS]
-        selected_label = st.selectbox("Select dimension", dim_options, key="bld_sel_dim")
-
-        if st.button("Add", key="bld_add", disabled=(selected_label == "")):
-            dim_def = next(d for d in AVAILABLE_DIMENSIONS if d["label"] == selected_label)
-            new_dim = {"column": dim_def["column"], "category": dim_def["category"], "split": False}
-            if "transform" in dim_def:
-                new_dim["transform"] = dim_def["transform"]
-            dims.append(new_dim)
-            st.rerun()
-
-        # Custom dimension
-        with st.expander("Add custom dimension"):
-            cc = st.text_input("Column name", key="bld_cc")
-            cat = st.text_input("Category label", key="bld_cat")
-            if st.button("Add Custom", key="bld_add_cust"):
-                if cc.strip() and cat.strip():
-                    dims.append({"column": cc.strip(), "category": cat.strip(), "split": False})
-                    st.rerun()
-
-    with action_col:
-        st.markdown("**Edit Selected**")
-
-        if dims:
-            # Select which dimension to edit
-            edit_options = [f"{d['category']} ({d['column']})" for d in dims]
-            edit_idx = st.selectbox("Dimension", range(len(edit_options)),
-                                   format_func=lambda i: edit_options[i], key="bld_edit_sel")
-
-            selected_dim = dims[edit_idx]
-
-            # Split toggle
-            is_split = st.checkbox("Split branch", value=selected_dim.get("split", False),
-                                   key="bld_split_toggle")
-            if is_split != selected_dim.get("split", False):
-                selected_dim["split"] = is_split
-                st.rerun()
-
-            # Delete
-            if st.button("Remove dimension", key="bld_remove"):
-                dims.pop(edit_idx)
-                st.rerun()
-
-    # -----------------------------------------------------------------------
-    # Preview
-    # -----------------------------------------------------------------------
-
-    st.markdown("---")
-    st.markdown("**Preview**")
-
-    def _build_preview(dims_list):
-        lines = []
-        depth = 0
-        for d in dims_list:
-            sp = " (split)" if d.get("split") else ""
-            lines.append(f"{'    ' * depth}\u2514\u2500 {d['category']} [{d['column']}]{sp}")
-            if not d.get("split"):
-                depth += 1
-        return "\n".join(lines) if lines else "(empty)"
-
-    st.code(_build_preview(dims), language=None)
-
-    # -----------------------------------------------------------------------
-    # Build
-    # -----------------------------------------------------------------------
-
-    st.markdown("---")
-    kpi_name = st.text_input("KPI Name (e.g. 'D0 3.0')", key="bld_kpi_name")
-
-    if st.button("Build Tree", type="primary", key="bld_build"):
-        if not kpi_name.strip():
-            st.error("Enter a KPI name.")
-        elif not dims:
-            st.error("Add at least one dimension.")
-        elif (OUTPUT_DIR / f"{kpi_name.strip()}.json").exists():
-            st.error(f"'{kpi_name.strip()}' already exists.")
-        else:
+        if st.button("Build Tree", type="primary", key="bld_go"):
             kn = kpi_name.strip()
-
-            # Convert flat list to nested hierarchy definition
-            def _nest_dims(dim_list):
-                """Convert flat ordered dims into nested hierarchy JSON."""
-                if not dim_list:
-                    return {"levels": []}
-
-                def _build(idx):
-                    if idx >= len(dim_list):
-                        return None
-                    d = dim_list[idx]
-                    node = {"column": d["column"], "category": d["category"]}
-                    if d.get("transform"):
-                        node["transform"] = d["transform"]
-                    if d.get("split"):
-                        node["split"] = True
-                        return node  # splits have no children in the primary chain
-
-                    # Collect children: next items until end
-                    children = []
-                    next_idx = idx + 1
-                    while next_idx < len(dim_list):
-                        child = _build(next_idx)
-                        if child:
-                            children.append(child)
-                            if not dim_list[next_idx].get("split"):
-                                break  # only one primary child
-                        next_idx += 1
-                    if children:
-                        node["children"] = children
-                    return node
-
-                top = _build(0)
-                return {"levels": [top]} if top else {"levels": []}
-
-            hdef = _nest_dims(dims)
-
-            with st.spinner(f"Building '{kn}'..."):
-                cp = Path("teradata_cache.parquet")
-                if not cp.exists():
-                    st.error("teradata_cache.parquet not found.")
-                else:
-                    # Save hierarchy
-                    HIERARCHIES_DIR.mkdir(exist_ok=True)
-                    hp = HIERARCHIES_DIR / f"{kn}.json"
-                    hp.write_text(json.dumps(hdef, indent=4, ensure_ascii=False), encoding="utf-8")
-
-                    # Build tree
-                    bdf = pd.read_parquet(cp)
-                    tree = build_tree_from_hierarchy(bdf, hdef)
-
-                    # Save tree JSON
-                    op = OUTPUT_DIR / f"{kn}.json"
-                    op.write_text(json.dumps(tree, indent=4, ensure_ascii=False), encoding="utf-8")
-
-                    # Run cascade
-                    from cascade import cascade
-                    try:
-                        cascade(goals_file=Path("goals.csv"), hierarchy_file=hp,
-                                cache_file=cp, output_file=op)
-                    except Exception:
-                        pass
-
-                    # Generate CSV
-                    ft = load_tree(str(op))
-                    tree_to_csv(ft, kn).to_csv(OUTPUT_DIR / f"{kn}.csv", index=False)
-
-                    st.success(f"Built '{kn}' — select from sidebar.")
-                    st.rerun()
+            if not kn:
+                st.error("Enter a KPI name.")
+            elif (OUTPUT_DIR / f"{kn}.json").exists():
+                st.error(f"'{kn}' already exists in output/. Pick a different name or delete the old one.")
+            else:
+                with st.spinner(f"Building '{kn}'..."):
+                    cp = Path("teradata_cache.parquet")
+                    if not cp.exists():
+                        st.error("teradata_cache.parquet not found. Run kpi_statistics.py first.")
+                    else:
+                        hp = HIERARCHIES_DIR / f"{selected_hier}.json"
+                        from cascade import cascade
+                        try:
+                            op = OUTPUT_DIR / f"{kn}.json"
+                            cascade(goals_file=Path("goals.csv"), hierarchy_file=hp,
+                                    cache_file=cp, output_file=op)
+                            st.success(f"Built '{kn}' — select it from the sidebar.")
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Build failed: {e}")

@@ -1,0 +1,44 @@
+{
+    "levels": [
+        {
+            "column": "sys",
+            "category": "system",
+            "children": [
+                {
+                    "column": "Mo_Nb",
+                    "category": "month",
+                    "children": [
+                        {
+                            "column": "frst_flt_ind",
+                            "category": "first_flt",
+                            "transform": {
+                                "type": "int_flag",
+                                "map": {
+                                    "1": "First Flight",
+                                    "0": "Not First Flight"
+                                }
+                            },
+                            "split": true,
+                            "children": [
+                                {
+                                    "column": "station",
+                                    "category": "station"
+                                }
+                            ]
+                        },
+                        {
+                            "column": "dom_int",
+                            "category": "dom_int",
+                            "children": [
+                                {
+                                    "column": "station",
+                                    "category": "station"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

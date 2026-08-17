@@ -1,0 +1,26 @@
+{
+    "levels": [
+        {
+            "column": "sys",
+            "category": "system",
+            "children": [
+                {
+                    "column": "ml_dc_1",
+                    "category": "carrier",
+                    "children": [
+                        {
+                            "column": "ml_dc_2",
+                            "category": "dc_carrier",
+                            "children": [
+                                {
+                                    "column": "station",
+                                    "category": "station"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

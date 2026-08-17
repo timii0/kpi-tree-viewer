@@ -1,0 +1,43 @@
+{
+    "levels": [
+        {
+            "column": "sys",
+            "category": "system",
+            "children": [
+                {
+                    "column": "ml_dc_1",
+                    "category": "carrier",
+                    "children": [
+                        {
+                            "column": "ml_dc_2",
+                            "category": "dc_carrier",
+                            "children": [
+                                {
+                                    "column": "dom_int",
+                                    "category": "dom_int",
+                                    "children": [
+                                        {
+                                            "column": "station",
+                                            "category": "station"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "column": "fleet",
+                            "category": "fleet",
+                            "split": true,
+                            "children": [
+                                {
+                                    "column": "station",
+                                    "category": "station"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -32,7 +32,6 @@ GOALS_FILE = Path("goals.csv")
 HIERARCHY_FILE = Path("hierarchy.json")
 CACHE_FILE = Path("teradata_cache.parquet")
 OUTPUT_FILE = Path("output") / "D0 2.0.json"
-CASCADED_CSV_DIR = Path("cascaded_output")
 
 CARRIER_ALIASES = {"ML": "DL", "DL": "DL", "DC": "DC"}
 
@@ -165,7 +164,7 @@ def clean_flags(node):
 # Reporting
 # ---------------------------------------------------------------------------
 
-def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None):
+def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None, parent_baseline_num=None):
     """Flatten tree into rows for CSV export."""
     if rows is None:
         rows = []
@@ -185,6 +184,12 @@ def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None
     baseline_rate = bnum / bden if bden > 0 else node["baseline"]
     stretch = ((node["goal"] - baseline_rate) / baseline_rate * 100) if baseline_rate > 0 else 0
 
+    # Num-based contribution: child_baseline_num / parent_baseline_num
+    if parent_baseline_num and parent_baseline_num > 0:
+        contribution = bnum / parent_baseline_num
+    else:
+        contribution = node["contribution"]  # root node keeps 1.0
+
     row = {"parent": "/".join(current[col] for col, _, _, _ in levels if col in current and col != cat_to_col.get(node["category"], "?")),
            "node": node["name"],
            "tier": node["tier"] - tier_offset}
@@ -196,7 +201,7 @@ def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None
         "baseline": baseline_rate,
         "baseline_num": bnum, "baseline_den": bden,
         "goal": node["goal"], "stretch": stretch,
-        "contribution": node["contribution"],
+        "contribution": contribution,
         "num": node.get("_goal_num", node["num"]),
         "den": node.get("_goal_den", node["den"]),
         "source": "Goal Input" if node.get("_goal_set") else "Cascaded",
@@ -204,7 +209,7 @@ def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None
     rows.append(row)
 
     for child in node.get("children", []):
-        collect_goal_table(child, levels, rows, current, tier_offset)
+        collect_goal_table(child, levels, rows, current, tier_offset, parent_baseline_num=bnum)
     return rows
 
 
@@ -224,6 +229,12 @@ def compute_ytd(df, levels):
             found = True
             continue
         (after_month if found else before_month).append(col)
+
+    # If month column doesn't exist in the output, YTD = full year goal
+    if month_col not in df.columns:
+        df["YTD_Num"] = df["num"]
+        df["YTD_Den"] = df["den"]
+        return df
 
     has_month = df[month_col].astype(str).str.strip() != ""
 
@@ -311,7 +322,10 @@ def cascade(
 
     # Sort by tier, then month numerically, then node name
     out_df["_tier_sort"] = out_df["tier"]
-    out_df["_month_sort"] = pd.to_numeric(out_df.get("Mo_Nb", ""), errors="coerce").fillna(0).astype(int)
+    if "Mo_Nb" in out_df.columns:
+        out_df["_month_sort"] = pd.to_numeric(out_df["Mo_Nb"], errors="coerce").fillna(0).astype(int)
+    else:
+        out_df["_month_sort"] = 0
     out_df = out_df.sort_values(["_tier_sort", "parent", "_month_sort", "node"]).reset_index(drop=True)
     out_df.drop(columns=["_tier_sort", "_month_sort"], inplace=True)
 
@@ -333,8 +347,9 @@ def cascade(
         "num": "Goal_Num", "den": "Goal_Den", "tier": "Tier", "source": "Source",
     })
 
-    CASCADED_CSV_DIR.mkdir(parents=True, exist_ok=True)
-    csv_path = CASCADED_CSV_DIR / f"{kpi_name}_cascaded.csv"
+    csv_dir = output_file.parent
+    csv_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = csv_dir / f"{output_file.stem}_cascaded.csv"
     out_df.to_csv(csv_path, index=False)
     print(f"Wrote {csv_path}")
 

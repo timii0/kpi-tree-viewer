@@ -164,6 +164,14 @@ def cascade_goals(node):
         cbn = child["num"]
         cbd = child["den"]
         cbr = cbn / cbd if cbd > 0 else 0
+
+        # IMPORTANT: This is the CASCADE contribution — NUM-BASED.
+        # child.num / parent.baseline_num determines what share of the
+        # parent's stretch each child receives.
+        # This is DIFFERENT from the tree node's "contribution" field which
+        # is DEN-BASED (child.den / parent.den) and represents volume share.
+        # Num-based means higher-performing children get proportionally more
+        # absolute stretch, preserving uniform percentage improvement.
         contribution = cbn / parent_baseline_num if parent_baseline_num > 0 else 0
 
         child_goal_num = cbn + num_delta * contribution

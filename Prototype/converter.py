@@ -180,6 +180,11 @@ def build_tree(df, hierarchy):
             calc_baselines(c)
 
     def calc_contributions(n):
+        # IMPORTANT: This sets the DISPLAY contribution on tree nodes.
+        # It is DEN-BASED: child.den / parent.den (volume share).
+        # This is DIFFERENT from the cascade's stretch allocation which
+        # uses NUM-BASED: child.num / parent.num (performance share).
+        # See cascade.py → cascade_goals() for the other calculation.
         if not n.get("children"):
             return
         pden = n["den"]

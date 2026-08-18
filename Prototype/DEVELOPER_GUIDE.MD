@@ -510,7 +510,16 @@ D0,carrier;DC,72.13,446980,619723,5%,469329,619723,75.73
 
 ### Change contribution from den-based to num-based
 
-Contribution is currently **den-based** in tree building (`converter.py` and `app.py`):
+There are **two separate contribution calculations** in this codebase that serve different purposes:
+
+| Location | Basis | Purpose | Affects |
+|----------|-------|---------|---------|
+| `converter.py` / `app.py` → `calc_contributions()` | **DEN-based** (`child.den / parent.den`) | Sets the `contribution` field displayed in the viewer | Tree node display, QA validation |
+| `cascade.py` → `cascade_goals()` | **NUM-based** (`child.num / parent.num`) | Determines how stretch is distributed to children | Goal cascading only (internal) |
+
+**Why they differ:** Den-based contribution represents volume share — what fraction of total opportunities does this node account for. Num-based cascade distribution represents performance share — nodes with more successes receive proportionally more stretch, which preserves uniform percentage improvement across all children.
+
+To change the **display contribution** (tree nodes) from den-based to num-based:
 
 ```python
 # In converter.py → build_tree() → calc_contributions()
@@ -539,7 +548,7 @@ def calc_contributions(n):
 1. `converter.py` — `calc_contributions()` inside `build_tree()`
 2. `app.py` — `calc_contributions()` inside `build_tree_from_hierarchy()`
 
-**Note:** The cascade logic in `cascade.py` already uses num-based contribution for distributing stretch (`child.num / parent._baseline_num`). The `calc_contributions` function in converter.py only sets the initial `contribution` field on tree nodes for display purposes. Changing it affects what's shown in the viewer's "Contribution" metric and QA validation.
+**Note:** This only changes the display/validation contribution on tree nodes. The cascade stretch distribution in `cascade.py` → `cascade_goals()` is a separate num-based calculation and is NOT affected by this change. To also change cascade distribution, see "Change the cascade distribution method" below.
 
 ---
 

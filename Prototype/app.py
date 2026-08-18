@@ -482,7 +482,8 @@ with graph_tab:
             d = G.nodes[np]
             nd = find_node(np)
             ht.append(f"<b>{d['name']}</b><br>Num: {nd['num']:,}<br>Den: {nd['den']:,}<br>"
-                      f"Baseline: {nd['baseline']:.2%}<br>Contribution: {nd['contribution']:.2%}"
+                      f"Baseline: {nd['baseline']:.2%}<br>Goal: {nd['goal']:.2%}<br>"
+                      f"Contribution: {nd['contribution']:.2%}"
                       if nd else d["name"])
             nc.append("#6B2D8B" if d.get("split") else "#808080" if d.get("type") == "Goal" else "#003366")
 

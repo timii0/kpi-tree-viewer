@@ -43,12 +43,28 @@ summary { font-size: 1.15rem !important; font-weight: 700 !important; }
 
 
 def load_tree(json_path):
+    """Load a KPI tree from a JSON file.
+
+    Args:
+        json_path (str): Path to the tree JSON file in output/.
+
+    Returns:
+        dict: Root node of the tree (nested structure with children).
+    """
     with open(json_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 @st.cache_data
 def load_parquet(path):
+    """Load a parquet file with Streamlit caching.
+
+    Args:
+        path (str): Path to the parquet file.
+
+    Returns:
+        pd.DataFrame: Loaded DataFrame (cached across reruns).
+    """
     return pd.read_parquet(path)
 
 
@@ -58,6 +74,19 @@ def load_parquet(path):
 
 
 def build_path_index(node, index=None):
+    """Build a flat dict mapping node paths to node dicts for O(1) lookup.
+
+    Args:
+        node (dict): Root node of the tree (or subtree).
+        index (dict or None): Accumulator dict. Pass None to start fresh.
+
+    Returns:
+        dict: Mapping of path string → node dict for every node in the tree.
+
+    Example:
+        >>> index = build_path_index(root_data)
+        >>> index["sys/DL/DL"]  # Returns the DL dc_carrier node
+    """
     if index is None:
         index = {}
     index[node["path"]] = node
@@ -67,10 +96,31 @@ def build_path_index(node, index=None):
 
 
 def count_nodes(node):
+    """Count total nodes in the tree (recursive).
+
+    Args:
+        node (dict): Root node of the tree (or subtree).
+
+    Returns:
+        int: Total number of nodes including the root.
+    """
     return 1 + sum(count_nodes(c) for c in node.get("children", []))
 
 
 def validate_contributions(node):
+    """Validate that contribution sums equal 1.0 at every tree level.
+
+    Checks both primary children (non-split) and split children separately.
+    Each group's contributions should sum to 1.0 (within 0.001 tolerance).
+
+    Args:
+        node (dict): Root node. Recurses through all descendants.
+
+    Returns:
+        list[dict]: Issues found. Each issue has:
+            - "node" (str): Name of the parent node with the problem
+            - "total" (float): Actual contribution sum
+    """
     issues = []
     children = node.get("children", [])
     if children:
@@ -88,6 +138,22 @@ def validate_contributions(node):
 
 
 def validate_rollup(node):
+    """Validate that children's num sums to parent's num at every level.
+
+    Only checks primary (non-split) children. Tolerance scales with the
+    number of children to account for rounding in cascaded values.
+
+    Also validates that primary children contributions sum to 1.0.
+
+    Args:
+        node (dict): Root node. Recurses through all descendants.
+
+    Returns:
+        list[dict]: Issues found. Each issue has:
+            - "type" (str): "num_rollup" or "contribution_sum"
+            - "node" (str): Name of the parent node
+            - Additional fields depending on type (diff, total, etc.)
+    """
     issues = []
     children = node.get("children", [])
     if children:
@@ -114,7 +180,24 @@ def validate_rollup(node):
 
 
 def build_tree_from_hierarchy(df, hierarchy_def):
-    """Build KPI tree from data + hierarchy definition. Root = first level."""
+    """Build KPI tree from data + hierarchy definition (Streamlit version).
+
+    This is a duplicate of converter.py's build_tree() used by the Hierarchy
+    Builder tab. Kept separate to avoid import issues in the Streamlit context.
+
+    Args:
+        df (pd.DataFrame): Flat data with 'num', 'den', and dimension columns.
+        hierarchy_def (dict): Hierarchy JSON with {"levels": [...]} structure.
+
+    Returns:
+        dict: Root node of the built tree with baselines and contributions set.
+
+    Notes:
+        - Same split offset logic as converter.py's build_tree().
+        - Contribution is den-based (child.den / parent.den).
+        - If modifying tree construction logic, update BOTH this function
+          and converter.py's build_tree() to keep them in sync.
+    """
 
     def apply_transform(series, transform):
         if not transform:
@@ -273,6 +356,14 @@ path_index = st.session_state.path_index
 
 
 def find_node(path):
+    """Look up a tree node by its path string.
+
+    Args:
+        path (str): Slash-separated node path (e.g. "sys/DL/DL").
+
+    Returns:
+        dict or None: The node dict, or None if path not found.
+    """
     return path_index.get(path)
 
 
@@ -295,11 +386,42 @@ col2.metric("Nodes", st.session_state.node_count)
 
 
 def get_ancestor_paths(path):
+    """Get all ancestor paths for a given node path (including itself).
+
+    Used to determine which tree expanders should be open to reveal
+    the currently selected node.
+
+    Args:
+        path (str): Slash-separated node path (e.g. "sys/DL/DL/D").
+
+    Returns:
+        set[str]: All ancestor paths including the path itself.
+            e.g. {"sys", "sys/DL", "sys/DL/DL", "sys/DL/DL/D"}
+    """
     parts = path.split("/")
     return {"/".join(parts[:i]) for i in range(1, len(parts) + 1)}
 
 
 def display_tree(node, depth=0, ancestors=None):
+    """Recursively render the KPI tree using Streamlit expanders and buttons.
+
+    Parent nodes render as expandable sections with a "Select" button.
+    Leaf nodes render as simple buttons. Split children are grouped under
+    a separate "Split" expander within their parent.
+
+    Args:
+        node (dict): Current tree node to render.
+        depth (int): Current recursion depth (0 = root). Used for depth limiting.
+        ancestors (set or None): Set of ancestor paths for the selected node.
+            If None, computed from session state. Ancestors are auto-expanded.
+
+    Behavior:
+        - Nodes deeper than MAX_TREE_DEPTH are hidden unless they're ancestors
+          of the selected node.
+        - Clicking a node sets it as selected and triggers a rerun.
+        - Split nodes are visually marked with ⑂ prefix.
+        - Selected node is marked with ✅ prefix.
+    """
     if ancestors is None:
         ancestors = get_ancestor_paths(st.session_state.selected_path)
     children = node.get("children", [])

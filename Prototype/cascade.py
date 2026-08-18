@@ -4,17 +4,23 @@ cascade.py - Goal Cascading Engine
 Builds a KPI tree, applies goal targets from goals.csv, cascades stretch
 proportionally to all descendants, and outputs the enriched tree + CSV.
 
-Usage:
+The cascade distributes a parent's numerator improvement (num delta) to
+children proportionally based on each child's num share. This means every
+child gets the same percentage stretch as the parent, preserving relative
+performance rankings.
+
+Usage (standalone):
     python cascade.py
 
-Inputs:
-    - goals.csv              : Goal targets per anchor node
-    - hierarchy.json         : Hierarchy definition (nesting + transforms)
-    - teradata_cache.parquet : Raw data
+    Uses default paths: goals.csv, hierarchy.json, teradata_cache.parquet
+    Outputs to: output/D0 2.0.json + output/D0 2.0_cascaded.csv
 
-Output:
-    - output/D0 2.0.json             : Tree with cascaded goals
-    - cascaded_output/D0_cascaded.csv : Flat summary with YTD expectations
+Usage (as library):
+    from cascade import cascade
+    cascade(goals_file=Path("goals.csv"),
+            hierarchy_file=Path("hierarchies/D0 4.0.json"),
+            cache_file=Path("teradata_cache.parquet"),
+            output_file=Path("output/D0 4.0.json"))
 """
 
 import pandas as pd
@@ -41,7 +47,21 @@ CARRIER_ALIASES = {"ML": "DL", "DL": "DL", "DC": "DC"}
 # ---------------------------------------------------------------------------
 
 def parse_levels(hierarchy):
-    """Flatten hierarchy into ordered (column, category, transform, split) tuples."""
+    """Flatten hierarchy definition into an ordered list of level tuples.
+
+    Walks the hierarchy tree depth-first and collects each level's metadata
+    in the order they appear. Used for CSV column ordering and YTD computation.
+
+    Args:
+        hierarchy (dict): Hierarchy JSON with {"levels": [...]} structure.
+
+    Returns:
+        list[tuple]: Each tuple is (column, category, transform, split).
+            - column (str): DataFrame column name (e.g. "ml_dc_1")
+            - category (str): Logical category (e.g. "carrier")
+            - transform (dict or None): Value transform spec
+            - split (bool): Whether this level is a split branch
+    """
     levels = []
 
     def walk(node):
@@ -59,7 +79,18 @@ def parse_levels(hierarchy):
 # ---------------------------------------------------------------------------
 
 def find_node_by_id(node, node_id):
-    """Find a node by its id field (depth-first)."""
+    """Find a node in the tree by its 'id' field using depth-first search.
+
+    Node IDs follow the format "category;name" (e.g. "carrier;DL", "system;sys").
+    This is the primary method for locating goal target nodes.
+
+    Args:
+        node (dict): Root of the subtree to search.
+        node_id (str): Target node ID to find.
+
+    Returns:
+        dict or None: The matching node, or None if not found.
+    """
     if node["id"] == node_id:
         return node
     for child in node.get("children", []):
@@ -70,7 +101,18 @@ def find_node_by_id(node, node_id):
 
 
 def resolve_goal_target(node_name):
-    """Resolve alias: 'carrier;ML' -> 'carrier;DL'."""
+    """Resolve carrier aliases in goal target node names.
+
+    The goals.csv may reference carriers by operational codes that differ
+    from the tree's data values. This function maps them (e.g. "ML" → "DL").
+
+    Args:
+        node_name (str): Raw Node_Name from goals.csv (e.g. "carrier;ML").
+
+    Returns:
+        str: Resolved node ID (e.g. "carrier;DL"). Returns unchanged if
+            no alias exists or format is invalid.
+    """
     parts = node_name.split(";", 1)
     if len(parts) != 2:
         return node_name
@@ -79,7 +121,34 @@ def resolve_goal_target(node_name):
 
 
 def cascade_goals(node):
-    """Distribute parent's num delta to children proportionally by num share."""
+    """Distribute a parent's num improvement to children proportionally.
+
+    This is the core cascade algorithm. It takes the num delta (goal_num -
+    baseline_num) from the parent and allocates it to each child based on
+    that child's num share of the parent's baseline.
+
+    Algorithm per child:
+        contribution = child.num / parent._baseline_num
+        child_goal_num = child.num + num_delta * contribution
+        child.goal = child_goal_num / child.den
+
+    This preserves uniform percentage stretch: if the parent has 5% stretch,
+    every child also gets ~5% stretch (exact for num-proportional distribution).
+
+    Args:
+        node (dict): Anchor node that has _goal_num and _baseline_num set.
+            Typically called on nodes marked via apply_goals_from_csv().
+
+    Side effects:
+        Sets on each child: _goal_num, _goal_den, _baseline_num, _baseline_den,
+        _stretch, goal. Then recurses into each child.
+
+    Notes:
+        - Children with _goal_set=True are skipped (they have their own
+          explicit goals and will cascade independently).
+        - The contribution used here is NUM-based (child_num / parent_num),
+          not the den-based contribution stored on tree nodes.
+    """
     children = node.get("children", [])
     if not children:
         return
@@ -111,7 +180,28 @@ def cascade_goals(node):
 
 
 def apply_goals_from_csv(tree, goals_df):
-    """Apply explicit goals from CSV to matching tree nodes."""
+    """Apply explicit goal values from the goals CSV to matching tree nodes.
+
+    Iterates through each row in goals_df, resolves the node ID (with carrier
+    alias handling), finds the node in the tree, and sets its goal values.
+
+    Args:
+        tree (dict): Root node of the KPI tree.
+        goals_df (pd.DataFrame): Goals CSV with columns:
+            Node_Name, Baseline, Baseline_Num, Baseline_Den, Stretch,
+            KPI_Num, KPI_Den, Goal.
+
+    Side effects:
+        On each matched node, sets: baseline, num, den, goal, _goal_num,
+        _goal_den, _baseline_num, _baseline_den, _goal_set, _stretch.
+
+        Prints warnings for unmatched nodes.
+
+    Notes:
+        - Node_Name format: "category;name" (e.g. "carrier;ML")
+        - Commas in numeric fields are stripped before parsing
+        - Stretch is parsed from percentage string (e.g. "5%" → 0.05)
+    """
     for _, row in goals_df.iterrows():
         node_id = resolve_goal_target(str(row["Node_Name"]).strip())
         target = find_node_by_id(tree, node_id)
@@ -138,7 +228,19 @@ def apply_goals_from_csv(tree, goals_df):
 
 
 def propagate_goal_nums(node):
-    """Write _goal_num back into num for consistent rollup."""
+    """Write cascaded goal_num values back into the 'num' field for consistency.
+
+    After cascading, nodes have _goal_num (the target numerator) stored
+    separately. This function copies it into 'num' so the final tree JSON
+    reflects goal values rather than baseline values.
+
+    Also syncs non-anchor parent nodes: if a parent wasn't an explicit goal
+    target, its num is recalculated as the sum of its primary children's num.
+    This keeps the tree internally consistent for rollup validation.
+
+    Args:
+        node (dict): Root node. Applies recursively to all descendants.
+    """
     if "_goal_num" in node:
         node["num"] = node["_goal_num"]
     for child in node.get("children", []):
@@ -152,7 +254,19 @@ def propagate_goal_nums(node):
 
 
 def clean_flags(node):
-    """Remove internal cascade flags."""
+    """Remove internal cascade working flags before JSON serialization.
+
+    During cascading, nodes accumulate temporary fields prefixed with '_'
+    (e.g. _goal_num, _baseline_num, _goal_set). These are implementation
+    details not needed in the output file.
+
+    Args:
+        node (dict): Root node. Applies recursively to all descendants.
+
+    Removed keys:
+        _goal_set, _parent_baseline, _stretch, _goal_num, _goal_den,
+        _baseline_num, _baseline_den.
+    """
     for key in ("_goal_set", "_parent_baseline", "_stretch",
                 "_goal_num", "_goal_den", "_baseline_num", "_baseline_den"):
         node.pop(key, None)
@@ -165,7 +279,33 @@ def clean_flags(node):
 # ---------------------------------------------------------------------------
 
 def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None, parent_baseline_num=None):
-    """Flatten tree into rows for CSV export."""
+    """Flatten the tree into a list of row dicts for CSV export.
+
+    Walks the tree depth-first, building one row per node with all ancestor
+    dimension values filled in. This produces the cascaded summary table.
+
+    Args:
+        node (dict): Current node being processed.
+        levels (list): From parse_levels(). Defines column order in output.
+        rows (list or None): Accumulator for output rows. Pass None to start.
+        ancestors (dict or None): Map of column→value from ancestor nodes.
+            Used to fill in parent dimensions for each row.
+        tier_offset (float or None): Subtracted from raw tier to produce
+            relative tier numbering (auto-set from first node's tier - 1).
+        parent_baseline_num (float or None): Parent's baseline numerator.
+            Used to compute num-based contribution for each row.
+
+    Returns:
+        list[dict]: Flat list of row dicts. Each row contains:
+            parent, node, tier, {dimension columns}, baseline, baseline_num,
+            baseline_den, goal, stretch, contribution, num, den, source.
+
+    Notes:
+        - contribution in the CSV is num-based: child._baseline_num / parent_baseline_num.
+          This differs from the tree node's den-based contribution field.
+        - stretch is computed as: (goal - baseline_rate) / baseline_rate * 100
+        - source is "Goal Input" for anchor nodes, "Cascaded" for derived nodes.
+    """
     if rows is None:
         rows = []
     if ancestors is None:
@@ -218,7 +358,27 @@ def collect_goal_table(node, levels, rows=None, ancestors=None, tier_offset=None
 # ---------------------------------------------------------------------------
 
 def compute_ytd(df, levels):
-    """Compute cumulative YTD goal expectations by month."""
+    """Add YTD (year-to-date) cumulative columns to the cascaded output.
+
+    Computes cumulative numerator and denominator through the year for
+    month-level rows, enabling YTD rate tracking against goals.
+
+    Args:
+        df (pd.DataFrame): Cascaded output table (from collect_goal_table).
+        levels (list): From parse_levels(). Used to identify which columns
+            come before/after month in the hierarchy.
+
+    Returns:
+        pd.DataFrame: Input df with 'YTD_Num' and 'YTD_Den' columns added.
+
+    Logic:
+        - Identifies month column (Mo_Nb) position in hierarchy.
+        - Month-level rows (no deeper dims filled): cumulative sum of num/den
+          grouped by parent key, sorted by month number.
+        - Below-month rows (station, dom_int under a month): YTD = own value.
+        - Non-month rows (carriers, system): YTD = full year value.
+        - If Mo_Nb is not in the hierarchy, all rows get YTD = full year.
+    """
     month_col = "Mo_Nb"
 
     # Columns before and after month in the hierarchy
@@ -284,7 +444,41 @@ def cascade(
     cache_file=CACHE_FILE,
     output_file=OUTPUT_FILE
 ):
-    """Run the full cascade pipeline: build tree, apply goals, cascade, export."""
+    """Run the full cascade pipeline: build tree, apply goals, cascade, export.
+
+    This is the main entry point. It orchestrates the entire process from
+    raw data to final output files.
+
+    Args:
+        goals_file (Path): Path to goals CSV file. Contains explicit goal
+            targets for anchor nodes.
+        hierarchy_file (Path): Path to hierarchy definition JSON. Defines
+            the nesting structure of dimensions.
+        cache_file (Path): Path to teradata_cache.parquet. The raw flight
+            data used to build the tree.
+        output_file (Path): Path for the output tree JSON. The cascaded CSV
+            is written alongside it as {stem}_cascaded.csv.
+
+    Returns:
+        dict: Root node of the cascaded tree.
+
+    Output files:
+        - {output_file}: Tree JSON with cascaded goal values in every node.
+        - {output_file.parent}/{output_file.stem}_cascaded.csv: Flat summary
+          table with columns: KPI_Name, parent, node, Tier, {dimensions},
+          Baseline, Baseline_Num, Baseline_Den, Goal, Stretch, Contribution,
+          Goal_Num, Goal_Den, Source, Goal_Yr, YTD_Num, YTD_Den.
+
+    Pipeline steps:
+        1. Load hierarchy and parse levels
+        2. Load parquet data
+        3. build_tree() — construct base tree with baselines
+        4. apply_goals_from_csv() — set explicit goals on anchor nodes
+        5. cascade_goals() — distribute stretch to all descendants
+        6. collect_goal_table() + compute_ytd() — build CSV output
+        7. propagate_goal_nums() + clean_flags() — finalize tree
+        8. Write JSON and CSV files
+    """
 
     with open(hierarchy_file, "r", encoding="utf-8") as f:
         hierarchy = json.load(f)

@@ -1,11 +1,19 @@
 """
-converter2.0.py - Build KPI tree from parquet data + hierarchy definition.
+converter.py - Build KPI tree from parquet data + hierarchy definition.
 
-Usage:
-    python converter2.0.py
+This module provides the core tree-building logic used by cascade.py.
+It reads a flat DataFrame (from teradata_cache.parquet) and a hierarchy
+definition (JSON), then constructs a nested tree where each level groups
+data by a dimension column.
+
+Usage (standalone):
+    python converter.py
 
 Reads:  teradata_cache.parquet, hierarchy.json
 Writes: output/D0 2.0.json
+
+When imported:
+    from converter import build_tree, apply_transform_series
 """
 
 import pandas as pd
@@ -19,7 +27,29 @@ CACHE_FILE = Path("teradata_cache.parquet")
 
 
 def apply_transform_series(series, transform):
-    """Vectorized transform on a pandas Series."""
+    """Apply a value transform to a pandas Series before tree grouping.
+
+    Transforms convert raw column values into display-friendly labels.
+    Called once per hierarchy column during tree construction.
+
+    Args:
+        series (pd.Series): Raw column data from the DataFrame.
+        transform (dict or None): Transform specification. If None, simply
+            strips whitespace and casts to string.
+
+    Transform types:
+        - "int_flag": Casts to int then maps via {"1": "Label", "0": "Label"}.
+          Used for binary indicators like first_flt_ind.
+        - "map": Direct string-to-string mapping via a dict.
+          Unmapped values pass through unchanged.
+
+    Returns:
+        pd.Series: Transformed string values ready for groupby.
+
+    Example:
+        >>> transform = {"type": "int_flag", "map": {"1": "First Flight", "0": "Not First Flight"}}
+        >>> apply_transform_series(df["frst_flt_ind"], transform)
+    """
     if not transform:
         return series.astype(str).str.strip()
     kind = transform.get("type")
@@ -33,8 +63,52 @@ def apply_transform_series(series, transform):
 
 
 def build_tree(df, hierarchy):
-    """Build KPI tree from dataframe + hierarchy definition.
-    Root = sys (first hierarchy level). Children built from level's children."""
+    """Build a complete KPI tree from a DataFrame and hierarchy definition.
+
+    This is the primary tree construction function. It creates a nested dict
+    structure where each level corresponds to a hierarchy dimension. The root
+    node represents the system total (sum of all num/den).
+
+    Args:
+        df (pd.DataFrame): Flat data with at minimum 'num' and 'den' columns,
+            plus all dimension columns referenced in the hierarchy (e.g. sys,
+            ml_dc_1, ml_dc_2, station, fleet, etc.).
+        hierarchy (dict): Hierarchy definition with structure:
+            {"levels": [{"column": "sys", "category": "system", "children": [...]}]}
+
+    Returns:
+        dict: Root node of the tree. Structure per node:
+            {
+                "id": "category;name",
+                "name": str,
+                "category": str,
+                "type": "Goal",
+                "tier": float,          # Integer for primary, X.1/X.2 for splits
+                "num": int,
+                "den": int,
+                "baseline": float,      # num/den
+                "goal": float,          # Same as baseline (no goals applied here)
+                "contribution": float,  # child.den / parent.den
+                "path": str,            # Slash-separated from root
+                "children": list,
+                "split": bool           # Only present if True
+            }
+
+    Processing steps:
+        1. prepare_columns: Pre-transforms all hierarchy columns on the DataFrame
+        2. build_level: Recursive groupby at each hierarchy depth
+        3. calc_baselines: Sets baseline = num/den for every node
+        4. calc_contributions: Sets contribution = child.den / parent.den
+        5. set_paths: Builds slash-separated path strings
+
+    Notes:
+        - The first hierarchy level is treated as the root (sys). Its children
+          define the actual tree branching starting at tier 2.
+        - Split branches get tier offsets (.1, .2, etc.) that propagate to
+          all descendants of that split.
+        - contribution is den-based. To change to num-based, modify
+          calc_contributions() (see DEVELOPER_GUIDE.MD).
+    """
 
     # Pre-transform all columns referenced in the hierarchy
     col_map = {}  # category -> transformed column name

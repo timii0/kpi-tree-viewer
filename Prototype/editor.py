@@ -322,7 +322,23 @@ class HierarchyDesigner:
     # -----------------------------------------------------------------------
 
     def save_json(self):
-        """Save hierarchy, build tree, run cascade, output to output/ folder."""
+        """Save hierarchy definition to JSON, then build tree and run cascade.
+
+        Full workflow on Save:
+            1. Prompts for file path if not previously saved (saves to hierarchies/).
+            2. Writes the hierarchy JSON ({"levels": [...]}).
+            3. Derives KPI name from the filename stem.
+            4. Calls cascade() with:
+               - goals_file = ./goals.csv
+               - hierarchy_file = the saved hierarchy JSON
+               - cache_file = ./teradata_cache.parquet
+               - output_file = ./output/{kpi_name}.json
+            5. Cascade produces both the tree JSON and cascaded CSV.
+            6. Shows success/warning dialog.
+
+        If teradata_cache.parquet doesn't exist, saves the hierarchy but
+        skips tree building.
+        """
         if not self.json_file:
             HIERARCHIES_DIR.mkdir(exist_ok=True)
             self.json_file = filedialog.asksaveasfilename(

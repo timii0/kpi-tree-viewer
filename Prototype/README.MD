@@ -42,11 +42,18 @@ cd Prototype
 
 # Create a virtual environment (recommended)
 python -m venv .venv
-.venv\Scripts\activate        # Windows
-# source .venv/bin/activate   # macOS/Linux
+source .venv/bin/activate         # Linux/macOS
+# .venv\Scripts\activate.bat      # Windows cmd
+# .venv\Scripts\Activate.ps1      # Windows PowerShell
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+**Note:** `teradatasql` is only needed for refreshing data from Teradata (`kpi_statistics.py`). If you already have `teradata_cache.parquet`, you can skip it:
+
+```bash
+pip install streamlit pandas numpy pyarrow plotly networkx pillow
 ```
 
 ## Usage
@@ -71,6 +78,8 @@ python editor.py
 
 Add dimensions (column + category), arrange nesting order, toggle split branches. Saving a hierarchy also builds the tree and runs cascade automatically, outputting results to `output/`.
 
+**Note:** `editor.py` requires a graphical display (X server). It will not work on headless environments like Red Hat DevSpaces or remote containers. On those platforms, use the Hierarchy Builder tab in the Streamlit viewer or edit hierarchy JSON files manually.
+
 ### Step 3: Build and cascade (standalone)
 
 If running without the editor, use cascade.py directly. It reads the hierarchy, builds the tree, applies goals from `goals.csv`, cascades stretch, and writes:
@@ -84,10 +93,18 @@ python cascade.py
 ### Step 4: Launch the viewer
 
 ```bash
-streamlit run app.py
+streamlit run app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
 ```
 
-Opens at `http://localhost:8501`. Use the sidebar to select a KPI, adjust max stations, and control tree display depth.
+On a local machine this opens at `http://localhost:8501`.
+
+**On Red Hat DevSpaces / headless environments:**
+1. Run the command above
+2. Watch for a notification in the IDE: "A new process is listening on port 8501"
+3. Click "Open in New Tab" to access the app via the DevSpaces proxy URL
+4. If no notification appears, check the "Endpoints" section in the DevSpaces dashboard for a routed URL to port 8501
+
+Use the sidebar to select a KPI, adjust max stations, and control tree display depth.
 
 ## App Features
 

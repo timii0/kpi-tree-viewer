@@ -43,7 +43,6 @@ query = """
 
 with td_connect() as conn:
     df = pd.read_sql(query, conn)
-    df = df.dropna()
     df.to_parquet("teradata_cache.parquet")
 
 print(df.head())

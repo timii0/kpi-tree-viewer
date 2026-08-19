@@ -181,3 +181,32 @@ This allows split branches to be visually and logically distinguished from the p
 - YTD expectations in the cascaded CSV use cumulative month-level rollups.
 - The hierarchy view under Graph automatically shows the hierarchy matching the selected KPI name.
 - Non-D0 legacy output files are archived under `legacy/output/`.
+- Available dimensions in the editor are auto-discovered from the parquet cache columns. If you change the SQL query to add/remove columns, re-run `kpi_statistics.py` then restart `editor.py`.
+- The cascade distribution method is controlled by `CASCADE_BASIS` in `cascade.py` (currently `"num"`). Set to `"den"` for volume-proportional distribution.
+
+## Value Transforms
+
+Transforms convert raw data values into human-readable labels in the tree (e.g. `1` → `"First Flight"`). They are defined in `editor.py`'s `TRANSFORMS` dict, keyed by column name:
+
+```python
+TRANSFORMS = {
+    "frst_flt_ind": {"type": "int_flag", "map": {"1": "First Flight", "0": "Not First Flight"}},
+}
+```
+
+When a dimension with a matching column name is added in the editor, its transform is automatically attached to the hierarchy node.
+
+**Supported transform types:**
+- `int_flag`: Casts the column to int, then maps via a string dict. Use for binary indicators.
+- `map`: Direct string-to-string mapping. Use for renaming categorical values.
+
+**To add a new value mapping:**
+1. Add an entry to `TRANSFORMS` in `editor.py`:
+   ```python
+   TRANSFORMS = {
+       "frst_flt_ind": {"type": "int_flag", "map": {"1": "First Flight", "0": "Not First Flight"}},
+       "dom_int": {"type": "map", "map": {"D": "Domestic", "I": "International"}},
+   }
+   ```
+2. The transform is auto-applied when building trees via `converter.py`'s `apply_transform_series()`.
+3. No code changes needed — just add the dict entry and rebuild.

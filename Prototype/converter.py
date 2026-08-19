@@ -7,10 +7,7 @@ definition (JSON), then constructs a nested tree where each level groups
 data by a dimension column.
 
 Usage (standalone):
-    python converter.py
-
-Reads:  teradata_cache.parquet, hierarchy.json
-Writes: output/D0 2.0.json
+    python converter.py --hierarchy hierarchy.json --output output/my_kpi.json
 
 When imported:
     from converter import build_tree, apply_transform_series
@@ -21,7 +18,7 @@ import json
 from pathlib import Path
 import time
 
-OUTPUT_FILE = Path("output") / "D0 2.0.json"
+OUTPUT_FILE = Path("output") / "output.json"
 HIERARCHY_FILE = Path("hierarchy.json")
 CACHE_FILE = Path("teradata_cache.parquet")
 
@@ -204,18 +201,29 @@ def build_tree(df, hierarchy):
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Build KPI tree from parquet + hierarchy")
+    parser.add_argument("--hierarchy", type=Path, default=HIERARCHY_FILE,
+                        help="Path to hierarchy JSON (default: hierarchy.json)")
+    parser.add_argument("--cache", type=Path, default=CACHE_FILE,
+                        help="Path to parquet cache (default: teradata_cache.parquet)")
+    parser.add_argument("--output", type=Path, default=OUTPUT_FILE,
+                        help="Path for output tree JSON (default: output/output.json)")
+    args = parser.parse_args()
+
     start = time.time()
-    df = pd.read_parquet(CACHE_FILE)
+    df = pd.read_parquet(args.cache)
     print(f"Loaded {len(df):,} rows in {time.time() - start:.2f}s")
 
-    with open(HIERARCHY_FILE, "r", encoding="utf-8") as f:
+    with open(args.hierarchy, "r", encoding="utf-8") as f:
         hierarchy = json.load(f)
 
     t0 = time.time()
     root = build_tree(df, hierarchy)
     print(f"Tree built in {time.time() - t0:.2f}s")
 
-    OUTPUT_FILE.parent.mkdir(exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    args.output.parent.mkdir(exist_ok=True)
+    with open(args.output, "w", encoding="utf-8") as f:
         json.dump(root, f, indent=4, ensure_ascii=False)
-    print(f"Wrote {OUTPUT_FILE}")
+    print(f"Wrote {args.output}")

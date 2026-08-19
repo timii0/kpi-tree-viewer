@@ -13,7 +13,7 @@ Usage (standalone):
     python cascade.py
 
     Uses default paths: goals.csv, hierarchy.json, teradata_cache.parquet
-    Outputs to: output/D0 2.0.json + output/D0 2.0_cascaded.csv
+    Outputs to: output/output.json + output/output_cascaded.csv
 
 Usage (as library):
     from cascade import cascade
@@ -37,9 +37,18 @@ from converter import build_tree, apply_transform_series
 GOALS_FILE = Path("goals.csv")
 HIERARCHY_FILE = Path("hierarchy.json")
 CACHE_FILE = Path("teradata_cache.parquet")
-OUTPUT_FILE = Path("output") / "D0 2.0.json"
+OUTPUT_FILE = Path("output") / "output.json"
 
 CARRIER_ALIASES = {"ML": "DL", "DL": "DL", "DC": "DC"}
+
+# CASCADE_BASIS controls how stretch is distributed to children.
+#   "num" (default): Proportional to child.num / parent.num.
+#       Higher-performing children receive more absolute stretch.
+#       Preserves uniform percentage improvement across children.
+#   "den": Proportional to child.den / parent.den.
+#       Distributes stretch by volume share regardless of performance.
+#       Larger-volume children receive more absolute stretch.
+CASCADE_BASIS = "num"
 
 
 # ---------------------------------------------------------------------------
@@ -146,14 +155,15 @@ def cascade_goals(node):
     Notes:
         - Children with _goal_set=True are skipped (they have their own
           explicit goals and will cascade independently).
-        - The contribution used here is NUM-based (child_num / parent_num),
-          not the den-based contribution stored on tree nodes.
+        - Distribution basis is controlled by CASCADE_BASIS ("num" or "den").
+          Currently set to "num" (child_num / parent_num).
     """
     children = node.get("children", [])
     if not children:
         return
 
     parent_baseline_num = node.get("_baseline_num", node["num"])
+    parent_baseline_den = node.get("_baseline_den", node["den"])
     parent_goal_num = node.get("_goal_num", node["num"])
     num_delta = parent_goal_num - parent_baseline_num
 
@@ -165,14 +175,13 @@ def cascade_goals(node):
         cbd = child["den"]
         cbr = cbn / cbd if cbd > 0 else 0
 
-        # IMPORTANT: This is the CASCADE contribution — NUM-BASED.
-        # child.num / parent.baseline_num determines what share of the
-        # parent's stretch each child receives.
-        # This is DIFFERENT from the tree node's "contribution" field which
-        # is DEN-BASED (child.den / parent.den) and represents volume share.
-        # Num-based means higher-performing children get proportionally more
-        # absolute stretch, preserving uniform percentage improvement.
-        contribution = cbn / parent_baseline_num if parent_baseline_num > 0 else 0
+        # CASCADE_BASIS determines how stretch is distributed to children.
+        # "num": child.num / parent.num — uniform percentage improvement
+        # "den": child.den / parent.den — proportional to volume share
+        if CASCADE_BASIS == "den":
+            contribution = cbd / parent_baseline_den if parent_baseline_den > 0 else 0
+        else:
+            contribution = cbn / parent_baseline_num if parent_baseline_num > 0 else 0
 
         child_goal_num = cbn + num_delta * contribution
         child_goal_rate = child_goal_num / cbd if cbd > 0 else 0

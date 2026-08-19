@@ -1,11 +1,4 @@
 {
-    "name": "D0 Hierarchy",
-    "version": "1.0.0",
-    "root": {
-        "id": "Nwk Sys",
-        "name": "Nwk Sys",
-        "category": "Enterprise"
-    },
     "levels": [
         {
             "column": "sys",

@@ -290,16 +290,17 @@ def build_tree_from_hierarchy(df, hierarchy_def):
 
     def calc_contributions(n):
         # IMPORTANT: This sets the DISPLAY contribution on tree nodes.
-        # It is DEN-BASED: child.den / parent.den (volume share).
-        # This is DIFFERENT from the cascade's stretch allocation which
-        # uses NUM-BASED: child.num / parent.num (performance share).
-        # See cascade.py → cascade_goals() for the other calculation.
+        # It is NUM-BASED: child.num / parent.num (performance share).
+        # This represents what fraction of successful outcomes this node
+        # contributes to its parent.
+        # The cascade stretch allocation in cascade.py → cascade_goals()
+        # also uses num-based distribution (child.num / parent.baseline_num).
         children = n.get("children", [])
         if not children:
             return
-        pden = n["den"]
+        pnum = n["num"]
         for c in children:
-            c["contribution"] = c["den"] / pden if pden > 0 else 0
+            c["contribution"] = c["num"] / pnum if pnum > 0 else 0
             calc_contributions(c)
 
     def set_paths(n, pp=""):
@@ -329,7 +330,7 @@ with col2:
 # ---------------------------------------------------------------------------
 
 kpis = sorted(f.stem for f in OUTPUT_DIR.glob("*.json"))
-default_idx = kpis.index("D0 2.0") if "D0 2.0" in kpis else 0
+default_idx = 0
 selected_kpi = st.sidebar.selectbox("Select KPI", kpis, index=default_idx)
 max_leaf_nodes = st.sidebar.slider("Max Stations", 1, 50, 10)
 

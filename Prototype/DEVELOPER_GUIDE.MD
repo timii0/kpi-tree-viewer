@@ -198,8 +198,9 @@ build_level(node, filtered_df, h_children, tier + 1, child_offset)
 | `GOALS_FILE` | `goals.csv` | Path to goals CSV |
 | `HIERARCHY_FILE` | `hierarchy.json` | Default hierarchy definition |
 | `CACHE_FILE` | `teradata_cache.parquet` | Data cache |
-| `OUTPUT_FILE` | `output/D0 2.0.json` | Default output path |
+| `OUTPUT_FILE` | `output/output.json` | Default output path |
 | `CARRIER_ALIASES` | `{"ML": "DL", "DL": "DL", "DC": "DC"}` | Node name resolution |
+| `CASCADE_BASIS` | `"num"` | Controls stretch distribution: `"num"` (uniform %) or `"den"` (by volume) |
 
 ### Functions
 
@@ -330,7 +331,7 @@ Main entry point. Orchestrates the full pipeline.
 | `goals_file` | `Path` | `goals.csv` | Goals CSV path |
 | `hierarchy_file` | `Path` | `hierarchy.json` | Hierarchy JSON path |
 | `cache_file` | `Path` | `teradata_cache.parquet` | Data cache path |
-| `output_file` | `Path` | `output/D0 2.0.json` | Output tree JSON path |
+| `output_file` | `Path` | `output/output.json` | Output tree JSON path |
 
 **Outputs:**
 - `{output_file}` — Tree JSON
@@ -570,36 +571,73 @@ def calc_contributions(n):
 
 ### Add a new dimension
 
-1. **Add column to SQL** in `kpi_statistics.py`:
+1. **Add the column to the SQL query** in `kpi_statistics.py`:
    ```sql
    new_column_name as new_col,
    ```
 
-2. **Add to AVAILABLE_COLUMNS** in `editor.py`:
-   ```python
-   ("new_col", "new_category"),
-   ```
+2. **Re-run** `python kpi_statistics.py` to refresh the parquet cache.
 
-3. **Re-run** `python kpi_statistics.py` to refresh the parquet cache.
+3. **Restart `editor.py`** — the new column appears automatically in the Quick Select dropdown (dimensions are auto-discovered from the parquet schema).
 
 4. **Add the dimension** in the hierarchy editor (or manually edit hierarchy JSON).
 
+5. **(Optional)** Add a value transform in `editor.py`'s `TRANSFORMS` dict if the raw values need labeling.
+
 ---
 
-### Add a new transform type
+### Add a value mapping (transform) for a column
+
+Value mappings convert raw data values into display-friendly labels in the tree
+(e.g. `"1"` → `"First Flight"`, `"D"` → `"Domestic"`).
+
+**To add a mapping using an existing transform type:**
+
+1. Add an entry to `TRANSFORMS` in `editor.py`, keyed by the **column name**:
+   ```python
+   TRANSFORMS = {
+       "frst_flt_ind": {"type": "int_flag", "map": {"1": "First Flight", "0": "Not First Flight"}},
+       "dom_int": {"type": "map", "map": {"D": "Domestic", "I": "International"}},
+   }
+   ```
+
+2. That's it. The transform is automatically:
+   - Attached to the hierarchy node when adding that column in the editor
+   - Applied during tree building by `converter.py` → `apply_transform_series()`
+
+**Supported transform types:**
+
+| Type | Input | Behavior | Use Case |
+|------|-------|----------|----------|
+| `int_flag` | Numeric column (0/1) | Casts to int, then maps via `{"1": "Label", "0": "Label"}` | Binary indicators |
+| `map` | String column | Direct string→string mapping via dict. Unmapped values pass through | Renaming categories |
+
+**Example — mapping fleet codes to readable names:**
+```python
+TRANSFORMS = {
+    "frst_flt_ind": {"type": "int_flag", "map": {"1": "First Flight", "0": "Not First Flight"}},
+    "fleet": {"type": "map", "map": {"738": "737-800", "739": "737-900", "321": "A321"}},
+}
+```
+
+---
+
+### Add a new transform type (custom logic)
+
+If the existing `int_flag` and `map` types don't cover your needs, you can add a new type:
 
 1. **Define the transform** in `editor.py`'s `TRANSFORMS` dict:
    ```python
    TRANSFORMS = {
-       "first_flt": {"type": "int_flag", "map": {...}},
-       "new_category": {"type": "my_type", "map": {...}},
+       "frst_flt_ind": {"type": "int_flag", "map": {...}},
+       "my_column": {"type": "my_type", "map": {...}},
    }
    ```
 
 2. **Handle it** in `converter.py`'s `apply_transform_series()`:
    ```python
    if kind == "my_type":
-       # Your transformation logic
+       # Your transformation logic on the pandas Series
        return transformed_series
    ```
 
@@ -609,21 +647,24 @@ def calc_contributions(n):
 
 ### Change the cascade distribution method
 
-The core logic is in `cascade.py` → `cascade_goals()`:
+The cascade distribution method is controlled by the `CASCADE_BASIS` flag in `cascade.py`:
 
 ```python
-contribution = cbn / parent_baseline_num    # num-based share
-child_goal_num = cbn + num_delta * contribution
+# At the top of cascade.py, in the Configuration section:
+CASCADE_BASIS = "num"   # Currently set to num-based
 ```
 
-To distribute by den instead:
+**Options:**
+- `"num"` (current default): `child.num / parent.num` — distributes stretch proportionally to performance share. Every child gets the same percentage improvement as the parent.
+- `"den"`: `child.den / parent.den` — distributes stretch proportionally to volume share. Larger-volume children get more absolute stretch regardless of current performance.
+
+To switch, simply change the value:
 
 ```python
-contribution = cbd / parent_baseline_den    # den-based share
-child_goal_num = cbn + num_delta * contribution
+CASCADE_BASIS = "den"
 ```
 
-You'd also need to track `_baseline_den` on the parent. This changes how stretch is allocated — den-based means larger volume nodes get more absolute stretch regardless of their current performance.
+No other code changes needed — `cascade_goals()` reads this flag and adjusts its contribution calculation accordingly.
 
 ---
 

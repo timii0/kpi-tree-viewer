@@ -95,19 +95,36 @@ def build_tree(df, hierarchy):
         1. prepare_columns: Pre-transforms all hierarchy columns on the DataFrame
         2. build_level: Recursive groupby at each hierarchy depth
         3. calc_baselines: Sets baseline = num/den for every node
-        4. calc_contributions: Sets contribution = child.den / parent.den
+        4. calc_contributions: Sets contribution = child.num / parent.num
         5. set_paths: Builds slash-separated path strings
+
+    State at each step:
+        After step 1: df has new columns _lvl_{category} with transformed values.
+            col_map = {category: "_lvl_{category}"} for all hierarchy levels.
+        After step 2: tree is fully nested with num/den aggregated at each level.
+            baseline=0, goal=0, contribution=1.0 (placeholders).
+            Split nodes have "split": True and offset tiers (X.1, X.2).
+        After step 3: every node has baseline = num/den (the actual rate).
+            goal = baseline (no targets yet — cascade sets these later).
+        After step 4: every child has contribution = child.num / parent.num.
+            Primary children contributions sum to ~1.0.
+            Split children contributions also sum to ~1.0 (independent group).
+        After step 5: every node has path = "sys/DL/DL/D/ATL" etc.
+            Tree is complete and ready for use by cascade.py.
 
     Notes:
         - The first hierarchy level is treated as the root (sys). Its children
           define the actual tree branching starting at tier 2.
         - Split branches get tier offsets (.1, .2, etc.) that propagate to
           all descendants of that split.
-        - contribution is den-based. To change to num-based, modify
-          calc_contributions() (see DEVELOPER_GUIDE.MD).
+        - contribution is num-based (child.num / parent.num).
     """
 
-    # Pre-transform all columns referenced in the hierarchy
+    # -----------------------------------------------------------------------
+    # Step 1: Pre-transform all hierarchy columns on the DataFrame.
+    # Creates _lvl_{category} columns with display-friendly values.
+    # State after: df has one new column per hierarchy level, col_map populated.
+    # -----------------------------------------------------------------------
     col_map = {}  # category -> transformed column name
 
     def prepare_columns(node):
@@ -120,6 +137,13 @@ def build_tree(df, hierarchy):
 
     for top in hierarchy.get("levels", []):
         prepare_columns(top)
+
+    # -----------------------------------------------------------------------
+    # Step 2: Recursive tree building via groupby at each hierarchy depth.
+    # State after: nested tree with num/den aggregated. Placeholders for
+    #   baseline (0), goal (0), contribution (1.0). Tiers assigned with
+    #   split offsets. Split nodes marked with "split": True.
+    # -----------------------------------------------------------------------
 
     # Root = totals (sys level)
     root = {
@@ -169,26 +193,34 @@ def build_tree(df, hierarchy):
     if top and top[0].get("children"):
         build_level(root, df, top[0]["children"], 2)
 
-    # Post-processing
+    # -----------------------------------------------------------------------
+    # Step 3: Calculate baselines.
+    # State after: every node has baseline = num/den, goal = baseline.
+    # -----------------------------------------------------------------------
     def calc_baselines(n):
         n["baseline"] = n["num"] / n["den"] if n["den"] > 0 else 0
         n["goal"] = n["baseline"]
         for c in n["children"]:
             calc_baselines(c)
 
+    # -----------------------------------------------------------------------
+    # Step 4: Calculate num-based contributions.
+    # State after: every child has contribution = child.num / parent.num.
+    #   This represents what share of successful outcomes each child contributes.
+    #   The cascade in cascade.py also uses num-based distribution.
+    # -----------------------------------------------------------------------
     def calc_contributions(n):
-        # IMPORTANT: This sets the DISPLAY contribution on tree nodes.
-        # It is DEN-BASED: child.den / parent.den (volume share).
-        # This is DIFFERENT from the cascade's stretch allocation which
-        # uses NUM-BASED: child.num / parent.num (performance share).
-        # See cascade.py → cascade_goals() for the other calculation.
         if not n.get("children"):
             return
-        pden = n["den"]
+        pnum = n["num"]
         for c in n["children"]:
-            c["contribution"] = c["den"] / pden if pden > 0 else 0
+            c["contribution"] = c["num"] / pnum if pnum > 0 else 0
             calc_contributions(c)
 
+    # -----------------------------------------------------------------------
+    # Step 5: Build path strings.
+    # State after: every node has path = "sys/DL/DL/D/ATL" (slash-separated).
+    # -----------------------------------------------------------------------
     def set_paths(n, pp=""):
         n["path"] = f"{pp}/{n['name']}" if pp else n["name"]
         for c in n["children"]:

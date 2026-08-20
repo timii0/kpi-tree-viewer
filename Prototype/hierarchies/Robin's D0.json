@@ -1,0 +1,38 @@
+{
+    "levels": [
+        {
+            "column": "sys",
+            "category": "sys",
+            "children": [
+                {
+                    "column": "ml_dc_1",
+                    "category": "ml_dc_1",
+                    "children": [
+                        {
+                            "column": "ml_dc_2",
+                            "category": "ml_dc_2",
+                            "children": [
+                                {
+                                    "column": "fleet",
+                                    "category": "fleet",
+                                    "split": true
+                                },
+                                {
+                                    "column": "station",
+                                    "category": "station",
+                                    "split": true,
+                                    "children": [
+                                        {
+                                            "column": "vendor",
+                                            "category": "vendor"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

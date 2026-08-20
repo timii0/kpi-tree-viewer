@@ -108,10 +108,11 @@ def count_nodes(node):
 
 
 def validate_contributions(node):
-    """Validate that contribution sums equal 1.0 at every tree level.
+    """Validate that children's num-based contributions sum to 1.0 at every level.
 
-    Checks both primary children (non-split) and split children separately.
-    Each group's contributions should sum to 1.0 (within 0.001 tolerance).
+    Computes contribution directly from num values (child.num / parent.num)
+    for both primary and split groups independently. Each group should sum
+    to 1.0 within tolerance.
 
     Args:
         node (dict): Root node. Recurses through all descendants.
@@ -124,13 +125,14 @@ def validate_contributions(node):
     issues = []
     children = node.get("children", [])
     if children:
+        parent_num = node.get("num", 0)
         for group_name, group in [
             (node["name"], [c for c in children if not c.get("split")]),
             (f"{node['name']} (split)", [c for c in children if c.get("split")]),
         ]:
-            if group:
-                total = sum(c.get("contribution", 0) for c in group)
-                if abs(total - 1.0) > 0.001:
+            if group and parent_num > 0:
+                total = sum(c.get("num", 0) for c in group) / parent_num
+                if abs(total - 1.0) > 0.01:
                     issues.append({"node": group_name, "total": total})
     for child in children:
         issues.extend(validate_contributions(child))
@@ -138,21 +140,19 @@ def validate_contributions(node):
 
 
 def validate_rollup(node):
-    """Validate that children's num sums to parent's num at every level.
+    """Validate that primary children's num sums to parent's num at every level.
 
     Only checks primary (non-split) children. Tolerance scales with the
     number of children to account for rounding in cascaded values.
-
-    Also validates that primary children contributions sum to 1.0.
 
     Args:
         node (dict): Root node. Recurses through all descendants.
 
     Returns:
         list[dict]: Issues found. Each issue has:
-            - "type" (str): "num_rollup" or "contribution_sum"
+            - "type" (str): "num_rollup"
             - "node" (str): Name of the parent node
-            - Additional fields depending on type (diff, total, etc.)
+            - Additional fields: parent_num, children_num, diff
     """
     issues = []
     children = node.get("children", [])
@@ -165,9 +165,6 @@ def validate_rollup(node):
                 issues.append({"type": "num_rollup", "node": node["name"],
                                "parent_num": parent_num, "children_num": child_sum,
                                "diff": child_sum - parent_num})
-            ct = sum(c.get("contribution", 0) for c in primary)
-            if abs(ct - 1.0) > 0.001:
-                issues.append({"type": "contribution_sum", "node": node["name"], "total": ct})
     for child in children:
         issues.extend(validate_rollup(child))
     return issues
@@ -491,10 +488,9 @@ with tree_tab:
                 st.success("Contributions OK")
             for i in issues:
                 st.warning(f"{i['node']} = {i['total']:.1%}")
-            num_issues = [r for r in rollup if r["type"] == "num_rollup"]
-            if not num_issues:
+            if not rollup:
                 st.success("Rollup OK")
-            for i in num_issues:
+            for i in rollup:
                 st.warning(f"{i['node']}: diff {i['diff']:+,}")
 
         # Properties

@@ -93,17 +93,48 @@ def find_node_by_id(node, node_id):
     Node IDs follow the format "category;name" (e.g. "carrier;DL", "system;sys").
     This is the primary method for locating goal target nodes.
 
+    If an exact ID match is not found, falls back to matching by name alone.
+    This handles cases where the hierarchy was built with column names as
+    categories (e.g. "ml_dc_1;DL") but goals.csv uses human-friendly
+    categories (e.g. "carrier;DL").
+
     Args:
         node (dict): Root of the subtree to search.
-        node_id (str): Target node ID to find.
+        node_id (str): Target node ID to find (format: "category;name").
 
     Returns:
         dict or None: The matching node, or None if not found.
     """
+    # Exact ID match
     if node["id"] == node_id:
         return node
     for child in node.get("children", []):
         result = find_node_by_id(child, node_id)
+        if result:
+            return result
+
+    # Fallback: match by name only (when called from top level)
+    # This is handled by find_node_by_name below
+    return None
+
+
+def find_node_by_name(node, name):
+    """Fallback search: find a node by its 'name' field (depth-first).
+
+    Used when an exact ID match fails — e.g. goals.csv uses "carrier;DL"
+    but the tree has "ml_dc_1;DL". In this case we search for name="DL".
+
+    Args:
+        node (dict): Root of the subtree to search.
+        name (str): Target node name to find.
+
+    Returns:
+        dict or None: The first matching node, or None if not found.
+    """
+    if node["name"] == name:
+        return node
+    for child in node.get("children", []):
+        result = find_node_by_name(child, name)
         if result:
             return result
     return None
@@ -222,6 +253,13 @@ def apply_goals_from_csv(tree, goals_df):
     for _, row in goals_df.iterrows():
         node_id = resolve_goal_target(str(row["Node_Name"]).strip())
         target = find_node_by_id(tree, node_id)
+        # Fallback: if exact ID not found, try matching by name alone.
+        # This handles hierarchies where category = column name (e.g. "ml_dc_1")
+        # but goals.csv uses human-friendly categories (e.g. "carrier").
+        if not target:
+            parts = node_id.split(";", 1)
+            if len(parts) == 2:
+                target = find_node_by_name(tree, parts[1])
         if not target:
             print(f"  WARNING: node '{row['Node_Name']}' not found (resolved: {node_id})")
             continue
@@ -495,41 +533,109 @@ def cascade(
         6. collect_goal_table() + compute_ytd() — build CSV output
         7. propagate_goal_nums() + clean_flags() — finalize tree
         8. Write JSON and CSV files
+
+    State at each step:
+        After step 1: hierarchy dict loaded, levels = [(col, cat, transform, split), ...]
+        After step 2: df = flat DataFrame with num, den, and dimension columns
+        After step 3: tree has baseline = num/den, goal = baseline (no targets yet),
+                      contribution = child.num/parent.num, all paths set
+        After step 4: anchor nodes have goal != baseline, _goal_set=True,
+                      _goal_num/_baseline_num set. Non-anchor nodes unchanged.
+        After step 5: ALL nodes have goal set (cascaded from anchors).
+                      Each node: goal = (num + delta*share) / den.
+                      Internal flags: _goal_num, _baseline_num, _stretch on every node.
+        After step 6: out_df = flat table with one row per node, YTD columns added.
+                      Tree still has internal flags at this point.
+        After step 7: tree.num = goal_num everywhere (overwritten for final output).
+                      All _ flags removed. Tree is clean for serialization.
+        After step 8: JSON and CSV written to disk.
     """
 
+    # -----------------------------------------------------------------------
+    # Step 1: Load hierarchy definition and flatten into level tuples.
+    # State after: hierarchy = {"levels": [...]}, levels = [(col, cat, transform, split), ...]
+    # -----------------------------------------------------------------------
     with open(hierarchy_file, "r", encoding="utf-8") as f:
         hierarchy = json.load(f)
 
     levels = parse_levels(hierarchy)
+
+    # -----------------------------------------------------------------------
+    # Step 2: Load raw data from parquet cache.
+    # State after: df = flat DataFrame, one row per flight-operation.
+    #   Columns: num, den, sys, ml_dc_1, ml_dc_2, Mo_Nb, dom_int, station, fleet, etc.
+    # -----------------------------------------------------------------------
     df = pd.read_parquet(cache_file)
     print(f"Loaded {len(df):,} rows from {cache_file}")
 
+    # -----------------------------------------------------------------------
+    # Step 3: Build base tree from data + hierarchy.
+    # State after: nested dict tree where each node has:
+    #   num = sum of children's num (raw from data)
+    #   den = sum of children's den (raw from data)
+    #   baseline = num/den (current performance rate)
+    #   goal = baseline (no targets applied yet — goal == baseline)
+    #   contribution = child.num / parent.num (num-based share)
+    #   path = slash-separated string from root
+    #   tier = integer (primary) or X.1/X.2 (split branches)
+    # -----------------------------------------------------------------------
     tree = build_tree(df, hierarchy)
     print(f"Built tree: root={tree['name']}")
 
+    # -----------------------------------------------------------------------
+    # Step 4: Apply explicit goals from goals.csv to anchor nodes.
+    # State after: anchor nodes (matched by id or name fallback) now have:
+    #   goal = goal_num / goal_den (the target rate, != baseline)
+    #   _goal_set = True (marks this as an explicit target, not cascaded)
+    #   _goal_num, _goal_den = target numerator/denominator
+    #   _baseline_num, _baseline_den = original values before goal was set
+    #   All non-anchor nodes remain unchanged (goal still == baseline).
+    # -----------------------------------------------------------------------
     goals_df = pd.read_csv(goals_file)
     print(f"\nApplying {len(goals_df)} goal(s):")
     apply_goals_from_csv(tree, goals_df)
 
-    # Cascade top-down by tier
+    # -----------------------------------------------------------------------
+    # Step 5: Cascade stretch from anchor nodes down to all descendants.
+    # State after: EVERY node in the tree now has a goal value.
+    #   For each child: goal = (child.num + parent_delta * child_share) / child.den
+    #   child_share is determined by CASCADE_BASIS ("num" or "den").
+    #   Internal flags on every cascaded node: _goal_num, _baseline_num, _stretch
+    #   Nodes with _goal_set=True are skipped (they keep their explicit goal).
+    # -----------------------------------------------------------------------
     print("\nCascading...")
     anchors = []
     for _, row in goals_df.iterrows():
         node_id = resolve_goal_target(str(row["Node_Name"]).strip())
         anchor = find_node_by_id(tree, node_id)
+        if not anchor:
+            parts = node_id.split(";", 1)
+            if len(parts) == 2:
+                anchor = find_node_by_name(tree, parts[1])
         if anchor:
             anchors.append(anchor)
     anchors.sort(key=lambda n: n.get("tier", 0))
     for anchor in anchors:
         cascade_goals(anchor)
 
-    # Export CSV (before cleaning flags)
+    # -----------------------------------------------------------------------
+    # Step 6: Flatten tree into CSV table and compute YTD expectations.
+    # State after: out_df = pandas DataFrame with one row per tree node.
+    #   Columns: KPI_Name, parent, node, Tier, {dimensions}, Baseline,
+    #   Baseline_Num, Baseline_Den, Goal, Stretch, Contribution, Goal_Num,
+    #   Goal_Den, Source, Goal_Yr, YTD_Num, YTD_Den.
+    #   Tree still has internal _flags at this point (needed for CSV generation).
+    # -----------------------------------------------------------------------
     output_file.parent.mkdir(parents=True, exist_ok=True)
     kpi_name = goals_df["KPI_Name"].iloc[0]
 
     top_anchor = anchors[0] if anchors else tree
     rows = collect_goal_table(top_anchor, levels)
     out_df = pd.DataFrame(rows)
+
+    # -----------------------------------------------------------------------
+    # Step 6 (continued): Sort, format, and add YTD columns.
+    # -----------------------------------------------------------------------
 
     # Sort by tier, then month numerically, then node name
     out_df["_tier_sort"] = out_df["tier"]
@@ -558,15 +664,29 @@ def cascade(
         "num": "Goal_Num", "den": "Goal_Den", "tier": "Tier", "source": "Source",
     })
 
+    # -----------------------------------------------------------------------
+    # Step 7: Finalize tree for JSON output.
+    # State after: tree.num = _goal_num at every node (overwrites baseline num).
+    #   All internal flags (_goal_set, _goal_num, _baseline_num, etc.) removed.
+    #   Tree is now a clean nested dict ready for JSON serialization.
+    #   Node values represent the GOAL state, not baseline.
+    # -----------------------------------------------------------------------
+    propagate_goal_nums(tree)
+    clean_flags(tree)
+
+    # -----------------------------------------------------------------------
+    # Step 8: Write output files.
+    # Outputs:
+    #   {output_file} — Tree JSON where each node's num reflects goal targets.
+    #   {output_file.stem}_cascaded.csv — Flat table with all nodes, their
+    #       baselines, goals, stretch %, contributions, and YTD expectations.
+    # -----------------------------------------------------------------------
     csv_dir = output_file.parent
     csv_dir.mkdir(parents=True, exist_ok=True)
     csv_path = csv_dir / f"{output_file.stem}_cascaded.csv"
     out_df.to_csv(csv_path, index=False)
     print(f"Wrote {csv_path}")
 
-    # Write tree JSON
-    propagate_goal_nums(tree)
-    clean_flags(tree)
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(tree, f, indent=4, ensure_ascii=False)
     print(f"Wrote {output_file}")

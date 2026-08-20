@@ -200,7 +200,7 @@ build_level(node, filtered_df, h_children, tier + 1, child_offset)
 | `CACHE_FILE` | `teradata_cache.parquet` | Data cache |
 | `OUTPUT_FILE` | `output/output.json` | Default output path |
 | `CARRIER_ALIASES` | `{"ML": "DL", "DL": "DL", "DC": "DC"}` | Node name resolution |
-| `CASCADE_BASIS` | `"num"` | Controls stretch distribution: `"num"` (uniform %) or `"den"` (by volume) |
+| `CASCADE_BASIS` | (imported from `config.py`) | Controls contributions + stretch distribution |
 
 ### Functions
 
@@ -509,53 +509,27 @@ D0,carrier;DC,72.13,446980,619723,5%,469329,619723,75.73
 
 ## Common Changes
 
-### Change contribution from den-based to num-based
+### Change contribution basis (num vs den)
 
-There are **two separate contribution calculations** in this codebase that serve different purposes:
-
-| Location | Basis | Purpose | Affects |
-|----------|-------|---------|---------|
-| `converter.py` / `app.py` → `calc_contributions()` | **DEN-based** (`child.den / parent.den`) | Sets the `contribution` field displayed in the viewer | Tree node display, QA validation |
-| `cascade.py` → `cascade_goals()` | **NUM-based** (`child.num / parent.num`) | Determines how stretch is distributed to children | Goal cascading only (internal) |
-
-**Why they differ:** Den-based contribution represents volume share — what fraction of total opportunities does this node account for. Num-based cascade distribution represents performance share — nodes with more successes receive proportionally more stretch, which preserves uniform percentage improvement across all children.
-
-To change the **display contribution** (tree nodes) from den-based to num-based:
+Contributions and cascade stretch are now controlled by a **single setting** in `config.py`:
 
 ```python
-# In converter.py → build_tree() → calc_contributions()
-def calc_contributions(n):
-    if not n.get("children"):
-        return
-    pden = n["den"]
-    for c in n["children"]:
-        c["contribution"] = c["den"] / pden if pden > 0 else 0
-        calc_contributions(c)
+# config.py
+CASCADE_BASIS = "num"  # or "den"
 ```
 
-To make it **num-based**, change to:
+This controls all three places at once:
+- `converter.py` → `calc_contributions()` (tree building)
+- `cascade.py` → `cascade_goals()` (stretch distribution)
+- `app.py` → `calc_contributions()` (viewer display)
 
-```python
-def calc_contributions(n):
-    if not n.get("children"):
-        return
-    pnum = n["num"]
-    for c in n["children"]:
-        c["contribution"] = c["num"] / pnum if pnum > 0 else 0
-        calc_contributions(c)
-```
-
-**Files to update:**
-1. `converter.py` — `calc_contributions()` inside `build_tree()`
-2. `app.py` — `calc_contributions()` inside `build_tree_from_hierarchy()`
-
-**Note:** This only changes the display/validation contribution on tree nodes. The cascade stretch distribution in `cascade.py` → `cascade_goals()` is a separate num-based calculation and is NOT affected by this change. To also change cascade distribution, see "Change the cascade distribution method" below.
+To switch from num-based to den-based, just change the value in `config.py`. No code edits elsewhere.
 
 ---
 
-### Change contribution from den-based to a custom formula
+### Use a custom contribution formula
 
-Replace the body of `calc_contributions()` in both `converter.py` and `app.py`. Example using weighted formula:
+If neither "num" nor "den" fits your needs, modify `calc_contributions()` in both `converter.py` and `app.py`:
 
 ```python
 def calc_contributions(n):
@@ -566,6 +540,8 @@ def calc_contributions(n):
         c["contribution"] = your_formula(c) / total if total > 0 else 0
         calc_contributions(c)
 ```
+
+Also update `cascade_goals()` in `cascade.py` to use the same formula for the cascade `contribution` variable.
 
 ---
 
@@ -647,24 +623,29 @@ If the existing `int_flag` and `map` types don't cover your needs, you can add a
 
 ### Change the cascade distribution method
 
-The cascade distribution method is controlled by the `CASCADE_BASIS` flag in `cascade.py`:
+The cascade distribution and tree node contributions are both controlled by `CASCADE_BASIS` in `config.py` — the single source of truth:
 
 ```python
-# At the top of cascade.py, in the Configuration section:
+# config.py
 CASCADE_BASIS = "num"   # Currently set to num-based
 ```
+
+**This one setting controls three things:**
+1. Tree node contributions (`converter.py` → `calc_contributions`)
+2. Cascade stretch distribution (`cascade.py` → `cascade_goals`)
+3. App display contributions (`app.py` → `calc_contributions`)
 
 **Options:**
 - `"num"` (current default): `child.num / parent.num` — distributes stretch proportionally to performance share. Every child gets the same percentage improvement as the parent.
 - `"den"`: `child.den / parent.den` — distributes stretch proportionally to volume share. Larger-volume children get more absolute stretch regardless of current performance.
 
-To switch, simply change the value:
+To switch, change the value in `config.py`:
 
 ```python
 CASCADE_BASIS = "den"
 ```
 
-No other code changes needed — `cascade_goals()` reads this flag and adjusts its contribution calculation accordingly.
+No other code changes needed — all three modules import from `config.py` automatically.
 
 ---
 

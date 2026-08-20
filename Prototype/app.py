@@ -286,19 +286,24 @@ def build_tree_from_hierarchy(df, hierarchy_def):
             calc_baselines(c)
 
     def calc_contributions(n):
-        # IMPORTANT: This sets the DISPLAY contribution on tree nodes.
-        # It is NUM-BASED: child.num / parent.num (performance share).
-        # This represents what fraction of successful outcomes this node
-        # contributes to its parent.
-        # The cascade stretch allocation in cascade.py → cascade_goals()
-        # also uses num-based distribution (child.num / parent.baseline_num).
+        # Contribution basis is controlled by CASCADE_BASIS in config.py.
+        # This ensures the tree display and cascade distribution use the same method.
+        #   "num": child.num / parent.num (performance share)
+        #   "den": child.den / parent.den (volume share)
+        from config import CASCADE_BASIS
         children = n.get("children", [])
         if not children:
             return
-        pnum = n["num"]
-        for c in children:
-            c["contribution"] = c["num"] / pnum if pnum > 0 else 0
-            calc_contributions(c)
+        if CASCADE_BASIS == "den":
+            parent_val = n["den"]
+            for c in children:
+                c["contribution"] = c["den"] / parent_val if parent_val > 0 else 0
+                calc_contributions(c)
+        else:
+            parent_val = n["num"]
+            for c in children:
+                c["contribution"] = c["num"] / parent_val if parent_val > 0 else 0
+                calc_contributions(c)
 
     def set_paths(n, pp=""):
         n["path"] = f"{pp}/{n['name']}" if pp else n["name"]

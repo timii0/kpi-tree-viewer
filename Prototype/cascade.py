@@ -41,14 +41,10 @@ OUTPUT_FILE = Path("output") / "output.json"
 
 CARRIER_ALIASES = {"ML": "DL", "DL": "DL", "DC": "DC"}
 
-# CASCADE_BASIS controls how stretch is distributed to children.
-#   "num" (default): Proportional to child.num / parent.num.
-#       Higher-performing children receive more absolute stretch.
-#       Preserves uniform percentage improvement across children.
-#   "den": Proportional to child.den / parent.den.
-#       Distributes stretch by volume share regardless of performance.
-#       Larger-volume children receive more absolute stretch.
-CASCADE_BASIS = "num"
+# CASCADE_BASIS controls how contributions AND stretch distribution are calculated.
+# This is imported from config.py — the single source of truth.
+# Changing it there affects tree contributions, cascade distribution, and app display.
+from config import CASCADE_BASIS
 
 
 # ---------------------------------------------------------------------------

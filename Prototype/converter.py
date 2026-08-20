@@ -204,18 +204,27 @@ def build_tree(df, hierarchy):
             calc_baselines(c)
 
     # -----------------------------------------------------------------------
-    # Step 4: Calculate num-based contributions.
-    # State after: every child has contribution = child.num / parent.num.
-    #   This represents what share of successful outcomes each child contributes.
-    #   The cascade in cascade.py also uses num-based distribution.
+    # Step 4: Calculate contributions (basis controlled by CASCADE_BASIS).
+    # State after: every child has contribution computed per the configured basis.
+    #   "num": child.num / parent.num (performance share)
+    #   "den": child.den / parent.den (volume share)
+    #   The cascade distribution in cascade.py uses the same basis for consistency.
     # -----------------------------------------------------------------------
+    from config import CASCADE_BASIS as _basis
+
     def calc_contributions(n):
         if not n.get("children"):
             return
-        pnum = n["num"]
-        for c in n["children"]:
-            c["contribution"] = c["num"] / pnum if pnum > 0 else 0
-            calc_contributions(c)
+        if _basis == "den":
+            parent_val = n["den"]
+            for c in n["children"]:
+                c["contribution"] = c["den"] / parent_val if parent_val > 0 else 0
+                calc_contributions(c)
+        else:
+            parent_val = n["num"]
+            for c in n["children"]:
+                c["contribution"] = c["num"] / parent_val if parent_val > 0 else 0
+                calc_contributions(c)
 
     # -----------------------------------------------------------------------
     # Step 5: Build path strings.

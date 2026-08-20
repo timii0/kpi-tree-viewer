@@ -286,24 +286,33 @@ def build_tree_from_hierarchy(df, hierarchy_def):
             calc_baselines(c)
 
     def calc_contributions(n):
-        # Contribution basis is controlled by CASCADE_BASIS in config.py.
-        # This ensures the tree display and cascade distribution use the same method.
-        #   "num": child.num / parent.num (performance share)
-        #   "den": child.den / parent.den (volume share)
+        """Calculate contributions per group: primary children share one pool,
+        each split offset group shares its own pool independently."""
         from config import CASCADE_BASIS
         children = n.get("children", [])
         if not children:
             return
-        if CASCADE_BASIS == "den":
-            parent_val = n["den"]
-            for c in children:
-                c["contribution"] = c["den"] / parent_val if parent_val > 0 else 0
-                calc_contributions(c)
-        else:
-            parent_val = n["num"]
-            for c in children:
-                c["contribution"] = c["num"] / parent_val if parent_val > 0 else 0
-                calc_contributions(c)
+
+        # Group children by their split offset (primary = 0, splits = 0.1, 0.2, etc.)
+        groups = {}
+        for c in children:
+            offset = round(c["tier"] - int(c["tier"]), 1)
+            groups.setdefault(offset, []).append(c)
+
+        # Calculate contribution within each group independently
+        for offset, group in groups.items():
+            if CASCADE_BASIS == "den":
+                group_total = sum(c["den"] for c in group)
+                for c in group:
+                    c["contribution"] = c["den"] / group_total if group_total > 0 else 0
+            else:
+                group_total = sum(c["num"] for c in group)
+                for c in group:
+                    c["contribution"] = c["num"] / group_total if group_total > 0 else 0
+
+        # Recurse into all children
+        for c in children:
+            calc_contributions(c)
 
     def set_paths(n, pp=""):
         n["path"] = f"{pp}/{n['name']}" if pp else n["name"]

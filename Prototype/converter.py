@@ -213,18 +213,36 @@ def build_tree(df, hierarchy):
     from config import CASCADE_BASIS as _basis
 
     def calc_contributions(n):
-        if not n.get("children"):
+        """Calculate contributions per group: primary children share one pool,
+        each split offset group shares its own pool. This prevents multiple
+        split branches (which represent the same data differently) from
+        summing to >100% when calculated against the parent."""
+        children = n.get("children", [])
+        if not children:
             return
-        if _basis == "den":
-            parent_val = n["den"]
-            for c in n["children"]:
-                c["contribution"] = c["den"] / parent_val if parent_val > 0 else 0
-                calc_contributions(c)
-        else:
-            parent_val = n["num"]
-            for c in n["children"]:
-                c["contribution"] = c["num"] / parent_val if parent_val > 0 else 0
-                calc_contributions(c)
+
+        # Group children by their split offset (primary = 0, splits = 0.1, 0.2, etc.)
+        # Children in the same group share a contribution pool that sums to 1.0
+        groups = {}
+        for c in children:
+            # Determine which group this child belongs to by its tier offset
+            offset = round(c["tier"] - int(c["tier"]), 1)
+            groups.setdefault(offset, []).append(c)
+
+        # Calculate contribution within each group independently
+        for offset, group in groups.items():
+            if _basis == "den":
+                group_total = sum(c["den"] for c in group)
+                for c in group:
+                    c["contribution"] = c["den"] / group_total if group_total > 0 else 0
+            else:
+                group_total = sum(c["num"] for c in group)
+                for c in group:
+                    c["contribution"] = c["num"] / group_total if group_total > 0 else 0
+
+        # Recurse into all children
+        for c in children:
+            calc_contributions(c)
 
     # -----------------------------------------------------------------------
     # Step 5: Build path strings.
